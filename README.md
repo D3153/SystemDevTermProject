@@ -7,3 +7,6 @@
 - Ibrahim Awad
 - Craig Justin Balibalos
 - Alihan Djamankulov
+
+### Project Description:
+We will be building a Desktop Application using C# Visual Studio to help our client to store caller information.
