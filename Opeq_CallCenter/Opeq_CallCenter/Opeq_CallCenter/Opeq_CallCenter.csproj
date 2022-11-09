@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CFFDFFA7-7ADF-46AF-B68F-A23347F40D8D}</ProjectGuid>
+    <ProjectGuid>{5D3FB7C8-426C-473E-AD63-75ED31884689}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Opeq_CallCenter</RootNamespace>
     <AssemblyName>Opeq_CallCenter</AssemblyName>
