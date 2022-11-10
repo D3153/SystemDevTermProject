@@ -32,6 +32,15 @@ namespace Opeq_CallCenter
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = "INSERT INTO employee (employee_name) VALUES ('" + empName + "');";
             cmd.ExecuteNonQuery();
+            con.Close();
+            MessageBox.Show("Connexion Réussie");
+        }
+
+        private void adminLoginLabel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            AdminLoginForm adminLogin = new AdminLoginForm();
+            adminLogin.Show();
         }
     }
 }
