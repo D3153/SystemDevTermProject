@@ -26,12 +26,23 @@ namespace Opeq_CallCenter
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            string empName = empNameTextBox.Text;
-            con.Open();
-            SqlCommand cmd = con.CreateCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "INSERT INTO employee (employee_name) VALUES ('" + empName + "');";
-            cmd.ExecuteNonQuery();
+            //Uncomment to see if database works
+            //string empName = empNameTextBox.Text;
+            //con.Open();
+            //SqlCommand cmd = con.CreateCommand();
+            //cmd.CommandType = CommandType.Text;
+            //cmd.CommandText = "INSERT INTO employee (employee_name) VALUES ('" + empName + "');";
+            //cmd.ExecuteNonQuery();
+            //con.Close();
+            MessageBox.Show("Connexion Réussie");
+        }
+
+        private void adminLoginLabel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AdminLoginForm adminLogin = new AdminLoginForm();
+            adminLogin.ShowDialog();
+            this.Close();
         }
     }
 }
