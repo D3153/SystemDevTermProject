@@ -1,0 +1,2 @@
+Does the database connection string changes through different devices?
+Do we need MSSQL server installed to connect the database to the application?
