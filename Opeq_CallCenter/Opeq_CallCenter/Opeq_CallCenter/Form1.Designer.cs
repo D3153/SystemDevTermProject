@@ -61,6 +61,7 @@
             // empNameTextBox
             // 
             this.empNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.empNameTextBox.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.empNameTextBox.Location = new System.Drawing.Point(297, 293);
             this.empNameTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.empNameTextBox.Multiline = true;

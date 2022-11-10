@@ -50,6 +50,7 @@
             // adminNameTextBox
             // 
             this.adminNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adminNameTextBox.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.adminNameTextBox.Location = new System.Drawing.Point(280, 269);
             this.adminNameTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.adminNameTextBox.Multiline = true;
@@ -84,6 +85,7 @@
             // adminPassTextBox
             // 
             this.adminPassTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adminPassTextBox.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.adminPassTextBox.Location = new System.Drawing.Point(280, 334);
             this.adminPassTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.adminPassTextBox.Multiline = true;
