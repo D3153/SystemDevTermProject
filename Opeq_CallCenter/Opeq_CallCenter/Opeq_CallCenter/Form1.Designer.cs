@@ -29,46 +29,62 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
-            this.label1 = new System.Windows.Forms.Label();
+            this.loginLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.empNameTextBox = new System.Windows.Forms.TextBox();
+            this.loginButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // loginLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(759, 172);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.loginLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginLabel.Location = new System.Drawing.Point(437, 197);
+            this.loginLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.loginLabel.Name = "loginLabel";
+            this.loginLabel.Size = new System.Drawing.Size(177, 76);
+            this.loginLabel.TabIndex = 0;
+            this.loginLabel.Text = "Login";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(111, 558);
+            this.label2.Location = new System.Drawing.Point(28, 529);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 16);
+            this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "label2";
             // 
-            // textBox1
+            // empNameTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(427, 380);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(551, 67);
-            this.textBox1.TabIndex = 2;
+            this.empNameTextBox.Location = new System.Drawing.Point(320, 309);
+            this.empNameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.empNameTextBox.Multiline = true;
+            this.empNameTextBox.Name = "empNameTextBox";
+            this.empNameTextBox.Size = new System.Drawing.Size(411, 43);
+            this.empNameTextBox.TabIndex = 2;
+            // 
+            // loginButton
+            // 
+            this.loginButton.Location = new System.Drawing.Point(476, 398);
+            this.loginButton.Name = "loginButton";
+            this.loginButton.Size = new System.Drawing.Size(106, 26);
+            this.loginButton.TabIndex = 3;
+            this.loginButton.Text = "Se Connecter";
+            this.loginButton.UseVisualStyleBackColor = true;
+            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1215, 791);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(911, 609);
+            this.Controls.Add(this.loginButton);
+            this.Controls.Add(this.empNameTextBox);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.loginLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "LoginForm";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -79,9 +95,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label loginLabel;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox empNameTextBox;
+        private System.Windows.Forms.Button loginButton;
     }
 }
 
