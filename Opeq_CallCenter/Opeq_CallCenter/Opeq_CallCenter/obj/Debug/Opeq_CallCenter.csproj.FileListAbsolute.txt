@@ -22,3 +22,18 @@ C:\Users\2069192\Downloads\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\
 C:\Users\2069192\Downloads\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.pdb
 C:\Users\Dinal\Desktop\Semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.AdminLoginForm.resources
 C:\Users\Dinal\Desktop\Semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.WelcomeForm.resources
+C:\Users\dpate\OneDrive\Desktop\semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\bin\Debug\Opeq_CallCenter.exe.config
+C:\Users\dpate\OneDrive\Desktop\semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\bin\Debug\Opeq_CallCenter.exe
+C:\Users\dpate\OneDrive\Desktop\semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\bin\Debug\Opeq_CallCenter.pdb
+C:\Users\dpate\OneDrive\Desktop\semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.csproj.AssemblyReference.cache
+C:\Users\dpate\OneDrive\Desktop\semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.csproj.SuggestedBindingRedirects.cache
+C:\Users\dpate\OneDrive\Desktop\semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.AddForm.resources
+C:\Users\dpate\OneDrive\Desktop\semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.AdminLoginForm.resources
+C:\Users\dpate\OneDrive\Desktop\semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.LoginForm.resources
+C:\Users\dpate\OneDrive\Desktop\semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.ModifyForm.resources
+C:\Users\dpate\OneDrive\Desktop\semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.Properties.Resources.resources
+C:\Users\dpate\OneDrive\Desktop\semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.WelcomeForm.resources
+C:\Users\dpate\OneDrive\Desktop\semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.csproj.GenerateResource.cache
+C:\Users\dpate\OneDrive\Desktop\semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.csproj.CoreCompileInputs.cache
+C:\Users\dpate\OneDrive\Desktop\semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.exe
+C:\Users\dpate\OneDrive\Desktop\semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.pdb
