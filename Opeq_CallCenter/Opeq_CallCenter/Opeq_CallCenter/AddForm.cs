@@ -16,5 +16,6 @@ namespace Opeq_CallCenter
         {
             InitializeComponent();
         }
+
     }
 }
