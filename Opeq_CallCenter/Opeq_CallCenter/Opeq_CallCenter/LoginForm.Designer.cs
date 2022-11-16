@@ -41,9 +41,9 @@
             // 
             this.loginLabel.BackColor = System.Drawing.Color.Transparent;
             this.loginLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginLabel.Location = new System.Drawing.Point(561, 254);
+            this.loginLabel.Location = new System.Drawing.Point(499, 203);
             this.loginLabel.Name = "loginLabel";
-            this.loginLabel.Size = new System.Drawing.Size(266, 117);
+            this.loginLabel.Size = new System.Drawing.Size(236, 94);
             this.loginLabel.TabIndex = 0;
             this.loginLabel.Text = "Login";
             // 
@@ -53,9 +53,9 @@
             this.adminLoginLabel.BackColor = System.Drawing.Color.Transparent;
             this.adminLoginLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.adminLoginLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.adminLoginLabel.Location = new System.Drawing.Point(45, 862);
+            this.adminLoginLabel.Location = new System.Drawing.Point(40, 690);
             this.adminLoginLabel.Name = "adminLoginLabel";
-            this.adminLoginLabel.Size = new System.Drawing.Size(207, 25);
+            this.adminLoginLabel.Size = new System.Drawing.Size(175, 20);
             this.adminLoginLabel.TabIndex = 1;
             this.adminLoginLabel.Text = "Êtez-vous une admin?";
             this.adminLoginLabel.Click += new System.EventHandler(this.adminLoginLabel_Click);
@@ -64,10 +64,11 @@
             // 
             this.empNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.empNameTextBox.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.empNameTextBox.Location = new System.Drawing.Point(446, 451);
+            this.empNameTextBox.Location = new System.Drawing.Point(396, 361);
+            this.empNameTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.empNameTextBox.Multiline = true;
             this.empNameTextBox.Name = "empNameTextBox";
-            this.empNameTextBox.Size = new System.Drawing.Size(498, 46);
+            this.empNameTextBox.Size = new System.Drawing.Size(443, 38);
             this.empNameTextBox.TabIndex = 2;
             this.empNameTextBox.Text = "Entrer votre nom";
             this.empNameTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.empNameTextBox_MouseClick);
@@ -77,10 +78,10 @@
             this.loginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.loginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.loginButton.Location = new System.Drawing.Point(597, 568);
-            this.loginButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.loginButton.Location = new System.Drawing.Point(531, 454);
+            this.loginButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(201, 65);
+            this.loginButton.Size = new System.Drawing.Size(179, 52);
             this.loginButton.TabIndex = 3;
             this.loginButton.Text = "Se Connecter";
             this.loginButton.UseVisualStyleBackColor = false;
@@ -90,24 +91,26 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(14, 15);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(420, 180);
+            this.pictureBox1.Size = new System.Drawing.Size(373, 144);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1366, 937);
+            this.ClientSize = new System.Drawing.Size(1215, 750);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.empNameTextBox);
             this.Controls.Add(this.adminLoginLabel);
             this.Controls.Add(this.loginLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
