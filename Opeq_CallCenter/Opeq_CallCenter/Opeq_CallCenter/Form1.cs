@@ -24,13 +24,13 @@ namespace Opeq_CallCenter
             if(empNameTextBox.Text != string.Empty) 
             {
                 //Uncomment to see if database works
-                //string empName = empNameTextBox.Text;
-                //con.Open();
-                //SqlCommand cmd = con.CreateCommand();
-                //cmd.CommandType = CommandType.Text;
-                //cmd.CommandText = "INSERT INTO employee (employee_name) VALUES ('" + empName + "');";
-                //cmd.ExecuteNonQuery();
-                //con.Close();
+                string empName = empNameTextBox.Text;
+                con.Open();
+                SqlCommand cmd = con.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "INSERT INTO employee (employee_name) VALUES ('" + empName + "');";
+                cmd.ExecuteNonQuery();
+                con.Close();
 
                 this.Hide();
                 WelcomeForm welcomeForm = new WelcomeForm();
