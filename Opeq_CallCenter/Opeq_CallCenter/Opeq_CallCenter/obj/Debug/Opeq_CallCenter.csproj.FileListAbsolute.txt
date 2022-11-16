@@ -88,3 +88,19 @@ C:\Users\2032818\Downloads\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\
 C:\Users\2032818\Downloads\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.exe
 C:\Users\2032818\Downloads\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.pdb
 >>>>>>> 9f8db6f85a1165b72a5ddf5b8b31049e6ead81c0
+C:\Users\HP\Desktop\SysDevProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\bin\Debug\Opeq_CallCenter.exe.config
+C:\Users\HP\Desktop\SysDevProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\bin\Debug\Opeq_CallCenter.exe
+C:\Users\HP\Desktop\SysDevProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\bin\Debug\Opeq_CallCenter.pdb
+C:\Users\HP\Desktop\SysDevProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\SysDevProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.csproj.SuggestedBindingRedirects.cache
+C:\Users\HP\Desktop\SysDevProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.AddForm.resources
+C:\Users\HP\Desktop\SysDevProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.AdminLoginForm.resources
+C:\Users\HP\Desktop\SysDevProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.LoginForm.resources
+C:\Users\HP\Desktop\SysDevProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.ModifyForm.resources
+C:\Users\HP\Desktop\SysDevProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.Properties.Resources.resources
+C:\Users\HP\Desktop\SysDevProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.ViewForm.resources
+C:\Users\HP\Desktop\SysDevProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.WelcomeForm.resources
+C:\Users\HP\Desktop\SysDevProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\SysDevProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\SysDevProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.exe
+C:\Users\HP\Desktop\SysDevProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.pdb

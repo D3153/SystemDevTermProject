@@ -54,6 +54,7 @@ namespace Opeq_CallCenter
 
         private void empNameTextBox_MouseClick(object sender, MouseEventArgs e)
         {
+//            Session["Name"] = empNameTextBox.Text;
             if (empNameTextBox.Text == "Entrer votre nom")
             {
                 empNameTextBox.Text = "";
