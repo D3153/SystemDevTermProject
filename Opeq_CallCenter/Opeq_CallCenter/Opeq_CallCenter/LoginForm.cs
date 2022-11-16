@@ -21,7 +21,12 @@ namespace Opeq_CallCenter
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            if(empNameTextBox.Text != string.Empty) 
+
+            if (empNameTextBox.Text == "Entrer votre nom" || empNameTextBox.Text == String.Empty)
+            {
+                MessageBox.Show("Entrer un nom valide!");
+            }
+            else if (empNameTextBox.Text != string.Empty) 
             {
                 //Uncomment to see if database works
                 string empName = empNameTextBox.Text;
@@ -36,10 +41,6 @@ namespace Opeq_CallCenter
                 WelcomeForm welcomeForm = new WelcomeForm();
                 welcomeForm.ShowDialog();
                 this.Close();
-            }
-            else
-            {
-                MessageBox.Show("Entrer un nom valide!");
             }
 
         }
@@ -57,8 +58,8 @@ namespace Opeq_CallCenter
             if (empNameTextBox.Text == "Entrer votre nom")
             {
                 empNameTextBox.Text = "";
-                empNameTextBox.ForeColor = Color.Black;
             }
+            empNameTextBox.ForeColor = Color.Black;
         }
 
         private void LoginForm_Load(object sender, EventArgs e)

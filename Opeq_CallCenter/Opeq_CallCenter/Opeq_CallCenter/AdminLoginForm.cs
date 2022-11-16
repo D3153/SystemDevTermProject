@@ -34,8 +34,8 @@ namespace Opeq_CallCenter
             if (adminNameTextBox.Text == "Entrer votre Nom")
             {
                 adminNameTextBox.Text = "";
-                adminNameTextBox.ForeColor = Color.Black;
             }
+            adminNameTextBox.ForeColor = Color.Black;
         }
 
         private void adminPassTextBox_MouseClick(object sender, MouseEventArgs e)
@@ -43,8 +43,9 @@ namespace Opeq_CallCenter
             if (adminPassTextBox.Text == "Entrer votre Mot de Passe")
             {
                 adminPassTextBox.Text = "";
-                adminPassTextBox.ForeColor = Color.Black;
             }
+            adminPassTextBox.ForeColor = Color.Black;
+            adminPassTextBox.PasswordChar = '*';
         }
 
         private void loginButton_Click(object sender, EventArgs e)
@@ -63,6 +64,10 @@ namespace Opeq_CallCenter
                 WelcomeForm welcomeForm = new WelcomeForm();
                 welcomeForm.ShowDialog();
                 this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Entrer un nom valide!");
             }
         }
     }
