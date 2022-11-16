@@ -59,7 +59,7 @@
             this.adminLoginLabel.Name = "adminLoginLabel";
             this.adminLoginLabel.Size = new System.Drawing.Size(149, 17);
             this.adminLoginLabel.TabIndex = 1;
-            this.adminLoginLabel.Text = "Etez-vous une admin?";
+            this.adminLoginLabel.Text = "Êtez-vous une admin?";
             this.adminLoginLabel.Click += new System.EventHandler(this.adminLoginLabel_Click);
             // 
             // empNameTextBox
@@ -74,7 +74,6 @@
             this.empNameTextBox.TabIndex = 2;
             this.empNameTextBox.Text = "Entrer votre nom";
             this.empNameTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.empNameTextBox_MouseClick);
-            //this.empNameTextBox.MouseEnter += new System.EventHandler(this.empNameTextBox_MouseEnter);
             // 
             // loginButton
             // 
