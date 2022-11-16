@@ -61,6 +61,11 @@ namespace Opeq_CallCenter
             }
         }
 
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
         //private void empNameTextBox_MouseEnter(object sender, EventArgs e)
         //{
         //if (empNameTextBox.Text == "Entrer votre nom")
