@@ -57,7 +57,7 @@
             this.adminLoginLabel.Name = "adminLoginLabel";
             this.adminLoginLabel.Size = new System.Drawing.Size(207, 25);
             this.adminLoginLabel.TabIndex = 1;
-            this.adminLoginLabel.Text = "Etez-vous une admin?";
+            this.adminLoginLabel.Text = "Êtez-vous une admin?";
             this.adminLoginLabel.Click += new System.EventHandler(this.adminLoginLabel_Click);
             // 
             // empNameTextBox
