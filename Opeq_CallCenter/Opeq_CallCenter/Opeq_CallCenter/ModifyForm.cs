@@ -16,5 +16,10 @@ namespace Opeq_CallCenter
         {
             InitializeComponent();
         }
+
+        private void ModifyForm_Load(object sender, EventArgs e)
+        {
+            //s
+        }
     }
 }
