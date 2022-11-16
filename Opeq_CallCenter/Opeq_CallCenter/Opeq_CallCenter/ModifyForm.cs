@@ -19,7 +19,7 @@ namespace Opeq_CallCenter
 
         private void ModifyForm_Load(object sender, EventArgs e)
         {
-            //s
+            
         }
     }
 }

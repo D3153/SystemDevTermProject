@@ -49,15 +49,15 @@ namespace Opeq_CallCenter
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            /*con.Open();
+            con.Open();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
             string adminName = cmd.CommandText = "SELECT admin_name FROM Admin;";
             string adminPass = cmd.CommandText = "SELECT password FROM Admin;";
             cmd.ExecuteNonQuery();
-            con.Close();*/
+            con.Close();
 
-            if (adminNameTextBox.Text == "Ollo" && adminPassTextBox.Text == "Ollo")
+            if (adminNameTextBox.Text == adminName && adminPassTextBox.Text == adminPass)
             {
                 this.Hide();
                 WelcomeForm welcomeForm = new WelcomeForm();
