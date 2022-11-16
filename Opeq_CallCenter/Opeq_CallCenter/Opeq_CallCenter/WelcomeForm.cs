@@ -17,21 +17,29 @@ namespace Opeq_CallCenter
             InitializeComponent();
         }
 
-        private void addButton_CheckedChanged(object sender, EventArgs e)
+        
+        
+        
+
+        private void addButton_MouseClick(object sender, MouseEventArgs e)
         {
             AddForm addFormInstance = new AddForm();
             addFormInstance.ShowDialog();
             this.Close();
         }
 
-        private void modifyRadioBtn_CheckedChanged(object sender, EventArgs e)
+        private void modifyRadioBtn_MouseClick(object sender, MouseEventArgs e)
         {
             ModifyForm modifyFormInstance = new ModifyForm();
+            modifyFormInstance.ShowDialog();
+            this.Close();
         }
 
-        private void viewRadioBtn_CheckedChanged(object sender, EventArgs e)
+        private void viewRadioBtn_MouseClick(object sender, MouseEventArgs e)
         {
             ViewForm viewFormInstance = new ViewForm();
+            viewFormInstance.ShowDialog();
+            this.Close();
         }
     }
 }

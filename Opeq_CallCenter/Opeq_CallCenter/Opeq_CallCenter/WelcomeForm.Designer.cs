@@ -63,7 +63,7 @@
             this.viewRadioBtn.TabStop = true;
             this.viewRadioBtn.Text = "Voir";
             this.viewRadioBtn.UseVisualStyleBackColor = true;
-            this.viewRadioBtn.CheckedChanged += new System.EventHandler(this.viewRadioBtn_CheckedChanged);
+            this.viewRadioBtn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.viewRadioBtn_MouseClick);
             // 
             // modifyRadioBtn
             // 
@@ -76,7 +76,7 @@
             this.modifyRadioBtn.TabStop = true;
             this.modifyRadioBtn.Text = "Modifier";
             this.modifyRadioBtn.UseVisualStyleBackColor = true;
-            this.modifyRadioBtn.CheckedChanged += new System.EventHandler(this.modifyRadioBtn_CheckedChanged);
+            this.modifyRadioBtn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.modifyRadioBtn_MouseClick);
             // 
             // addButton
             // 
@@ -89,7 +89,7 @@
             this.addButton.TabStop = true;
             this.addButton.Text = "Ajouter";
             this.addButton.UseVisualStyleBackColor = true;
-            this.addButton.CheckedChanged += new System.EventHandler(this.addButton_CheckedChanged);
+            this.addButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.addButton_MouseClick);
             // 
             // welcomeLabel
             // 
