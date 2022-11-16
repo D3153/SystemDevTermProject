@@ -15,24 +15,23 @@ namespace Opeq_CallCenter
         public WelcomeForm()
         {
             InitializeComponent();
-            AddForm addFormInstance = new AddForm();
-            ModifyForm modifyFormInstance = new ModifyForm();            
-            ViewForm viewFormInstance = new ViewForm();
         }
 
         private void addButton_CheckedChanged(object sender, EventArgs e)
         {
-
+            AddForm addFormInstance = new AddForm();
+            addFormInstance.ShowDialog();
+            this.Close();
         }
 
         private void modifyRadioBtn_CheckedChanged(object sender, EventArgs e)
         {
-
+            ModifyForm modifyFormInstance = new ModifyForm();
         }
 
         private void viewRadioBtn_CheckedChanged(object sender, EventArgs e)
         {
-
+            ViewForm viewFormInstance = new ViewForm();
         }
     }
 }
