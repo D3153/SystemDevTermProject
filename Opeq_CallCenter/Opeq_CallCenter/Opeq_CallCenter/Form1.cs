@@ -19,27 +19,29 @@ namespace Opeq_CallCenter
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void loginButton_Click(object sender, EventArgs e)
         {
-            //Uncomment to see if database works
-            string empName = empNameTextBox.Text;
-            con.Open();
-            SqlCommand cmd = con.CreateCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "INSERT INTO employee (employee_name) VALUES ('" + empName + "');";
-            cmd.ExecuteNonQuery();
-            con.Close();
-            //MessageBox.Show("Connexion Réussie");
-            this.Hide();
-            WelcomeForm welcomeForm = new WelcomeForm();
-            welcomeForm.ShowDialog();
-            this.Close();
-            
+            if(empNameTextBox.Text != string.Empty) 
+            {
+                //Uncomment to see if database works
+                //string empName = empNameTextBox.Text;
+                //con.Open();
+                //SqlCommand cmd = con.CreateCommand();
+                //cmd.CommandType = CommandType.Text;
+                //cmd.CommandText = "INSERT INTO employee (employee_name) VALUES ('" + empName + "');";
+                //cmd.ExecuteNonQuery();
+                //con.Close();
+
+                this.Hide();
+                WelcomeForm welcomeForm = new WelcomeForm();
+                welcomeForm.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Entrer un nom valide!");
+            }
+
         }
 
         private void adminLoginLabel_Click(object sender, EventArgs e)
@@ -49,5 +51,33 @@ namespace Opeq_CallCenter
             adminLogin.ShowDialog();
             this.Close();
         }
+
+        private void empNameTextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (empNameTextBox.Text == "Entrer votre nom")
+            {
+                empNameTextBox.Text = "";
+                empNameTextBox.ForeColor = Color.Black;
+            }
+        }
+
+        //private void empNameTextBox_MouseEnter(object sender, EventArgs e)
+        //{
+        //if (empNameTextBox.Text == "Entrer votre nom")
+        //{
+        //empNameTextBox.Text = "";
+        //empNameTextBox.ForeColor = Color.Black;
+        //}
+        //}
+
+        //private void empNameTextBox_MouseLeave(object sender, EventArgs e)
+        //{
+        //if (empNameTextBox.Text != "Entrer votre nom")
+        //{
+        //empNameTextBox.Text = "Entrer votre nom";
+        //empNameTextBox.ForeColor = Color.Gray;
+        //}
+        //}
+
     }
 }
