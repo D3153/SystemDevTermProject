@@ -21,7 +21,7 @@ namespace Opeq_CallCenter
     }
 
 
-    internal class PersonClass : PersonInterface
+    internal class Person : PersonInterface
     {
         public int Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public string Name { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }        
