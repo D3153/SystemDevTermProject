@@ -24,5 +24,23 @@ namespace Opeq_CallCenter
             loginForm.ShowDialog();
             this.Close();
         }
+
+        private void adminNameTextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (adminNameTextBox.Text == "Entrer votre Nom")
+            {
+                adminNameTextBox.Text = "";
+                adminNameTextBox.ForeColor = Color.Black;
+            }
+        }
+
+        private void adminPassTextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (adminPassTextBox.Text == "Entrer votre Mot de Passe")
+            {
+                adminPassTextBox.Text = "";
+                adminPassTextBox.ForeColor = Color.Black;
+            }
+        }
     }
 }

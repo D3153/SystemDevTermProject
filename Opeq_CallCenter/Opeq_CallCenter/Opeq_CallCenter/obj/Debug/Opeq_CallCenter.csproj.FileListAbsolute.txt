@@ -52,3 +52,5 @@ C:\Users\CJ\Documents\Courses\Computer_Science(4th_Semester)\Sys. Dev\Team proje
 C:\Users\CJ\Documents\Courses\Computer_Science(4th_Semester)\Sys. Dev\Team project\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.csproj.CoreCompileInputs.cache
 C:\Users\CJ\Documents\Courses\Computer_Science(4th_Semester)\Sys. Dev\Team project\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.exe
 C:\Users\CJ\Documents\Courses\Computer_Science(4th_Semester)\Sys. Dev\Team project\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.pdb
+C:\Users\Dinal\Desktop\Semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.AddForm.resources
+C:\Users\Dinal\Desktop\Semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.ModifyForm.resources
