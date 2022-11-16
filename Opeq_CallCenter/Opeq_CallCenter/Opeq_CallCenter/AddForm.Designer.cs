@@ -107,6 +107,7 @@
             this.textBox2.Size = new System.Drawing.Size(516, 55);
             this.textBox2.TabIndex = 3;
             this.textBox2.Text = "Entrer nom du cliente";
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox4
             // 
