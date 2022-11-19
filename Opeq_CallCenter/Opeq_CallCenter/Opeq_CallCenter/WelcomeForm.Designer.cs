@@ -32,7 +32,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.viewRadioBtn = new System.Windows.Forms.RadioButton();
             this.modifyRadioBtn = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.addButton = new System.Windows.Forms.RadioButton();
             this.welcomeLabel = new System.Windows.Forms.Label();
             this.nameLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -45,7 +45,7 @@
             this.groupBox1.BackColor = System.Drawing.SystemColors.Menu;
             this.groupBox1.Controls.Add(this.viewRadioBtn);
             this.groupBox1.Controls.Add(this.modifyRadioBtn);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.addButton);
             this.groupBox1.Location = new System.Drawing.Point(1, 1);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(200, 752);
@@ -63,6 +63,7 @@
             this.viewRadioBtn.TabStop = true;
             this.viewRadioBtn.Text = "Voir";
             this.viewRadioBtn.UseVisualStyleBackColor = true;
+            this.viewRadioBtn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.viewRadioBtn_MouseClick);
             // 
             // modifyRadioBtn
             // 
@@ -75,18 +76,20 @@
             this.modifyRadioBtn.TabStop = true;
             this.modifyRadioBtn.Text = "Modifier";
             this.modifyRadioBtn.UseVisualStyleBackColor = true;
+            this.modifyRadioBtn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.modifyRadioBtn_MouseClick);
             // 
-            // radioButton1
+            // addButton
             // 
-            this.radioButton1.AutoCheck = false;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(6, 21);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(188, 44);
-            this.radioButton1.TabIndex = 1;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Ajouter";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.addButton.AutoCheck = false;
+            this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addButton.Location = new System.Drawing.Point(6, 21);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(188, 44);
+            this.addButton.TabIndex = 1;
+            this.addButton.TabStop = true;
+            this.addButton.Text = "Ajouter";
+            this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.addButton_MouseClick);
             // 
             // welcomeLabel
             // 
@@ -144,7 +147,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton viewRadioBtn;
         private System.Windows.Forms.RadioButton modifyRadioBtn;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton addButton;
         private System.Windows.Forms.Label welcomeLabel;
         private System.Windows.Forms.Label nameLabel;
         private System.Windows.Forms.PictureBox pictureBox1;

@@ -13,7 +13,7 @@ namespace Opeq_CallCenter
 {
     public partial class LoginForm : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KFOB4HEQ\DINAL;Initial Catalog=Opeq_CallCenter;Integrated Security=True");
+        //SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KFOB4HEQ\DINAL;Initial Catalog=Opeq_CallCenter;Integrated Security=True");
         public LoginForm()
         {
             InitializeComponent();
@@ -21,25 +21,26 @@ namespace Opeq_CallCenter
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            if(empNameTextBox.Text != string.Empty) 
+
+            if (empNameTextBox.Text == "Entrer votre nom" || empNameTextBox.Text == String.Empty)
+            {
+                MessageBox.Show("Entrer un nom valide!");
+            }
+            else if (empNameTextBox.Text != string.Empty) 
             {
                 //Uncomment to see if database works
                 string empName = empNameTextBox.Text;
-                con.Open();
-                SqlCommand cmd = con.CreateCommand();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "INSERT INTO employee (employee_name) VALUES ('" + empName + "');";
-                cmd.ExecuteNonQuery();
-                con.Close();
+                //con.Open();
+                //SqlCommand cmd = con.CreateCommand();
+                //cmd.CommandType = CommandType.Text;
+                //cmd.CommandText = "INSERT INTO employee (employee_name) VALUES ('" + empName + "');";
+                //cmd.ExecuteNonQuery();
+                //con.Close();
 
                 this.Hide();
                 WelcomeForm welcomeForm = new WelcomeForm();
                 welcomeForm.ShowDialog();
                 this.Close();
-            }
-            else
-            {
-                MessageBox.Show("Entrer un nom valide!");
             }
 
         }
@@ -54,11 +55,12 @@ namespace Opeq_CallCenter
 
         private void empNameTextBox_MouseClick(object sender, MouseEventArgs e)
         {
+//            Session["Name"] = empNameTextBox.Text;
             if (empNameTextBox.Text == "Entrer votre nom")
             {
                 empNameTextBox.Text = "";
-                empNameTextBox.ForeColor = Color.Black;
             }
+            empNameTextBox.ForeColor = Color.Black;
         }
 
         private void LoginForm_Load(object sender, EventArgs e)
