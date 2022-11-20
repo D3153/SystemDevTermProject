@@ -162,7 +162,7 @@ namespace Opeq_CallCenter
             if (nameTextBox.Text != " " && problemDescriptionTextBox.Text != " " && emailTextbox.Text != " " && MATTextBox.Text != " ")
             {
                 //IDK if this will work
-                //int empID = Session["Id"];
+                string empID;
                 string clientName = nameTextBox.Text;
                 string problemDesc = problemDescriptionTextBox.Text;
                 string email = emailTextbox.Text;
@@ -170,7 +170,7 @@ namespace Opeq_CallCenter
                 string date = dateTimePicker.Value.ToString();
 
                 //IDK how to get addressId from address table
-                string addressId = streetTextBox.Text;
+                string addressID;
 
                 /*
                 string street = streetTextBox.Text;
@@ -220,17 +220,32 @@ namespace Opeq_CallCenter
                 con.Open();
                 SqlCommand cmd1 = con.CreateCommand();
                 SqlCommand cmd2 = con.CreateCommand();
+                SqlCommand cmd3 = con.CreateCommand();
+                SqlCommand cmd4 = con.CreateCommand();
+
                 cmd1.CommandType = CommandType.Text;
                 cmd2.CommandType = CommandType.Text;
-                cmd1.CommandText = "INSERT INTO client (employee_id, MAT, computer_prob_id, laptop_prob_id, screen_prob_id, phone_tablet_prob_id, 
-                                                        address_id, client_name, client_desc, date, client_email, client_phone_num, by_email, by_telephone, in_person) 
-                                    VALUES ('" + empID + "', '" + mat + "', '" + computerProbID + "', '" + laptopProbID + "', '" + screenProbID + "', '" + phoneTabProbID + "', '" + 
-                                                addressID + "', '" + clientName + "', '" + problemDesc + "', '" + date + "', '" + email + "', '" + phone + "', '" + byEmail + "', '" + 
-                                                byTelephone + "', '" + inPerson + "');";
-                cmd2.CommandText = "INSERT INTO address (street, apt_num, city, province, postal_code) VALUES ('" + street + "', '" +
-                                                            aptNum + "', '" + city + "', '" + province + "', '" + postalCode + "');";
+                cmd3.CommandType = CommandType.Text;
+                cmd4.CommandType = CommandType.Text;
+
+                cmd1.CommandText = "INSERT INTO address (street, apt_num, city, province, postal_code) VALUES ('" + street + "', '" +
+                                                             aptNum + "', '" + city + "', '" + province + "', '" + postalCode + "');";
+
                 cmd1.ExecuteNonQuery();
-                cmd2.ExecuteNonQuery();
+
+                cmd2.CommandText = "SELECT IDENT_CURRENT('Employee');";
+                empID = Convert.ToString(cmd2.ExecuteScalar());
+
+                cmd3.CommandText = "SELECT IDENT_CURRENT('Addresss');";
+                addressID = Convert.ToString(cmd3.ExecuteScalar());
+
+                cmd4.CommandText = "INSERT INTO client (employee_id, MAT, computer_prob_id, laptop_prob_id, screen_prob_id, phone_tablet_prob_id, 
+                                                         address_id, client_name, client_desc, date, client_email, client_phone_num, by_email, by_telephone, in_person) 
+                                     VALUES ('" + empID + "', '" + mat + "', '" + computerProbID + "', '" + laptopProbID + "', '" + screenProbID + "', '" + phoneTabProbID + "', '" + 
+                                                 addressID + "', '" + clientName + "', '" + problemDesc + "', '" + date + "', '" + email + "', '" + phone + "', '" + byEmail + "', '" + 
+                                                 byTelephone + "', '" + inPerson + "');";
+                cmd4.ExecuteNonQuery();
+
                 con.Close();
                 */
 
