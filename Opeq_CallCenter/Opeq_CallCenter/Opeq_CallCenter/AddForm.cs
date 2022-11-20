@@ -109,11 +109,11 @@ namespace Opeq_CallCenter
         }
         private void addressTextBox_MouseClick(object sender, EventArgs e)
         {
-            if (addressTextBox.Text == "Addresse")
+            if (streetTextBox.Text == "Addresse")
             {
-                addressTextBox.Text = "";
+                streetTextBox.Text = "";
             }
-            addressTextBox.ForeColor = Color.Black;
+            streetTextBox.ForeColor = Color.Black;
         }
         private void MATTextBox_MouseClick(object sender, EventArgs e)
         {
@@ -137,7 +137,7 @@ namespace Opeq_CallCenter
                 string date = dateTimePicker.Value.ToString();
 
                 //IDK how to get addressId from address table
-                string addressId = addressTextBox.Text;
+                string addressId = streetTextBox.Text;
 
                 /*
                 string street = streetTextBox.Text;
@@ -268,5 +268,11 @@ namespace Opeq_CallCenter
             viewFormInstance.ShowDialog();
             this.Close();
         }
+
+        private void addressTextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
+        
     }
 }
