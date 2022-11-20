@@ -26,7 +26,7 @@ namespace Opeq_CallCenter
             {
                 MessageBox.Show("Entrer un nom valide!");
             }
-            else if (empNameTextBox.Text != string.Empty) 
+            else if (empNameTextBox.Text != String.Empty) 
             {
                 //Uncomment to see if database works
                 string empName = empNameTextBox.Text;
@@ -36,9 +36,8 @@ namespace Opeq_CallCenter
                 //cmd.CommandText = "INSERT INTO employee (employee_name) VALUES ('" + empName + "');";
                 //cmd.ExecuteNonQuery();
                 //con.Close();
-
                 this.Hide();
-                WelcomeForm welcomeForm = new WelcomeForm();
+                WelcomeForm welcomeForm = new WelcomeForm(empName);
                 welcomeForm.ShowDialog();
                 this.Close();
             }

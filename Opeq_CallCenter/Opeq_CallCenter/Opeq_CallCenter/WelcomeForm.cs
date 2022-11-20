@@ -12,14 +12,19 @@ namespace Opeq_CallCenter
 {
     public partial class WelcomeForm : Form
     {
+        public string Name { get; set; }
+
         public WelcomeForm()
         {
             InitializeComponent();
         }
 
-        
-        
-        
+        public WelcomeForm(String name)
+        {
+            InitializeComponent();
+            this.Name = name;
+            nameLabel.Text = Name;
+        }
 
         private void addButton_MouseClick(object sender, MouseEventArgs e)
         {
@@ -41,5 +46,6 @@ namespace Opeq_CallCenter
             viewFormInstance.ShowDialog();
             this.Close();
         }
+
     }
 }
