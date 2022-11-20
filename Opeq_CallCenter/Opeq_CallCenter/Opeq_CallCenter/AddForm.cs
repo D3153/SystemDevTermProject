@@ -13,7 +13,7 @@ namespace Opeq_CallCenter
 {
     public partial class AddForm : Form
     {
-        //SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KFOB4HEQ\DINAL;Initial Catalog=Opeq_CallCenter;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KFOB4HEQ\DINAL;Initial Catalog=Opeq_CallCenter;Integrated Security=True");
 
         Boolean isAddBtnClicked;
         Boolean isCancelBtnClicked;
@@ -27,13 +27,14 @@ namespace Opeq_CallCenter
         {
             //IDK if this works and pls check the names of the tables, IDs and Descriptions
             //I will put a "*" on the ones that are needed to be checked
-            /*
+            //-> I changed them I did not test if the database works yet
+            
             con.Open();
 
-            SqlCommand cmd1 = new SqlCommand("SELECT * FROM Computer_Problem"); *
-            SqlCommand cmd2 = new SqlCommand("SELECT * FROM Laptop_Problem"); *
-            SqlCommand cmd3 = new SqlCommand("SELECT * FROM Screen_Problem"); *
-            SqlCommand cmd4 = new SqlCommand("SELECT * FROM Phone_Tablet_Problem"); *
+            SqlCommand cmd1 = new SqlCommand("SELECT * FROM Computer_Prob"); 
+            SqlCommand cmd2 = new SqlCommand("SELECT * FROM Laptop_Prob"); 
+            SqlCommand cmd3 = new SqlCommand("SELECT * FROM Screen_Prob"); 
+            SqlCommand cmd4 = new SqlCommand("SELECT * FROM Phone_Tablet_Prob"); 
 
             SqlDataAdapter adapter1 = new SqlDataAdapter(cmd1);
             SqlDataAdapter adapter2 = new SqlDataAdapter(cmd2);
@@ -50,39 +51,40 @@ namespace Opeq_CallCenter
             adapter3.Fill(dataSet3);
             adapter4.Fill(dataSet4);
 
-            cmd1.ExecuteQuery();
-            cmd2.ExecuteQuery();
-            cmd3.ExecuteQuery();
-            cmd4.ExecuteQuery();
+            cmd1.ExecuteReader();
+            cmd2.ExecuteReader();
+            cmd3.ExecuteReader();
+            cmd4.ExecuteReader();
 
             con.Close();
 
             computerProblemComboBox.DataSource = dataSet1.Tables[0];
-            computerProblemComboBox.DisplayMember = "Computer_Prob_Desc"; *
-            computerProblemComboBox.ValueMember = "Computer_Prob_ID"; *
+            computerProblemComboBox.DisplayMember = "comp_desc"; 
+            computerProblemComboBox.ValueMember = "computer_prob_id";
 
-            LaptopProblemComboBox.DataSource = dataSet2.Tables[0];
-            LaptopProblemComboBox.DisplayMember = "Laptop_Prob_Desc"; *
-            LaptopProblemComboBox.ValueMember = "Laptop_Prob_ID"; *
+            laptopProblemComboBox.DataSource = dataSet2.Tables[0];
+            laptopProblemComboBox.DisplayMember = "laptop_desc";
+            laptopProblemComboBox.ValueMember = "laptop_prob_id";
 
             screenProblemComboBox.DataSource = dataSet3.Tables[0];
-            screenProblemComboBox.DisplayMember = "Screen_Prob_Desc"; *
-            screenProblemComboBox.ValueMember = "Screen_Prob_ID"; *
+            screenProblemComboBox.DisplayMember = "screen_desc"; 
+            screenProblemComboBox.ValueMember = "screen_prob_id"; 
 
             phoneOrTabletProblemComboBox.DataSource = dataSet4.Tables[0];
-            phoneOrTabletProblemComboBox.DisplayMember = "Phone_Tab_Prob_Desc"; *
-            phoneOrTabletProblemComboBox.ValueMember = "Phone_Tab_Prob_ID"; *
-            */
+            phoneOrTabletProblemComboBox.DisplayMember = "phone_tab_desc"; 
+            phoneOrTabletProblemComboBox.ValueMember = "phone_tablet_prob_id"; 
+            
         }
 
         private void nameTextBox_MouseClick(object sender, EventArgs e)
         {
-            if (nameTextBox.Text == "Entrer nom du cliente")
+            if (nameTextBox.Text == "Entrer nom du client")
             {
                 nameTextBox.Text = "";
             }
             nameTextBox.ForeColor = Color.Black;
         }
+
         private void problemDescriptionTextBox_MouseClick(object sender, EventArgs e)
         {
             if (problemDescriptionTextBox.Text == "Entrer problème")
@@ -91,6 +93,7 @@ namespace Opeq_CallCenter
             }
             problemDescriptionTextBox.ForeColor = Color.Black;
         }
+
         private void emailTextbox_MouseClick(object sender, EventArgs e)
         {
             if (emailTextbox.Text == "Courriel")
@@ -99,6 +102,7 @@ namespace Opeq_CallCenter
             }
             emailTextbox.ForeColor = Color.Black;
         }
+
         private void phoneTextBox_MouseClick(object sender, EventArgs e)
         {
             if (phoneTextBox.Text == "Téléphone")
@@ -107,14 +111,43 @@ namespace Opeq_CallCenter
             }
             phoneTextBox.ForeColor = Color.Black;
         }
-        private void addressTextBox_MouseClick(object sender, EventArgs e)
+
+        private void streetTextBox_MouseClick(object sender, MouseEventArgs e)
         {
-            if (streetTextBox.Text == "Addresse")
+            if (streetTextBox.Text == "Adresse")
             {
                 streetTextBox.Text = "";
             }
             streetTextBox.ForeColor = Color.Black;
         }
+
+        private void aptNumTextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (aptNumTextBox.Text == "Appartement, suite, ect.")
+            {
+                aptNumTextBox.Text = "";
+            }
+            aptNumTextBox.ForeColor = Color.Black;
+        }
+
+        private void cityTextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (cityTextBox.Text == "Ville")
+            {
+                cityTextBox.Text = "";
+            }
+            cityTextBox.ForeColor = Color.Black;
+        }
+
+        private void postalCodeTextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (postalCodeTextBox.Text == "Code Postal")
+            {
+                postalCodeTextBox.Text = "";
+            }
+            postalCodeTextBox.ForeColor = Color.Black;
+        }
+
         private void MATTextBox_MouseClick(object sender, EventArgs e)
         {
             if (MATTextBox.Text == "MAT")
@@ -269,10 +302,5 @@ namespace Opeq_CallCenter
             this.Close();
         }
 
-        private void addressTextBox_MouseClick(object sender, MouseEventArgs e)
-        {
-
-        }
-        
     }
 }

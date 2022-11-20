@@ -111,7 +111,7 @@
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(516, 55);
             this.nameTextBox.TabIndex = 3;
-            this.nameTextBox.Text = "Entrer nom du cliente";
+            this.nameTextBox.Text = "Entrer nom du client";
             this.nameTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.nameTextBox_MouseClick);
             // 
             // emailTextbox
@@ -238,7 +238,7 @@
             this.streetTextBox.Size = new System.Drawing.Size(332, 33);
             this.streetTextBox.TabIndex = 17;
             this.streetTextBox.Text = "Adresse";
-            this.streetTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.addressTextBox_MouseClick);
+            this.streetTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.streetTextBox_MouseClick);
             // 
             // opeq_CallCenterDataSet1
             // 
@@ -411,6 +411,7 @@
             this.aptNumTextBox.Size = new System.Drawing.Size(332, 33);
             this.aptNumTextBox.TabIndex = 35;
             this.aptNumTextBox.Text = "Appartement, suite, ect.";
+            this.aptNumTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.aptNumTextBox_MouseClick);
             // 
             // postalCodeTextBox
             // 
@@ -423,6 +424,7 @@
             this.postalCodeTextBox.Size = new System.Drawing.Size(332, 33);
             this.postalCodeTextBox.TabIndex = 36;
             this.postalCodeTextBox.Text = "Code Postal";
+            this.postalCodeTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.postalCodeTextBox_MouseClick);
             // 
             // cityTextBox
             // 
@@ -435,6 +437,7 @@
             this.cityTextBox.Size = new System.Drawing.Size(332, 33);
             this.cityTextBox.TabIndex = 37;
             this.cityTextBox.Text = "Ville";
+            this.cityTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cityTextBox_MouseClick);
             // 
             // AddForm
             // 
@@ -442,7 +445,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(1215, 750);
+            this.ClientSize = new System.Drawing.Size(1320, 750);
             this.Controls.Add(this.cityTextBox);
             this.Controls.Add(this.postalCodeTextBox);
             this.Controls.Add(this.aptNumTextBox);
