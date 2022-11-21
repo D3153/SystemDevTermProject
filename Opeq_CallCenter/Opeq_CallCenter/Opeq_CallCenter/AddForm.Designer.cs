@@ -145,9 +145,9 @@
             this.label4.Location = new System.Drawing.Point(484, 295);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 29);
+            this.label4.Size = new System.Drawing.Size(151, 29);
             this.label4.TabIndex = 7;
-            this.label4.Text = "Date";
+            this.label4.Text = "Date Entrée";
             // 
             // MATTextBox
             // 
@@ -175,7 +175,7 @@
             // 
             // dateTimePicker
             // 
-            this.dateTimePicker.Location = new System.Drawing.Point(623, 295);
+            this.dateTimePicker.Location = new System.Drawing.Point(656, 296);
             this.dateTimePicker.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker.Name = "dateTimePicker";
             this.dateTimePicker.Size = new System.Drawing.Size(383, 28);
@@ -445,7 +445,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(1320, 750);
+            this.ClientSize = new System.Drawing.Size(1341, 750);
             this.Controls.Add(this.cityTextBox);
             this.Controls.Add(this.postalCodeTextBox);
             this.Controls.Add(this.aptNumTextBox);

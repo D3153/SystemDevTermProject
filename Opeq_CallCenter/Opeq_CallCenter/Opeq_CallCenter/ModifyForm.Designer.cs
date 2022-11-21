@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModifyForm));
             this.cityTextBox = new System.Windows.Forms.TextBox();
             this.aptNumTextBox = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -77,6 +78,14 @@
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.label18 = new System.Windows.Forms.Label();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.label19 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.addBtn = new System.Windows.Forms.Button();
+            this.cancelBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.opeq_CallCenterDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,7 +119,7 @@
             this.label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label11.Location = new System.Drawing.Point(371, -2);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(10, 2118);
+            this.label11.Size = new System.Drawing.Size(10, 2266);
             this.label11.TabIndex = 65;
             // 
             // viewRadioBtn
@@ -569,9 +578,9 @@
             this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton4.Location = new System.Drawing.Point(733, 1920);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(134, 29);
+            this.radioButton4.Size = new System.Drawing.Size(69, 29);
             this.radioButton4.TabIndex = 91;
-            this.radioButton4.Text = "Non Résolu";
+            this.radioButton4.Text = "Non";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
             // radioButton5
@@ -580,9 +589,9 @@
             this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton5.Location = new System.Drawing.Point(581, 1920);
             this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(93, 29);
+            this.radioButton5.Size = new System.Drawing.Size(64, 29);
             this.radioButton5.TabIndex = 90;
-            this.radioButton5.Text = "Résolu";
+            this.radioButton5.Text = "Oui";
             this.radioButton5.UseVisualStyleBackColor = true;
             // 
             // label18
@@ -592,16 +601,114 @@
             this.label18.Location = new System.Drawing.Point(574, 1859);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(215, 29);
+            this.label18.Size = new System.Drawing.Size(257, 29);
             this.label18.TabIndex = 89;
-            this.label18.Text = "État du Problème";
+            this.label18.Text = "Nouvelle Commande";
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(746, 1982);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(383, 22);
+            this.dateTimePicker2.TabIndex = 93;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(574, 1981);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(160, 29);
+            this.label19.TabIndex = 92;
+            this.label19.Text = "Date D\'envoi";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBox3.Location = new System.Drawing.Point(746, 2041);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(332, 33);
+            this.textBox3.TabIndex = 95;
+            this.textBox3.Text = "Bon D\'envoi";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(577, 2045);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(152, 29);
+            this.label20.TabIndex = 94;
+            this.label20.Text = "Bon D\'envoi";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBox4.Location = new System.Drawing.Point(746, 2101);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(332, 33);
+            this.textBox4.TabIndex = 97;
+            this.textBox4.Text = "RMA";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(577, 2105);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(68, 29);
+            this.label21.TabIndex = 96;
+            this.label21.Text = "RMA";
+            // 
+            // addBtn
+            // 
+            this.addBtn.BackColor = System.Drawing.Color.Green;
+            this.addBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.addBtn.Location = new System.Drawing.Point(691, 2182);
+            this.addBtn.Name = "addBtn";
+            this.addBtn.Size = new System.Drawing.Size(153, 61);
+            this.addBtn.TabIndex = 99;
+            this.addBtn.Text = "Modifier";
+            this.addBtn.UseVisualStyleBackColor = false;
+            // 
+            // cancelBtn
+            // 
+            this.cancelBtn.BackColor = System.Drawing.Color.Red;
+            this.cancelBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancelBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.cancelBtn.Location = new System.Drawing.Point(881, 2182);
+            this.cancelBtn.Name = "cancelBtn";
+            this.cancelBtn.Size = new System.Drawing.Size(153, 61);
+            this.cancelBtn.TabIndex = 98;
+            this.cancelBtn.Text = "Annuler";
+            this.cancelBtn.UseVisualStyleBackColor = false;
             // 
             // ModifyForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.PaleGreen;
             this.ClientSize = new System.Drawing.Size(1320, 1055);
+            this.Controls.Add(this.addBtn);
+            this.Controls.Add(this.cancelBtn);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.label19);
             this.Controls.Add(this.radioButton4);
             this.Controls.Add(this.radioButton5);
             this.Controls.Add(this.label18);
@@ -650,6 +757,7 @@
             this.Controls.Add(this.problemDescriptionTextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ModifyForm";
             this.Text = "ModifyForm";
@@ -711,5 +819,13 @@
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.RadioButton radioButton5;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Button addBtn;
+        private System.Windows.Forms.Button cancelBtn;
     }
 }

@@ -172,13 +172,12 @@ namespace Opeq_CallCenter
                 //IDK how to get addressId from address table
                 string addressID;
 
-                /*
+                
                 string street = streetTextBox.Text;
                 string aptNum = aptNumTextBox.Text;
                 string city = cityTextBox.Text;
-                string province = provinceTextBox.Text;
                 string postalCode = postalCodeTextBox.Text;
-                */
+                
 
                 string mat = MATTextBox.Text;
 
@@ -216,7 +215,7 @@ namespace Opeq_CallCenter
                     MessageBox.Show("La section 'Comment Contacter' ne peut pas être vide");
                 }
 
-                /*
+                
                 con.Open();
                 SqlCommand cmd1 = con.CreateCommand();
                 SqlCommand cmd2 = con.CreateCommand();
@@ -229,7 +228,7 @@ namespace Opeq_CallCenter
                 cmd4.CommandType = CommandType.Text;
 
                 cmd1.CommandText = "INSERT INTO address (street, apt_num, city, province, postal_code) VALUES ('" + street + "', '" +
-                                                             aptNum + "', '" + city + "', '" + province + "', '" + postalCode + "');";
+                                                             aptNum + "', '" + city + "','" + postalCode + "');";
 
                 cmd1.ExecuteNonQuery();
 
@@ -239,15 +238,14 @@ namespace Opeq_CallCenter
                 cmd3.CommandText = "SELECT IDENT_CURRENT('Addresss');";
                 addressID = Convert.ToString(cmd3.ExecuteScalar());
 
-                cmd4.CommandText = "INSERT INTO client (employee_id, MAT, computer_prob_id, laptop_prob_id, screen_prob_id, phone_tablet_prob_id, 
-                                                         address_id, client_name, client_desc, date, client_email, client_phone_num, by_email, by_telephone, in_person) 
-                                     VALUES ('" + empID + "', '" + mat + "', '" + computerProbID + "', '" + laptopProbID + "', '" + screenProbID + "', '" + phoneTabProbID + "', '" + 
-                                                 addressID + "', '" + clientName + "', '" + problemDesc + "', '" + date + "', '" + email + "', '" + phone + "', '" + byEmail + "', '" + 
-                                                 byTelephone + "', '" + inPerson + "');";
+                cmd4.CommandText = "INSERT INTO client (employee_id, MAT, computer_prob_id, laptop_prob_id, screen_prob_id, phone_tablet_prob_id, address_id, client_name, client_desc, date, client_email, client_phone_num, by_email, by_telephone, in_person) VALUES ('" + 
+                                    empID + "', '" + mat + "', '" + computerProbID + "', '" + laptopProbID + "', '" + screenProbID + "', '" + phoneTabProbID + "', '" + 
+                                   addressID + "', '" + clientName + "', '" + problemDesc + "', '" + date + "', '" + email + "', '" + phone + "', '" + byEmail + "', '" + 
+                                   byTelephone + "', '" + inPerson + "');";
                 cmd4.ExecuteNonQuery();
 
                 con.Close();
-                */
+                
 
                 isAddBtnClicked = true;
                 confirmation();
