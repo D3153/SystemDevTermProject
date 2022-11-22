@@ -167,20 +167,6 @@
             this.MATTextBox.Text = "MAT";
             this.MATTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MATTextBox_MouseClick);
             // 
-<<<<<<< HEAD
-=======
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(473, 752);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(261, 32);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Type de Probléme";
-            // 
->>>>>>> e39a2035d9eecdfe2a6f892bc8d82be233187df6
             // dateTimePicker
             // 
             this.dateTimePicker.Location = new System.Drawing.Point(656, 296);
@@ -258,11 +244,7 @@
             this.computerProblemComboBox.FormattingEnabled = true;
             this.computerProblemComboBox.Location = new System.Drawing.Point(36, 95);
             this.computerProblemComboBox.Name = "computerProblemComboBox";
-<<<<<<< HEAD
             this.computerProblemComboBox.Size = new System.Drawing.Size(357, 39);
-=======
-            this.computerProblemComboBox.Size = new System.Drawing.Size(357, 34);
->>>>>>> e39a2035d9eecdfe2a6f892bc8d82be233187df6
             this.computerProblemComboBox.TabIndex = 19;
             // 
             // label6
@@ -290,11 +272,7 @@
             this.screenProblemComboBox.FormattingEnabled = true;
             this.screenProblemComboBox.Location = new System.Drawing.Point(36, 188);
             this.screenProblemComboBox.Name = "screenProblemComboBox";
-<<<<<<< HEAD
             this.screenProblemComboBox.Size = new System.Drawing.Size(357, 39);
-=======
-            this.screenProblemComboBox.Size = new System.Drawing.Size(357, 34);
->>>>>>> e39a2035d9eecdfe2a6f892bc8d82be233187df6
             this.screenProblemComboBox.TabIndex = 21;
             // 
             // label8
@@ -312,11 +290,7 @@
             this.laptopProblemComboBox.FormattingEnabled = true;
             this.laptopProblemComboBox.Location = new System.Drawing.Point(34, 293);
             this.laptopProblemComboBox.Name = "laptopProblemComboBox";
-<<<<<<< HEAD
             this.laptopProblemComboBox.Size = new System.Drawing.Size(357, 39);
-=======
-            this.laptopProblemComboBox.Size = new System.Drawing.Size(357, 34);
->>>>>>> e39a2035d9eecdfe2a6f892bc8d82be233187df6
             this.laptopProblemComboBox.TabIndex = 23;
             // 
             // label9
@@ -334,11 +308,7 @@
             this.phoneOrTabletProblemComboBox.FormattingEnabled = true;
             this.phoneOrTabletProblemComboBox.Location = new System.Drawing.Point(34, 393);
             this.phoneOrTabletProblemComboBox.Name = "phoneOrTabletProblemComboBox";
-<<<<<<< HEAD
             this.phoneOrTabletProblemComboBox.Size = new System.Drawing.Size(357, 39);
-=======
-            this.phoneOrTabletProblemComboBox.Size = new System.Drawing.Size(357, 34);
->>>>>>> e39a2035d9eecdfe2a6f892bc8d82be233187df6
             this.phoneOrTabletProblemComboBox.TabIndex = 25;
             // 
             // label10
