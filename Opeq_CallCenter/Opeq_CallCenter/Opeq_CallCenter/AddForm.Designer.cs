@@ -37,7 +37,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.MATTextBox = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.emailRadioBtn = new System.Windows.Forms.RadioButton();
             this.phoneRadioBtn = new System.Windows.Forms.RadioButton();
@@ -63,7 +62,13 @@
             this.aptNumTextBox = new System.Windows.Forms.TextBox();
             this.postalCodeTextBox = new System.Windows.Forms.TextBox();
             this.cityTextBox = new System.Windows.Forms.TextBox();
+            this.navGroupBox = new System.Windows.Forms.GroupBox();
+            this.contactGroupBox = new System.Windows.Forms.GroupBox();
+            this.problemGroupBox = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.opeq_CallCenterDataSet1)).BeginInit();
+            this.navGroupBox.SuspendLayout();
+            this.contactGroupBox.SuspendLayout();
+            this.problemGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -162,17 +167,6 @@
             this.MATTextBox.Text = "MAT";
             this.MATTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MATTextBox_MouseClick);
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(473, 752);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(230, 29);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Type de Probléme";
-            // 
             // dateTimePicker
             // 
             this.dateTimePicker.Location = new System.Drawing.Point(656, 296);
@@ -185,7 +179,7 @@
             // 
             this.emailRadioBtn.AutoSize = true;
             this.emailRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailRadioBtn.Location = new System.Drawing.Point(490, 421);
+            this.emailRadioBtn.Location = new System.Drawing.Point(12, 18);
             this.emailRadioBtn.Name = "emailRadioBtn";
             this.emailRadioBtn.Size = new System.Drawing.Size(101, 29);
             this.emailRadioBtn.TabIndex = 14;
@@ -196,7 +190,7 @@
             // 
             this.phoneRadioBtn.AutoSize = true;
             this.phoneRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phoneRadioBtn.Location = new System.Drawing.Point(490, 489);
+            this.phoneRadioBtn.Location = new System.Drawing.Point(12, 86);
             this.phoneRadioBtn.Name = "phoneRadioBtn";
             this.phoneRadioBtn.Size = new System.Drawing.Size(127, 29);
             this.phoneRadioBtn.TabIndex = 16;
@@ -220,7 +214,7 @@
             // 
             this.inPersonRadioBtn.AutoSize = true;
             this.inPersonRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inPersonRadioBtn.Location = new System.Drawing.Point(490, 555);
+            this.inPersonRadioBtn.Location = new System.Drawing.Point(12, 152);
             this.inPersonRadioBtn.Name = "inPersonRadioBtn";
             this.inPersonRadioBtn.Size = new System.Drawing.Size(146, 29);
             this.inPersonRadioBtn.TabIndex = 18;
@@ -248,16 +242,16 @@
             // computerProblemComboBox
             // 
             this.computerProblemComboBox.FormattingEnabled = true;
-            this.computerProblemComboBox.Location = new System.Drawing.Point(488, 849);
+            this.computerProblemComboBox.Location = new System.Drawing.Point(36, 95);
             this.computerProblemComboBox.Name = "computerProblemComboBox";
-            this.computerProblemComboBox.Size = new System.Drawing.Size(357, 30);
+            this.computerProblemComboBox.Size = new System.Drawing.Size(357, 39);
             this.computerProblemComboBox.TabIndex = 19;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(481, 808);
+            this.label6.Location = new System.Drawing.Point(29, 54);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(104, 25);
             this.label6.TabIndex = 20;
@@ -267,7 +261,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(490, 900);
+            this.label7.Location = new System.Drawing.Point(38, 146);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(63, 25);
             this.label7.TabIndex = 22;
@@ -276,16 +270,16 @@
             // screenProblemComboBox
             // 
             this.screenProblemComboBox.FormattingEnabled = true;
-            this.screenProblemComboBox.Location = new System.Drawing.Point(488, 942);
+            this.screenProblemComboBox.Location = new System.Drawing.Point(36, 188);
             this.screenProblemComboBox.Name = "screenProblemComboBox";
-            this.screenProblemComboBox.Size = new System.Drawing.Size(357, 30);
+            this.screenProblemComboBox.Size = new System.Drawing.Size(357, 39);
             this.screenProblemComboBox.TabIndex = 21;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(490, 1006);
+            this.label8.Location = new System.Drawing.Point(38, 252);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(84, 25);
             this.label8.TabIndex = 24;
@@ -294,16 +288,16 @@
             // laptopProblemComboBox
             // 
             this.laptopProblemComboBox.FormattingEnabled = true;
-            this.laptopProblemComboBox.Location = new System.Drawing.Point(486, 1047);
+            this.laptopProblemComboBox.Location = new System.Drawing.Point(34, 293);
             this.laptopProblemComboBox.Name = "laptopProblemComboBox";
-            this.laptopProblemComboBox.Size = new System.Drawing.Size(357, 30);
+            this.laptopProblemComboBox.Size = new System.Drawing.Size(357, 39);
             this.laptopProblemComboBox.TabIndex = 23;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(488, 1105);
+            this.label9.Location = new System.Drawing.Point(36, 351);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(170, 25);
             this.label9.TabIndex = 26;
@@ -312,9 +306,9 @@
             // phoneOrTabletProblemComboBox
             // 
             this.phoneOrTabletProblemComboBox.FormattingEnabled = true;
-            this.phoneOrTabletProblemComboBox.Location = new System.Drawing.Point(486, 1147);
+            this.phoneOrTabletProblemComboBox.Location = new System.Drawing.Point(34, 393);
             this.phoneOrTabletProblemComboBox.Name = "phoneOrTabletProblemComboBox";
-            this.phoneOrTabletProblemComboBox.Size = new System.Drawing.Size(357, 30);
+            this.phoneOrTabletProblemComboBox.Size = new System.Drawing.Size(357, 39);
             this.phoneOrTabletProblemComboBox.TabIndex = 25;
             // 
             // label10
@@ -333,7 +327,7 @@
             this.addRadioBtn.AutoSize = true;
             this.addRadioBtn.Checked = true;
             this.addRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addRadioBtn.Location = new System.Drawing.Point(50, 54);
+            this.addRadioBtn.Location = new System.Drawing.Point(58, 54);
             this.addRadioBtn.Name = "addRadioBtn";
             this.addRadioBtn.Size = new System.Drawing.Size(128, 35);
             this.addRadioBtn.TabIndex = 28;
@@ -345,7 +339,7 @@
             // 
             this.modifyRadioBtn.AutoSize = true;
             this.modifyRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.modifyRadioBtn.Location = new System.Drawing.Point(50, 149);
+            this.modifyRadioBtn.Location = new System.Drawing.Point(58, 106);
             this.modifyRadioBtn.Name = "modifyRadioBtn";
             this.modifyRadioBtn.Size = new System.Drawing.Size(139, 35);
             this.modifyRadioBtn.TabIndex = 29;
@@ -357,7 +351,7 @@
             // 
             this.viewRadioBtn.AutoSize = true;
             this.viewRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewRadioBtn.Location = new System.Drawing.Point(50, 243);
+            this.viewRadioBtn.Location = new System.Drawing.Point(58, 157);
             this.viewRadioBtn.Name = "viewRadioBtn";
             this.viewRadioBtn.Size = new System.Drawing.Size(87, 35);
             this.viewRadioBtn.TabIndex = 30;
@@ -439,6 +433,46 @@
             this.cityTextBox.Text = "Ville";
             this.cityTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cityTextBox_MouseClick);
             // 
+            // navGroupBox
+            // 
+            this.navGroupBox.Controls.Add(this.addRadioBtn);
+            this.navGroupBox.Controls.Add(this.modifyRadioBtn);
+            this.navGroupBox.Controls.Add(this.viewRadioBtn);
+            this.navGroupBox.Location = new System.Drawing.Point(7, 12);
+            this.navGroupBox.Name = "navGroupBox";
+            this.navGroupBox.Size = new System.Drawing.Size(235, 232);
+            this.navGroupBox.TabIndex = 38;
+            this.navGroupBox.TabStop = false;
+            // 
+            // contactGroupBox
+            // 
+            this.contactGroupBox.Controls.Add(this.phoneRadioBtn);
+            this.contactGroupBox.Controls.Add(this.emailRadioBtn);
+            this.contactGroupBox.Controls.Add(this.inPersonRadioBtn);
+            this.contactGroupBox.Location = new System.Drawing.Point(476, 402);
+            this.contactGroupBox.Name = "contactGroupBox";
+            this.contactGroupBox.Size = new System.Drawing.Size(191, 208);
+            this.contactGroupBox.TabIndex = 39;
+            this.contactGroupBox.TabStop = false;
+            // 
+            // problemGroupBox
+            // 
+            this.problemGroupBox.Controls.Add(this.computerProblemComboBox);
+            this.problemGroupBox.Controls.Add(this.label6);
+            this.problemGroupBox.Controls.Add(this.screenProblemComboBox);
+            this.problemGroupBox.Controls.Add(this.label7);
+            this.problemGroupBox.Controls.Add(this.laptopProblemComboBox);
+            this.problemGroupBox.Controls.Add(this.label8);
+            this.problemGroupBox.Controls.Add(this.phoneOrTabletProblemComboBox);
+            this.problemGroupBox.Controls.Add(this.label9);
+            this.problemGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.problemGroupBox.Location = new System.Drawing.Point(485, 747);
+            this.problemGroupBox.Name = "problemGroupBox";
+            this.problemGroupBox.Size = new System.Drawing.Size(439, 449);
+            this.problemGroupBox.TabIndex = 40;
+            this.problemGroupBox.TabStop = false;
+            this.problemGroupBox.Text = "Type de Probléme";
+            // 
             // AddForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -446,32 +480,20 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(1341, 750);
+            this.Controls.Add(this.problemGroupBox);
+            this.Controls.Add(this.contactGroupBox);
+            this.Controls.Add(this.navGroupBox);
             this.Controls.Add(this.cityTextBox);
             this.Controls.Add(this.postalCodeTextBox);
             this.Controls.Add(this.aptNumTextBox);
             this.Controls.Add(this.addBtn);
             this.Controls.Add(this.cancelBtn);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.viewRadioBtn);
-            this.Controls.Add(this.modifyRadioBtn);
-            this.Controls.Add(this.addRadioBtn);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.phoneOrTabletProblemComboBox);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.laptopProblemComboBox);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.screenProblemComboBox);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.computerProblemComboBox);
-            this.Controls.Add(this.inPersonRadioBtn);
             this.Controls.Add(this.streetTextBox);
-            this.Controls.Add(this.phoneRadioBtn);
             this.Controls.Add(this.phoneTextBox);
-            this.Controls.Add(this.emailRadioBtn);
             this.Controls.Add(this.dateTimePicker);
             this.Controls.Add(this.MATTextBox);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.emailTextbox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
@@ -487,6 +509,12 @@
             this.Text = "AddForm";
             this.Load += new System.EventHandler(this.AddForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.opeq_CallCenterDataSet1)).EndInit();
+            this.navGroupBox.ResumeLayout(false);
+            this.navGroupBox.PerformLayout();
+            this.contactGroupBox.ResumeLayout(false);
+            this.contactGroupBox.PerformLayout();
+            this.problemGroupBox.ResumeLayout(false);
+            this.problemGroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -502,7 +530,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox MATTextBox;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dateTimePicker;
         private System.Windows.Forms.RadioButton emailRadioBtn;
         private System.Windows.Forms.RadioButton phoneRadioBtn;
@@ -528,5 +555,8 @@
         private System.Windows.Forms.TextBox aptNumTextBox;
         private System.Windows.Forms.TextBox postalCodeTextBox;
         private System.Windows.Forms.TextBox cityTextBox;
+        private System.Windows.Forms.GroupBox navGroupBox;
+        private System.Windows.Forms.GroupBox contactGroupBox;
+        private System.Windows.Forms.GroupBox problemGroupBox;
     }
 }

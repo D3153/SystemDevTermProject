@@ -859,10 +859,10 @@ namespace Opeq_CallCenter {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Action_TookRow AddAction_TookRow(int action_took_id, string action_took_name) {
+            public Action_TookRow AddAction_TookRow(string action_took_name) {
                 Action_TookRow rowAction_TookRow = ((Action_TookRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        action_took_id,
+                        null,
                         action_took_name};
                 rowAction_TookRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowAction_TookRow);
@@ -906,6 +906,9 @@ namespace Opeq_CallCenter {
                 base.Columns.Add(this.columnaction_took_name);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnaction_took_id}, true));
+                this.columnaction_took_id.AutoIncrement = true;
+                this.columnaction_took_id.AutoIncrementSeed = -1;
+                this.columnaction_took_id.AutoIncrementStep = -1;
                 this.columnaction_took_id.AllowDBNull = false;
                 this.columnaction_took_id.Unique = true;
                 this.columnaction_took_name.AllowDBNull = false;
@@ -1163,10 +1166,10 @@ namespace Opeq_CallCenter {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public AddressRow AddAddressRow(int address_id, string street, long apt_num, string city, string postal_code) {
+            public AddressRow AddAddressRow(int street, long apt_num, int city, string postal_code) {
                 AddressRow rowAddressRow = ((AddressRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        address_id,
+                        null,
                         street,
                         apt_num,
                         city,
@@ -1212,22 +1215,27 @@ namespace Opeq_CallCenter {
             private void InitClass() {
                 this.columnaddress_id = new global::System.Data.DataColumn("address_id", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnaddress_id);
-                this.columnstreet = new global::System.Data.DataColumn("street", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnstreet = new global::System.Data.DataColumn("street", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnstreet);
                 this.columnapt_num = new global::System.Data.DataColumn("apt_num", typeof(long), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnapt_num);
-                this.columncity = new global::System.Data.DataColumn("city", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columncity = new global::System.Data.DataColumn("city", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columncity);
                 this.columnpostal_code = new global::System.Data.DataColumn("postal_code", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnpostal_code);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnaddress_id}, true));
+                this.columnaddress_id.AutoIncrement = true;
+                this.columnaddress_id.AutoIncrementSeed = -1;
+                this.columnaddress_id.AutoIncrementStep = -1;
                 this.columnaddress_id.AllowDBNull = false;
                 this.columnaddress_id.Unique = true;
+                this.columnstreet.AutoIncrementSeed = -1;
+                this.columnstreet.AutoIncrementStep = -1;
                 this.columnstreet.AllowDBNull = false;
-                this.columnstreet.MaxLength = 50;
+                this.columncity.AutoIncrementSeed = -1;
+                this.columncity.AutoIncrementStep = -1;
                 this.columncity.AllowDBNull = false;
-                this.columncity.MaxLength = 50;
                 this.columnpostal_code.AllowDBNull = false;
                 this.columnpostal_code.MaxLength = 6;
             }
@@ -1463,10 +1471,10 @@ namespace Opeq_CallCenter {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public AdminRow AddAdminRow(int admin_id, string admin_name, string password) {
+            public AdminRow AddAdminRow(string admin_name, string password) {
                 AdminRow rowAdminRow = ((AdminRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        admin_id,
+                        null,
                         admin_name,
                         password};
                 rowAdminRow.ItemArray = columnValuesArray;
@@ -1514,6 +1522,9 @@ namespace Opeq_CallCenter {
                 base.Columns.Add(this.columnpassword);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnadmin_id}, true));
+                this.columnadmin_id.AutoIncrement = true;
+                this.columnadmin_id.AutoIncrementSeed = -1;
+                this.columnadmin_id.AutoIncrementStep = -1;
                 this.columnadmin_id.AllowDBNull = false;
                 this.columnadmin_id.Unique = true;
                 this.columnadmin_name.AllowDBNull = false;
@@ -1863,10 +1874,10 @@ namespace Opeq_CallCenter {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ClientRow AddClientRow(int client_id, string client_name, string client_desc, System.DateTime date_contacted, string client_email, string client_phone_num, bool by_email, bool by_telephone, bool in_person, Computer_ProbRow parentComputer_ProbRowByFK_Client_Computer_Prob, Laptop_ProbRow parentLaptop_ProbRowByFK_Client_Laptop_Prob, Screen_ProbRow parentScreen_ProbRowByFK_Client_Screen_Prob, Phone_Tablet_ProbRow parentPhone_Tablet_ProbRowByFK_Client_Phone_Tab_Prob, AddressRow parentAddressRowByFK_Client_Address) {
+            public ClientRow AddClientRow(string client_name, int client_desc, System.DateTime date_contacted, string client_email, string client_phone_num, bool by_email, bool by_telephone, bool in_person, Computer_ProbRow parentComputer_ProbRowByFK_Client_Computer_Prob, Laptop_ProbRow parentLaptop_ProbRowByFK_Client_Laptop_Prob, Screen_ProbRow parentScreen_ProbRowByFK_Client_Screen_Prob, Phone_Tablet_ProbRow parentPhone_Tablet_ProbRowByFK_Client_Phone_Tab_Prob, AddressRow parentAddressRowByFK_Client_Address) {
                 ClientRow rowClientRow = ((ClientRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        client_id,
+                        null,
                         client_name,
                         client_desc,
                         date_contacted,
@@ -1947,7 +1958,7 @@ namespace Opeq_CallCenter {
                 base.Columns.Add(this.columnclient_id);
                 this.columnclient_name = new global::System.Data.DataColumn("client_name", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnclient_name);
-                this.columnclient_desc = new global::System.Data.DataColumn("client_desc", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnclient_desc = new global::System.Data.DataColumn("client_desc", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnclient_desc);
                 this.columndate_contacted = new global::System.Data.DataColumn("date_contacted", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columndate_contacted);
@@ -1973,10 +1984,14 @@ namespace Opeq_CallCenter {
                 base.Columns.Add(this.columnaddress_id);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnclient_id}, true));
+                this.columnclient_id.AutoIncrement = true;
+                this.columnclient_id.AutoIncrementSeed = -1;
+                this.columnclient_id.AutoIncrementStep = -1;
                 this.columnclient_id.AllowDBNull = false;
                 this.columnclient_id.Unique = true;
                 this.columnclient_name.MaxLength = 50;
-                this.columnclient_desc.MaxLength = 2147483647;
+                this.columnclient_desc.AutoIncrementSeed = -1;
+                this.columnclient_desc.AutoIncrementStep = -1;
                 this.columnclient_email.MaxLength = 2147483647;
                 this.columnclient_phone_num.MaxLength = 50;
             }
@@ -2202,10 +2217,10 @@ namespace Opeq_CallCenter {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Computer_ProbRow AddComputer_ProbRow(int computer_prob_id, string comp_desc) {
+            public Computer_ProbRow AddComputer_ProbRow(int comp_desc) {
                 Computer_ProbRow rowComputer_ProbRow = ((Computer_ProbRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        computer_prob_id,
+                        null,
                         comp_desc};
                 rowComputer_ProbRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowComputer_ProbRow);
@@ -2245,13 +2260,16 @@ namespace Opeq_CallCenter {
             private void InitClass() {
                 this.columncomputer_prob_id = new global::System.Data.DataColumn("computer_prob_id", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columncomputer_prob_id);
-                this.columncomp_desc = new global::System.Data.DataColumn("comp_desc", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columncomp_desc = new global::System.Data.DataColumn("comp_desc", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columncomp_desc);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columncomputer_prob_id}, true));
+                this.columncomputer_prob_id.AutoIncrement = true;
+                this.columncomputer_prob_id.AutoIncrementSeed = 1;
                 this.columncomputer_prob_id.AllowDBNull = false;
                 this.columncomputer_prob_id.Unique = true;
-                this.columncomp_desc.MaxLength = 2147483647;
+                this.columncomp_desc.AutoIncrementSeed = -1;
+                this.columncomp_desc.AutoIncrementStep = -1;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2753,10 +2771,10 @@ namespace Opeq_CallCenter {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Laptop_ProbRow AddLaptop_ProbRow(int laptop_prob_id, string laptop_desc) {
+            public Laptop_ProbRow AddLaptop_ProbRow(string laptop_desc) {
                 Laptop_ProbRow rowLaptop_ProbRow = ((Laptop_ProbRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        laptop_prob_id,
+                        null,
                         laptop_desc};
                 rowLaptop_ProbRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowLaptop_ProbRow);
@@ -2800,6 +2818,9 @@ namespace Opeq_CallCenter {
                 base.Columns.Add(this.columnlaptop_desc);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnlaptop_prob_id}, true));
+                this.columnlaptop_prob_id.AutoIncrement = true;
+                this.columnlaptop_prob_id.AutoIncrementSeed = -1;
+                this.columnlaptop_prob_id.AutoIncrementStep = -1;
                 this.columnlaptop_prob_id.AllowDBNull = false;
                 this.columnlaptop_prob_id.Unique = true;
                 this.columnlaptop_desc.MaxLength = 2147483647;
@@ -3126,10 +3147,10 @@ namespace Opeq_CallCenter {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ModifyRow AddModifyRow(int modify_id, string how_solved, string phone_num, bool is_solved, bool is_unsolved, bool is_ongoing, System.DateTime date_solved, ClientRow parentClientRowByFK_Modify_Client, Action_TookRow parentAction_TookRowByFK_Modify_Action_Took, Order_TypeRow parentOrder_TypeRowByFK_Modify_Order_Type, New_OrderRow parentNew_OrderRowByFK_Modify_New_Order, EmployeeRow parentEmployeeRowByFK_Modify_Employee) {
+            public ModifyRow AddModifyRow(string how_solved, string phone_num, bool is_solved, bool is_unsolved, bool is_ongoing, System.DateTime date_solved, ClientRow parentClientRowByFK_Modify_Client, Action_TookRow parentAction_TookRowByFK_Modify_Action_Took, Order_TypeRow parentOrder_TypeRowByFK_Modify_Order_Type, New_OrderRow parentNew_OrderRowByFK_Modify_New_Order, EmployeeRow parentEmployeeRowByFK_Modify_Employee) {
                 ModifyRow rowModifyRow = ((ModifyRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        modify_id,
+                        null,
                         how_solved,
                         phone_num,
                         is_solved,
@@ -3228,6 +3249,9 @@ namespace Opeq_CallCenter {
                 base.Columns.Add(this.columnemployee_id);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnmodify_id}, true));
+                this.columnmodify_id.AutoIncrement = true;
+                this.columnmodify_id.AutoIncrementSeed = -1;
+                this.columnmodify_id.AutoIncrementStep = -1;
                 this.columnmodify_id.AllowDBNull = false;
                 this.columnmodify_id.Unique = true;
                 this.columnhow_solved.MaxLength = 2147483647;
@@ -3744,10 +3768,10 @@ namespace Opeq_CallCenter {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Order_TypeRow AddOrder_TypeRow(int order_type_id, string order_name) {
+            public Order_TypeRow AddOrder_TypeRow(string order_name) {
                 Order_TypeRow rowOrder_TypeRow = ((Order_TypeRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        order_type_id,
+                        null,
                         order_name};
                 rowOrder_TypeRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowOrder_TypeRow);
@@ -3791,6 +3815,9 @@ namespace Opeq_CallCenter {
                 base.Columns.Add(this.columnorder_name);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnorder_type_id}, true));
+                this.columnorder_type_id.AutoIncrement = true;
+                this.columnorder_type_id.AutoIncrementSeed = -1;
+                this.columnorder_type_id.AutoIncrementStep = -1;
                 this.columnorder_type_id.AllowDBNull = false;
                 this.columnorder_type_id.Unique = true;
                 this.columnorder_name.AllowDBNull = false;
@@ -4018,10 +4045,10 @@ namespace Opeq_CallCenter {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Phone_Tablet_ProbRow AddPhone_Tablet_ProbRow(int phone_tablet_prob_id, string phone_tab_desc) {
+            public Phone_Tablet_ProbRow AddPhone_Tablet_ProbRow(string phone_tab_desc) {
                 Phone_Tablet_ProbRow rowPhone_Tablet_ProbRow = ((Phone_Tablet_ProbRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        phone_tablet_prob_id,
+                        null,
                         phone_tab_desc};
                 rowPhone_Tablet_ProbRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPhone_Tablet_ProbRow);
@@ -4065,6 +4092,9 @@ namespace Opeq_CallCenter {
                 base.Columns.Add(this.columnphone_tab_desc);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnphone_tablet_prob_id}, true));
+                this.columnphone_tablet_prob_id.AutoIncrement = true;
+                this.columnphone_tablet_prob_id.AutoIncrementSeed = -1;
+                this.columnphone_tablet_prob_id.AutoIncrementStep = -1;
                 this.columnphone_tablet_prob_id.AllowDBNull = false;
                 this.columnphone_tablet_prob_id.Unique = true;
                 this.columnphone_tab_desc.AllowDBNull = false;
@@ -4566,10 +4596,10 @@ namespace Opeq_CallCenter {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Screen_ProbRow AddScreen_ProbRow(int screen_prob_id, string screen_desc) {
+            public Screen_ProbRow AddScreen_ProbRow(string screen_desc) {
                 Screen_ProbRow rowScreen_ProbRow = ((Screen_ProbRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        screen_prob_id,
+                        null,
                         screen_desc};
                 rowScreen_ProbRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowScreen_ProbRow);
@@ -4613,6 +4643,9 @@ namespace Opeq_CallCenter {
                 base.Columns.Add(this.columnscreen_desc);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnscreen_prob_id}, true));
+                this.columnscreen_prob_id.AutoIncrement = true;
+                this.columnscreen_prob_id.AutoIncrementSeed = -1;
+                this.columnscreen_prob_id.AutoIncrementStep = -1;
                 this.columnscreen_prob_id.AllowDBNull = false;
                 this.columnscreen_prob_id.Unique = true;
                 this.columnscreen_desc.MaxLength = 2147483647;
@@ -4817,9 +4850,9 @@ namespace Opeq_CallCenter {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string street {
+            public int street {
                 get {
-                    return ((string)(this[this.tableAddress.streetColumn]));
+                    return ((int)(this[this.tableAddress.streetColumn]));
                 }
                 set {
                     this[this.tableAddress.streetColumn] = value;
@@ -4844,9 +4877,9 @@ namespace Opeq_CallCenter {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string city {
+            public int city {
                 get {
-                    return ((string)(this[this.tableAddress.cityColumn]));
+                    return ((int)(this[this.tableAddress.cityColumn]));
                 }
                 set {
                     this[this.tableAddress.cityColumn] = value;
@@ -4979,10 +5012,10 @@ namespace Opeq_CallCenter {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string client_desc {
+            public int client_desc {
                 get {
                     try {
-                        return ((string)(this[this.tableClient.client_descColumn]));
+                        return ((int)(this[this.tableClient.client_descColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'client_desc\' in table \'Client\' is DBNull.", e);
@@ -5419,10 +5452,10 @@ namespace Opeq_CallCenter {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string comp_desc {
+            public int comp_desc {
                 get {
                     try {
-                        return ((string)(this[this.tableComputer_Prob.comp_descColumn]));
+                        return ((int)(this[this.tableComputer_Prob.comp_descColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'comp_desc\' in table \'Computer_Prob\' is DBNull.", e);

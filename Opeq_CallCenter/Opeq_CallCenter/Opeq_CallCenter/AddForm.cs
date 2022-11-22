@@ -25,16 +25,27 @@ namespace Opeq_CallCenter
 
         private void AddForm_Load(object sender, EventArgs e)
         {
-            //IDK if this works and pls check the names of the tables, IDs and Descriptions
-            //I will put a "*" on the ones that are needed to be checked
-            //-> I changed them I did not test if the database works yet
-            
             con.Open();
 
-            SqlCommand cmd1 = new SqlCommand("SELECT * FROM Computer_Prob"); 
-            SqlCommand cmd2 = new SqlCommand("SELECT * FROM Laptop_Prob"); 
-            SqlCommand cmd3 = new SqlCommand("SELECT * FROM Screen_Prob"); 
-            SqlCommand cmd4 = new SqlCommand("SELECT * FROM Phone_Tablet_Prob"); 
+            SqlCommand cmd1 = con.CreateCommand();
+            SqlCommand cmd2 = con.CreateCommand();
+            SqlCommand cmd3 = con.CreateCommand();
+            SqlCommand cmd4 = con.CreateCommand();
+
+            cmd1.CommandType = CommandType.Text;
+            cmd2.CommandType = CommandType.Text;
+            cmd3.CommandType = CommandType.Text;
+            cmd4.CommandType = CommandType.Text;
+
+            cmd1.CommandText = "SELECT * FROM Computer_Prob;";
+            cmd2.CommandText = "SELECT * FROM Laptop_Prob;";
+            cmd3.CommandText = "SELECT * FROM Screen_Prob;";
+            cmd4.CommandText = "SELECT * FROM Phone_Tablet_Prob;";
+
+            cmd1.ExecuteNonQuery();
+            cmd2.ExecuteNonQuery();
+            cmd3.ExecuteNonQuery();
+            cmd4.ExecuteNonQuery();
 
             SqlDataAdapter adapter1 = new SqlDataAdapter(cmd1);
             SqlDataAdapter adapter2 = new SqlDataAdapter(cmd2);
@@ -51,28 +62,27 @@ namespace Opeq_CallCenter
             adapter3.Fill(dataSet3);
             adapter4.Fill(dataSet4);
 
-            cmd1.ExecuteReader();
-            cmd2.ExecuteReader();
-            cmd3.ExecuteReader();
-            cmd4.ExecuteReader();
-
             con.Close();
 
             computerProblemComboBox.DataSource = dataSet1.Tables[0];
             computerProblemComboBox.DisplayMember = "comp_desc"; 
             computerProblemComboBox.ValueMember = "computer_prob_id";
+            computerProblemComboBox.SelectedIndex = -1;
 
             laptopProblemComboBox.DataSource = dataSet2.Tables[0];
             laptopProblemComboBox.DisplayMember = "laptop_desc";
             laptopProblemComboBox.ValueMember = "laptop_prob_id";
+            laptopProblemComboBox.SelectedIndex = -1;
 
             screenProblemComboBox.DataSource = dataSet3.Tables[0];
             screenProblemComboBox.DisplayMember = "screen_desc"; 
-            screenProblemComboBox.ValueMember = "screen_prob_id"; 
+            screenProblemComboBox.ValueMember = "screen_prob_id";
+            screenProblemComboBox.SelectedIndex = -1;
 
             phoneOrTabletProblemComboBox.DataSource = dataSet4.Tables[0];
             phoneOrTabletProblemComboBox.DisplayMember = "phone_tab_desc"; 
-            phoneOrTabletProblemComboBox.ValueMember = "phone_tablet_prob_id"; 
+            phoneOrTabletProblemComboBox.ValueMember = "phone_tablet_prob_id";
+            phoneOrTabletProblemComboBox.SelectedIndex = -1;
             
         }
 
@@ -177,57 +187,83 @@ namespace Opeq_CallCenter
                 string aptNum = aptNumTextBox.Text;
                 string city = cityTextBox.Text;
                 string postalCode = postalCodeTextBox.Text;
-                
+
+                string productName = " ";
 
                 string mat = MATTextBox.Text;
 
                 //Same problem as addressID
-                string computerProbID = computerProblemComboBox.SelectedItem.ToString();
-                string laptopProbID = computerProblemComboBox.SelectedItem.ToString();
-                string screenProbID = computerProblemComboBox.SelectedItem.ToString();
-                string phoneTabProbID = computerProblemComboBox.SelectedItem.ToString();
+                int computerProbID = computerProblemComboBox.SelectedIndex;
+                int laptopProbID = laptopProblemComboBox.SelectedIndex;
+                int screenProbID = screenProblemComboBox.SelectedIndex;
+                int phoneTabProbID = phoneOrTabletProblemComboBox.SelectedIndex;
 
-                string byEmail;
-                string byTelephone;
-                string inPerson;
+                string byEmail = "0";
+                string byTelephone = "0";
+                string inPerson = "0";
 
-                //This could be changed to a Switch case, I think, but I forgot how to do it. Sorry :(
-                if (emailRadioBtn.Checked)
+                if(computerProbID > 0)
                 {
-                    byEmail = "1";
-                    byTelephone = "0";
-                    inPerson = "0";
+                    productName = "Computer";
                 }
-                else if (phoneRadioBtn.Checked)
+                else if(laptopProbID > 0)
                 {
-                    byEmail = "0";
-                    byTelephone = "1";
-                    inPerson = "0";
+                    productName = "Laptop";
                 }
-                else if (inPersonRadioBtn.Checked)
+                else if (screenProbID > 0)
                 {
-                    byEmail = "0";
-                    byTelephone = "0";
-                    inPerson = "1";
+                    productName = "Screen";
                 }
-                else
+                else if (phoneTabProbID > 0)
                 {
-                    MessageBox.Show("La section 'Comment Contacter' ne peut pas être vide");
+                    productName = "Phone and Tablet";
+                }
+                else if (computerProbID == 0 && laptopProbID == 0 && screenProbID == 0 && phoneTabProbID == 0)
+                {
+                    MessageBox.Show("Fuck you and fill it out");
                 }
 
-                
+                    //var problems = problemGroupBox;
+                    //foreach (var comboBox in problems.Controls))
+                    //{
+                    //    computerProbID = computerProblemComboBox.Select ? "1" : "0";
+                    //    laptopProbID = phoneRadioBtn.Checked ? "1" : "0";
+                    //    screenProbID = inPersonRadioBtn.Checked ? "1" : "0";
+                    //    phoneTabProbID = inPersonRadioBtn.Checked ? "1" : "0";
+                    //}
+
+                    var contacts = contactGroupBox;
+                foreach (var radioButton in contacts.Controls.OfType<RadioButton>())
+                {
+                    byEmail = emailRadioBtn.Checked ? "1" : "0";
+                    byTelephone = phoneRadioBtn.Checked ? "1" : "0";
+                    inPerson = inPersonRadioBtn.Checked ? "1" : "0";
+                }
+
+                /*
+                var ctrl3 = containerGroupBox;
+                foreach (var radioButton in ctrl3.Controls.OfType<RadioButton>())
+                {
+                    Total = radioButton.Checked ? (Total + Convert.ToDouble(radioButton.Tag)) : Total;
+                }*/
+
+
                 con.Open();
                 SqlCommand cmd1 = con.CreateCommand();
                 SqlCommand cmd2 = con.CreateCommand();
                 SqlCommand cmd3 = con.CreateCommand();
                 SqlCommand cmd4 = con.CreateCommand();
+                SqlCommand cmd5 = con.CreateCommand();
+                SqlCommand cmd6 = con.CreateCommand();
 
                 cmd1.CommandType = CommandType.Text;
                 cmd2.CommandType = CommandType.Text;
                 cmd3.CommandType = CommandType.Text;
                 cmd4.CommandType = CommandType.Text;
+                cmd5.CommandType = CommandType.Text;
+                cmd6.CommandType = CommandType.Text;
 
-                cmd1.CommandText = "INSERT INTO address (street, apt_num, city, province, postal_code) VALUES ('" + street + "', '" +
+                cmd1.CommandText = "INSERT INTO address (street, apt_num, city, postal_code) VALUES ('" + street + "', '" +
                                                              aptNum + "', '" + city + "','" + postalCode + "');";
 
                 cmd1.ExecuteNonQuery();
@@ -238,14 +274,18 @@ namespace Opeq_CallCenter
                 cmd3.CommandText = "SELECT IDENT_CURRENT('Addresss');";
                 addressID = Convert.ToString(cmd3.ExecuteScalar());
 
-                cmd4.CommandText = "INSERT INTO client (employee_id, MAT, computer_prob_id, laptop_prob_id, screen_prob_id, phone_tablet_prob_id, address_id, client_name, client_desc, date, client_email, client_phone_num, by_email, by_telephone, in_person) VALUES ('" + 
-                                    empID + "', '" + mat + "', '" + computerProbID + "', '" + laptopProbID + "', '" + screenProbID + "', '" + phoneTabProbID + "', '" + 
-                                   addressID + "', '" + clientName + "', '" + problemDesc + "', '" + date + "', '" + email + "', '" + phone + "', '" + byEmail + "', '" + 
-                                   byTelephone + "', '" + inPerson + "');";
+                cmd4.CommandText = "INSERT INTO product VALUES ('" + productName + "');";
+                cmd4.ExecuteNonQuery();
+
+                cmd5.CommandText = "SELECT IDENT_CURRENT('Product');";
+                 mat = Convert.ToString(cmd5.ExecuteScalar());
+
+                cmd6.CommandText = "INSERT INTO client (employee_id, MAT, computer_prob_id, laptop_prob_id, screen_prob_id, phone_tablet_prob_id, address_id, client_name, client_desc, date, client_email, client_phone_num, by_email, by_telephone, in_person) VALUES ('" +
+                                   empID + "', '" + mat + "', '" + computerProbID + "', '" + laptopProbID + "', '" + screenProbID + "', '" + phoneTabProbID + "', '" + addressID + "', '" + clientName + "', '" + problemDesc + "', '" + date + "', '" + email + "', '" + phone + "', '" + byEmail + "', '" + byTelephone + "', '" + inPerson + "');";
+
                 cmd4.ExecuteNonQuery();
 
                 con.Close();
-                
 
                 isAddBtnClicked = true;
                 confirmation();
