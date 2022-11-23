@@ -180,7 +180,7 @@ namespace Opeq_CallCenter
                 string date = dateTimePicker.Value.ToString();
 
                 //IDK how to get addressId from address table
-                string addressID;
+                string addressID = " ";
 
                 
                 string street = streetTextBox.Text;
@@ -190,38 +190,55 @@ namespace Opeq_CallCenter
 
                 string productName = " ";
 
+                string productID = " ";
                 string mat = MATTextBox.Text;
 
                 //Same problem as addressID
-                int computerProbID = computerProblemComboBox.SelectedIndex;
-                int laptopProbID = laptopProblemComboBox.SelectedIndex;
-                int screenProbID = screenProblemComboBox.SelectedIndex;
-                int phoneTabProbID = phoneOrTabletProblemComboBox.SelectedIndex;
+                //int computerProbID = computerProblemComboBox.SelectedIndex + 1;
+                //int laptopProbID = laptopProblemComboBox.SelectedIndex + 1;
+                //int screenProbID = screenProblemComboBox.SelectedIndex + 1;
+                //int phoneTabProbID = phoneOrTabletProblemComboBox.SelectedIndex + 1;
+
+                string computerProbDesc = computerProblemComboBox.GetItemText(computerProblemComboBox.SelectedItem);
+                string laptopProbDesc = laptopProblemComboBox.GetItemText(laptopProblemComboBox.SelectedItem);
+                string screenProbDesc = screenProblemComboBox.GetItemText(screenProblemComboBox.SelectedItem);
+                string phoneTabProbDesc = phoneOrTabletProblemComboBox.GetItemText(phoneOrTabletProblemComboBox.SelectedItem);
+
+                string computerProbID = " ";
+                string laptopProbID = " ";
+                string screenProbID = " ";
+                string phoneTabProbID = " ";
 
                 string byEmail = "0";
                 string byTelephone = "0";
                 string inPerson = "0";
 
-                if(computerProbID > 0)
-                {
-                    productName = "Computer";
-                }
-                else if(laptopProbID > 0)
-                {
-                    productName = "Laptop";
-                }
-                else if (screenProbID > 0)
-                {
-                    productName = "Screen";
-                }
-                else if (phoneTabProbID > 0)
-                {
-                    productName = "Phone and Tablet";
-                }
-                else if (computerProbID == 0 && laptopProbID == 0 && screenProbID == 0 && phoneTabProbID == 0)
-                {
-                    MessageBox.Show("Fuck you and fill it out");
-                }
+                //if(computerProbDesc != "")
+                //{
+                //    computerProbID = 0;
+
+                //}
+
+                //if(computerProbID > 0)
+                //{
+                //    productName = "Computer";
+                //}
+                //else if(laptopProbID > 0)
+                //{
+                //    productName = "Laptop";
+                //}
+                //else if (screenProbID > 0)
+                //{
+                //    productName = "Screen";
+                //}
+                //else if (phoneTabProbID > 0)
+                //{
+                //    productName = "Phone and Tablet";
+                //}
+                //else if (computerProbID == 0 && laptopProbID == 0 && screenProbID == 0 && phoneTabProbID == 0)
+                //{
+                //    MessageBox.Show("Fuck you and fill it out");
+                //}
 
                     //var problems = problemGroupBox;
                     //foreach (var comboBox in problems.Controls))
@@ -253,8 +270,13 @@ namespace Opeq_CallCenter
                 SqlCommand cmd2 = con.CreateCommand();
                 SqlCommand cmd3 = con.CreateCommand();
                 SqlCommand cmd4 = con.CreateCommand();
-                SqlCommand cmd5 = con.CreateCommand();
+                SqlCommand cmd5 = con.CreateCommand();  
                 SqlCommand cmd6 = con.CreateCommand();
+                SqlCommand cmd7 = con.CreateCommand();
+                SqlCommand cmd8 = con.CreateCommand();
+                SqlCommand cmd9 = con.CreateCommand();
+                SqlCommand cmd10 = con.CreateCommand();
+
 
                 cmd1.CommandType = CommandType.Text;
                 cmd2.CommandType = CommandType.Text;
@@ -262,8 +284,12 @@ namespace Opeq_CallCenter
                 cmd4.CommandType = CommandType.Text;
                 cmd5.CommandType = CommandType.Text;
                 cmd6.CommandType = CommandType.Text;
+                cmd7.CommandType = CommandType.Text;
+                cmd8.CommandType = CommandType.Text;
+                cmd9.CommandType = CommandType.Text;
+                cmd10.CommandType = CommandType.Text;
 
-                cmd1.CommandText = "INSERT INTO address (street, apt_num, city, postal_code) VALUES ('" + street + "', '" +
+                cmd1.CommandText = "INSERT INTO Client_Address (street, apt_num, city, postal_code) VALUES ('" + street + "', '" +
                                                              aptNum + "', '" + city + "','" + postalCode + "');";
 
                 cmd1.ExecuteNonQuery();
@@ -271,19 +297,31 @@ namespace Opeq_CallCenter
                 cmd2.CommandText = "SELECT IDENT_CURRENT('Employee');";
                 empID = Convert.ToString(cmd2.ExecuteScalar());
 
-                cmd3.CommandText = "SELECT IDENT_CURRENT('Addresss');";
+                cmd3.CommandText = "SELECT IDENT_CURRENT('Client_Address');";
                 addressID = Convert.ToString(cmd3.ExecuteScalar());
 
-                cmd4.CommandText = "INSERT INTO product VALUES ('" + productName + "');";
+                cmd4.CommandText = "INSERT INTO Product (MAT, product_name) VALUES ('" + mat +"', '" + productName + "');";
                 cmd4.ExecuteNonQuery();
 
                 cmd5.CommandText = "SELECT IDENT_CURRENT('Product');";
-                 mat = Convert.ToString(cmd5.ExecuteScalar());
+                 productID = Convert.ToString(cmd5.ExecuteScalar());
 
-                cmd6.CommandText = "INSERT INTO client (employee_id, MAT, computer_prob_id, laptop_prob_id, screen_prob_id, phone_tablet_prob_id, address_id, client_name, client_desc, date, client_email, client_phone_num, by_email, by_telephone, in_person) VALUES ('" +
-                                   empID + "', '" + mat + "', '" + computerProbID + "', '" + laptopProbID + "', '" + screenProbID + "', '" + phoneTabProbID + "', '" + addressID + "', '" + clientName + "', '" + problemDesc + "', '" + date + "', '" + email + "', '" + phone + "', '" + byEmail + "', '" + byTelephone + "', '" + inPerson + "');";
+                cmd6.CommandText = "SELECT computer_prob_id FROM Computer_Prob WHERE computer_desc = '" + computerProbDesc + "';";
+                computerProbID = Convert.ToString(cmd6.ExecuteScalar());
 
-                cmd4.ExecuteNonQuery();
+                cmd7.CommandText = "SELECT laptop_prob_id FROM Laptop_Prob WHERE laptop_desc = '" + laptopProbDesc + "';";
+                laptopProbID =Convert.ToString(cmd7.ExecuteScalar());
+
+                cmd8.CommandText = "SELECT screen_prob_id FROM Screen_Prob WHERE screen_desc = '" + screenProbDesc + "';";
+                screenProbID = Convert.ToString(cmd8.ExecuteScalar());
+
+                cmd9.CommandText = "SELECT phone_tablet_prob_id FROM Phone_tablet_Prob WHERE phone_tab_desc = '" + phoneTabProbDesc + "';";
+                phoneTabProbID = Convert.ToString(cmd9.ExecuteScalar());
+
+                cmd10.CommandText = "INSERT INTO Client (employee_id, product_id, computer_prob_id, laptop_prob_id, screen_prob_id, phone_tablet_prob_id, address_id, client_name, client_desc, date_added, client_email, client_phone_num, by_email, by_telephone, in_person) VALUES ('" +
+                                   empID + "', '" + productID + "', '" + computerProbID + "', '" + laptopProbID + "', '" + screenProbID + "', '" + phoneTabProbID + "', '" + addressID + "', '" + clientName + "', '" + problemDesc + "', '" + date + "', '" + email + "', '" + phone + "', '" + byEmail + "', '" + byTelephone + "', '" + inPerson + "');";
+
+                cmd10.ExecuteNonQuery();
 
                 con.Close();
 

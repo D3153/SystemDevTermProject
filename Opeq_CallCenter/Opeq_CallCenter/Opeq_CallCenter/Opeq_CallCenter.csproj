@@ -64,6 +64,11 @@
     <Compile Include="AdminLoginForm.Designer.cs">
       <DependentUpon>AdminLoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Opeq_CallCenterDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Opeq_CallCenterDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="PersonInterface.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -168,6 +173,17 @@
     </None>
     <None Include="Opeq_CallCenterDataSet2.xss">
       <DependentUpon>Opeq_CallCenterDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Opeq_CallCenterDataSet3.xsc">
+      <DependentUpon>Opeq_CallCenterDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Opeq_CallCenterDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Opeq_CallCenterDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Opeq_CallCenterDataSet3.xss">
+      <DependentUpon>Opeq_CallCenterDataSet3.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
