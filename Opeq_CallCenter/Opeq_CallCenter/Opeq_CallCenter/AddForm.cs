@@ -204,10 +204,10 @@ namespace Opeq_CallCenter
                 string screenProbDesc = screenProblemComboBox.GetItemText(screenProblemComboBox.SelectedItem);
                 string phoneTabProbDesc = phoneOrTabletProblemComboBox.GetItemText(phoneOrTabletProblemComboBox.SelectedItem);
 
-                string computerProbID = " ";
-                string laptopProbID = " ";
-                string screenProbID = " ";
-                string phoneTabProbID = " ";
+                int computerProbID = 0;
+                int laptopProbID = 0;
+                int screenProbID = 0;
+                int phoneTabProbID = 0;
 
                 string byEmail = "0";
                 string byTelephone = "0";
@@ -306,33 +306,42 @@ namespace Opeq_CallCenter
                 cmd5.CommandText = "SELECT IDENT_CURRENT('Product');";
                  productID = Convert.ToString(cmd5.ExecuteScalar());
 
-                cmd6.CommandText = "SELECT computer_prob_id FROM Computer_Prob WHERE computer_desc = '" + computerProbDesc + "';";
-                computerProbID = Convert.ToString(cmd6.ExecuteScalar());
+                if (computerProbDesc != "")
+                {
+                    cmd6.CommandText = "SELECT computer_prob_id FROM Computer_Prob WHERE computer_desc = '" + computerProbDesc + "';";
+                    computerProbID = cmd6.ExecuteNonQuery();
+                }
+                else if (laptopProbDesc != "")
+                {
+                    cmd7.CommandText = "SELECT laptop_prob_id FROM Laptop_Prob WHERE laptop_desc = '" + laptopProbDesc + "';";
+                    laptopProbID = cmd7.ExecuteNonQuery();
+                }
+                else if (screenProbDesc != "")
+                {
+                    cmd8.CommandText = "SELECT screen_prob_id FROM Screen_Prob WHERE screen_desc = '" + screenProbDesc + "';";
+                    screenProbID = cmd8.ExecuteNonQuery();
+                }
+                else if (phoneTabProbDesc != "")
+                {
+                    cmd9.CommandText = "SELECT phone_tablet_prob_id FROM Phone_tablet_Prob WHERE phone_tab_desc = '" + phoneTabProbDesc + "';";
+                    phoneTabProbID = cmd9.ExecuteNonQuery();
+                }
 
-                cmd7.CommandText = "SELECT laptop_prob_id FROM Laptop_Prob WHERE laptop_desc = '" + laptopProbDesc + "';";
-                laptopProbID =Convert.ToString(cmd7.ExecuteScalar());
+                    cmd10.CommandText = "INSERT INTO Client (employee_id, product_id, computer_prob_id, laptop_prob_id, screen_prob_id, phone_tablet_prob_id, address_id, client_name, client_desc, date_added, client_email, client_phone_num, by_email, by_telephone, in_person) VALUES ('" +
+                                       empID + "', '" + productID + "', '" + computerProbID + "', '" + laptopProbID + "', '" + screenProbID + "', '" + phoneTabProbID + "', '" + addressID + "', '" + clientName + "', '" + problemDesc + "', '" + date + "', '" + email + "', '" + phone + "', '" + byEmail + "', '" + byTelephone + "', '" + inPerson + "');";
 
-                cmd8.CommandText = "SELECT screen_prob_id FROM Screen_Prob WHERE screen_desc = '" + screenProbDesc + "';";
-                screenProbID = Convert.ToString(cmd8.ExecuteScalar());
+                    cmd10.ExecuteNonQuery();
 
-                cmd9.CommandText = "SELECT phone_tablet_prob_id FROM Phone_tablet_Prob WHERE phone_tab_desc = '" + phoneTabProbDesc + "';";
-                phoneTabProbID = Convert.ToString(cmd9.ExecuteScalar());
+                    con.Close();
 
-                cmd10.CommandText = "INSERT INTO Client (employee_id, product_id, computer_prob_id, laptop_prob_id, screen_prob_id, phone_tablet_prob_id, address_id, client_name, client_desc, date_added, client_email, client_phone_num, by_email, by_telephone, in_person) VALUES ('" +
-                                   empID + "', '" + productID + "', '" + computerProbID + "', '" + laptopProbID + "', '" + screenProbID + "', '" + phoneTabProbID + "', '" + addressID + "', '" + clientName + "', '" + problemDesc + "', '" + date + "', '" + email + "', '" + phone + "', '" + byEmail + "', '" + byTelephone + "', '" + inPerson + "');";
+                    isAddBtnClicked = true;
+                    confirmation();
 
-                cmd10.ExecuteNonQuery();
-
-                con.Close();
-
-                isAddBtnClicked = true;
-                confirmation();
-                
-            }
-            else
-            {
-                MessageBox.Show("Les champs de texte ne peuvent pas être vides");
-            }
+                }
+                else
+                {
+                    MessageBox.Show("Les champs de texte ne peuvent pas être vides");
+                }
 
         }
 
@@ -393,5 +402,9 @@ namespace Opeq_CallCenter
             this.Close();
         }
 
+        private void computerProblemComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
