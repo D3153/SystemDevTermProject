@@ -246,7 +246,7 @@
             this.computerProblemComboBox.Name = "computerProblemComboBox";
             this.computerProblemComboBox.Size = new System.Drawing.Size(357, 39);
             this.computerProblemComboBox.TabIndex = 19;
-            this.computerProblemComboBox.SelectedIndexChanged += new System.EventHandler(this.computerProblemComboBox_SelectedIndexChanged);
+            this.computerProblemComboBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.computerProblemComboBox_KeyDown);
             // 
             // label6
             // 
@@ -275,6 +275,7 @@
             this.screenProblemComboBox.Name = "screenProblemComboBox";
             this.screenProblemComboBox.Size = new System.Drawing.Size(357, 39);
             this.screenProblemComboBox.TabIndex = 21;
+            this.screenProblemComboBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.screenProblemComboBox_KeyDown);
             // 
             // label8
             // 
@@ -293,6 +294,7 @@
             this.laptopProblemComboBox.Name = "laptopProblemComboBox";
             this.laptopProblemComboBox.Size = new System.Drawing.Size(357, 39);
             this.laptopProblemComboBox.TabIndex = 23;
+            this.laptopProblemComboBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.laptopProblemComboBox_KeyDown);
             // 
             // label9
             // 
@@ -311,6 +313,7 @@
             this.phoneOrTabletProblemComboBox.Name = "phoneOrTabletProblemComboBox";
             this.phoneOrTabletProblemComboBox.Size = new System.Drawing.Size(357, 39);
             this.phoneOrTabletProblemComboBox.TabIndex = 25;
+            this.phoneOrTabletProblemComboBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.phoneOrTabletProblemComboBox_KeyDown);
             // 
             // label10
             // 

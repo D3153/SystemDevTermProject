@@ -72,6 +72,7 @@
             this.empNameTextBox.TabIndex = 2;
             this.empNameTextBox.Text = "Entrer votre nom";
             this.empNameTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.empNameTextBox_MouseClick);
+            this.empNameTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.empNameTextBox_KeyPress);
             // 
             // loginButton
             // 
@@ -79,7 +80,7 @@
             this.loginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.loginButton.Location = new System.Drawing.Point(531, 454);
-            this.loginButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.loginButton.Margin = new System.Windows.Forms.Padding(4);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(179, 52);
             this.loginButton.TabIndex = 3;

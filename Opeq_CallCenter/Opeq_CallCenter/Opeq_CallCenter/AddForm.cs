@@ -65,7 +65,7 @@ namespace Opeq_CallCenter
             con.Close();
 
             computerProblemComboBox.DataSource = dataSet1.Tables[0];
-            computerProblemComboBox.DisplayMember = "comp_desc"; 
+            computerProblemComboBox.DisplayMember = "computer_desc"; 
             computerProblemComboBox.ValueMember = "computer_prob_id";
             computerProblemComboBox.SelectedIndex = -1;
 
@@ -402,9 +402,24 @@ namespace Opeq_CallCenter
             this.Close();
         }
 
-        private void computerProblemComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void computerProblemComboBox_KeyDown(object sender, KeyEventArgs e)
         {
+            e.SuppressKeyPress = true;
+        }
 
+        private void screenProblemComboBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.SuppressKeyPress = true;
+        }
+
+        private void laptopProblemComboBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.SuppressKeyPress = true;
+        }
+
+        private void phoneOrTabletProblemComboBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.SuppressKeyPress = true;
         }
     }
 }

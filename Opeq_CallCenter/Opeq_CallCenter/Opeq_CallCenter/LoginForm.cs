@@ -21,12 +21,43 @@ namespace Opeq_CallCenter
 
         private void loginButton_Click(object sender, EventArgs e)
         {
+            saveEmployee();
+        }
 
+        private void adminLoginLabel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AdminLoginForm adminLogin = new AdminLoginForm();
+            adminLogin.ShowDialog();
+            this.Close();
+        }
+
+        private void empNameTextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            hint();
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+            
+        }
+        private void empNameTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            hint();
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                saveEmployee();
+            }
+
+        }
+
+        public void saveEmployee()
+        {
             if (empNameTextBox.Text == "Entrer votre nom" || empNameTextBox.Text == String.Empty)
             {
                 MessageBox.Show("Entrer un nom valide!");
             }
-            else if (empNameTextBox.Text != String.Empty) 
+            else if (empNameTextBox.Text != String.Empty)
             {
                 //Uncomment to see if database works
                 string empName = empNameTextBox.Text;
@@ -41,18 +72,9 @@ namespace Opeq_CallCenter
                 welcomeForm.ShowDialog();
                 this.Close();
             }
-
         }
 
-        private void adminLoginLabel_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            AdminLoginForm adminLogin = new AdminLoginForm();
-            adminLogin.ShowDialog();
-            this.Close();
-        }
-
-        private void empNameTextBox_MouseClick(object sender, MouseEventArgs e)
+        public void hint()
         {
             if (empNameTextBox.Text == "Entrer votre nom")
             {
@@ -60,29 +82,5 @@ namespace Opeq_CallCenter
             }
             empNameTextBox.ForeColor = Color.Black;
         }
-
-        private void LoginForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        //private void empNameTextBox_MouseEnter(object sender, EventArgs e)
-        //{
-        //if (empNameTextBox.Text == "Entrer votre nom")
-        //{
-        //empNameTextBox.Text = "";
-        //empNameTextBox.ForeColor = Color.Black;
-        //}
-        //}
-
-        //private void empNameTextBox_MouseLeave(object sender, EventArgs e)
-        //{
-        //if (empNameTextBox.Text != "Entrer votre nom")
-        //{
-        //empNameTextBox.Text = "Entrer votre nom";
-        //empNameTextBox.ForeColor = Color.Gray;
-        //}
-        //}
-
     }
 }

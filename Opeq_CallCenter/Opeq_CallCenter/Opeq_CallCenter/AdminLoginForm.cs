@@ -31,14 +31,45 @@ namespace Opeq_CallCenter
 
         private void adminNameTextBox_MouseClick(object sender, MouseEventArgs e)
         {
-            if (adminNameTextBox.Text == "Entrer votre Nom")
+            hintForName();
+        }
+        private void adminNameTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            hintForName();
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                adminLogin();
+            }
+        }
+
+        private void adminPassTextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            hintForPassword();
+        }
+        private void adminPassTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            hintForPassword();
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                adminLogin();
+            }
+        }
+
+        private void loginButton_Click(object sender, EventArgs e)
+        {
+            adminLogin();
+        }
+
+        public void hintForName()
+        {
+            if (adminNameTextBox.Text == "Entrer votre nom")
             {
                 adminNameTextBox.Text = "";
             }
             adminNameTextBox.ForeColor = Color.Black;
         }
 
-        private void adminPassTextBox_MouseClick(object sender, MouseEventArgs e)
+        public void hintForPassword()
         {
             if (adminPassTextBox.Text == "Entrer votre Mot de Passe")
             {
@@ -48,14 +79,20 @@ namespace Opeq_CallCenter
             adminPassTextBox.PasswordChar = '*';
         }
 
-        private void loginButton_Click(object sender, EventArgs e)
+        public void adminLogin()
         {
             con.Open();
-            SqlCommand cmd = con.CreateCommand();
-            cmd.CommandType = CommandType.Text;
-            string adminName = cmd.CommandText = "SELECT admin_name FROM Admin;";
-            string adminPass = cmd.CommandText = "SELECT password FROM Admin;";
-            cmd.ExecuteNonQuery();
+            SqlCommand cmd1 = con.CreateCommand();
+            SqlCommand cmd2 = con.CreateCommand();
+
+            cmd1.CommandType = CommandType.Text;
+            cmd2.CommandType = CommandType.Text;
+
+            cmd1.CommandText = "SELECT admin_name FROM Admin_Account;";
+            cmd2.CommandText = "SELECT password FROM Admin_Account;";
+
+            string adminName = Convert.ToString(cmd1.ExecuteScalar());
+            string adminPass = Convert.ToString(cmd2.ExecuteScalar());
             con.Close();
 
             if (adminNameTextBox.Text == adminName && adminPassTextBox.Text == adminPass)
@@ -67,7 +104,7 @@ namespace Opeq_CallCenter
             }
             else
             {
-                MessageBox.Show("Entrer un nom valide!");
+                MessageBox.Show("Nom ou Mot de Passe non valide!");
             }
         }
     }
