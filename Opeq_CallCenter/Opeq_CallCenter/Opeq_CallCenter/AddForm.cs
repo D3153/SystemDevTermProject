@@ -17,10 +17,14 @@ namespace Opeq_CallCenter
 
         Boolean isAddBtnClicked;
         Boolean isCancelBtnClicked;
+        Boolean isModifyRadioBtnClicked;
+        Boolean isViewRadioBtnClicked;
 
         public AddForm()
         {
             InitializeComponent();
+            nameTextBox.Focus();
+
         }
 
         private void AddForm_Load(object sender, EventArgs e)
@@ -368,7 +372,10 @@ namespace Opeq_CallCenter
                 }
                 else if (dialog == DialogResult.No)
                 {
-                    //Redirect to Main hub but it does not exist XD
+                    this.Hide();
+                    MainHub mainHub = new MainHub();
+                    mainHub.ShowDialog();
+                    this.Close();
                 }
             }
             else if (isCancelBtnClicked == true)
@@ -377,29 +384,61 @@ namespace Opeq_CallCenter
                     "\nÊtes-vous sur d’annuler?", "Mise en garde", MessageBoxButtons.YesNo);
                 if (dialog == DialogResult.Yes)
                 {
-                    //Also redirect to Main hub
+                    this.Hide();
+                    MainHub mainHub = new MainHub();
+                    mainHub.ShowDialog();
+                    this.Close();
                 }
                 else if (dialog == DialogResult.No)
                 {
-                    //IDK how to go back to the page that still has the values in the textBox
-                    //Alternate solution: create a Form for the confirmation 
+                    isCancelBtnClicked = false;
+                }
+            }
+            else if (isModifyRadioBtnClicked == true)
+            {
+                DialogResult dialog = MessageBox.Show("Les donnés que vous avez rentrées ne vont pas être sauvegardés." +
+                    "\nÊtes-vous sur d’annuler?", "Mise en garde", MessageBoxButtons.YesNo);
+                if (dialog == DialogResult.Yes)
+                {
+                    this.Hide();
+                    ModifyForm modifyForm = new ModifyForm();
+                    modifyForm.ShowDialog();
+                    this.Close();
+                }
+                else if (dialog == DialogResult.No)
+                {
+                    isModifyRadioBtnClicked = false;
+                }
+            }
+            else if (isViewRadioBtnClicked == true)
+            {
+                DialogResult dialog = MessageBox.Show("Les donnés que vous avez rentrées ne vont pas être sauvegardés." +
+                    "\nÊtes-vous sur d’annuler?", "Mise en garde", MessageBoxButtons.YesNo);
+                if (dialog == DialogResult.Yes)
+                {
+                    this.Hide();
+                    ViewForm viewForm = new ViewForm();
+                    viewForm.ShowDialog();
+                    this.Close();
+                }
+                else if (dialog == DialogResult.No)
+                {
+                    isViewRadioBtnClicked = false;
                 }
             }
         }
         private void modifyRadioBtn_MouseClick(object sender, MouseEventArgs e)
         {
-            this.Hide();
-            ModifyForm modifyFormInstance = new ModifyForm();
-            modifyFormInstance.ShowDialog();
-            this.Close();
+            isModifyRadioBtnClicked = true;
+            addRadioBtn.Checked = true;
+            confirmation();
         }
 
         private void viewRadioBtn_MouseClick(object sender, MouseEventArgs e)
         {
-            this.Hide();
-            ViewForm viewFormInstance = new ViewForm();
-            viewFormInstance.ShowDialog();
-            this.Close();
+            isViewRadioBtnClicked = true;
+            addRadioBtn.Checked = true;
+            confirmation();
         }
 
         private void computerProblemComboBox_KeyDown(object sender, KeyEventArgs e)
@@ -421,5 +460,6 @@ namespace Opeq_CallCenter
         {
             e.SuppressKeyPress = true;
         }
+
     }
 }

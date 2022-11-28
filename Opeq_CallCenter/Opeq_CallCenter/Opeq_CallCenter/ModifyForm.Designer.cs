@@ -32,9 +32,6 @@
             this.cityTextBox = new System.Windows.Forms.TextBox();
             this.aptNumTextBox = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.viewRadioBtn = new System.Windows.Forms.RadioButton();
-            this.modifyRadioBtn = new System.Windows.Forms.RadioButton();
-            this.addRadioBtn = new System.Windows.Forms.RadioButton();
             this.label9 = new System.Windows.Forms.Label();
             this.phoneOrTabletProblemComboBox = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -86,7 +83,12 @@
             this.label21 = new System.Windows.Forms.Label();
             this.addBtn = new System.Windows.Forms.Button();
             this.cancelBtn = new System.Windows.Forms.Button();
+            this.navGroupBox = new System.Windows.Forms.GroupBox();
+            this.addRadioBtn = new System.Windows.Forms.RadioButton();
+            this.modifyRadioBtn = new System.Windows.Forms.RadioButton();
+            this.viewRadioBtn = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.opeq_CallCenterDataSet1)).BeginInit();
+            this.navGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // cityTextBox
@@ -121,41 +123,6 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(10, 2266);
             this.label11.TabIndex = 65;
-            // 
-            // viewRadioBtn
-            // 
-            this.viewRadioBtn.AutoSize = true;
-            this.viewRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewRadioBtn.Location = new System.Drawing.Point(135, 240);
-            this.viewRadioBtn.Name = "viewRadioBtn";
-            this.viewRadioBtn.Size = new System.Drawing.Size(87, 35);
-            this.viewRadioBtn.TabIndex = 64;
-            this.viewRadioBtn.Text = "Voir";
-            this.viewRadioBtn.UseVisualStyleBackColor = true;
-            // 
-            // modifyRadioBtn
-            // 
-            this.modifyRadioBtn.AutoSize = true;
-            this.modifyRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.modifyRadioBtn.Location = new System.Drawing.Point(135, 146);
-            this.modifyRadioBtn.Name = "modifyRadioBtn";
-            this.modifyRadioBtn.Size = new System.Drawing.Size(139, 35);
-            this.modifyRadioBtn.TabIndex = 63;
-            this.modifyRadioBtn.Text = "Modifier";
-            this.modifyRadioBtn.UseVisualStyleBackColor = true;
-            // 
-            // addRadioBtn
-            // 
-            this.addRadioBtn.AutoSize = true;
-            this.addRadioBtn.Checked = true;
-            this.addRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addRadioBtn.Location = new System.Drawing.Point(135, 51);
-            this.addRadioBtn.Name = "addRadioBtn";
-            this.addRadioBtn.Size = new System.Drawing.Size(128, 35);
-            this.addRadioBtn.TabIndex = 62;
-            this.addRadioBtn.TabStop = true;
-            this.addRadioBtn.Text = "Ajouter";
-            this.addRadioBtn.UseVisualStyleBackColor = true;
             // 
             // label9
             // 
@@ -694,13 +661,61 @@
             this.cancelBtn.Text = "Annuler";
             this.cancelBtn.UseVisualStyleBackColor = false;
             // 
+            // navGroupBox
+            // 
+            this.navGroupBox.Controls.Add(this.addRadioBtn);
+            this.navGroupBox.Controls.Add(this.modifyRadioBtn);
+            this.navGroupBox.Controls.Add(this.viewRadioBtn);
+            this.navGroupBox.Location = new System.Drawing.Point(49, 38);
+            this.navGroupBox.Name = "navGroupBox";
+            this.navGroupBox.Size = new System.Drawing.Size(248, 332);
+            this.navGroupBox.TabIndex = 100;
+            this.navGroupBox.TabStop = false;
+            // 
+            // addRadioBtn
+            // 
+            this.addRadioBtn.AutoSize = true;
+            this.addRadioBtn.Checked = true;
+            this.addRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addRadioBtn.Location = new System.Drawing.Point(58, 54);
+            this.addRadioBtn.Name = "addRadioBtn";
+            this.addRadioBtn.Size = new System.Drawing.Size(128, 35);
+            this.addRadioBtn.TabIndex = 28;
+            this.addRadioBtn.TabStop = true;
+            this.addRadioBtn.Text = "Ajouter";
+            this.addRadioBtn.UseVisualStyleBackColor = true;
+            // 
+            // modifyRadioBtn
+            // 
+            this.modifyRadioBtn.AutoSize = true;
+            this.modifyRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.modifyRadioBtn.Location = new System.Drawing.Point(58, 145);
+            this.modifyRadioBtn.Name = "modifyRadioBtn";
+            this.modifyRadioBtn.Size = new System.Drawing.Size(139, 35);
+            this.modifyRadioBtn.TabIndex = 29;
+            this.modifyRadioBtn.Text = "Modifier";
+            this.modifyRadioBtn.UseVisualStyleBackColor = true;
+            this.modifyRadioBtn.CheckedChanged += new System.EventHandler(this.modifyRadioBtn_CheckedChanged);
+            // 
+            // viewRadioBtn
+            // 
+            this.viewRadioBtn.AutoSize = true;
+            this.viewRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewRadioBtn.Location = new System.Drawing.Point(58, 230);
+            this.viewRadioBtn.Name = "viewRadioBtn";
+            this.viewRadioBtn.Size = new System.Drawing.Size(87, 35);
+            this.viewRadioBtn.TabIndex = 30;
+            this.viewRadioBtn.Text = "Voir";
+            this.viewRadioBtn.UseVisualStyleBackColor = true;
+            // 
             // ModifyForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(1320, 1055);
+            this.ClientSize = new System.Drawing.Size(1362, 750);
+            this.Controls.Add(this.navGroupBox);
             this.Controls.Add(this.addBtn);
             this.Controls.Add(this.cancelBtn);
             this.Controls.Add(this.textBox4);
@@ -733,9 +748,6 @@
             this.Controls.Add(this.cityTextBox);
             this.Controls.Add(this.aptNumTextBox);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.viewRadioBtn);
-            this.Controls.Add(this.modifyRadioBtn);
-            this.Controls.Add(this.addRadioBtn);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.phoneOrTabletProblemComboBox);
             this.Controls.Add(this.label8);
@@ -760,9 +772,11 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ModifyForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModifyForm";
-            this.Load += new System.EventHandler(this.ModifyForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.opeq_CallCenterDataSet1)).EndInit();
+            this.navGroupBox.ResumeLayout(false);
+            this.navGroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -773,9 +787,6 @@
         private System.Windows.Forms.TextBox cityTextBox;
         private System.Windows.Forms.TextBox aptNumTextBox;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.RadioButton viewRadioBtn;
-        private System.Windows.Forms.RadioButton modifyRadioBtn;
-        private System.Windows.Forms.RadioButton addRadioBtn;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox phoneOrTabletProblemComboBox;
         private System.Windows.Forms.Label label8;
@@ -827,5 +838,9 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Button addBtn;
         private System.Windows.Forms.Button cancelBtn;
+        private System.Windows.Forms.GroupBox navGroupBox;
+        private System.Windows.Forms.RadioButton addRadioBtn;
+        private System.Windows.Forms.RadioButton modifyRadioBtn;
+        private System.Windows.Forms.RadioButton viewRadioBtn;
     }
 }

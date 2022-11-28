@@ -328,7 +328,7 @@
             this.dateTimePicker.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker.Name = "dateTimePicker";
             this.dateTimePicker.Size = new System.Drawing.Size(383, 22);
-            this.dateTimePicker.TabIndex = 47;
+            this.dateTimePicker.TabIndex = 3;
             // 
             // MATTextBox
             // 
@@ -396,7 +396,7 @@
             this.nameTextBox.Multiline = true;
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(516, 55);
-            this.nameTextBox.TabIndex = 41;
+            this.nameTextBox.TabIndex = 1;
             this.nameTextBox.Text = "Entrer nom du client";
             // 
             // problemDescriptionTextBox
@@ -408,7 +408,7 @@
             this.problemDescriptionTextBox.Multiline = true;
             this.problemDescriptionTextBox.Name = "problemDescriptionTextBox";
             this.problemDescriptionTextBox.Size = new System.Drawing.Size(516, 55);
-            this.problemDescriptionTextBox.TabIndex = 40;
+            this.problemDescriptionTextBox.TabIndex = 2;
             this.problemDescriptionTextBox.Text = "Entrer problème";
             // 
             // label2

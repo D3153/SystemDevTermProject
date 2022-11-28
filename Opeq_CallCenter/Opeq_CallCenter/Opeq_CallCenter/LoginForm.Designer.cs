@@ -84,7 +84,7 @@
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(179, 52);
             this.loginButton.TabIndex = 3;
-            this.loginButton.Text = "Se Connecter";
+            this.loginButton.Text = "&Se Connecter";
             this.loginButton.UseVisualStyleBackColor = false;
             this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 

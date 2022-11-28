@@ -10,20 +10,11 @@ using System.Windows.Forms;
 
 namespace Opeq_CallCenter
 {
-    public partial class WelcomeForm : Form
+    public partial class MainHub : Form
     {
-        public string Name { get; set; }
-
-        public WelcomeForm()
+        public MainHub()
         {
             InitializeComponent();
-        }
-
-        public WelcomeForm(String name)
-        {
-            InitializeComponent();
-            this.Name = name;
-            nameLabel.Text = Name;
         }
 
         private void addButton_MouseClick(object sender, MouseEventArgs e)
