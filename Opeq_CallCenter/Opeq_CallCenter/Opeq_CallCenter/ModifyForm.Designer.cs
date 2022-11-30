@@ -32,22 +32,10 @@
             this.cityTextBox = new System.Windows.Forms.TextBox();
             this.aptNumTextBox = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.phoneOrTabletProblemComboBox = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.laptopProblemComboBox = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.screenProblemComboBox = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.computerProblemComboBox = new System.Windows.Forms.ComboBox();
             this.opeq_CallCenterDataSet1 = new Opeq_CallCenter.Opeq_CallCenterDataSet();
             this.postalCodeTextBox = new System.Windows.Forms.TextBox();
-            this.inPersonRadioBtn = new System.Windows.Forms.RadioButton();
             this.streetTextBox = new System.Windows.Forms.TextBox();
-            this.phoneRadioBtn = new System.Windows.Forms.RadioButton();
             this.phoneTextBox = new System.Windows.Forms.TextBox();
-            this.emailRadioBtn = new System.Windows.Forms.RadioButton();
-            this.label5 = new System.Windows.Forms.Label();
             this.emailTextbox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.nameTextBox = new System.Windows.Forms.TextBox();
@@ -87,8 +75,24 @@
             this.addRadioBtn = new System.Windows.Forms.RadioButton();
             this.modifyRadioBtn = new System.Windows.Forms.RadioButton();
             this.viewRadioBtn = new System.Windows.Forms.RadioButton();
+            this.loadBtn = new System.Windows.Forms.Button();
+            this.problemGroupBox = new System.Windows.Forms.GroupBox();
+            this.computerProblemComboBox = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.screenProblemComboBox = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.laptopProblemComboBox = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.phoneOrTabletProblemComboBox = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.contactGroupBox = new System.Windows.Forms.GroupBox();
+            this.phoneRadioBtn = new System.Windows.Forms.RadioButton();
+            this.emailRadioBtn = new System.Windows.Forms.RadioButton();
+            this.inPersonRadioBtn = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.opeq_CallCenterDataSet1)).BeginInit();
             this.navGroupBox.SuspendLayout();
+            this.problemGroupBox.SuspendLayout();
+            this.contactGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // cityTextBox
@@ -124,78 +128,6 @@
             this.label11.Size = new System.Drawing.Size(10, 2266);
             this.label11.TabIndex = 65;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(592, 1190);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(170, 25);
-            this.label9.TabIndex = 60;
-            this.label9.Text = "Cellulaire/Tablette";
-            // 
-            // phoneOrTabletProblemComboBox
-            // 
-            this.phoneOrTabletProblemComboBox.FormattingEnabled = true;
-            this.phoneOrTabletProblemComboBox.Location = new System.Drawing.Point(590, 1232);
-            this.phoneOrTabletProblemComboBox.Name = "phoneOrTabletProblemComboBox";
-            this.phoneOrTabletProblemComboBox.Size = new System.Drawing.Size(357, 24);
-            this.phoneOrTabletProblemComboBox.TabIndex = 59;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(594, 1091);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(84, 25);
-            this.label8.TabIndex = 58;
-            this.label8.Text = "Portable";
-            // 
-            // laptopProblemComboBox
-            // 
-            this.laptopProblemComboBox.FormattingEnabled = true;
-            this.laptopProblemComboBox.Location = new System.Drawing.Point(590, 1132);
-            this.laptopProblemComboBox.Name = "laptopProblemComboBox";
-            this.laptopProblemComboBox.Size = new System.Drawing.Size(357, 24);
-            this.laptopProblemComboBox.TabIndex = 57;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(594, 985);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(63, 25);
-            this.label7.TabIndex = 56;
-            this.label7.Text = "Écran";
-            // 
-            // screenProblemComboBox
-            // 
-            this.screenProblemComboBox.FormattingEnabled = true;
-            this.screenProblemComboBox.Location = new System.Drawing.Point(592, 1027);
-            this.screenProblemComboBox.Name = "screenProblemComboBox";
-            this.screenProblemComboBox.Size = new System.Drawing.Size(357, 24);
-            this.screenProblemComboBox.TabIndex = 55;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(585, 893);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(104, 25);
-            this.label6.TabIndex = 54;
-            this.label6.Text = "Ordinateur";
-            // 
-            // computerProblemComboBox
-            // 
-            this.computerProblemComboBox.FormattingEnabled = true;
-            this.computerProblemComboBox.Location = new System.Drawing.Point(592, 934);
-            this.computerProblemComboBox.Name = "computerProblemComboBox";
-            this.computerProblemComboBox.Size = new System.Drawing.Size(357, 24);
-            this.computerProblemComboBox.TabIndex = 53;
-            // 
             // opeq_CallCenterDataSet1
             // 
             this.opeq_CallCenterDataSet1.DataSetName = "Opeq_CallCenterDataSet";
@@ -213,17 +145,6 @@
             this.postalCodeTextBox.TabIndex = 69;
             this.postalCodeTextBox.Text = "Code Postal";
             // 
-            // inPersonRadioBtn
-            // 
-            this.inPersonRadioBtn.AutoSize = true;
-            this.inPersonRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inPersonRadioBtn.Location = new System.Drawing.Point(594, 640);
-            this.inPersonRadioBtn.Name = "inPersonRadioBtn";
-            this.inPersonRadioBtn.Size = new System.Drawing.Size(146, 29);
-            this.inPersonRadioBtn.TabIndex = 52;
-            this.inPersonRadioBtn.Text = "En Personne";
-            this.inPersonRadioBtn.UseVisualStyleBackColor = true;
-            // 
             // streetTextBox
             // 
             this.streetTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -236,17 +157,6 @@
             this.streetTextBox.TabIndex = 51;
             this.streetTextBox.Text = "Adresse";
             // 
-            // phoneRadioBtn
-            // 
-            this.phoneRadioBtn.AutoSize = true;
-            this.phoneRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phoneRadioBtn.Location = new System.Drawing.Point(594, 574);
-            this.phoneRadioBtn.Name = "phoneRadioBtn";
-            this.phoneRadioBtn.Size = new System.Drawing.Size(127, 29);
-            this.phoneRadioBtn.TabIndex = 50;
-            this.phoneRadioBtn.Text = "Téléphone";
-            this.phoneRadioBtn.UseVisualStyleBackColor = true;
-            // 
             // phoneTextBox
             // 
             this.phoneTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -258,28 +168,6 @@
             this.phoneTextBox.Size = new System.Drawing.Size(332, 33);
             this.phoneTextBox.TabIndex = 49;
             this.phoneTextBox.Text = "Téléphone";
-            // 
-            // emailRadioBtn
-            // 
-            this.emailRadioBtn.AutoSize = true;
-            this.emailRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailRadioBtn.Location = new System.Drawing.Point(594, 506);
-            this.emailRadioBtn.Name = "emailRadioBtn";
-            this.emailRadioBtn.Size = new System.Drawing.Size(101, 29);
-            this.emailRadioBtn.TabIndex = 48;
-            this.emailRadioBtn.Text = "Courriel";
-            this.emailRadioBtn.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(577, 837);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(230, 29);
-            this.label5.TabIndex = 45;
-            this.label5.Text = "Type de Probléme";
             // 
             // emailTextbox
             // 
@@ -365,13 +253,14 @@
             // 
             this.MATTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MATTextBox.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.MATTextBox.Location = new System.Drawing.Point(592, 42);
+            this.MATTextBox.Location = new System.Drawing.Point(594, 48);
             this.MATTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.MATTextBox.Multiline = true;
             this.MATTextBox.Name = "MATTextBox";
             this.MATTextBox.Size = new System.Drawing.Size(438, 49);
             this.MATTextBox.TabIndex = 71;
             this.MATTextBox.Text = "MAT";
+            this.MATTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MATTextBox_MouseClick);
             // 
             // comboBox1
             // 
@@ -695,7 +584,6 @@
             this.modifyRadioBtn.TabIndex = 29;
             this.modifyRadioBtn.Text = "Modifier";
             this.modifyRadioBtn.UseVisualStyleBackColor = true;
-            this.modifyRadioBtn.CheckedChanged += new System.EventHandler(this.modifyRadioBtn_CheckedChanged);
             // 
             // viewRadioBtn
             // 
@@ -708,13 +596,164 @@
             this.viewRadioBtn.Text = "Voir";
             this.viewRadioBtn.UseVisualStyleBackColor = true;
             // 
+            // loadBtn
+            // 
+            this.loadBtn.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.loadBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.loadBtn.Location = new System.Drawing.Point(1065, 42);
+            this.loadBtn.Name = "loadBtn";
+            this.loadBtn.Size = new System.Drawing.Size(106, 44);
+            this.loadBtn.TabIndex = 101;
+            this.loadBtn.Text = "Charger les Données";
+            this.loadBtn.UseVisualStyleBackColor = false;
+            this.loadBtn.Click += new System.EventHandler(this.loadBtn_Click);
+            // 
+            // problemGroupBox
+            // 
+            this.problemGroupBox.Controls.Add(this.computerProblemComboBox);
+            this.problemGroupBox.Controls.Add(this.label6);
+            this.problemGroupBox.Controls.Add(this.screenProblemComboBox);
+            this.problemGroupBox.Controls.Add(this.label7);
+            this.problemGroupBox.Controls.Add(this.laptopProblemComboBox);
+            this.problemGroupBox.Controls.Add(this.label8);
+            this.problemGroupBox.Controls.Add(this.phoneOrTabletProblemComboBox);
+            this.problemGroupBox.Controls.Add(this.label9);
+            this.problemGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.problemGroupBox.Location = new System.Drawing.Point(563, 828);
+            this.problemGroupBox.Name = "problemGroupBox";
+            this.problemGroupBox.Size = new System.Drawing.Size(439, 449);
+            this.problemGroupBox.TabIndex = 102;
+            this.problemGroupBox.TabStop = false;
+            this.problemGroupBox.Text = "Type de Probléme";
+            // 
+            // computerProblemComboBox
+            // 
+            this.computerProblemComboBox.FormattingEnabled = true;
+            this.computerProblemComboBox.ItemHeight = 31;
+            this.computerProblemComboBox.Location = new System.Drawing.Point(36, 95);
+            this.computerProblemComboBox.Name = "computerProblemComboBox";
+            this.computerProblemComboBox.Size = new System.Drawing.Size(357, 39);
+            this.computerProblemComboBox.TabIndex = 13;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(29, 54);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(104, 25);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Ordinateur";
+            // 
+            // screenProblemComboBox
+            // 
+            this.screenProblemComboBox.FormattingEnabled = true;
+            this.screenProblemComboBox.ItemHeight = 31;
+            this.screenProblemComboBox.Location = new System.Drawing.Point(36, 188);
+            this.screenProblemComboBox.Name = "screenProblemComboBox";
+            this.screenProblemComboBox.Size = new System.Drawing.Size(357, 39);
+            this.screenProblemComboBox.TabIndex = 14;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(38, 146);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(63, 25);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "Écran";
+            // 
+            // laptopProblemComboBox
+            // 
+            this.laptopProblemComboBox.FormattingEnabled = true;
+            this.laptopProblemComboBox.Location = new System.Drawing.Point(34, 293);
+            this.laptopProblemComboBox.Name = "laptopProblemComboBox";
+            this.laptopProblemComboBox.Size = new System.Drawing.Size(357, 39);
+            this.laptopProblemComboBox.TabIndex = 15;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(38, 252);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(84, 25);
+            this.label8.TabIndex = 24;
+            this.label8.Text = "Portable";
+            // 
+            // phoneOrTabletProblemComboBox
+            // 
+            this.phoneOrTabletProblemComboBox.FormattingEnabled = true;
+            this.phoneOrTabletProblemComboBox.Location = new System.Drawing.Point(34, 393);
+            this.phoneOrTabletProblemComboBox.Name = "phoneOrTabletProblemComboBox";
+            this.phoneOrTabletProblemComboBox.Size = new System.Drawing.Size(357, 39);
+            this.phoneOrTabletProblemComboBox.TabIndex = 16;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(36, 351);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(170, 25);
+            this.label9.TabIndex = 26;
+            this.label9.Text = "Cellulaire/Tablette";
+            // 
+            // contactGroupBox
+            // 
+            this.contactGroupBox.Controls.Add(this.phoneRadioBtn);
+            this.contactGroupBox.Controls.Add(this.emailRadioBtn);
+            this.contactGroupBox.Controls.Add(this.inPersonRadioBtn);
+            this.contactGroupBox.Location = new System.Drawing.Point(563, 494);
+            this.contactGroupBox.Name = "contactGroupBox";
+            this.contactGroupBox.Size = new System.Drawing.Size(191, 208);
+            this.contactGroupBox.TabIndex = 40;
+            this.contactGroupBox.TabStop = false;
+            // 
+            // phoneRadioBtn
+            // 
+            this.phoneRadioBtn.AutoSize = true;
+            this.phoneRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phoneRadioBtn.Location = new System.Drawing.Point(12, 86);
+            this.phoneRadioBtn.Name = "phoneRadioBtn";
+            this.phoneRadioBtn.Size = new System.Drawing.Size(127, 29);
+            this.phoneRadioBtn.TabIndex = 5;
+            this.phoneRadioBtn.Text = "Téléphone";
+            this.phoneRadioBtn.UseVisualStyleBackColor = true;
+            // 
+            // emailRadioBtn
+            // 
+            this.emailRadioBtn.AutoSize = true;
+            this.emailRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailRadioBtn.Location = new System.Drawing.Point(12, 18);
+            this.emailRadioBtn.Name = "emailRadioBtn";
+            this.emailRadioBtn.Size = new System.Drawing.Size(101, 29);
+            this.emailRadioBtn.TabIndex = 4;
+            this.emailRadioBtn.Text = "Courriel";
+            this.emailRadioBtn.UseVisualStyleBackColor = true;
+            // 
+            // inPersonRadioBtn
+            // 
+            this.inPersonRadioBtn.AutoSize = true;
+            this.inPersonRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inPersonRadioBtn.Location = new System.Drawing.Point(12, 152);
+            this.inPersonRadioBtn.Name = "inPersonRadioBtn";
+            this.inPersonRadioBtn.Size = new System.Drawing.Size(146, 29);
+            this.inPersonRadioBtn.TabIndex = 6;
+            this.inPersonRadioBtn.Text = "En Personne";
+            this.inPersonRadioBtn.UseVisualStyleBackColor = true;
+            // 
             // ModifyForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(1362, 750);
+            this.ClientSize = new System.Drawing.Size(1383, 750);
+            this.Controls.Add(this.contactGroupBox);
+            this.Controls.Add(this.problemGroupBox);
+            this.Controls.Add(this.loadBtn);
             this.Controls.Add(this.navGroupBox);
             this.Controls.Add(this.addBtn);
             this.Controls.Add(this.cancelBtn);
@@ -748,21 +787,9 @@
             this.Controls.Add(this.cityTextBox);
             this.Controls.Add(this.aptNumTextBox);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.phoneOrTabletProblemComboBox);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.laptopProblemComboBox);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.screenProblemComboBox);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.computerProblemComboBox);
             this.Controls.Add(this.postalCodeTextBox);
-            this.Controls.Add(this.inPersonRadioBtn);
             this.Controls.Add(this.streetTextBox);
-            this.Controls.Add(this.phoneRadioBtn);
             this.Controls.Add(this.phoneTextBox);
-            this.Controls.Add(this.emailRadioBtn);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.emailTextbox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.nameTextBox);
@@ -774,9 +801,14 @@
             this.Name = "ModifyForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModifyForm";
+            this.Load += new System.EventHandler(this.ModifyForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.opeq_CallCenterDataSet1)).EndInit();
             this.navGroupBox.ResumeLayout(false);
             this.navGroupBox.PerformLayout();
+            this.problemGroupBox.ResumeLayout(false);
+            this.problemGroupBox.PerformLayout();
+            this.contactGroupBox.ResumeLayout(false);
+            this.contactGroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -787,22 +819,10 @@
         private System.Windows.Forms.TextBox cityTextBox;
         private System.Windows.Forms.TextBox aptNumTextBox;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox phoneOrTabletProblemComboBox;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox laptopProblemComboBox;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox screenProblemComboBox;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox computerProblemComboBox;
         private Opeq_CallCenterDataSet opeq_CallCenterDataSet1;
         private System.Windows.Forms.TextBox postalCodeTextBox;
-        private System.Windows.Forms.RadioButton inPersonRadioBtn;
         private System.Windows.Forms.TextBox streetTextBox;
-        private System.Windows.Forms.RadioButton phoneRadioBtn;
         private System.Windows.Forms.TextBox phoneTextBox;
-        private System.Windows.Forms.RadioButton emailRadioBtn;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox emailTextbox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox nameTextBox;
@@ -842,5 +862,19 @@
         private System.Windows.Forms.RadioButton addRadioBtn;
         private System.Windows.Forms.RadioButton modifyRadioBtn;
         private System.Windows.Forms.RadioButton viewRadioBtn;
+        private System.Windows.Forms.Button loadBtn;
+        private System.Windows.Forms.GroupBox problemGroupBox;
+        private System.Windows.Forms.ComboBox computerProblemComboBox;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox screenProblemComboBox;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox laptopProblemComboBox;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox phoneOrTabletProblemComboBox;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.GroupBox contactGroupBox;
+        private System.Windows.Forms.RadioButton phoneRadioBtn;
+        private System.Windows.Forms.RadioButton emailRadioBtn;
+        private System.Windows.Forms.RadioButton inPersonRadioBtn;
     }
 }

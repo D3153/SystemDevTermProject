@@ -485,7 +485,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(1341, 750);
+            this.ClientSize = new System.Drawing.Size(1362, 750);
             this.Controls.Add(this.navGroupBox);
             this.Controls.Add(this.problemGroupBox);
             this.Controls.Add(this.contactGroupBox);
