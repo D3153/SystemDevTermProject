@@ -56,7 +56,7 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.label16 = new System.Windows.Forms.Label();
-            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerEntered = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label17 = new System.Windows.Forms.Label();
@@ -259,7 +259,7 @@
             this.MATTextBox.Name = "MATTextBox";
             this.MATTextBox.Size = new System.Drawing.Size(438, 49);
             this.MATTextBox.TabIndex = 71;
-            this.MATTextBox.Text = "MAT";
+            this.MATTextBox.Text = "MAT-";
             this.MATTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MATTextBox_MouseClick);
             // 
             // comboBox1
@@ -390,13 +390,13 @@
             this.label16.TabIndex = 81;
             this.label16.Text = "État du Problème";
             // 
-            // dateTimePicker
+            // dateTimePickerEntered
             // 
-            this.dateTimePicker.Location = new System.Drawing.Point(758, 389);
-            this.dateTimePicker.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTimePicker.Name = "dateTimePicker";
-            this.dateTimePicker.Size = new System.Drawing.Size(383, 22);
-            this.dateTimePicker.TabIndex = 86;
+            this.dateTimePickerEntered.Location = new System.Drawing.Point(758, 389);
+            this.dateTimePickerEntered.Margin = new System.Windows.Forms.Padding(4);
+            this.dateTimePickerEntered.Name = "dateTimePickerEntered";
+            this.dateTimePickerEntered.Size = new System.Drawing.Size(383, 22);
+            this.dateTimePickerEntered.TabIndex = 86;
             // 
             // label4
             // 
@@ -564,24 +564,24 @@
             // addRadioBtn
             // 
             this.addRadioBtn.AutoSize = true;
-            this.addRadioBtn.Checked = true;
             this.addRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addRadioBtn.Location = new System.Drawing.Point(58, 54);
             this.addRadioBtn.Name = "addRadioBtn";
             this.addRadioBtn.Size = new System.Drawing.Size(128, 35);
             this.addRadioBtn.TabIndex = 28;
-            this.addRadioBtn.TabStop = true;
             this.addRadioBtn.Text = "Ajouter";
             this.addRadioBtn.UseVisualStyleBackColor = true;
             // 
             // modifyRadioBtn
             // 
             this.modifyRadioBtn.AutoSize = true;
+            this.modifyRadioBtn.Checked = true;
             this.modifyRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.modifyRadioBtn.Location = new System.Drawing.Point(58, 145);
             this.modifyRadioBtn.Name = "modifyRadioBtn";
             this.modifyRadioBtn.Size = new System.Drawing.Size(139, 35);
             this.modifyRadioBtn.TabIndex = 29;
+            this.modifyRadioBtn.TabStop = true;
             this.modifyRadioBtn.Text = "Modifier";
             this.modifyRadioBtn.UseVisualStyleBackColor = true;
             // 
@@ -589,7 +589,7 @@
             // 
             this.viewRadioBtn.AutoSize = true;
             this.viewRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewRadioBtn.Location = new System.Drawing.Point(58, 230);
+            this.viewRadioBtn.Location = new System.Drawing.Point(58, 235);
             this.viewRadioBtn.Name = "viewRadioBtn";
             this.viewRadioBtn.Size = new System.Drawing.Size(87, 35);
             this.viewRadioBtn.TabIndex = 30;
@@ -768,7 +768,7 @@
             this.Controls.Add(this.label18);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.dateTimePicker);
+            this.Controls.Add(this.dateTimePickerEntered);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.radioButton2);
@@ -843,7 +843,7 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.DateTimePicker dateTimePicker;
+        private System.Windows.Forms.DateTimePicker dateTimePickerEntered;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label17;
