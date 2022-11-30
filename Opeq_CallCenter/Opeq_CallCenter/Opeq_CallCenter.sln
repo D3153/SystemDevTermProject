@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opeq_CallCenter", "Opeq_CallCenter\Opeq_CallCenter.csproj", "{5D3FB7C8-426C-473E-AD63-75ED31884689}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{CFEDB541-8DF5-4568-8F7B-FBA984C2DF05}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5D3FB7C8-426C-473E-AD63-75ED31884689}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D3FB7C8-426C-473E-AD63-75ED31884689}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D3FB7C8-426C-473E-AD63-75ED31884689}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFEDB541-8DF5-4568-8F7B-FBA984C2DF05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFEDB541-8DF5-4568-8F7B-FBA984C2DF05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFEDB541-8DF5-4568-8F7B-FBA984C2DF05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFEDB541-8DF5-4568-8F7B-FBA984C2DF05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

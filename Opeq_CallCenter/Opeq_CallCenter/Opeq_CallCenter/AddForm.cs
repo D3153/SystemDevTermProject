@@ -92,11 +92,9 @@ namespace Opeq_CallCenter
 
         private void nameTextBox_MouseClick(object sender, EventArgs e)
         {
-            if (nameTextBox.Text == "Entrer nom du client")
-            {
-                nameTextBox.Text = "";
-            }
-            nameTextBox.ForeColor = Color.Black;
+            String text = "Entrer nom du client";
+            TextBox nameTextBox = new TextBox();
+            changeText(nameTextBox, text);
         }
 
         private void problemDescriptionTextBox_MouseClick(object sender, EventArgs e)
@@ -146,11 +144,9 @@ namespace Opeq_CallCenter
 
         private void cityTextBox_MouseClick(object sender, MouseEventArgs e)
         {
-            if (cityTextBox.Text == "Ville")
-            {
-                cityTextBox.Text = "";
-            }
-            cityTextBox.ForeColor = Color.Black;
+            String text = "Ville";
+            TextBox cityTextBox = new TextBox();
+            changeText(cityTextBox, text);
         }
 
         private void postalCodeTextBox_MouseClick(object sender, MouseEventArgs e)
@@ -310,26 +306,26 @@ namespace Opeq_CallCenter
                 cmd5.CommandText = "SELECT IDENT_CURRENT('Product');";
                  productID = Convert.ToString(cmd5.ExecuteScalar());
 
-                if (computerProbDesc != "")
-                {
-                    cmd6.CommandText = "SELECT computer_prob_id FROM Computer_Prob WHERE computer_desc = '" + computerProbDesc + "';";
-                    computerProbID = cmd6.ExecuteNonQuery();
-                }
-                else if (laptopProbDesc != "")
-                {
-                    cmd7.CommandText = "SELECT laptop_prob_id FROM Laptop_Prob WHERE laptop_desc = '" + laptopProbDesc + "';";
-                    laptopProbID = cmd7.ExecuteNonQuery();
-                }
-                else if (screenProbDesc != "")
-                {
-                    cmd8.CommandText = "SELECT screen_prob_id FROM Screen_Prob WHERE screen_desc = '" + screenProbDesc + "';";
-                    screenProbID = cmd8.ExecuteNonQuery();
-                }
-                else if (phoneTabProbDesc != "")
-                {
-                    cmd9.CommandText = "SELECT phone_tablet_prob_id FROM Phone_tablet_Prob WHERE phone_tab_desc = '" + phoneTabProbDesc + "';";
-                    phoneTabProbID = cmd9.ExecuteNonQuery();
-                }
+                //if (computerProbDesc != "")
+                //{
+                //    cmd6.CommandText = "SELECT computer_prob_id FROM Computer_Prob WHERE computer_desc = '" + computerProbDesc + "';";
+                //    computerProbID = cmd6.ExecuteNonQuery();
+                //}
+                //else if (laptopProbDesc != "")
+                //{
+                //    cmd7.CommandText = "SELECT laptop_prob_id FROM Laptop_Prob WHERE laptop_desc = '" + laptopProbDesc + "';";
+                //    laptopProbID = cmd7.ExecuteNonQuery();
+                //}
+                //else if (screenProbDesc != "")
+                //{
+                //    cmd8.CommandText = "SELECT screen_prob_id FROM Screen_Prob WHERE screen_desc = '" + screenProbDesc + "';";
+                //    screenProbID = cmd8.ExecuteNonQuery();
+                //}
+                //else if (phoneTabProbDesc != "")
+                //{
+                //    cmd9.CommandText = "SELECT phone_tablet_prob_id FROM Phone_tablet_Prob WHERE phone_tab_desc = '" + phoneTabProbDesc + "';";
+                //    phoneTabProbID = cmd9.ExecuteNonQuery();
+                //}
 
                     cmd10.CommandText = "INSERT INTO Client (employee_id, product_id, computer_prob_id, laptop_prob_id, screen_prob_id, phone_tablet_prob_id, address_id, client_name, client_desc, date_added, client_email, client_phone_num, by_email, by_telephone, in_person) VALUES ('" +
                                        empID + "', '" + productID + "', '" + computerProbID + "', '" + laptopProbID + "', '" + screenProbID + "', '" + phoneTabProbID + "', '" + addressID + "', '" + clientName + "', '" + problemDesc + "', '" + date + "', '" + email + "', '" + phone + "', '" + byEmail + "', '" + byTelephone + "', '" + inPerson + "');";
@@ -461,5 +457,13 @@ namespace Opeq_CallCenter
             e.SuppressKeyPress = true;
         }
 
+        public void changeText(TextBox name, String text)
+        {
+            if (name.Text == text)
+            {
+                name.Text = "";
+            }
+            name.ForeColor = Color.Black;
+        }
     }
 }

@@ -17,6 +17,9 @@ namespace Opeq_CallCenter
             InitializeComponent();
         }
 
+        private void ViewForm_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }

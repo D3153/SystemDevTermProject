@@ -238,6 +238,7 @@
             this.Name = "ViewForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewForm";
+            this.Load += new System.EventHandler(this.ViewForm_Load);
             this.filter.ResumeLayout(false);
             this.filter.PerformLayout();
             this.navigation.ResumeLayout(false);
