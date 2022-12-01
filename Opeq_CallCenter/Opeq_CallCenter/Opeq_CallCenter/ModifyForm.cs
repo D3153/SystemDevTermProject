@@ -81,6 +81,43 @@ namespace Opeq_CallCenter
             phoneOrTabletProblemComboBox.ValueMember = "phone_tablet_prob_id";
             phoneOrTabletProblemComboBox.SelectedIndex = -1;
 
+            //hide eveything
+            nameTextBox.Hide();
+            label1.Hide();
+            label2.Hide();
+            problemDescriptionTextBox.Hide();
+            label4.Hide();
+            dateTimePickerEntered.Hide();
+            label3.Hide();
+            contactGroupBox.Hide();
+            emailTextbox.Hide();
+            phoneTextBox.Hide();
+            streetTextBox.Hide();
+            aptNumTextBox.Hide();
+            cityTextBox.Hide();
+            postalCodeTextBox.Hide();
+            problemGroupBox.Hide();
+            label13.Hide();
+            comboBox1.Hide();
+            label12.Hide();
+            textBox1.Hide();
+            label14.Hide();
+            textBox2.Hide();
+            label15.Hide();
+            comboBox2.Hide();
+            problemStatusFroupBox.Hide();
+            label17.Hide();
+            dateTimePicker1.Hide();
+
+            //new order hidden
+            orderGroupBox.Hide();
+            label19.Hide();
+            dateTimePicker2.Hide();
+            label20.Hide();
+            textBox3.Hide();
+            label21.Hide();
+            RMATextBox.Hide();
+
         }
 
         private void MATTextBox_MouseClick(object sender, MouseEventArgs e)
@@ -96,6 +133,35 @@ namespace Opeq_CallCenter
 
         private void loadBtn_Click(object sender, EventArgs e)
         {
+            //Show everything
+            nameTextBox.Show();
+            label1.Show();
+            label2.Show();
+            problemDescriptionTextBox.Show();
+            label4.Show();
+            dateTimePickerEntered.Show();
+            label3.Show();
+            contactGroupBox.Show();
+            emailTextbox.Show();
+            phoneTextBox.Show();
+            streetTextBox.Show();
+            aptNumTextBox.Show();
+            cityTextBox.Show();
+            postalCodeTextBox.Show();
+            problemGroupBox.Show();
+            label13.Show();
+            comboBox1.Show();
+            label12.Show();
+            textBox1.Show();
+            label14.Show();
+            textBox2.Show();
+            label15.Show();
+            comboBox2.Show();
+            problemStatusFroupBox.Show();
+            label17.Show();
+            dateTimePicker1.Show();
+            orderGroupBox.Show();
+
             con.Open();
 
             SqlCommand cmd1 = con.CreateCommand();
@@ -190,6 +256,28 @@ namespace Opeq_CallCenter
             con.Close();
         }
 
+        private void computerProblemComboBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.SuppressKeyPress = true;
+        }
+
+        private void screenProblemComboBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.SuppressKeyPress = true;
+        }
+
+        private void laptopProblemComboBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.SuppressKeyPress = true;
+        }
+
+        private void phoneOrTabletProblemComboBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.SuppressKeyPress = true;
+        }
+
+    }
+
         //Boolean isAddBtnClicked;
         //Boolean isCancelBtnClicked;
         //Boolean isAddRadioBtnClicked;
@@ -281,5 +369,4 @@ namespace Opeq_CallCenter
         //    addRadioBtn.Checked = true;
         //    confirmation();
         //}
-    }
 }
