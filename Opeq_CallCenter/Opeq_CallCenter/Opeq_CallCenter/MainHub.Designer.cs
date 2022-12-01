@@ -45,8 +45,10 @@
             this.groupBox1.Controls.Add(this.modifyRadioBtn);
             this.groupBox1.Controls.Add(this.addButton);
             this.groupBox1.Location = new System.Drawing.Point(-1, -1);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(207, 752);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(155, 611);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             // 
@@ -54,9 +56,10 @@
             // 
             this.viewRadioBtn.AutoCheck = false;
             this.viewRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewRadioBtn.Location = new System.Drawing.Point(6, 168);
+            this.viewRadioBtn.Location = new System.Drawing.Point(4, 136);
+            this.viewRadioBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.viewRadioBtn.Name = "viewRadioBtn";
-            this.viewRadioBtn.Size = new System.Drawing.Size(188, 44);
+            this.viewRadioBtn.Size = new System.Drawing.Size(141, 36);
             this.viewRadioBtn.TabIndex = 3;
             this.viewRadioBtn.TabStop = true;
             this.viewRadioBtn.Text = "Voir";
@@ -67,9 +70,10 @@
             // 
             this.modifyRadioBtn.AutoCheck = false;
             this.modifyRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.modifyRadioBtn.Location = new System.Drawing.Point(6, 100);
+            this.modifyRadioBtn.Location = new System.Drawing.Point(4, 81);
+            this.modifyRadioBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.modifyRadioBtn.Name = "modifyRadioBtn";
-            this.modifyRadioBtn.Size = new System.Drawing.Size(188, 44);
+            this.modifyRadioBtn.Size = new System.Drawing.Size(141, 36);
             this.modifyRadioBtn.TabIndex = 2;
             this.modifyRadioBtn.TabStop = true;
             this.modifyRadioBtn.Text = "Modifier";
@@ -80,9 +84,10 @@
             // 
             this.addButton.AutoCheck = false;
             this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addButton.Location = new System.Drawing.Point(6, 21);
+            this.addButton.Location = new System.Drawing.Point(4, 17);
+            this.addButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(188, 44);
+            this.addButton.Size = new System.Drawing.Size(141, 36);
             this.addButton.TabIndex = 1;
             this.addButton.TabStop = true;
             this.addButton.Text = "Ajouter";
@@ -92,22 +97,24 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(916, 418);
+            this.pictureBox1.Location = new System.Drawing.Point(681, 340);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(292, 318);
+            this.pictureBox1.Size = new System.Drawing.Size(219, 258);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
             // MainHub
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1215, 750);
+            this.ClientSize = new System.Drawing.Size(911, 609);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MainHub";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

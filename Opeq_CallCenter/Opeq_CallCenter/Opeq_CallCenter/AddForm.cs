@@ -70,7 +70,7 @@ namespace Opeq_CallCenter
             con.Close();
 
             computerProblemComboBox.DataSource = dataSet1.Tables[0];
-            computerProblemComboBox.DisplayMember = "computer_desc"; 
+            computerProblemComboBox.DisplayMember = "computer_desc";
             computerProblemComboBox.ValueMember = "computer_prob_id";
             computerProblemComboBox.SelectedIndex = -1;
 
@@ -80,22 +80,35 @@ namespace Opeq_CallCenter
             laptopProblemComboBox.SelectedIndex = -1;
 
             screenProblemComboBox.DataSource = dataSet3.Tables[0];
-            screenProblemComboBox.DisplayMember = "screen_desc"; 
+            screenProblemComboBox.DisplayMember = "screen_desc";
             screenProblemComboBox.ValueMember = "screen_prob_id";
             screenProblemComboBox.SelectedIndex = -1;
 
             phoneOrTabletProblemComboBox.DataSource = dataSet4.Tables[0];
-            phoneOrTabletProblemComboBox.DisplayMember = "phone_tab_desc"; 
+            phoneOrTabletProblemComboBox.DisplayMember = "phone_tab_desc";
             phoneOrTabletProblemComboBox.ValueMember = "phone_tablet_prob_id";
             phoneOrTabletProblemComboBox.SelectedIndex = -1;
-            
+
         }
 
         private void nameTextBox_MouseClick(object sender, EventArgs e)
         {
-            String text = "Entrer nom du client";
-            TextBox nameTextBox = new TextBox();
-            changeText(nameTextBox, text);
+            if (nameTextBox.Text == "Entrer nom")
+            {
+                nameTextBox.Text = "";
+            }
+            nameTextBox.ForeColor = Color.Black;
+        }
+        private void nameTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar != (char)Keys.Tab)
+            {
+                if (nameTextBox.Text == "Entrer nom")
+                {
+                    nameTextBox.Text = "";
+                }
+                nameTextBox.ForeColor = Color.Black;
+            }
         }
 
         private void problemDescriptionTextBox_MouseClick(object sender, EventArgs e)
@@ -106,6 +119,17 @@ namespace Opeq_CallCenter
             }
             problemDescriptionTextBox.ForeColor = Color.Black;
         }
+        private void problemDescriptionTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar != (char)Keys.Tab)
+            {
+                if (problemDescriptionTextBox.Text == "Entrer problème")
+                {
+                    problemDescriptionTextBox.Text = "";
+                }
+                problemDescriptionTextBox.ForeColor = Color.Black;
+            }
+        }
 
         private void emailTextbox_MouseClick(object sender, EventArgs e)
         {
@@ -114,6 +138,17 @@ namespace Opeq_CallCenter
                 emailTextbox.Text = "";
             }
             emailTextbox.ForeColor = Color.Black;
+        }
+        private void emailTextbox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar != (char)Keys.Tab)
+            {
+                if (emailTextbox.Text == "Courriel")
+                {
+                    emailTextbox.Text = "";
+                }
+                emailTextbox.ForeColor = Color.Black;
+            }
         }
 
         private void phoneTextBox_MouseClick(object sender, EventArgs e)
@@ -124,6 +159,17 @@ namespace Opeq_CallCenter
             }
             phoneTextBox.ForeColor = Color.Black;
         }
+        private void phoneTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar != (char)Keys.Tab)
+            {
+                if (phoneTextBox.Text == "Téléphone")
+                {
+                    phoneTextBox.Text = "";
+                }
+                phoneTextBox.ForeColor = Color.Black;
+            }
+        }
 
         private void streetTextBox_MouseClick(object sender, MouseEventArgs e)
         {
@@ -132,6 +178,17 @@ namespace Opeq_CallCenter
                 streetTextBox.Text = "";
             }
             streetTextBox.ForeColor = Color.Black;
+        }
+        private void streetTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar != (char)Keys.Tab)
+            {
+                if (streetTextBox.Text == "Adresse")
+                {
+                    streetTextBox.Text = "";
+                }
+                streetTextBox.ForeColor = Color.Black;
+            }
         }
 
         private void aptNumTextBox_MouseClick(object sender, MouseEventArgs e)
@@ -142,12 +199,36 @@ namespace Opeq_CallCenter
             }
             aptNumTextBox.ForeColor = Color.Black;
         }
+        private void aptNumTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar != (char)Keys.Tab)
+            {
+                if (aptNumTextBox.Text == "Appartement, suite, ect.")
+                {
+                    aptNumTextBox.Text = "";
+                }
+                aptNumTextBox.ForeColor = Color.Black;
+            }
+        }
 
         private void cityTextBox_MouseClick(object sender, MouseEventArgs e)
         {
-            String text = "Ville";
-            TextBox cityTextBox = new TextBox();
-            changeText(cityTextBox, text);
+            if (cityTextBox.Text == "Ville")
+            {
+                cityTextBox.Text = "";
+            }
+            cityTextBox.ForeColor = Color.Black;
+        }
+        private void cityTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar != (char)Keys.Tab)
+            {
+                if (cityTextBox.Text == "Ville")
+                {
+                    cityTextBox.Text = "";
+                }
+                cityTextBox.ForeColor = Color.Black;
+            }
         }
 
         private void postalCodeTextBox_MouseClick(object sender, MouseEventArgs e)
@@ -158,19 +239,43 @@ namespace Opeq_CallCenter
             }
             postalCodeTextBox.ForeColor = Color.Black;
         }
+        private void postalCodeTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar != (char)Keys.Tab)
+            {
+                if (postalCodeTextBox.Text == "Code Postal")
+                {
+                    postalCodeTextBox.Text = "";
+                }
+                postalCodeTextBox.ForeColor = Color.Black;
+            }
+        }
 
         private void MATTextBox_MouseClick(object sender, EventArgs e)
         {
             if (MATTextBox.Text == "MAT")
             {
-                MATTextBox.Text = "";
+                MATTextBox.Text = "MAT-";
             }
             MATTextBox.ForeColor = Color.Black;
+        }
+        private void MATTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar != (char)Keys.Tab)
+            {
+                if (MATTextBox.Text == "MAT")
+                {
+                    MATTextBox.Text = "MAT-";
+                }
+                MATTextBox.ForeColor = Color.Black;
+            }
         }
 
         private void addBtn_Click(object sender, EventArgs e)
         {
-            if (nameTextBox.Text != " " && problemDescriptionTextBox.Text != " " && emailTextbox.Text != " " && MATTextBox.Text != " ")
+            if (nameTextBox.Text != "" && nameTextBox.Text != "Entrer nom" && problemDescriptionTextBox.Text != "" && problemDescriptionTextBox.Text != "Entrer problème" && emailTextbox.Text != "" && emailTextbox.Text != "Courriel" &&
+                streetTextBox.Text != "" && streetTextBox.Text != "Adresse" && aptNumTextBox.Text != "" && aptNumTextBox.Text != "Appartement, suite, ect." && cityTextBox.Text != "" && cityTextBox.Text != "Ville" &&
+                postalCodeTextBox.Text != "" && postalCodeTextBox.Text != "Code Postal" && MATTextBox.Text != "" && MATTextBox.Text != "MAT" && MATTextBox.Text != "MAT-")
             {
                 //IDK if this will work
                 string empID;
@@ -194,12 +299,6 @@ namespace Opeq_CallCenter
                 string productID = " ";
                 string mat = MATTextBox.Text;
 
-                //Same problem as addressID
-                //int computerProbID = computerProblemComboBox.SelectedIndex + 1;
-                //int laptopProbID = laptopProblemComboBox.SelectedIndex + 1;
-                //int screenProbID = screenProblemComboBox.SelectedIndex + 1;
-                //int phoneTabProbID = phoneOrTabletProblemComboBox.SelectedIndex + 1;
-
                 string computerProbDesc = computerProblemComboBox.GetItemText(computerProblemComboBox.SelectedItem);
                 string laptopProbDesc = laptopProblemComboBox.GetItemText(laptopProblemComboBox.SelectedItem);
                 string screenProbDesc = screenProblemComboBox.GetItemText(screenProblemComboBox.SelectedItem);
@@ -214,42 +313,6 @@ namespace Opeq_CallCenter
                 string byTelephone = "0";
                 string inPerson = "0";
 
-                //if(computerProbDesc != "")
-                //{
-                //    computerProbID = 0;
-
-                //}
-
-                //if(computerProbID > 0)
-                //{
-                //    productName = "Computer";
-                //}
-                //else if(laptopProbID > 0)
-                //{
-                //    productName = "Laptop";
-                //}
-                //else if (screenProbID > 0)
-                //{
-                //    productName = "Screen";
-                //}
-                //else if (phoneTabProbID > 0)
-                //{
-                //    productName = "Phone and Tablet";
-                //}
-                //else if (computerProbID == 0 && laptopProbID == 0 && screenProbID == 0 && phoneTabProbID == 0)
-                //{
-                //    MessageBox.Show("Fuck you and fill it out");
-                //}
-
-                    //var problems = problemGroupBox;
-                    //foreach (var comboBox in problems.Controls))
-                    //{
-                    //    computerProbID = computerProblemComboBox.Select ? "1" : "0";
-                    //    laptopProbID = phoneRadioBtn.Checked ? "1" : "0";
-                    //    screenProbID = inPersonRadioBtn.Checked ? "1" : "0";
-                    //    phoneTabProbID = inPersonRadioBtn.Checked ? "1" : "0";
-                    //}
-
                     var contacts = contactGroupBox;
                 foreach (var radioButton in contacts.Controls.OfType<RadioButton>())
                 {
@@ -258,20 +321,13 @@ namespace Opeq_CallCenter
                     inPerson = inPersonRadioBtn.Checked ? "1" : "0";
                 }
 
-                /*
-                var ctrl3 = containerGroupBox;
-                foreach (var radioButton in ctrl3.Controls.OfType<RadioButton>())
-                {
-                    Total = radioButton.Checked ? (Total + Convert.ToDouble(radioButton.Tag)) : Total;
-                }*/
-
-
                 con.Open();
+
                 SqlCommand cmd1 = con.CreateCommand();
                 SqlCommand cmd2 = con.CreateCommand();
                 SqlCommand cmd3 = con.CreateCommand();
                 SqlCommand cmd4 = con.CreateCommand();
-                SqlCommand cmd5 = con.CreateCommand();  
+                SqlCommand cmd5 = con.CreateCommand();
                 SqlCommand cmd6 = con.CreateCommand();
                 SqlCommand cmd7 = con.CreateCommand();
                 SqlCommand cmd8 = con.CreateCommand();
@@ -301,11 +357,11 @@ namespace Opeq_CallCenter
                 cmd3.CommandText = "SELECT IDENT_CURRENT('Client_Address');";
                 addressID = Convert.ToString(cmd3.ExecuteScalar());
 
-                cmd4.CommandText = "INSERT INTO Product (MAT, product_name) VALUES ('" + mat +"', '" + productName + "');";
+                cmd4.CommandText = "INSERT INTO Product (MAT, product_name) VALUES ('" + mat + "', '" + productName + "');";
                 cmd4.ExecuteNonQuery();
 
                 cmd5.CommandText = "SELECT IDENT_CURRENT('Product');";
-                 productID = Convert.ToString(cmd5.ExecuteScalar());
+                productID = Convert.ToString(cmd5.ExecuteScalar());
 
                 if (computerProbDesc != "")
                 {
@@ -331,11 +387,11 @@ namespace Opeq_CallCenter
                 cmd10.CommandText = "INSERT INTO Client (employee_id, product_id, computer_prob_id, laptop_prob_id, screen_prob_id, phone_tablet_prob_id, address_id, client_name, client_desc, date_added, client_email, client_phone_num, by_email, by_telephone, in_person) VALUES ('" +
                                        empID + "', '" + productID + "', '" + computerProbID + "', '" + laptopProbID + "', '" + screenProbID + "', '" + phoneTabProbID + "', '" + addressID + "', '" + clientName + "', '" + problemDesc + "', '" + date + "', '" + email + "', '" + phone + "', '" + byEmail + "', '" + byTelephone + "', '" + inPerson + "');";
 
-                    cmd10.ExecuteNonQuery();
+                cmd10.ExecuteNonQuery();
 
-                    con.Close();
+                con.Close();
 
-                    isAddBtnClicked = true;
+                isAddBtnClicked = true;
                     confirmation();
 
                 }
@@ -456,15 +512,6 @@ namespace Opeq_CallCenter
         private void phoneOrTabletProblemComboBox_KeyDown(object sender, KeyEventArgs e)
         {
             e.SuppressKeyPress = true;
-        }
-
-        public void changeText(TextBox name, String text)
-        {
-            if (name.Text == text)
-            {
-                name.Text = "";
-            }
-            name.ForeColor = Color.Black;
         }
 
     }
