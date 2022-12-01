@@ -15,7 +15,10 @@ namespace Opeq_CallCenter
     {
         //SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KFOB4HEQ\DINAL;Initial Catalog=Opeq_CallCenter;Integrated Security=True");
 <<<<<<< HEAD
+<<<<<<< HEAD
         SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-PJPEDDG;Initial Catalog=Opeq;Integrated Security=True");
+=======
+>>>>>>> da19c6de5b13c07bbe246f30781803a6e32ce6f6
 =======
 >>>>>>> da19c6de5b13c07bbe246f30781803a6e32ce6f6
         public LoginForm()
