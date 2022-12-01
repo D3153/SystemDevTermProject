@@ -23,7 +23,101 @@ namespace Opeq_CallCenter
 
         private void ModifyForm_Load(object sender, EventArgs e)
         {
-           
+            con.Open();
+
+            SqlCommand cmd1 = con.CreateCommand();
+            SqlCommand cmd2 = con.CreateCommand();
+            SqlCommand cmd3 = con.CreateCommand();
+            SqlCommand cmd4 = con.CreateCommand();
+
+            cmd1.CommandType = CommandType.Text;
+            cmd2.CommandType = CommandType.Text;
+            cmd3.CommandType = CommandType.Text;
+            cmd4.CommandType = CommandType.Text;
+
+            cmd1.CommandText = "SELECT * FROM Computer_Prob;";
+            cmd2.CommandText = "SELECT * FROM Laptop_Prob;";
+            cmd3.CommandText = "SELECT * FROM Screen_Prob;";
+            cmd4.CommandText = "SELECT * FROM Phone_Tablet_Prob;";
+
+            cmd1.ExecuteNonQuery();
+            cmd2.ExecuteNonQuery();
+            cmd3.ExecuteNonQuery();
+            cmd4.ExecuteNonQuery();
+
+            SqlDataAdapter adapter1 = new SqlDataAdapter(cmd1);
+            SqlDataAdapter adapter2 = new SqlDataAdapter(cmd2);
+            SqlDataAdapter adapter3 = new SqlDataAdapter(cmd3);
+            SqlDataAdapter adapter4 = new SqlDataAdapter(cmd4);
+
+            DataSet dataSet1 = new DataSet();
+            DataSet dataSet2 = new DataSet();
+            DataSet dataSet3 = new DataSet();
+            DataSet dataSet4 = new DataSet();
+
+            adapter1.Fill(dataSet1);
+            adapter2.Fill(dataSet2);
+            adapter3.Fill(dataSet3);
+            adapter4.Fill(dataSet4);
+
+            con.Close();
+
+            computerProblemComboBox.DataSource = dataSet1.Tables[0];
+            computerProblemComboBox.DisplayMember = "computer_desc";
+            computerProblemComboBox.ValueMember = "computer_prob_id";
+            computerProblemComboBox.SelectedIndex = -1;
+
+            laptopProblemComboBox.DataSource = dataSet2.Tables[0];
+            laptopProblemComboBox.DisplayMember = "laptop_desc";
+            laptopProblemComboBox.ValueMember = "laptop_prob_id";
+            laptopProblemComboBox.SelectedIndex = -1;
+
+            screenProblemComboBox.DataSource = dataSet3.Tables[0];
+            screenProblemComboBox.DisplayMember = "screen_desc";
+            screenProblemComboBox.ValueMember = "screen_prob_id";
+            screenProblemComboBox.SelectedIndex = -1;
+
+            phoneOrTabletProblemComboBox.DataSource = dataSet4.Tables[0];
+            phoneOrTabletProblemComboBox.DisplayMember = "phone_tab_desc";
+            phoneOrTabletProblemComboBox.ValueMember = "phone_tablet_prob_id";
+            phoneOrTabletProblemComboBox.SelectedIndex = -1;
+
+            //hide eveything
+            nameTextBox.Hide();
+            label1.Hide();
+            label2.Hide();
+            problemDescriptionTextBox.Hide();
+            label4.Hide();
+            dateTimePickerEntered.Hide();
+            label3.Hide();
+            contactGroupBox.Hide();
+            emailTextbox.Hide();
+            phoneTextBox.Hide();
+            streetTextBox.Hide();
+            aptNumTextBox.Hide();
+            cityTextBox.Hide();
+            postalCodeTextBox.Hide();
+            problemGroupBox.Hide();
+            label13.Hide();
+            comboBox1.Hide();
+            label12.Hide();
+            textBox1.Hide();
+            label14.Hide();
+            textBox2.Hide();
+            label15.Hide();
+            comboBox2.Hide();
+            problemStatusFroupBox.Hide();
+            label17.Hide();
+            dateTimePicker1.Hide();
+
+            //new order hidden
+            orderGroupBox.Hide();
+            label19.Hide();
+            dateTimePicker2.Hide();
+            label20.Hide();
+            textBox3.Hide();
+            label21.Hide();
+            RMATextBox.Hide();
 
         }
 
@@ -40,6 +134,35 @@ namespace Opeq_CallCenter
 
         private void loadBtn_Click(object sender, EventArgs e)
         {
+            //Show everything
+            nameTextBox.Show();
+            label1.Show();
+            label2.Show();
+            problemDescriptionTextBox.Show();
+            label4.Show();
+            dateTimePickerEntered.Show();
+            label3.Show();
+            contactGroupBox.Show();
+            emailTextbox.Show();
+            phoneTextBox.Show();
+            streetTextBox.Show();
+            aptNumTextBox.Show();
+            cityTextBox.Show();
+            postalCodeTextBox.Show();
+            problemGroupBox.Show();
+            label13.Show();
+            comboBox1.Show();
+            label12.Show();
+            textBox1.Show();
+            label14.Show();
+            textBox2.Show();
+            label15.Show();
+            comboBox2.Show();
+            problemStatusFroupBox.Show();
+            label17.Show();
+            dateTimePicker1.Show();
+            orderGroupBox.Show();
+
             con.Open();
 
             SqlCommand cmd1 = con.CreateCommand();
@@ -132,28 +255,33 @@ namespace Opeq_CallCenter
             cityTextBox.Text = Convert.ToString(cmd11.ExecuteScalar());
             postalCodeTextBox.Text = Convert.ToString(cmd12.ExecuteScalar());
 
-            //if(Convert.ToInt64(cmd13.ExecuteScalar()) > 0)
-            //{
-            //    cmd17.CommandText = "SELECT computer_desc FROM Computer_Prob WHERE computer_prob_id = '" + Convert.ToInt64(cmd13.ExecuteScalar()) + "';";
-            //    computerProblemComboBox.SelectedIndex = 0;
-            //}
-            //else if (Convert.ToInt64(cmd14.ExecuteScalar()) > 0)
-            //{
-            //    cmd17.CommandText = "SELECT laptop_desc FROM Laptop_Prob WHERE laptop_prob_id = '" + Convert.ToInt64(cmd13.ExecuteScalar()) + "';";
-            //}
-            //else if (Convert.ToInt64(cmd15.ExecuteScalar()) > 0)
-            //{
-            //    cmd17.CommandText = "SELECT phone_tab_desc FROM Phone_Tablet_Prob WHERE phone_tablet_prob_id = '" + Convert.ToInt64(cmd13.ExecuteScalar()) + "';";
-            //}
-            //else if (Convert.ToInt64(cmd16.ExecuteScalar()) > 0)
-            //{
-            //    cmd17.CommandText = "SELECT screen_desc FROM Screen_Prob WHERE screen_prob_id = '" + Convert.ToInt64(cmd13.ExecuteScalar()) + "';";
-            //}
+            if (Convert.ToInt64(cmd13.ExecuteScalar()) > 0)
+            {
+                cmd17.CommandText = "SELECT computer_desc FROM Computer_Prob WHERE computer_prob_id = '" + Convert.ToInt64(cmd13.ExecuteScalar()) + "';";
+                //computerProblemComboBox.SelectedIndex = 0;
+                computerProblemComboBox.SelectedIndex = computerProblemComboBox.FindString(cmd17.ExecuteScalar().ToString());
+            }
+            else if (Convert.ToInt64(cmd14.ExecuteScalar()) > 0)
+            {
+                cmd17.CommandText = "SELECT laptop_desc FROM Laptop_Prob WHERE laptop_prob_id = '" + Convert.ToInt64(cmd13.ExecuteScalar()) + "';";
+                laptopProblemComboBox.SelectedIndex = laptopProblemComboBox.FindString(cmd17.ExecuteScalar().ToString());
+            }
+            else if (Convert.ToInt64(cmd15.ExecuteScalar()) > 0)
+            {
+                cmd17.CommandText = "SELECT phone_tab_desc FROM Phone_Tablet_Prob WHERE phone_tablet_prob_id = '" + Convert.ToInt64(cmd13.ExecuteScalar()) + "';";
+                phoneOrTabletProblemComboBox.SelectedIndex = phoneOrTabletProblemComboBox.FindString(cmd17.ExecuteScalar().ToString());
+            }
+            else if (Convert.ToInt64(cmd16.ExecuteScalar()) > 0)
+            {
+                cmd17.CommandText = "SELECT screen_desc FROM Screen_Prob WHERE screen_prob_id = '" + Convert.ToInt64(cmd13.ExecuteScalar()) + "';";
+                screenProblemComboBox.SelectedIndex = screenProblemComboBox.FindString(cmd17.ExecuteScalar().ToString());
+            }
 
 
             con.Close();
         }
 
+<<<<<<< HEAD
         private void textBox1_MouseClick(object sender, MouseEventArgs e)
         {
             if (textBox1.Text == "Numero de Commande")
@@ -207,6 +335,29 @@ namespace Opeq_CallCenter
             string rma = textBox4.Text;
 
         }
+=======
+        private void computerProblemComboBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.SuppressKeyPress = true;
+        }
+
+        private void screenProblemComboBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.SuppressKeyPress = true;
+        }
+
+        private void laptopProblemComboBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.SuppressKeyPress = true;
+        }
+
+        private void phoneOrTabletProblemComboBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.SuppressKeyPress = true;
+        }
+
+    }
+>>>>>>> 749dc7a32de9e19f5fb151219a965ba1df63d83c
 
         //Boolean isAddBtnClicked;
         //Boolean isCancelBtnClicked;
@@ -299,5 +450,4 @@ namespace Opeq_CallCenter
         //    addRadioBtn.Checked = true;
         //    confirmation();
         //}
-    }
 }
