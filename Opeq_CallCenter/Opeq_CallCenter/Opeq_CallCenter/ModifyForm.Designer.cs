@@ -303,6 +303,7 @@
             this.textBox1.Size = new System.Drawing.Size(332, 33);
             this.textBox1.TabIndex = 76;
             this.textBox1.Text = "Numero de Commande";
+            this.textBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox1_MouseClick);
             // 
             // textBox2
             // 
@@ -315,6 +316,7 @@
             this.textBox2.Size = new System.Drawing.Size(516, 55);
             this.textBox2.TabIndex = 78;
             this.textBox2.Text = "Comment Résolu";
+            this.textBox2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox2_MouseClick);
             // 
             // label14
             // 
@@ -491,6 +493,7 @@
             this.textBox3.Size = new System.Drawing.Size(332, 33);
             this.textBox3.TabIndex = 95;
             this.textBox3.Text = "Bon D\'envoi";
+            this.textBox3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox3_MouseClick);
             // 
             // label20
             // 
@@ -514,6 +517,7 @@
             this.textBox4.Size = new System.Drawing.Size(332, 33);
             this.textBox4.TabIndex = 97;
             this.textBox4.Text = "RMA";
+            this.textBox4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox4_MouseClick);
             // 
             // label21
             // 
@@ -537,6 +541,7 @@
             this.addBtn.TabIndex = 99;
             this.addBtn.Text = "Modifier";
             this.addBtn.UseVisualStyleBackColor = false;
+            this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
             // 
             // cancelBtn
             // 

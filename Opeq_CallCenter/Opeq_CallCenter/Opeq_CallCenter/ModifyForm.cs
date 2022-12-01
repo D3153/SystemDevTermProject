@@ -14,7 +14,8 @@ namespace Opeq_CallCenter
 {
     public partial class ModifyForm : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KFOB4HEQ\DINAL;Initial Catalog=Opeq_CallCenter;Integrated Security=True");
+        //SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KFOB4HEQ\DINAL;Initial Catalog=Opeq_CallCenter;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-PJPEDDG;Initial Catalog=Opeq;Integrated Security=True");
         public ModifyForm()
         {
             InitializeComponent();
@@ -57,6 +58,10 @@ namespace Opeq_CallCenter
             SqlCommand cmd14 = con.CreateCommand();
             SqlCommand cmd15 = con.CreateCommand();
             SqlCommand cmd16 = con.CreateCommand();
+            
+
+            //SqlDataAdapter adapter5 = new SqlDataAdapter(cmd5);
+            //SqlDataAdapter adapter6 = new SqlDataAdapter(cmd6);
 
             //Commands to run to get client information
             String MAT = MATTextBox.Text;
@@ -78,10 +83,30 @@ namespace Opeq_CallCenter
             cmd16.CommandText = "SELECT Screen_Prob.screen_prob_id FROM Client JOIN Product ON Client.product_id = Product.product_id JOIN Screen_Prob ON Screen_Prob.screen_prob_id = Client.screen_prob_id WHERE Product.MAT = '" + MAT + "';";
 
             //Commands to get problem descriptions
-            SqlCommand cmd17 = con.CreateCommand();
+            //SqlCommand cmd17 = con.CreateCommand();
             //SqlCommand cmd18 = con.CreateCommand();
             //SqlCommand cmd19 = con.CreateCommand();
             //SqlCommand cmd20 = con.CreateCommand();
+            SqlCommand cmd17 = con.CreateCommand();
+            SqlCommand cmd18 = con.CreateCommand();
+
+            cmd17.CommandType = CommandType.Text;
+            cmd18.CommandType = CommandType.Text;
+
+            cmd17.CommandText = "SELECT * FROM Order_Type;";
+            cmd18.CommandText = "SELECT * FROM Action_Took;";
+
+            cmd17.ExecuteNonQuery();
+            cmd18.ExecuteNonQuery();
+
+            SqlDataAdapter adapter17 = new SqlDataAdapter(cmd5);
+            SqlDataAdapter adapter18 = new SqlDataAdapter(cmd6);
+
+            DataSet dataSet17 = new DataSet();
+            DataSet dataSet18 = new DataSet();
+
+            adapter17.Fill(dataSet17);
+            adapter18.Fill(dataSet18);
 
             nameTextBox.Text = Convert.ToString(cmd1.ExecuteScalar());
             problemDescriptionTextBox.Text = Convert.ToString(cmd2.ExecuteScalar());
@@ -127,6 +152,60 @@ namespace Opeq_CallCenter
 
 
             con.Close();
+        }
+
+        private void textBox1_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (textBox1.Text == "Numero de Commande")
+            {
+                textBox1.Text = "";
+            }
+            textBox1.ForeColor = Color.Black;
+        }
+
+        private void textBox2_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (textBox2.Text == "Comment Résolu")
+            {
+                textBox2.Text = "";
+            }
+            textBox2.ForeColor = Color.Black;
+        }
+
+        private void textBox3_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (textBox3.Text == "Bon D'envoi")
+            {
+                textBox3.Text = "";
+            }
+            textBox3.ForeColor = Color.Black;
+        }
+
+        private void textBox4_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (textBox4.Text == "RMA")
+            {
+                textBox4.Text = "";
+            }
+            textBox4.ForeColor = Color.Black;
+        }
+
+        private void addBtn_Click(object sender, EventArgs e)
+        {
+            string orderTypeDesc = comboBox1.GetItemText(comboBox1.SelectedItem);
+            string orderNum = textBox1.Text;
+            string howResolved = textBox2.Text;
+            string actionTookDesc = comboBox2.GetItemText(comboBox2.SelectedItem);
+            string resolved = "0";
+            string notResolved = "0";
+            string onGoing = "0";
+            string resolvedDate = dateTimePicker1.Value.ToString();
+            string yes = "0";
+            string no = "0";
+            string deliveryDate = dateTimePicker2.Value.ToString();
+            string shipment = textBox3.Text;
+            string rma = textBox4.Text;
+
         }
 
         //Boolean isAddBtnClicked;
