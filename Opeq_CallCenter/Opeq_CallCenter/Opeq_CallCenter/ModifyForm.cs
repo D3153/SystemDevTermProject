@@ -281,7 +281,7 @@ namespace Opeq_CallCenter
             con.Close();
         }
 
-<<<<<<< HEAD
+
         private void textBox1_MouseClick(object sender, MouseEventArgs e)
         {
             if (textBox1.Text == "Numero de Commande")
@@ -311,11 +311,11 @@ namespace Opeq_CallCenter
 
         private void textBox4_MouseClick(object sender, MouseEventArgs e)
         {
-            if (textBox4.Text == "RMA")
+            if (RMATextBox.Text == "RMA")
             {
-                textBox4.Text = "";
+                RMATextBox.Text = "";
             }
-            textBox4.ForeColor = Color.Black;
+            RMATextBox.ForeColor = Color.Black;
         }
 
         private void addBtn_Click(object sender, EventArgs e)
@@ -332,10 +332,10 @@ namespace Opeq_CallCenter
             string no = "0";
             string deliveryDate = dateTimePicker2.Value.ToString();
             string shipment = textBox3.Text;
-            string rma = textBox4.Text;
+            string rma = RMATextBox.Text;
 
         }
-=======
+
         private void computerProblemComboBox_KeyDown(object sender, KeyEventArgs e)
         {
             e.SuppressKeyPress = true;
@@ -357,7 +357,7 @@ namespace Opeq_CallCenter
         }
 
     }
->>>>>>> 749dc7a32de9e19f5fb151219a965ba1df63d83c
+
 
         //Boolean isAddBtnClicked;
         //Boolean isCancelBtnClicked;

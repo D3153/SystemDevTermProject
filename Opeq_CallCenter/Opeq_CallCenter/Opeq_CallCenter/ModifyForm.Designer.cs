@@ -469,18 +469,16 @@
             // 
             // RMATextBox
             // 
-<<<<<<< HEAD
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox4.Location = new System.Drawing.Point(746, 2101);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(332, 33);
-            this.textBox4.TabIndex = 97;
-            this.textBox4.Text = "RMA";
-            this.textBox4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox4_MouseClick);
-=======
+            this.RMATextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RMATextBox.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.RMATextBox.Location = new System.Drawing.Point(746, 2101);
+            this.RMATextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.RMATextBox.Multiline = true;
+            this.RMATextBox.Name = "textBox4";
+            this.RMATextBox.Size = new System.Drawing.Size(332, 33);
+            this.RMATextBox.TabIndex = 97;
+            this.RMATextBox.Text = "RMA";
+            this.RMATextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox4_MouseClick);
             this.RMATextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RMATextBox.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.RMATextBox.Location = new System.Drawing.Point(560, 1707);
@@ -489,7 +487,6 @@
             this.RMATextBox.Size = new System.Drawing.Size(250, 28);
             this.RMATextBox.TabIndex = 16;
             this.RMATextBox.Text = "RMA";
->>>>>>> 749dc7a32de9e19f5fb151219a965ba1df63d83c
             // 
             // label21
             // 
