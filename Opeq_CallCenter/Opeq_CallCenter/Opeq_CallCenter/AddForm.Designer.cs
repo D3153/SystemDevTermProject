@@ -78,7 +78,7 @@
             this.label1.Location = new System.Drawing.Point(482, 30);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 29);
+            this.label1.Size = new System.Drawing.Size(54, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nom";
             // 
@@ -89,7 +89,7 @@
             this.label2.Location = new System.Drawing.Point(483, 156);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 29);
+            this.label2.Size = new System.Drawing.Size(115, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "Description";
             // 
@@ -105,6 +105,7 @@
             this.problemDescriptionTextBox.TabIndex = 2;
             this.problemDescriptionTextBox.Text = "Entrer problème";
             this.problemDescriptionTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.problemDescriptionTextBox_MouseClick);
+            this.problemDescriptionTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.problemDescriptionTextBox_KeyPress);
             // 
             // nameTextBox
             // 
@@ -118,6 +119,7 @@
             this.nameTextBox.TabIndex = 1;
             this.nameTextBox.Text = "Entrer nom du client";
             this.nameTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.nameTextBox_MouseClick);
+            this.nameTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.nameTextBox_KeyPress);
             // 
             // emailTextbox
             // 
@@ -131,6 +133,7 @@
             this.emailTextbox.TabIndex = 7;
             this.emailTextbox.Text = "Courriel";
             this.emailTextbox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.emailTextbox_MouseClick);
+            this.emailTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.emailTextbox_KeyPress);
             // 
             // label3
             // 
@@ -139,7 +142,7 @@
             this.label3.Location = new System.Drawing.Point(483, 360);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(243, 29);
+            this.label3.Size = new System.Drawing.Size(194, 24);
             this.label3.TabIndex = 8;
             this.label3.Text = "Comment Contacter";
             // 
@@ -150,7 +153,7 @@
             this.label4.Location = new System.Drawing.Point(484, 295);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(151, 29);
+            this.label4.Size = new System.Drawing.Size(120, 24);
             this.label4.TabIndex = 7;
             this.label4.Text = "Date Entrée";
             // 
@@ -166,13 +169,14 @@
             this.MATTextBox.TabIndex = 17;
             this.MATTextBox.Text = "MAT";
             this.MATTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MATTextBox_MouseClick);
+            this.MATTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MATTextBox_KeyPress);
             // 
             // dateTimePicker
             // 
             this.dateTimePicker.Location = new System.Drawing.Point(656, 296);
             this.dateTimePicker.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker.Name = "dateTimePicker";
-            this.dateTimePicker.Size = new System.Drawing.Size(383, 28);
+            this.dateTimePicker.Size = new System.Drawing.Size(383, 24);
             this.dateTimePicker.TabIndex = 3;
             // 
             // emailRadioBtn
@@ -181,7 +185,7 @@
             this.emailRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailRadioBtn.Location = new System.Drawing.Point(12, 18);
             this.emailRadioBtn.Name = "emailRadioBtn";
-            this.emailRadioBtn.Size = new System.Drawing.Size(101, 29);
+            this.emailRadioBtn.Size = new System.Drawing.Size(81, 24);
             this.emailRadioBtn.TabIndex = 4;
             this.emailRadioBtn.Text = "Courriel";
             this.emailRadioBtn.UseVisualStyleBackColor = true;
@@ -192,7 +196,7 @@
             this.phoneRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phoneRadioBtn.Location = new System.Drawing.Point(12, 86);
             this.phoneRadioBtn.Name = "phoneRadioBtn";
-            this.phoneRadioBtn.Size = new System.Drawing.Size(127, 29);
+            this.phoneRadioBtn.Size = new System.Drawing.Size(102, 24);
             this.phoneRadioBtn.TabIndex = 5;
             this.phoneRadioBtn.Text = "Téléphone";
             this.phoneRadioBtn.UseVisualStyleBackColor = true;
@@ -209,6 +213,7 @@
             this.phoneTextBox.TabIndex = 8;
             this.phoneTextBox.Text = "Téléphone";
             this.phoneTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.phoneTextBox_MouseClick);
+            this.phoneTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.phoneTextBox_KeyPress);
             // 
             // inPersonRadioBtn
             // 
@@ -216,7 +221,7 @@
             this.inPersonRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inPersonRadioBtn.Location = new System.Drawing.Point(12, 152);
             this.inPersonRadioBtn.Name = "inPersonRadioBtn";
-            this.inPersonRadioBtn.Size = new System.Drawing.Size(146, 29);
+            this.inPersonRadioBtn.Size = new System.Drawing.Size(119, 24);
             this.inPersonRadioBtn.TabIndex = 6;
             this.inPersonRadioBtn.Text = "En Personne";
             this.inPersonRadioBtn.UseVisualStyleBackColor = true;
@@ -233,6 +238,7 @@
             this.streetTextBox.TabIndex = 9;
             this.streetTextBox.Text = "Adresse";
             this.streetTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.streetTextBox_MouseClick);
+            this.streetTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.streetTextBox_KeyPress);
             // 
             // opeq_CallCenterDataSet1
             // 
@@ -242,10 +248,10 @@
             // computerProblemComboBox
             // 
             this.computerProblemComboBox.FormattingEnabled = true;
-            this.computerProblemComboBox.ItemHeight = 31;
+            this.computerProblemComboBox.ItemHeight = 25;
             this.computerProblemComboBox.Location = new System.Drawing.Point(36, 95);
             this.computerProblemComboBox.Name = "computerProblemComboBox";
-            this.computerProblemComboBox.Size = new System.Drawing.Size(357, 39);
+            this.computerProblemComboBox.Size = new System.Drawing.Size(357, 33);
             this.computerProblemComboBox.TabIndex = 13;
             this.computerProblemComboBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.computerProblemComboBox_KeyDown);
             // 
@@ -255,7 +261,7 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(29, 54);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(104, 25);
+            this.label6.Size = new System.Drawing.Size(84, 20);
             this.label6.TabIndex = 20;
             this.label6.Text = "Ordinateur";
             // 
@@ -265,17 +271,17 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(38, 146);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(63, 25);
+            this.label7.Size = new System.Drawing.Size(51, 20);
             this.label7.TabIndex = 22;
             this.label7.Text = "Écran";
             // 
             // screenProblemComboBox
             // 
             this.screenProblemComboBox.FormattingEnabled = true;
-            this.screenProblemComboBox.ItemHeight = 31;
+            this.screenProblemComboBox.ItemHeight = 25;
             this.screenProblemComboBox.Location = new System.Drawing.Point(36, 188);
             this.screenProblemComboBox.Name = "screenProblemComboBox";
-            this.screenProblemComboBox.Size = new System.Drawing.Size(357, 39);
+            this.screenProblemComboBox.Size = new System.Drawing.Size(357, 33);
             this.screenProblemComboBox.TabIndex = 14;
             this.screenProblemComboBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.screenProblemComboBox_KeyDown);
             // 
@@ -285,7 +291,7 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(38, 252);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(84, 25);
+            this.label8.Size = new System.Drawing.Size(68, 20);
             this.label8.TabIndex = 24;
             this.label8.Text = "Portable";
             // 
@@ -294,7 +300,7 @@
             this.laptopProblemComboBox.FormattingEnabled = true;
             this.laptopProblemComboBox.Location = new System.Drawing.Point(34, 293);
             this.laptopProblemComboBox.Name = "laptopProblemComboBox";
-            this.laptopProblemComboBox.Size = new System.Drawing.Size(357, 39);
+            this.laptopProblemComboBox.Size = new System.Drawing.Size(357, 33);
             this.laptopProblemComboBox.TabIndex = 15;
             this.laptopProblemComboBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.laptopProblemComboBox_KeyDown);
             // 
@@ -304,7 +310,7 @@
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(36, 351);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(170, 25);
+            this.label9.Size = new System.Drawing.Size(135, 20);
             this.label9.TabIndex = 26;
             this.label9.Text = "Cellulaire/Tablette";
             // 
@@ -313,7 +319,7 @@
             this.phoneOrTabletProblemComboBox.FormattingEnabled = true;
             this.phoneOrTabletProblemComboBox.Location = new System.Drawing.Point(34, 393);
             this.phoneOrTabletProblemComboBox.Name = "phoneOrTabletProblemComboBox";
-            this.phoneOrTabletProblemComboBox.Size = new System.Drawing.Size(357, 39);
+            this.phoneOrTabletProblemComboBox.Size = new System.Drawing.Size(357, 33);
             this.phoneOrTabletProblemComboBox.TabIndex = 16;
             this.phoneOrTabletProblemComboBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.phoneOrTabletProblemComboBox_KeyDown);
             // 
@@ -324,7 +330,7 @@
             this.label10.Location = new System.Drawing.Point(480, 1217);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(67, 29);
+            this.label10.Size = new System.Drawing.Size(54, 24);
             this.label10.TabIndex = 27;
             this.label10.Text = "MAT";
             // 
@@ -375,6 +381,7 @@
             this.aptNumTextBox.TabIndex = 10;
             this.aptNumTextBox.Text = "Appartement, suite, ect.";
             this.aptNumTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.aptNumTextBox_MouseClick);
+            this.aptNumTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.aptNumTextBox_KeyPress);
             // 
             // postalCodeTextBox
             // 
@@ -388,6 +395,7 @@
             this.postalCodeTextBox.TabIndex = 12;
             this.postalCodeTextBox.Text = "Code Postal";
             this.postalCodeTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.postalCodeTextBox_MouseClick);
+            this.postalCodeTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.postalCodeTextBox_KeyPress);
             // 
             // cityTextBox
             // 
@@ -401,6 +409,7 @@
             this.cityTextBox.TabIndex = 11;
             this.cityTextBox.Text = "Ville";
             this.cityTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cityTextBox_MouseClick);
+            this.cityTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cityTextBox_KeyPress);
             // 
             // contactGroupBox
             // 
@@ -449,7 +458,7 @@
             this.addRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addRadioBtn.Location = new System.Drawing.Point(58, 54);
             this.addRadioBtn.Name = "addRadioBtn";
-            this.addRadioBtn.Size = new System.Drawing.Size(128, 35);
+            this.addRadioBtn.Size = new System.Drawing.Size(106, 30);
             this.addRadioBtn.TabIndex = 28;
             this.addRadioBtn.TabStop = true;
             this.addRadioBtn.Text = "Ajouter";
@@ -461,7 +470,7 @@
             this.modifyRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.modifyRadioBtn.Location = new System.Drawing.Point(58, 145);
             this.modifyRadioBtn.Name = "modifyRadioBtn";
-            this.modifyRadioBtn.Size = new System.Drawing.Size(139, 35);
+            this.modifyRadioBtn.Size = new System.Drawing.Size(115, 30);
             this.modifyRadioBtn.TabIndex = 29;
             this.modifyRadioBtn.Text = "Modifier";
             this.modifyRadioBtn.UseVisualStyleBackColor = true;
@@ -473,7 +482,7 @@
             this.viewRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.viewRadioBtn.Location = new System.Drawing.Point(58, 230);
             this.viewRadioBtn.Name = "viewRadioBtn";
-            this.viewRadioBtn.Size = new System.Drawing.Size(87, 35);
+            this.viewRadioBtn.Size = new System.Drawing.Size(73, 30);
             this.viewRadioBtn.TabIndex = 30;
             this.viewRadioBtn.Text = "Voir";
             this.viewRadioBtn.UseVisualStyleBackColor = true;
@@ -481,11 +490,11 @@
             // 
             // AddForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(1362, 750);
+            this.ClientSize = new System.Drawing.Size(1413, 750);
             this.Controls.Add(this.navGroupBox);
             this.Controls.Add(this.problemGroupBox);
             this.Controls.Add(this.contactGroupBox);

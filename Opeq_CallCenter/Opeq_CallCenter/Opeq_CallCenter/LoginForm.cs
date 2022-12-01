@@ -13,7 +13,7 @@ namespace Opeq_CallCenter
 {
     public partial class LoginForm : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KFOB4HEQ\DINAL;Initial Catalog=Opeq_CallCenter;Integrated Security=True");
+        //SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KFOB4HEQ\DINAL;Initial Catalog=Opeq_CallCenter;Integrated Security=True");
         public LoginForm()
         {
             InitializeComponent();
@@ -61,12 +61,12 @@ namespace Opeq_CallCenter
             {
                 //Uncomment to see if database works
                 string empName = empNameTextBox.Text;
-                con.Open();
-                SqlCommand cmd = con.CreateCommand();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "INSERT INTO employee (employee_name) VALUES ('" + empName + "');";
-                cmd.ExecuteNonQuery();
-                con.Close();
+                //con.Open();
+                //SqlCommand cmd = con.CreateCommand();
+                //cmd.CommandType = CommandType.Text;
+                //cmd.CommandText = "INSERT INTO employee (employee_name) VALUES ('" + empName + "');";
+                //cmd.ExecuteNonQuery();
+                //con.Close();
                 this.Hide();
                 WelcomeForm welcomeForm = new WelcomeForm(empName);
                 welcomeForm.ShowDialog();

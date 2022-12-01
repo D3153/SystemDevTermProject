@@ -40,6 +40,5 @@ namespace Opeq_CallCenter
             viewFormInstance.ShowDialog();
             this.Close();
         }
-
     }
 }
