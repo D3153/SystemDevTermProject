@@ -13,7 +13,8 @@ namespace Opeq_CallCenter
 {
     public partial class AddForm : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KFOB4HEQ\DINAL;Initial Catalog=Opeq_CallCenter;Integrated Security=True");
+        //SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KFOB4HEQ\DINAL;Initial Catalog=Opeq_CallCenter;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-PJPEDDG;Initial Catalog=Opeq;Integrated Security=True");
 
         Boolean isAddBtnClicked;
         Boolean isCancelBtnClicked;
@@ -204,10 +205,10 @@ namespace Opeq_CallCenter
                 string screenProbDesc = screenProblemComboBox.GetItemText(screenProblemComboBox.SelectedItem);
                 string phoneTabProbDesc = phoneOrTabletProblemComboBox.GetItemText(phoneOrTabletProblemComboBox.SelectedItem);
 
-                int computerProbID = 0;
-                int laptopProbID = 0;
-                int screenProbID = 0;
-                int phoneTabProbID = 0;
+                string computerProbID = " ";
+                string laptopProbID = " ";
+                string screenProbID = " ";
+                string phoneTabProbID = " ";
 
                 string byEmail = "0";
                 string byTelephone = "0";
@@ -306,28 +307,28 @@ namespace Opeq_CallCenter
                 cmd5.CommandText = "SELECT IDENT_CURRENT('Product');";
                  productID = Convert.ToString(cmd5.ExecuteScalar());
 
-                //if (computerProbDesc != "")
-                //{
-                //    cmd6.CommandText = "SELECT computer_prob_id FROM Computer_Prob WHERE computer_desc = '" + computerProbDesc + "';";
-                //    computerProbID = cmd6.ExecuteNonQuery();
-                //}
-                //else if (laptopProbDesc != "")
-                //{
-                //    cmd7.CommandText = "SELECT laptop_prob_id FROM Laptop_Prob WHERE laptop_desc = '" + laptopProbDesc + "';";
-                //    laptopProbID = cmd7.ExecuteNonQuery();
-                //}
-                //else if (screenProbDesc != "")
-                //{
-                //    cmd8.CommandText = "SELECT screen_prob_id FROM Screen_Prob WHERE screen_desc = '" + screenProbDesc + "';";
-                //    screenProbID = cmd8.ExecuteNonQuery();
-                //}
-                //else if (phoneTabProbDesc != "")
-                //{
-                //    cmd9.CommandText = "SELECT phone_tablet_prob_id FROM Phone_tablet_Prob WHERE phone_tab_desc = '" + phoneTabProbDesc + "';";
-                //    phoneTabProbID = cmd9.ExecuteNonQuery();
-                //}
+                if (computerProbDesc != "")
+                {
+                    cmd6.CommandText = "SELECT computer_prob_id FROM Computer_Prob WHERE computer_desc = '" + computerProbDesc + "';";
+                    computerProbID = Convert.ToString(cmd6.ExecuteScalar());
+                }
+                else if (laptopProbDesc != "")
+                {
+                    cmd7.CommandText = "SELECT laptop_prob_id FROM Laptop_Prob WHERE laptop_desc = '" + laptopProbDesc + "';";
+                    laptopProbID = Convert.ToString(cmd7.ExecuteScalar());
+                }
+                else if (screenProbDesc != "")
+                {
+                    cmd8.CommandText = "SELECT screen_prob_id FROM Screen_Prob WHERE screen_desc = '" + screenProbDesc + "';";
+                    screenProbID = Convert.ToString(cmd8.ExecuteScalar()); ;
+                }
+                else if (phoneTabProbDesc != "")
+                {
+                    cmd9.CommandText = "SELECT phone_tablet_prob_id FROM Phone_tablet_Prob WHERE phone_tab_desc = '" + phoneTabProbDesc + "';";
+                    phoneTabProbID = Convert.ToString(cmd9.ExecuteScalar());
+                }
 
-                    cmd10.CommandText = "INSERT INTO Client (employee_id, product_id, computer_prob_id, laptop_prob_id, screen_prob_id, phone_tablet_prob_id, address_id, client_name, client_desc, date_added, client_email, client_phone_num, by_email, by_telephone, in_person) VALUES ('" +
+                cmd10.CommandText = "INSERT INTO Client (employee_id, product_id, computer_prob_id, laptop_prob_id, screen_prob_id, phone_tablet_prob_id, address_id, client_name, client_desc, date_added, client_email, client_phone_num, by_email, by_telephone, in_person) VALUES ('" +
                                        empID + "', '" + productID + "', '" + computerProbID + "', '" + laptopProbID + "', '" + screenProbID + "', '" + phoneTabProbID + "', '" + addressID + "', '" + clientName + "', '" + problemDesc + "', '" + date + "', '" + email + "', '" + phone + "', '" + byEmail + "', '" + byTelephone + "', '" + inPerson + "');";
 
                     cmd10.ExecuteNonQuery();
@@ -465,5 +466,6 @@ namespace Opeq_CallCenter
             }
             name.ForeColor = Color.Black;
         }
+
     }
 }
