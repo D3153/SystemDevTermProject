@@ -42,7 +42,6 @@ namespace Opeq_CallCenter
 
         private void AddForm_Load(object sender, EventArgs e)
         {
-            //if
             con.Open();
 
             SqlCommand cmd1 = con.CreateCommand();

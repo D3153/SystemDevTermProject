@@ -12,8 +12,6 @@ namespace Opeq_CallCenter
 {
     public partial class WelcomeForm : Form
     {
-        public string Name { get; set; }
-
 
         public WelcomeForm(String name)
         {
@@ -57,8 +55,8 @@ namespace Opeq_CallCenter
         private void adminRadioBtn_MouseClick(object sender, MouseEventArgs e)
         {
             this.Hide();
-            AdminPage adminPage = new AdminPage();
-            adminPage.ShowDialog();
+            AdminPage adminFormInstance = new AdminPage();
+            adminFormInstance.ShowDialog();
             this.Close();
         }
 

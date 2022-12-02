@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminPage));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.viewRadioBtn = new System.Windows.Forms.RadioButton();
             this.modifyRadioBtn = new System.Windows.Forms.RadioButton();
@@ -84,7 +85,7 @@
             // 
             this.viewRadioBtn.AutoCheck = false;
             this.viewRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewRadioBtn.Location = new System.Drawing.Point(5, 167);
+            this.viewRadioBtn.Location = new System.Drawing.Point(6, 185);
             this.viewRadioBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.viewRadioBtn.Name = "viewRadioBtn";
             this.viewRadioBtn.Size = new System.Drawing.Size(188, 44);
@@ -98,7 +99,7 @@
             // 
             this.modifyRadioBtn.AutoCheck = false;
             this.modifyRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.modifyRadioBtn.Location = new System.Drawing.Point(5, 100);
+            this.modifyRadioBtn.Location = new System.Drawing.Point(6, 118);
             this.modifyRadioBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.modifyRadioBtn.Name = "modifyRadioBtn";
             this.modifyRadioBtn.Size = new System.Drawing.Size(188, 44);
@@ -112,7 +113,7 @@
             // 
             this.addButton.AutoCheck = false;
             this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addButton.Location = new System.Drawing.Point(5, 21);
+            this.addButton.Location = new System.Drawing.Point(6, 39);
             this.addButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(188, 44);
@@ -227,7 +228,7 @@
             this.computerProbTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.computerProbTextBox.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.computerProbTextBox.Location = new System.Drawing.Point(730, 114);
-            this.computerProbTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.computerProbTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.computerProbTextBox.Multiline = true;
             this.computerProbTextBox.Name = "computerProbTextBox";
             this.computerProbTextBox.Size = new System.Drawing.Size(251, 24);
@@ -239,7 +240,7 @@
             this.screenProbTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.screenProbTextBox.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.screenProbTextBox.Location = new System.Drawing.Point(730, 202);
-            this.screenProbTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.screenProbTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.screenProbTextBox.Multiline = true;
             this.screenProbTextBox.Name = "screenProbTextBox";
             this.screenProbTextBox.Size = new System.Drawing.Size(251, 24);
@@ -251,7 +252,7 @@
             this.laptopProbTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.laptopProbTextBox.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.laptopProbTextBox.Location = new System.Drawing.Point(730, 292);
-            this.laptopProbTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.laptopProbTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.laptopProbTextBox.Multiline = true;
             this.laptopProbTextBox.Name = "laptopProbTextBox";
             this.laptopProbTextBox.Size = new System.Drawing.Size(251, 24);
@@ -263,7 +264,7 @@
             this.phoneOrTabTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phoneOrTabTextBox.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.phoneOrTabTextBox.Location = new System.Drawing.Point(729, 379);
-            this.phoneOrTabTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.phoneOrTabTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.phoneOrTabTextBox.Multiline = true;
             this.phoneOrTabTextBox.Name = "phoneOrTabTextBox";
             this.phoneOrTabTextBox.Size = new System.Drawing.Size(251, 24);
@@ -516,7 +517,8 @@
             this.Controls.Add(this.computerProblemComboBox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdminPage";
             this.Text = "AdminPage";
             this.Load += new System.EventHandler(this.AdminPage_Load);
