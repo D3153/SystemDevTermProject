@@ -14,11 +14,21 @@ namespace Opeq_CallCenter
 {
     public partial class ModifyForm : Form
     {
-        //SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KFOB4HEQ\DINAL;Initial Catalog=Opeq_CallCenter;Integrated Security=True");
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-PJPEDDG;Initial Catalog=Opeq;Integrated Security=True");
-        public ModifyForm()
+        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KFOB4HEQ\DINAL;Initial Catalog=Opeq_CallCenter;Integrated Security=True");
+        //SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-PJPEDDG;Initial Catalog=Opeq;Integrated Security=True");
+        public ModifyForm(string empName)
         {
             InitializeComponent();
+            empNameTextView.Text = empName;
+
+            if(empName == "Simon.P")
+            {
+                adminRadioBtn.Show();
+            }
+            else
+            {
+                adminRadioBtn.Hide();
+            }
         }
 
         private void ModifyForm_Load(object sender, EventArgs e)
@@ -356,98 +366,148 @@ namespace Opeq_CallCenter
             e.SuppressKeyPress = true;
         }
 
-    }
+
+        Boolean isAddBtnClicked;
+        Boolean isCancelBtnClicked;
+        Boolean isAddRadioBtnClicked;
+        Boolean isViewRadioBtnClicked;
+        Boolean isAdminRadioBtnClicked;
+
+        private void confirmation()
+        {
+            if (isAddBtnClicked == true)
+            {
+                DialogResult dialog = MessageBox.Show("Les donnés que vous avez rentrées vont être sauvegardés." +
+                    "\nModifier un autre client?", "Mise en garde", MessageBoxButtons.YesNo);
+                if (dialog == DialogResult.Yes)
+                {
+                    this.Hide();
+                    String empName = empNameTextView.Text;
+                    AddForm addForm = new AddForm(empName);
+                    addForm.ShowDialog();
+                    this.Close();
+                    //Alternate solution: create a Form for the confirmation 
+                }
+                else if (dialog == DialogResult.No)
+                {
+                    this.Hide();
+                    MainHub mainHub = new MainHub();
+                    mainHub.ShowDialog();
+                    this.Close();
+                }
+            }
+            else if (isCancelBtnClicked == true)
+            {
+                DialogResult dialog = MessageBox.Show("Les donnés que vous avez rentrées ne vont pas être sauvegardés." +
+                    "\nÊtes-vous sur d’annuler?", "Mise en garde", MessageBoxButtons.YesNo);
+                if (dialog == DialogResult.Yes)
+                {
+                    this.Hide();
+                    String empName = empNameTextView.Text;
+                    MainHub mainHub = new MainHub(empName);
+                    mainHub.ShowDialog();
+                    this.Close();
+                }
+                else if (dialog == DialogResult.No)
+                {
+                    isCancelBtnClicked = false;
+                }
+            }
+            else if (isAddRadioBtnClicked == true)
+            {
+                DialogResult dialog = MessageBox.Show("Les donnés que vous avez rentrées ne vont pas être sauvegardés." +
+                    "\nÊtes-vous sur d’annuler?", "Mise en garde", MessageBoxButtons.YesNo);
+                if (dialog == DialogResult.Yes)
+                {
+                    this.Hide();
+                    String empName = empNameTextView.Text;
+                    AddForm modifyForm = new AddForm(empName);
+                    modifyForm.ShowDialog();
+                    this.Close();
+                }
+                else if (dialog == DialogResult.No)
+                {
+                    isAddRadioBtnClicked = false;
+                }
+            }
+            else if (isViewRadioBtnClicked == true)
+            {
+                DialogResult dialog = MessageBox.Show("Les donnés que vous avez rentrées ne vont pas être sauvegardés." +
+                    "\nÊtes-vous sur d’annuler?", "Mise en garde", MessageBoxButtons.YesNo);
+                if (dialog == DialogResult.Yes)
+                {
+                    this.Hide();
+                    String empName = empNameTextView.Text;
+                    ViewForm viewForm = new ViewForm(empName);
+                    viewForm.ShowDialog();
+                    this.Close();
+                }
+                else if (dialog == DialogResult.No)
+                {
+                    isViewRadioBtnClicked = false;
+                }
+            }
+            else if (isAdminRadioBtnClicked == true)
+            {
+                DialogResult dialog = MessageBox.Show("Les donnés que vous avez rentrées ne vont pas être sauvegardés." +
+                    "\nÊtes-vous sur d’annuler?", "Mise en garde", MessageBoxButtons.YesNo);
+                if (dialog == DialogResult.Yes)
+                {
+                    this.Hide();
+                    String empName = empNameTextView.Text;
+                    AdminPage adminForm = new AdminPage();
+                    adminForm.ShowDialog();
+                    this.Close();
+                }
+                else if (dialog == DialogResult.No)
+                {
+                    isAdminRadioBtnClicked = false;
+                }
+            }
+
+        }
+        private void addButton_MouseClick(object sender, MouseEventArgs e)
+        {
+            isAddRadioBtnClicked = true;
+            addRadioBtn.Checked = true;
+            confirmation();
+        }
+
+        private void viewRadioBtn_MouseClick(object sender, MouseEventArgs e)
+        {
+            isViewRadioBtnClicked = true;
+            addRadioBtn.Checked = true;
+            confirmation();
+        }
 
 
-        //Boolean isAddBtnClicked;
-        //Boolean isCancelBtnClicked;
-        //Boolean isAddRadioBtnClicked;
-        //Boolean isViewRadioBtnClicked;
-
-        //private void confirmation()
+        
+        //private void addButton_MouseClick(object sender, MouseEventArgs e)
         //{
-        //    if (isAddBtnClicked == true)
-        //    {
-        //        DialogResult dialog = MessageBox.Show("Les donnés que vous avez rentrées vont être sauvegardés." +
-        //            "\nModifier un autre client?", "Mise en garde", MessageBoxButtons.YesNo);
-        //        if (dialog == DialogResult.Yes)
-        //        {
-        //            //This might break the app or not so test with caution
-        //            this.Hide();
-        //            AddForm addForm = new AddForm();
-        //            addForm.ShowDialog();
-        //            this.Close();
-        //            //Alternate solution: create a Form for the confirmation 
-        //        }
-        //        else if (dialog == DialogResult.No)
-        //        {
-        //            this.Hide();
-        //            MainHub mainHub = new MainHub();
-        //            mainHub.ShowDialog();
-        //            this.Close();
-        //        }
-        //    }
-        //    else if (isCancelBtnClicked == true)
-        //    {
-        //        DialogResult dialog = MessageBox.Show("Les donnés que vous avez rentrées ne vont pas être sauvegardés." +
-        //            "\nÊtes-vous sur d’annuler?", "Mise en garde", MessageBoxButtons.YesNo);
-        //        if (dialog == DialogResult.Yes)
-        //        {
-        //            this.Hide();
-        //            MainHub mainHub = new MainHub();
-        //            mainHub.ShowDialog();
-        //            this.Close();
-        //        }
-        //        else if (dialog == DialogResult.No)
-        //        {
-        //            isCancelBtnClicked = false;
-        //        }
-        //    }
-        //    else if (isAddRadioBtnClicked == true)
-        //    {
-        //        DialogResult dialog = MessageBox.Show("Les donnés que vous avez rentrées ne vont pas être sauvegardés." +
-        //            "\nÊtes-vous sur d’annuler?", "Mise en garde", MessageBoxButtons.YesNo);
-        //        if (dialog == DialogResult.Yes)
-        //        {
-        //            this.Hide();
-        //            ModifyForm modifyForm = new ModifyForm();
-        //            modifyForm.ShowDialog();
-        //            this.Close();
-        //        }
-        //        else if (dialog == DialogResult.No)
-        //        {
-        //            isAddRadioBtnClicked = false;
-        //        }
-        //    }
-        //    else if (isViewRadioBtnClicked == true)
-        //    {
-        //        DialogResult dialog = MessageBox.Show("Les donnés que vous avez rentrées ne vont pas être sauvegardés." +
-        //            "\nÊtes-vous sur d’annuler?", "Mise en garde", MessageBoxButtons.YesNo);
-        //        if (dialog == DialogResult.Yes)
-        //        {
-        //            this.Hide();
-        //            ViewForm viewForm = new ViewForm();
-        //            viewForm.ShowDialog();
-        //            this.Close();
-        //        }
-        //        else if (dialog == DialogResult.No)
-        //        {
-        //            isViewRadioBtnClicked = false;
-        //        }
-        //    }
+        //    this.Hide();
+        //    String empName = empNameTextView.Text;
+        //    AddForm addFormInstance = new AddForm(empName);
+        //    addFormInstance.ShowDialog();
+        //    this.Close();
         //}
 
-        //private void addRadioBtn_MouseClick(object sender, MouseEventArgs e)
+        //private void modifyRadioBtn_MouseClick(object sender, MouseEventArgs e)
         //{
-        //    isAddRadioBtnClicked = true;
-        //    addRadioBtn.Checked = true;
-        //    confirmation();
+        //    this.Hide();
+        //    String empName = empNameTextView.Text;
+        //    ModifyForm modifyFormInstance = new ModifyForm(empName);
+        //    modifyFormInstance.ShowDialog();
+        //    this.Close();
         //}
 
         //private void viewRadioBtn_MouseClick(object sender, MouseEventArgs e)
         //{
-        //    isViewRadioBtnClicked = true;
-        //    addRadioBtn.Checked = true;
-        //    confirmation();
+        //    this.Hide();
+        //    String empName = empNameTextView.Text;
+        //    ViewForm viewFormInstance = new ViewForm(empName);
+        //    viewFormInstance.ShowDialog();
+        //    this.Close();
         //}
+    }
+
 }

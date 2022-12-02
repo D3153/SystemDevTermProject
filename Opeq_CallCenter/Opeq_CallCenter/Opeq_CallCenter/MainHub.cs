@@ -14,13 +14,18 @@ namespace Opeq_CallCenter
     {
         public MainHub()
         {
+        }
+
+        public MainHub(string empName)
+        {
             InitializeComponent();
         }
 
         private void addButton_MouseClick(object sender, MouseEventArgs e)
         {
             this.Hide();
-            AddForm addFormInstance = new AddForm();
+            String empName = empNameTextView.Text;
+            AddForm addFormInstance = new AddForm(empName);
             addFormInstance.ShowDialog();
             this.Close();
         }
@@ -28,7 +33,8 @@ namespace Opeq_CallCenter
         private void modifyRadioBtn_MouseClick(object sender, MouseEventArgs e)
         {
             this.Hide();
-            ModifyForm modifyFormInstance = new ModifyForm();
+            String empName = empNameTextView.Text;
+            ModifyForm modifyFormInstance = new ModifyForm(empName);
             modifyFormInstance.ShowDialog();
             this.Close();
         }
@@ -36,7 +42,8 @@ namespace Opeq_CallCenter
         private void viewRadioBtn_MouseClick(object sender, MouseEventArgs e)
         {
             this.Hide();
-            ViewForm viewFormInstance = new ViewForm();
+            String empName = empNameTextView.Text;
+            ViewForm viewFormInstance = new ViewForm(empName);
             viewFormInstance.ShowDialog();
             this.Close();
         }

@@ -42,10 +42,10 @@
             this.loginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.loginButton.Location = new System.Drawing.Point(508, 508);
-            this.loginButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.loginButton.Margin = new System.Windows.Forms.Padding(4);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(179, 52);
-            this.loginButton.TabIndex = 7;
+            this.loginButton.TabIndex = 3;
             this.loginButton.Text = "Se Connecter";
             this.loginButton.UseVisualStyleBackColor = false;
             this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
@@ -59,7 +59,7 @@
             this.adminNameTextBox.Multiline = true;
             this.adminNameTextBox.Name = "adminNameTextBox";
             this.adminNameTextBox.Size = new System.Drawing.Size(443, 37);
-            this.adminNameTextBox.TabIndex = 6;
+            this.adminNameTextBox.TabIndex = 1;
             this.adminNameTextBox.Text = "Entrer votre Nom";
             this.adminNameTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.adminNameTextBox_MouseClick);
             this.adminNameTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.adminNameTextBox_KeyPress);
@@ -73,7 +73,7 @@
             this.employeeLoginLabel.Location = new System.Drawing.Point(37, 684);
             this.employeeLoginLabel.Name = "employeeLoginLabel";
             this.employeeLoginLabel.Size = new System.Drawing.Size(129, 20);
-            this.employeeLoginLabel.TabIndex = 5;
+            this.employeeLoginLabel.TabIndex = 4;
             this.employeeLoginLabel.Text = "Pas une admin?";
             this.employeeLoginLabel.Click += new System.EventHandler(this.employeeLoginLabel_Click);
             // 
@@ -96,7 +96,7 @@
             this.adminPassTextBox.Multiline = true;
             this.adminPassTextBox.Name = "adminPassTextBox";
             this.adminPassTextBox.Size = new System.Drawing.Size(443, 37);
-            this.adminPassTextBox.TabIndex = 8;
+            this.adminPassTextBox.TabIndex = 2;
             this.adminPassTextBox.Text = "Entrer votre Mot de Passe";
             this.adminPassTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.adminPassTextBox_MouseClick);
             this.adminPassTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.adminPassTextBox_KeyPress);
@@ -113,7 +113,7 @@
             this.Controls.Add(this.employeeLoginLabel);
             this.Controls.Add(this.loginLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdminLoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin Login";

@@ -13,23 +13,36 @@ namespace Opeq_CallCenter
 {
     public partial class AddForm : Form
     {
-        //SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KFOB4HEQ\DINAL;Initial Catalog=Opeq_CallCenter;Integrated Security=True");
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-PJPEDDG;Initial Catalog=Opeq;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KFOB4HEQ\DINAL;Initial Catalog=Opeq_CallCenter;Integrated Security=True");
+        //SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-PJPEDDG;Initial Catalog=Opeq;Integrated Security=True");
 
         Boolean isAddBtnClicked;
         Boolean isCancelBtnClicked;
         Boolean isModifyRadioBtnClicked;
         Boolean isViewRadioBtnClicked;
+        Boolean isAdminRadioBtnClicked;
+
 
         public AddForm()
         {
             InitializeComponent();
+        }
+        public AddForm(string empName)
+        {
+            InitializeComponent();
             nameTextBox.Focus();
+            empNameTextView.Text = empName;
 
+            if (empName == "Simon.P")
+            {
+                adminRadioBtn.Show();
+            }
+            else adminRadioBtn.Hide();
         }
 
         private void AddForm_Load(object sender, EventArgs e)
         {
+            //if
             con.Open();
 
             SqlCommand cmd1 = con.CreateCommand();
@@ -416,9 +429,9 @@ namespace Opeq_CallCenter
                     "\nModifier un autre client?", "Mise en garde", MessageBoxButtons.YesNo);
                 if (dialog == DialogResult.Yes)
                 {
-                    //This might break the app or not so test with caution
                     this.Hide();
-                    AddForm addForm = new AddForm();
+                    String empName = empNameTextView.Text;
+                    AddForm addForm = new AddForm(empName);
                     addForm.ShowDialog();
                     this.Close();
                     //Alternate solution: create a Form for the confirmation 
@@ -438,7 +451,8 @@ namespace Opeq_CallCenter
                 if (dialog == DialogResult.Yes)
                 {
                     this.Hide();
-                    MainHub mainHub = new MainHub();
+                    String empName = empNameTextView.Text;
+                    MainHub mainHub = new MainHub(empName);
                     mainHub.ShowDialog();
                     this.Close();
                 }
@@ -454,7 +468,8 @@ namespace Opeq_CallCenter
                 if (dialog == DialogResult.Yes)
                 {
                     this.Hide();
-                    ModifyForm modifyForm = new ModifyForm();
+                    String empName = empNameTextView.Text;
+                    ModifyForm modifyForm = new ModifyForm(empName);
                     modifyForm.ShowDialog();
                     this.Close();
                 }
@@ -470,7 +485,8 @@ namespace Opeq_CallCenter
                 if (dialog == DialogResult.Yes)
                 {
                     this.Hide();
-                    ViewForm viewForm = new ViewForm();
+                    String empName = empNameTextView.Text;
+                    ViewForm viewForm = new ViewForm(empName);
                     viewForm.ShowDialog();
                     this.Close();
                 }
@@ -479,6 +495,24 @@ namespace Opeq_CallCenter
                     isViewRadioBtnClicked = false;
                 }
             }
+            else if (isAdminRadioBtnClicked == true)
+            {
+                DialogResult dialog = MessageBox.Show("Les donnés que vous avez rentrées ne vont pas être sauvegardés." +
+                    "\nÊtes-vous sur d’annuler?", "Mise en garde", MessageBoxButtons.YesNo);
+                if (dialog == DialogResult.Yes)
+                {
+                    this.Hide();
+                    String empName = empNameTextView.Text;
+                    AdminPage adminForm = new AdminPage();
+                    adminForm.ShowDialog();
+                    this.Close();
+                }
+                else if (dialog == DialogResult.No)
+                {
+                    isAdminRadioBtnClicked = false;
+                }
+            }
+
         }
         private void modifyRadioBtn_MouseClick(object sender, MouseEventArgs e)
         {

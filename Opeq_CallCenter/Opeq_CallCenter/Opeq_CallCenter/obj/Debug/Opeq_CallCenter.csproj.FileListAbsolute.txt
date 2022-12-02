@@ -1,27 +1,11 @@
-C:\Users\HP\Desktop\SysDevProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\bin\Debug\Opeq_CallCenter.exe.config
-C:\Users\HP\Desktop\SysDevProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\bin\Debug\Opeq_CallCenter.exe
-C:\Users\HP\Desktop\SysDevProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\bin\Debug\Opeq_CallCenter.pdb
-C:\Users\HP\Desktop\SysDevProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.csproj.AssemblyReference.cache
-C:\Users\HP\Desktop\SysDevProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.csproj.SuggestedBindingRedirects.cache
-C:\Users\HP\Desktop\SysDevProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.AddForm.resources
-C:\Users\HP\Desktop\SysDevProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.AdminLoginForm.resources
-C:\Users\HP\Desktop\SysDevProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.LoginForm.resources
-C:\Users\HP\Desktop\SysDevProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.ModifyForm.resources
-C:\Users\HP\Desktop\SysDevProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.Properties.Resources.resources
-C:\Users\HP\Desktop\SysDevProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.ViewForm.resources
-C:\Users\HP\Desktop\SysDevProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.WelcomeForm.resources
-C:\Users\HP\Desktop\SysDevProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.csproj.GenerateResource.cache
-C:\Users\HP\Desktop\SysDevProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.csproj.CoreCompileInputs.cache
-C:\Users\HP\Desktop\SysDevProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.exe
-C:\Users\HP\Desktop\SysDevProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.pdb
 C:\Users\Dinal\Desktop\Semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\bin\Debug\Opeq_CallCenter.exe.config
 C:\Users\Dinal\Desktop\Semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\bin\Debug\Opeq_CallCenter.exe
 C:\Users\Dinal\Desktop\Semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\bin\Debug\Opeq_CallCenter.pdb
 C:\Users\Dinal\Desktop\Semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.csproj.AssemblyReference.cache
 C:\Users\Dinal\Desktop\Semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.csproj.SuggestedBindingRedirects.cache
 C:\Users\Dinal\Desktop\Semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.AddForm.resources
-C:\Users\Dinal\Desktop\Semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.AdminAddForm.resources
 C:\Users\Dinal\Desktop\Semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.AdminLoginForm.resources
+C:\Users\Dinal\Desktop\Semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.AdminPage.resources
 C:\Users\Dinal\Desktop\Semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.LoginForm.resources
 C:\Users\Dinal\Desktop\Semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.MainHub.resources
 C:\Users\Dinal\Desktop\Semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.ModifyForm.resources
@@ -32,48 +16,3 @@ C:\Users\Dinal\Desktop\Semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\O
 C:\Users\Dinal\Desktop\Semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.csproj.CoreCompileInputs.cache
 C:\Users\Dinal\Desktop\Semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.exe
 C:\Users\Dinal\Desktop\Semester 4\Sys_Dev\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.pdb
-<<<<<<< HEAD
-<<<<<<< HEAD
-C:\Users\HP\Desktop\SysDevProject3\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\bin\Debug\Opeq_CallCenter.exe.config
-C:\Users\HP\Desktop\SysDevProject3\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\bin\Debug\Opeq_CallCenter.exe
-C:\Users\HP\Desktop\SysDevProject3\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\bin\Debug\Opeq_CallCenter.pdb
-C:\Users\HP\Desktop\SysDevProject3\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.csproj.AssemblyReference.cache
-C:\Users\HP\Desktop\SysDevProject3\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.csproj.SuggestedBindingRedirects.cache
-C:\Users\HP\Desktop\SysDevProject3\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.AddForm.resources
-C:\Users\HP\Desktop\SysDevProject3\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.AdminAddForm.resources
-C:\Users\HP\Desktop\SysDevProject3\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.AdminLoginForm.resources
-C:\Users\HP\Desktop\SysDevProject3\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.LoginForm.resources
-C:\Users\HP\Desktop\SysDevProject3\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.MainHub.resources
-C:\Users\HP\Desktop\SysDevProject3\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.ModifyForm.resources
-C:\Users\HP\Desktop\SysDevProject3\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.Properties.Resources.resources
-C:\Users\HP\Desktop\SysDevProject3\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.ViewForm.resources
-C:\Users\HP\Desktop\SysDevProject3\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.WelcomeForm.resources
-C:\Users\HP\Desktop\SysDevProject3\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.csproj.GenerateResource.cache
-C:\Users\HP\Desktop\SysDevProject3\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.csproj.CoreCompileInputs.cache
-C:\Users\HP\Desktop\SysDevProject3\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.exe
-C:\Users\HP\Desktop\SysDevProject3\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.pdb
-=======
-=======
->>>>>>> da19c6de5b13c07bbe246f30781803a6e32ce6f6
-C:\Users\2069192\Downloads\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\bin\Debug\Opeq_CallCenter.exe.config
-C:\Users\2069192\Downloads\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\bin\Debug\Opeq_CallCenter.exe
-C:\Users\2069192\Downloads\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\bin\Debug\Opeq_CallCenter.pdb
-C:\Users\2069192\Downloads\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.csproj.AssemblyReference.cache
-C:\Users\2069192\Downloads\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.csproj.SuggestedBindingRedirects.cache
-C:\Users\2069192\Downloads\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.AddForm.resources
-C:\Users\2069192\Downloads\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.AdminAddForm.resources
-C:\Users\2069192\Downloads\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.AdminLoginForm.resources
-C:\Users\2069192\Downloads\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.LoginForm.resources
-C:\Users\2069192\Downloads\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.MainHub.resources
-C:\Users\2069192\Downloads\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.ModifyForm.resources
-C:\Users\2069192\Downloads\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.Properties.Resources.resources
-C:\Users\2069192\Downloads\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.ViewForm.resources
-C:\Users\2069192\Downloads\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.WelcomeForm.resources
-C:\Users\2069192\Downloads\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.csproj.GenerateResource.cache
-C:\Users\2069192\Downloads\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.csproj.CoreCompileInputs.cache
-C:\Users\2069192\Downloads\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.exe
-C:\Users\2069192\Downloads\SystemDevTermProject\Opeq_CallCenter\Opeq_CallCenter\Opeq_CallCenter\obj\Debug\Opeq_CallCenter.pdb
-<<<<<<< HEAD
->>>>>>> da19c6de5b13c07bbe246f30781803a6e32ce6f6
-=======
->>>>>>> da19c6de5b13c07bbe246f30781803a6e32ce6f6

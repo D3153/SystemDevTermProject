@@ -12,9 +12,42 @@ namespace Opeq_CallCenter
 {
     public partial class AdminPage : Form
     {
-        public AdminPage()
+        public AdminPage(string empName)
         {
             InitializeComponent();
+        }
+
+        public AdminPage()
+        {
+        }
+
+        private void AdminPage_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addButton_MouseClick(object sender, MouseEventArgs e)
+        {
+            this.Hide();
+            AddForm addFormInstance = new AddForm("Simon.P");
+            addFormInstance.ShowDialog();
+            this.Close();
+        }
+
+        private void modifyRadioBtn_MouseClick(object sender, MouseEventArgs e)
+        {
+            this.Hide();
+            ModifyForm modifyFormInstance = new ModifyForm("Simon.P");
+            modifyFormInstance.ShowDialog();
+            this.Close();
+        }
+
+        private void viewRadioBtn_MouseClick(object sender, MouseEventArgs e)
+        {
+            this.Hide();
+            ViewForm viewFormInstance = new ViewForm("Simon.P");
+            viewFormInstance.ShowDialog();
+            this.Close();
         }
     }
 }
