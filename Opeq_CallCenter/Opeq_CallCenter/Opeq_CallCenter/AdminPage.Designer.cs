@@ -135,6 +135,7 @@
             this.phoneOrTabProbAddBtn.TabIndex = 125;
             this.phoneOrTabProbAddBtn.Text = "+";
             this.phoneOrTabProbAddBtn.UseVisualStyleBackColor = false;
+            this.phoneOrTabProbAddBtn.Click += new System.EventHandler(this.phoneOrTabProbAddBtn_Click);
             // 
             // label5
             // 
@@ -283,6 +284,7 @@
             this.computerProbRemoveBtn.TabIndex = 118;
             this.computerProbRemoveBtn.Text = "-";
             this.computerProbRemoveBtn.UseVisualStyleBackColor = false;
+            this.computerProbRemoveBtn.Click += new System.EventHandler(this.computerProbRemoveBtn_Click);
             // 
             // computerProbAddBtn
             // 
@@ -296,6 +298,7 @@
             this.computerProbAddBtn.TabIndex = 119;
             this.computerProbAddBtn.Text = "+";
             this.computerProbAddBtn.UseVisualStyleBackColor = false;
+            this.computerProbAddBtn.Click += new System.EventHandler(this.computerProbAddBtn_Click);
             // 
             // screenProbRemoveBtn
             // 
@@ -309,6 +312,7 @@
             this.screenProbRemoveBtn.TabIndex = 120;
             this.screenProbRemoveBtn.Text = "-";
             this.screenProbRemoveBtn.UseVisualStyleBackColor = false;
+            this.screenProbRemoveBtn.Click += new System.EventHandler(this.screenProbRemoveBtn_Click);
             // 
             // screenProbAddBtn
             // 
@@ -322,6 +326,7 @@
             this.screenProbAddBtn.TabIndex = 121;
             this.screenProbAddBtn.Text = "+";
             this.screenProbAddBtn.UseVisualStyleBackColor = false;
+            this.screenProbAddBtn.Click += new System.EventHandler(this.screenProbAddBtn_Click);
             // 
             // laptopProbRemoveBtn
             // 
@@ -335,6 +340,7 @@
             this.laptopProbRemoveBtn.TabIndex = 122;
             this.laptopProbRemoveBtn.Text = "-";
             this.laptopProbRemoveBtn.UseVisualStyleBackColor = false;
+            this.laptopProbRemoveBtn.Click += new System.EventHandler(this.laptopProbRemoveBtn_Click);
             // 
             // laptopProbAddBtn
             // 
@@ -348,6 +354,7 @@
             this.laptopProbAddBtn.TabIndex = 123;
             this.laptopProbAddBtn.Text = "+";
             this.laptopProbAddBtn.UseVisualStyleBackColor = false;
+            this.laptopProbAddBtn.Click += new System.EventHandler(this.laptopProbAddBtn_Click);
             // 
             // phoneOrTabProbRemoveBtn
             // 
@@ -361,6 +368,7 @@
             this.phoneOrTabProbRemoveBtn.TabIndex = 124;
             this.phoneOrTabProbRemoveBtn.Text = "-";
             this.phoneOrTabProbRemoveBtn.UseVisualStyleBackColor = false;
+            this.phoneOrTabProbRemoveBtn.Click += new System.EventHandler(this.phoneOrTabProbRemoveBtn_Click);
             // 
             // orderTypeComboBox
             // 
@@ -406,6 +414,7 @@
             this.orderTypeAddBtn.TabIndex = 130;
             this.orderTypeAddBtn.Text = "+";
             this.orderTypeAddBtn.UseVisualStyleBackColor = false;
+            this.orderTypeAddBtn.Click += new System.EventHandler(this.orderTypeAddBtn_Click);
             // 
             // orderTypeRemoveBtn
             // 
@@ -419,6 +428,7 @@
             this.orderTypeRemoveBtn.TabIndex = 129;
             this.orderTypeRemoveBtn.Text = "-";
             this.orderTypeRemoveBtn.UseVisualStyleBackColor = false;
+            this.orderTypeRemoveBtn.Click += new System.EventHandler(this.orderTypeRemoveBtn_Click);
             // 
             // actionTookComboBox
             // 
@@ -464,6 +474,7 @@
             this.actionTookAddBtn.TabIndex = 135;
             this.actionTookAddBtn.Text = "+";
             this.actionTookAddBtn.UseVisualStyleBackColor = false;
+            this.actionTookAddBtn.Click += new System.EventHandler(this.actionTookAddBtn_Click);
             // 
             // actionTookRemoveBtn
             // 
@@ -477,6 +488,7 @@
             this.actionTookRemoveBtn.TabIndex = 134;
             this.actionTookRemoveBtn.Text = "-";
             this.actionTookRemoveBtn.UseVisualStyleBackColor = false;
+            this.actionTookRemoveBtn.Click += new System.EventHandler(this.actionTookRemoveBtn_Click);
             // 
             // AdminPage
             // 

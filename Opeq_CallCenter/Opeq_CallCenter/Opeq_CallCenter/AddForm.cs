@@ -388,7 +388,7 @@ namespace Opeq_CallCenter
                 else if (screenProbDesc != "")
                 {
                     cmd8.CommandText = "SELECT screen_prob_id FROM Screen_Prob WHERE screen_desc = '" + screenProbDesc + "';";
-                    screenProbID = Convert.ToString(cmd8.ExecuteScalar()); ;
+                    screenProbID = Convert.ToString(cmd8.ExecuteScalar());
                 }
                 else if (phoneTabProbDesc != "")
                 {
@@ -438,7 +438,8 @@ namespace Opeq_CallCenter
                 else if (dialog == DialogResult.No)
                 {
                     this.Hide();
-                    MainHub mainHub = new MainHub();
+                    string empName = empNameTextView.Text;
+                    MainHub mainHub = new MainHub(empName);
                     mainHub.ShowDialog();
                     this.Close();
                 }
@@ -502,7 +503,7 @@ namespace Opeq_CallCenter
                 {
                     this.Hide();
                     String empName = empNameTextView.Text;
-                    AdminPage adminForm = new AdminPage();
+                    AdminPage adminForm = new AdminPage(empName);
                     adminForm.ShowDialog();
                     this.Close();
                 }

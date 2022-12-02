@@ -24,7 +24,7 @@ namespace Opeq_CallCenter
         private void addButton_MouseClick(object sender, MouseEventArgs e)
         {
             this.Hide();
-            String empName = empNameTextView.Text;
+            string empName = empNameTextView.Text;
             AddForm addFormInstance = new AddForm(empName);
             addFormInstance.ShowDialog();
             this.Close();
@@ -33,7 +33,7 @@ namespace Opeq_CallCenter
         private void modifyRadioBtn_MouseClick(object sender, MouseEventArgs e)
         {
             this.Hide();
-            String empName = empNameTextView.Text;
+            string empName = empNameTextView.Text;
             ModifyForm modifyFormInstance = new ModifyForm(empName);
             modifyFormInstance.ShowDialog();
             this.Close();
@@ -42,7 +42,7 @@ namespace Opeq_CallCenter
         private void viewRadioBtn_MouseClick(object sender, MouseEventArgs e)
         {
             this.Hide();
-            String empName = empNameTextView.Text;
+            string empName = empNameTextView.Text;
             ViewForm viewFormInstance = new ViewForm(empName);
             viewFormInstance.ShowDialog();
             this.Close();

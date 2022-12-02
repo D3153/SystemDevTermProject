@@ -391,7 +391,8 @@ namespace Opeq_CallCenter
                 else if (dialog == DialogResult.No)
                 {
                     this.Hide();
-                    MainHub mainHub = new MainHub();
+                    string empName = empNameTextView.Text;
+                    MainHub mainHub = new MainHub(empName);
                     mainHub.ShowDialog();
                     this.Close();
                 }
