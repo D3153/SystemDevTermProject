@@ -39,36 +39,50 @@ namespace Opeq_CallCenter
             SqlCommand cmd2 = con.CreateCommand();
             SqlCommand cmd3 = con.CreateCommand();
             SqlCommand cmd4 = con.CreateCommand();
+            SqlCommand cmd5 = con.CreateCommand();
+            SqlCommand cmd6 = con.CreateCommand();
 
             cmd1.CommandType = CommandType.Text;
             cmd2.CommandType = CommandType.Text;
             cmd3.CommandType = CommandType.Text;
             cmd4.CommandType = CommandType.Text;
+            cmd5.CommandType = CommandType.Text;
+            cmd6.CommandType = CommandType.Text;
 
             cmd1.CommandText = "SELECT * FROM Computer_Prob;";
             cmd2.CommandText = "SELECT * FROM Laptop_Prob;";
             cmd3.CommandText = "SELECT * FROM Screen_Prob;";
             cmd4.CommandText = "SELECT * FROM Phone_Tablet_Prob;";
+            cmd5.CommandText = "SELECT * FROM Order_Type;";
+            cmd6.CommandText = "SELECT * FROM Action_Took;";
 
             cmd1.ExecuteNonQuery();
             cmd2.ExecuteNonQuery();
             cmd3.ExecuteNonQuery();
             cmd4.ExecuteNonQuery();
+            cmd5.ExecuteNonQuery();
+            cmd6.ExecuteNonQuery();
 
             SqlDataAdapter adapter1 = new SqlDataAdapter(cmd1);
             SqlDataAdapter adapter2 = new SqlDataAdapter(cmd2);
             SqlDataAdapter adapter3 = new SqlDataAdapter(cmd3);
             SqlDataAdapter adapter4 = new SqlDataAdapter(cmd4);
+            SqlDataAdapter adapter5 = new SqlDataAdapter(cmd5);
+            SqlDataAdapter adapter6 = new SqlDataAdapter(cmd6);
 
             DataSet dataSet1 = new DataSet();
             DataSet dataSet2 = new DataSet();
             DataSet dataSet3 = new DataSet();
             DataSet dataSet4 = new DataSet();
+            DataSet dataSet5 = new DataSet();
+            DataSet dataSet6 = new DataSet();
 
             adapter1.Fill(dataSet1);
             adapter2.Fill(dataSet2);
             adapter3.Fill(dataSet3);
             adapter4.Fill(dataSet4);
+            adapter4.Fill(dataSet5);
+            adapter4.Fill(dataSet6);
 
             con.Close();
 
@@ -92,6 +106,16 @@ namespace Opeq_CallCenter
             phoneOrTabletProblemComboBox.ValueMember = "phone_tablet_prob_id";
             phoneOrTabletProblemComboBox.SelectedIndex = -1;
 
+            orderTypeComboBox.DataSource = dataSet5.Tables[0];
+            orderTypeComboBox.DisplayMember = "Order_Type";
+            orderTypeComboBox.ValueMember = "order_type_id";
+            orderTypeComboBox.SelectedIndex = -1;
+
+            actionTookComboBox.DataSource = dataSet6.Tables[0];
+            actionTookComboBox.DisplayMember = "Action_Took";
+            actionTookComboBox.ValueMember = "action_took_id";
+            actionTookComboBox.SelectedIndex = -1;
+
             //hide eveything
             nameTextBox.Hide();
             label1.Hide();
@@ -109,13 +133,13 @@ namespace Opeq_CallCenter
             postalCodeTextBox.Hide();
             problemGroupBox.Hide();
             label13.Hide();
-            comboBox1.Hide();
+            orderTypeComboBox.Hide();
             label12.Hide();
             textBox1.Hide();
             label14.Hide();
             textBox2.Hide();
             label15.Hide();
-            comboBox2.Hide();
+            actionTookComboBox.Hide();
             problemStatusFroupBox.Hide();
             label17.Hide();
             dateTimePicker1.Hide();
@@ -161,13 +185,13 @@ namespace Opeq_CallCenter
             postalCodeTextBox.Show();
             problemGroupBox.Show();
             label13.Show();
-            comboBox1.Show();
+            orderTypeComboBox.Show();
             label12.Show();
             textBox1.Show();
             label14.Show();
             textBox2.Show();
             label15.Show();
-            comboBox2.Show();
+            actionTookComboBox.Show();
             problemStatusFroupBox.Show();
             label17.Show();
             dateTimePicker1.Show();
@@ -216,30 +240,30 @@ namespace Opeq_CallCenter
             cmd16.CommandText = "SELECT Screen_Prob.screen_prob_id FROM Client JOIN Product ON Client.product_id = Product.product_id JOIN Screen_Prob ON Screen_Prob.screen_prob_id = Client.screen_prob_id WHERE Product.MAT = '" + MAT + "';";
 
             //Commands to get problem descriptions
-            //SqlCommand cmd17 = con.CreateCommand();
+            SqlCommand cmd17 = con.CreateCommand();
             //SqlCommand cmd18 = con.CreateCommand();
             //SqlCommand cmd19 = con.CreateCommand();
             //SqlCommand cmd20 = con.CreateCommand();
-            SqlCommand cmd17 = con.CreateCommand();
-            SqlCommand cmd18 = con.CreateCommand();
+            //SqlCommand cmd17 = con.CreateCommand();
+            //SqlCommand cmd18 = con.CreateCommand();
 
             cmd17.CommandType = CommandType.Text;
-            cmd18.CommandType = CommandType.Text;
+            //cmd18.CommandType = CommandType.Text;
 
-            cmd17.CommandText = "SELECT * FROM Order_Type;";
-            cmd18.CommandText = "SELECT * FROM Action_Took;";
+            //cmd17.CommandText = "SELECT * FROM Order_Type;";
+            //cmd18.CommandText = "SELECT * FROM Action_Took;";
 
-            cmd17.ExecuteNonQuery();
-            cmd18.ExecuteNonQuery();
+            //cmd17.ExecuteNonQuery();
+            //cmd18.ExecuteNonQuery();
 
-            SqlDataAdapter adapter17 = new SqlDataAdapter(cmd5);
-            SqlDataAdapter adapter18 = new SqlDataAdapter(cmd6);
+            //SqlDataAdapter adapter17 = new SqlDataAdapter(cmd5);
+            //SqlDataAdapter adapter18 = new SqlDataAdapter(cmd6);
 
-            DataSet dataSet17 = new DataSet();
-            DataSet dataSet18 = new DataSet();
+            //DataSet dataSet17 = new DataSet();
+            //DataSet dataSet18 = new DataSet();
 
-            adapter17.Fill(dataSet17);
-            adapter18.Fill(dataSet18);
+            //adapter17.Fill(dataSet17);
+            //adapter18.Fill(dataSet18);
 
             nameTextBox.Text = Convert.ToString(cmd1.ExecuteScalar());
             problemDescriptionTextBox.Text = Convert.ToString(cmd2.ExecuteScalar());
@@ -330,10 +354,10 @@ namespace Opeq_CallCenter
 
         private void addBtn_Click(object sender, EventArgs e)
         {
-            string orderTypeDesc = comboBox1.GetItemText(comboBox1.SelectedItem);
+            string orderTypeDesc = orderTypeComboBox.GetItemText(orderTypeComboBox.SelectedItem);
             string orderNum = textBox1.Text;
             string howResolved = textBox2.Text;
-            string actionTookDesc = comboBox2.GetItemText(comboBox2.SelectedItem);
+            string actionTookDesc = actionTookComboBox.GetItemText(actionTookComboBox.SelectedItem);
             string resolved = "0";
             string notResolved = "0";
             string onGoing = "0";

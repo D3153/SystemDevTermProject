@@ -56,7 +56,7 @@
             this.adminLoginLabel.Location = new System.Drawing.Point(40, 690);
             this.adminLoginLabel.Name = "adminLoginLabel";
             this.adminLoginLabel.Size = new System.Drawing.Size(175, 20);
-            this.adminLoginLabel.TabIndex = 1;
+            this.adminLoginLabel.TabIndex = 3;
             this.adminLoginLabel.Text = "Êtez-vous une admin?";
             this.adminLoginLabel.Click += new System.EventHandler(this.adminLoginLabel_Click);
             // 
@@ -69,7 +69,7 @@
             this.empNameTextBox.Multiline = true;
             this.empNameTextBox.Name = "empNameTextBox";
             this.empNameTextBox.Size = new System.Drawing.Size(443, 38);
-            this.empNameTextBox.TabIndex = 2;
+            this.empNameTextBox.TabIndex = 1;
             this.empNameTextBox.Text = "Entrer votre nom";
             this.empNameTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.empNameTextBox_MouseClick);
             this.empNameTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.empNameTextBox_KeyPress);
@@ -83,7 +83,7 @@
             this.loginButton.Margin = new System.Windows.Forms.Padding(4);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(179, 52);
-            this.loginButton.TabIndex = 3;
+            this.loginButton.TabIndex = 2;
             this.loginButton.Text = "&Se Connecter";
             this.loginButton.UseVisualStyleBackColor = false;
             this.loginButton.Click += new System.EventHandler(this.loginButton_Click);

@@ -44,13 +44,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.MATTextBox = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.orderTypeComboBox = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.actionTookComboBox = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -266,14 +266,14 @@
             this.MATTextBox.Text = "MAT-";
             this.MATTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MATTextBox_MouseClick);
             // 
-            // comboBox1
+            // orderTypeComboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(864, 1303);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(357, 24);
-            this.comboBox1.TabIndex = 74;
+            this.orderTypeComboBox.FormattingEnabled = true;
+            this.orderTypeComboBox.Location = new System.Drawing.Point(864, 1303);
+            this.orderTypeComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.orderTypeComboBox.Name = "orderTypeComboBox";
+            this.orderTypeComboBox.Size = new System.Drawing.Size(357, 24);
+            this.orderTypeComboBox.TabIndex = 74;
             // 
             // label13
             // 
@@ -334,14 +334,14 @@
             this.label14.TabIndex = 77;
             this.label14.Text = "Comment Résolu";
             // 
-            // comboBox2
+            // actionTookComboBox
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(737, 1588);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(357, 24);
-            this.comboBox2.TabIndex = 80;
+            this.actionTookComboBox.FormattingEnabled = true;
+            this.actionTookComboBox.Location = new System.Drawing.Point(737, 1588);
+            this.actionTookComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.actionTookComboBox.Name = "actionTookComboBox";
+            this.actionTookComboBox.Size = new System.Drawing.Size(357, 24);
+            this.actionTookComboBox.TabIndex = 80;
             // 
             // label15
             // 
@@ -841,13 +841,13 @@
             this.Controls.Add(this.label17);
             this.Controls.Add(this.dateTimePickerEntered);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.actionTookComboBox);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.orderTypeComboBox);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.MATTextBox);
@@ -867,7 +867,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ModifyForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ModifyForm";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.ModifyForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.opeq_CallCenterDataSet1)).EndInit();
             this.navGroupBox.ResumeLayout(false);
@@ -902,13 +902,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox MATTextBox;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox orderTypeComboBox;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox actionTookComboBox;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;

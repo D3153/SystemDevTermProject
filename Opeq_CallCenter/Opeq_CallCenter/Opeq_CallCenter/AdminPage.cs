@@ -148,6 +148,45 @@ namespace Opeq_CallCenter
             this.Close();
         }
 
+        private void emptyTextBox(TextBox textBox)
+        {
+            if(textBox.Text == "Ajouter")
+            {
+                textBox.Text = "";
+            }
+            textBox.ForeColor = Color.Black;
+        }
+
+        private void computerProbTextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            emptyTextBox(computerProbTextBox);
+        }
+
+        private void laptopProbTextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            emptyTextBox(laptopProbTextBox);
+        }
+
+        private void screenProbTextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            emptyTextBox(screenProbTextBox);
+        }
+       
+        private void phoneOrTabTextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            emptyTextBox(phoneOrTabTextBox);
+        }
+        
+        private void orderTypeTextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            emptyTextBox(orderTypeTextBox);
+        }
+
+        private void actionTookTextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            emptyTextBox(actionTookTextBox);
+        }
+
         private void computerProbAddBtn_Click(object sender, EventArgs e)
         {
             string computerProbDesc = computerProbTextBox.Text;
@@ -167,6 +206,7 @@ namespace Opeq_CallCenter
 
                 con.Close();
             }
+            computerProbTextBox.Text = "";
             loadComboBox();
         }
 
@@ -188,6 +228,7 @@ namespace Opeq_CallCenter
 
                 con.Close();
             }
+            screenProbTextBox.Text = "";
             loadComboBox();
         }
 
@@ -209,6 +250,7 @@ namespace Opeq_CallCenter
 
                 con.Close();
             }
+            laptopProbTextBox.Text = "";
             loadComboBox();
         }
 
@@ -230,6 +272,7 @@ namespace Opeq_CallCenter
 
                 con.Close();
             }
+            phoneOrTabTextBox.Text = "";
             loadComboBox();
         }
 
@@ -251,6 +294,7 @@ namespace Opeq_CallCenter
 
                 con.Close();
             }
+            orderTypeTextBox.Text = "";
             loadComboBox();
         }
 
@@ -272,6 +316,7 @@ namespace Opeq_CallCenter
 
                 con.Close();
             }
+            actionTookTextBox.Text = "";
             loadComboBox();
         }
 
@@ -400,5 +445,6 @@ namespace Opeq_CallCenter
             }
             loadComboBox();
         }
+
     }
 }

@@ -235,6 +235,7 @@
             this.computerProbTextBox.Size = new System.Drawing.Size(251, 24);
             this.computerProbTextBox.TabIndex = 114;
             this.computerProbTextBox.Text = "Ajouter";
+            this.computerProbTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.computerProbTextBox_MouseClick);
             // 
             // screenProbTextBox
             // 
@@ -247,6 +248,7 @@
             this.screenProbTextBox.Size = new System.Drawing.Size(251, 24);
             this.screenProbTextBox.TabIndex = 115;
             this.screenProbTextBox.Text = "Ajouter";
+            this.screenProbTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.screenProbTextBox_MouseClick);
             // 
             // laptopProbTextBox
             // 
@@ -259,6 +261,7 @@
             this.laptopProbTextBox.Size = new System.Drawing.Size(251, 24);
             this.laptopProbTextBox.TabIndex = 116;
             this.laptopProbTextBox.Text = "Ajouter";
+            this.laptopProbTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.laptopProbTextBox_MouseClick);
             // 
             // phoneOrTabTextBox
             // 
@@ -271,6 +274,7 @@
             this.phoneOrTabTextBox.Size = new System.Drawing.Size(251, 24);
             this.phoneOrTabTextBox.TabIndex = 117;
             this.phoneOrTabTextBox.Text = "Ajouter";
+            this.phoneOrTabTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.phoneOrTabTextBox_MouseClick);
             // 
             // computerProbRemoveBtn
             // 
@@ -401,6 +405,7 @@
             this.orderTypeTextBox.Size = new System.Drawing.Size(251, 24);
             this.orderTypeTextBox.TabIndex = 128;
             this.orderTypeTextBox.Text = "Ajouter";
+            this.orderTypeTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.orderTypeTextBox_MouseClick);
             // 
             // orderTypeAddBtn
             // 
@@ -461,6 +466,7 @@
             this.actionTookTextBox.Size = new System.Drawing.Size(251, 24);
             this.actionTookTextBox.TabIndex = 133;
             this.actionTookTextBox.Text = "Ajouter";
+            this.actionTookTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.actionTookTextBox_MouseClick);
             // 
             // actionTookAddBtn
             // 
