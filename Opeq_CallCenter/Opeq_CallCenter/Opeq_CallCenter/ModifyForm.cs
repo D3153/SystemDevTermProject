@@ -81,8 +81,8 @@ namespace Opeq_CallCenter
             adapter2.Fill(dataSet2);
             adapter3.Fill(dataSet3);
             adapter4.Fill(dataSet4);
-            adapter4.Fill(dataSet5);
-            adapter4.Fill(dataSet6);
+            adapter5.Fill(dataSet5);
+            adapter6.Fill(dataSet6);
 
             con.Close();
 
@@ -107,12 +107,12 @@ namespace Opeq_CallCenter
             phoneOrTabletProblemComboBox.SelectedIndex = -1;
 
             orderTypeComboBox.DataSource = dataSet5.Tables[0];
-            orderTypeComboBox.DisplayMember = "Order_Type";
+            orderTypeComboBox.DisplayMember = "order_name";
             orderTypeComboBox.ValueMember = "order_type_id";
             orderTypeComboBox.SelectedIndex = -1;
 
             actionTookComboBox.DataSource = dataSet6.Tables[0];
-            actionTookComboBox.DisplayMember = "Action_Took";
+            actionTookComboBox.DisplayMember = "action_took_name";
             actionTookComboBox.ValueMember = "action_took_id";
             actionTookComboBox.SelectedIndex = -1;
 
