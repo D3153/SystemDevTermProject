@@ -803,6 +803,7 @@
             this.orderGroupBox.TabIndex = 104;
             this.orderGroupBox.TabStop = false;
             this.orderGroupBox.Text = "Nouvelle Commande?";
+            this.orderGroupBox.Enter += new System.EventHandler(this.orderGroupBox_Enter);
             // 
             // empNameTextView
             // 

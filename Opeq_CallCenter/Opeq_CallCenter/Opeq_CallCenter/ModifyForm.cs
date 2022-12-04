@@ -354,6 +354,126 @@ namespace Opeq_CallCenter
 
         private void addBtn_Click(object sender, EventArgs e)
         {
+            //Update Client Table
+            string empID;
+            string clientName = nameTextBox.Text;
+            string problemDesc = problemDescriptionTextBox.Text;
+            string email = emailTextbox.Text;
+            string phone = phoneTextBox.Text;
+            string date = dateTimePickerEntered.Value.ToString();
+
+            //IDK how to get addressId from address table
+            string addressID = " ";
+
+
+            string street = streetTextBox.Text;
+            string aptNum = aptNumTextBox.Text;
+            string city = cityTextBox.Text;
+            string postalCode = postalCodeTextBox.Text;
+
+            string productName = " ";
+
+            string productID = " ";
+            string mat = MATTextBox.Text;
+
+            string computerProbDesc = computerProblemComboBox.GetItemText(computerProblemComboBox.SelectedItem);
+            string laptopProbDesc = laptopProblemComboBox.GetItemText(laptopProblemComboBox.SelectedItem);
+            string screenProbDesc = screenProblemComboBox.GetItemText(screenProblemComboBox.SelectedItem);
+            string phoneTabProbDesc = phoneOrTabletProblemComboBox.GetItemText(phoneOrTabletProblemComboBox.SelectedItem);
+
+            string computerProbID = " ";
+            string laptopProbID = " ";
+            string screenProbID = " ";
+            string phoneTabProbID = " ";
+
+            string byEmail = "0";
+            string byTelephone = "0";
+            string inPerson = "0";
+
+            var contacts = contactGroupBox;
+            foreach (var radioButton in contacts.Controls.OfType<RadioButton>())
+            {
+                byEmail = emailRadioBtn.Checked ? "1" : "0";
+                byTelephone = phoneRadioBtn.Checked ? "1" : "0";
+                inPerson = inPersonRadioBtn.Checked ? "1" : "0";
+            }
+
+            con.Open();
+
+            SqlCommand cmd1 = con.CreateCommand();
+            SqlCommand cmd2 = con.CreateCommand();
+            SqlCommand cmd3 = con.CreateCommand();
+            SqlCommand cmd4 = con.CreateCommand();
+            SqlCommand cmd5 = con.CreateCommand();
+            SqlCommand cmd6 = con.CreateCommand();
+            SqlCommand cmd7 = con.CreateCommand();
+            SqlCommand cmd8 = con.CreateCommand();
+            SqlCommand cmd9 = con.CreateCommand();
+            SqlCommand cmd10 = con.CreateCommand();
+
+
+            cmd1.CommandType = CommandType.Text;
+            cmd2.CommandType = CommandType.Text;
+            cmd3.CommandType = CommandType.Text;
+            cmd4.CommandType = CommandType.Text;
+            cmd5.CommandType = CommandType.Text;
+            cmd6.CommandType = CommandType.Text;
+            cmd7.CommandType = CommandType.Text;
+            cmd8.CommandType = CommandType.Text;
+            cmd9.CommandType = CommandType.Text;
+            cmd10.CommandType = CommandType.Text;
+
+            cmd1.CommandText = "UPDATE Client_Address SET street = '" + street + "', apt_num = '" + aptNum + "', city = '" + city+ "', postal_code = '" + postalCode+ "' FROM Client_Address JOIN Client ON Client_Address.address_id = Client.address_id JOIN Product ON Product.product_id = Client.product_id WHERE MAT = 'MAT-ollo';";
+            //cmd1.CommandText = "INSERT INTO Client_Address (street, apt_num, city, postal_code) VALUES ('" + street + "', '" + aptNum + "', '" + city + "','" + postalCode + "');";
+
+            cmd1.ExecuteNonQuery();
+
+            cmd2.CommandText = "SELECT IDENT_CURRENT('Employee');";
+            empID = Convert.ToString(cmd2.ExecuteScalar());
+
+            cmd3.CommandText = "SELECT IDENT_CURRENT('Client_Address');";
+            addressID = Convert.ToString(cmd3.ExecuteScalar());
+
+            cmd4.CommandText = "INSERT INTO Product (MAT, product_name) VALUES ('" + mat + "', '" + productName + "');";
+            cmd4.ExecuteNonQuery();
+
+            cmd5.CommandText = "SELECT IDENT_CURRENT('Product');";
+            productID = Convert.ToString(cmd5.ExecuteScalar());
+
+            if (computerProbDesc != "")
+            {
+                cmd6.CommandText = "SELECT computer_prob_id FROM Computer_Prob WHERE computer_desc = '" + computerProbDesc + "';";
+                computerProbID = Convert.ToString(cmd6.ExecuteScalar());
+            }
+            else if (laptopProbDesc != "")
+            {
+                cmd7.CommandText = "SELECT laptop_prob_id FROM Laptop_Prob WHERE laptop_desc = '" + laptopProbDesc + "';";
+                laptopProbID = Convert.ToString(cmd7.ExecuteScalar());
+            }
+            else if (screenProbDesc != "")
+            {
+                cmd8.CommandText = "SELECT screen_prob_id FROM Screen_Prob WHERE screen_desc = '" + screenProbDesc + "';";
+                screenProbID = Convert.ToString(cmd8.ExecuteScalar());
+            }
+            else if (phoneTabProbDesc != "")
+            {
+                cmd9.CommandText = "SELECT phone_tablet_prob_id FROM Phone_tablet_Prob WHERE phone_tab_desc = '" + phoneTabProbDesc + "';";
+                phoneTabProbID = Convert.ToString(cmd9.ExecuteScalar());
+            }
+
+            cmd10.CommandText = "UPDATE Client SET computer_prob_id = '" + computerProbID + "', laptop_prob_id = '" + laptopProbID + "', screen_prob_id = '" + screenProbID + "', phone_tablet_prob_id = '" + phoneTabProbID + "', client_name = '" + clientName + "', client_desc = '" + problemDesc + "', date_added = '" + date+ "', client_email = '" + email+ "', client_phone_num = '" + phone+ "', by_email = '" + byEmail+ "', by_telephone = '" + byTelephone + "', in_person = '" + inPerson+ "' FROM Client JOIN Product ON Client.product_id = Product.product_id WHERE MAT = 'MAT-ollo';";
+
+            //cmd10.CommandText = "INSERT INTO Client (employee_id, product_id, computer_prob_id, laptop_prob_id, screen_prob_id, phone_tablet_prob_id, address_id, client_name, client_desc, date_added, client_email, client_phone_num, by_email, by_telephone, in_person) VALUES ('" +
+            //                       empID + "', '" + productID + "', '" + computerProbID + "', '" + laptopProbID + "', '" + screenProbID + "', '" + phoneTabProbID + "', '" + addressID + "', '" + clientName + "', '" + problemDesc + "', '" + date + "', '" + email + "', '" + phone + "', '" + byEmail + "', '" + byTelephone + "', '" + inPerson + "');";
+
+            cmd10.ExecuteNonQuery();
+
+            con.Close();
+
+            isAddBtnClicked = true;
+            confirmation();
+
+
             string orderTypeDesc = orderTypeComboBox.GetItemText(orderTypeComboBox.SelectedItem);
             string orderNum = textBox1.Text;
             string howResolved = textBox2.Text;
@@ -505,34 +625,10 @@ namespace Opeq_CallCenter
             confirmation();
         }
 
+        private void orderGroupBox_Enter(object sender, EventArgs e)
+        {
 
-        
-        //private void addButton_MouseClick(object sender, MouseEventArgs e)
-        //{
-        //    this.Hide();
-        //    String empName = empNameTextView.Text;
-        //    AddForm addFormInstance = new AddForm(empName);
-        //    addFormInstance.ShowDialog();
-        //    this.Close();
-        //}
-
-        //private void modifyRadioBtn_MouseClick(object sender, MouseEventArgs e)
-        //{
-        //    this.Hide();
-        //    String empName = empNameTextView.Text;
-        //    ModifyForm modifyFormInstance = new ModifyForm(empName);
-        //    modifyFormInstance.ShowDialog();
-        //    this.Close();
-        //}
-
-        //private void viewRadioBtn_MouseClick(object sender, MouseEventArgs e)
-        //{
-        //    this.Hide();
-        //    String empName = empNameTextView.Text;
-        //    ViewForm viewFormInstance = new ViewForm(empName);
-        //    viewFormInstance.ShowDialog();
-        //    this.Close();
-        //}
+        }
     }
 
 }
