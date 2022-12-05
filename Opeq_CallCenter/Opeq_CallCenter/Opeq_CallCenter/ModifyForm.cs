@@ -16,12 +16,36 @@ namespace Opeq_CallCenter
     {
         SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KFOB4HEQ\DINAL;Initial Catalog=Opeq_CallCenter;Integrated Security=True");
         //SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-PJPEDDG;Initial Catalog=Opeq;Integrated Security=True");
+
+        //Ali code for inserting to modify table
+        string orderTypeDesc;
+        string orderNum;
+        string howResolved;
+        string actionTookDesc;
+
+        string resolved;
+        string notResolved;
+        string onGoing;
+
+        string resolvedDate;
+        string yes;
+        string no;
+
+        string deliveryDate;
+        string return_voucher;
+        string rma;
+
+        string clientId;
+        string actionTookId;
+        string orderTypeId;
+        string newOrderId;
+
         public ModifyForm(string empName)
         {
             InitializeComponent();
             empNameTextView.Text = empName;
 
-            if(empName == "Simon.P")
+            if (empName == "Simon.P")
             {
                 adminRadioBtn.Show();
             }
@@ -31,6 +55,7 @@ namespace Opeq_CallCenter
             }
         }
 
+        //loading up client dropdown information
         private void ModifyForm_Load(object sender, EventArgs e)
         {
             con.Open();
@@ -116,7 +141,7 @@ namespace Opeq_CallCenter
             actionTookComboBox.ValueMember = "action_took_id";
             actionTookComboBox.SelectedIndex = -1;
 
-            //hide eveything
+            //hide eveything before accessing the client
             nameTextBox.Hide();
             label1.Hide();
             label2.Hide();
@@ -168,6 +193,30 @@ namespace Opeq_CallCenter
 
         private void loadBtn_Click(object sender, EventArgs e)
         {
+
+
+            //orderTypeDesc = orderTypeComboBox.GetItemText(orderTypeComboBox.SelectedItem);
+            //orderNum = textBox1.Text;
+            //howResolved = textBox2.Text;
+            //actionTookDesc = actionTookComboBox.GetItemText(actionTookComboBox.SelectedItem);
+
+            resolved = "0";
+            notResolved = "0";
+            onGoing = "0";
+
+            resolvedDate = dateTimePicker1.Value.ToString();
+            yes = "0";
+            no = "0";
+
+            deliveryDate = dateTimePicker2.Value.ToString();
+            return_voucher = textBox3.Text;
+            rma = RMATextBox.Text;
+
+            clientId = "";
+            actionTookId = "";
+            orderTypeId = "";
+            newOrderId = "";
+
             //Show everything
             nameTextBox.Show();
             label1.Show();
@@ -197,6 +246,7 @@ namespace Opeq_CallCenter
             dateTimePicker1.Show();
             orderGroupBox.Show();
 
+
             con.Open();
 
             SqlCommand cmd1 = con.CreateCommand();
@@ -215,7 +265,22 @@ namespace Opeq_CallCenter
             SqlCommand cmd14 = con.CreateCommand();
             SqlCommand cmd15 = con.CreateCommand();
             SqlCommand cmd16 = con.CreateCommand();
-            
+
+            //to load modify table
+            SqlCommand cmd18 = con.CreateCommand();
+            SqlCommand cmd19 = con.CreateCommand();
+            SqlCommand cmd20 = con.CreateCommand();
+            SqlCommand cmd21 = con.CreateCommand();
+            SqlCommand cmd22 = con.CreateCommand();
+            SqlCommand cmd23 = con.CreateCommand();
+            SqlCommand cmd24 = con.CreateCommand();
+            SqlCommand cmd25 = con.CreateCommand();
+            SqlCommand cmd26 = con.CreateCommand();
+            SqlCommand cmd27 = con.CreateCommand();
+            SqlCommand cmd29 = con.CreateCommand();
+            SqlCommand cmd28 = con.CreateCommand();
+            SqlCommand cmd30 = con.CreateCommand();
+
 
             //SqlDataAdapter adapter5 = new SqlDataAdapter(cmd5);
             //SqlDataAdapter adapter6 = new SqlDataAdapter(cmd6);
@@ -238,46 +303,45 @@ namespace Opeq_CallCenter
             cmd14.CommandText = "SELECT Laptop_Prob.laptop_prob_id FROM Client JOIN Product ON Client.product_id = Product.product_id JOIN Computer_Prob ON Laptop_Prob.laptop_prob_id = Client.laptop_prob_id WHERE Product.MAT = '" + MAT + "';";
             cmd15.CommandText = "SELECT Phone_Tablet_Prob.phone_tablet_prob_id FROM Client JOIN Product ON Client.product_id = Product.product_id JOIN Phone_Tablet_Prob ON Phone_Tablet_Prob.phone_tablet_prob_id = Client.phone_tablet_prob_id WHERE Product.MAT = '" + MAT + "';";
             cmd16.CommandText = "SELECT Screen_Prob.screen_prob_id FROM Client JOIN Product ON Client.product_id = Product.product_id JOIN Screen_Prob ON Screen_Prob.screen_prob_id = Client.screen_prob_id WHERE Product.MAT = '" + MAT + "';";
+            //modify load
+            cmd18.CommandText = "SELECT Modify_Client.* FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
+            cmd19.CommandText = "SELECT Order_Type.order_type_id FROM Order_Type JOIN Modify_Client ON Order_Type.order_type_id =Modify_Client.order_type_id JOIN Client ON Client.client_id=Modify_Client.client_id JOIN Product ON Product.product_id=Client.product_id WHERE MAT = '" + MAT + "';";
+            cmd20.CommandText = "SELECT Modify_Client.order_num FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
+            cmd21.CommandText = "SELECT Modify_Client.how_solved FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
+            cmd22.CommandText = "SELECT Action_Took.action_took_id FROM Action_Took JOIN Modify_Client ON Action_Took.action_took_id=Modify_Client.order_type_id JOIN Client ON Client.client_id=Modify_Client.client_id JOIN Product ON Product.product_id=Client.product_id WHERE MAT = '" + MAT + "';";
+            cmd23.CommandText = "SELECT Modify_Client.is_solved FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
+            cmd24.CommandText = "SELECT Modify_Client.is_unsolved FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
+            cmd25.CommandText = "SELECT Modify_Client.is_ongoing FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
+            cmd26.CommandText = "SELECT Modify_Client.date_solved FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
+            cmd27.CommandText = "SELECT Modify_Client.order_id FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
+            cmd28.CommandText = "SELECT New_Order.RMA FROM New_Order JOIN Modify_Client ON New_Order.order_id=Modify_Client.order_id JOIN Client ON Client.client_id=Modify_Client.client_id JOIN Product ON Product.product_id=Client.product_id WHERE MAT = '" + MAT + "';";
+            cmd29.CommandText = "SELECT New_Order.send_date FROM New_Order JOIN Modify_Client ON New_Order.order_id=Modify_Client.order_id JOIN Client ON Client.client_id=Modify_Client.client_id JOIN Product ON Product.product_id=Client.product_id WHERE MAT = '" + MAT + "';";
+            cmd30.CommandText = "SELECT New_Order.return_voucher FROM New_Order JOIN Modify_Client ON New_Order.order_id=Modify_Client.order_id JOIN Client ON Client.client_id=Modify_Client.client_id JOIN Product ON Product.product_id=Client.product_id WHERE MAT = '" + MAT + "';";
+            
 
-            //Commands to get problem descriptions
+            //Commands to populate dropdowns
             SqlCommand cmd17 = con.CreateCommand();
-            //SqlCommand cmd18 = con.CreateCommand();
-            //SqlCommand cmd19 = con.CreateCommand();
-            //SqlCommand cmd20 = con.CreateCommand();
-            //SqlCommand cmd17 = con.CreateCommand();
-            //SqlCommand cmd18 = con.CreateCommand();
+            SqlCommand cmd31 = con.CreateCommand();
+            SqlCommand cmd32 = con.CreateCommand();
 
             cmd17.CommandType = CommandType.Text;
-            //cmd18.CommandType = CommandType.Text;
+            cmd31.CommandType = CommandType.Text;
+            cmd32.CommandType = CommandType.Text;
 
-            //cmd17.CommandText = "SELECT * FROM Order_Type;";
-            //cmd18.CommandText = "SELECT * FROM Action_Took;";
-
-            //cmd17.ExecuteNonQuery();
-            //cmd18.ExecuteNonQuery();
-
-            //SqlDataAdapter adapter17 = new SqlDataAdapter(cmd5);
-            //SqlDataAdapter adapter18 = new SqlDataAdapter(cmd6);
-
-            //DataSet dataSet17 = new DataSet();
-            //DataSet dataSet18 = new DataSet();
-
-            //adapter17.Fill(dataSet17);
-            //adapter18.Fill(dataSet18);
-
+            //Setting texts for the client
             nameTextBox.Text = Convert.ToString(cmd1.ExecuteScalar());
             problemDescriptionTextBox.Text = Convert.ToString(cmd2.ExecuteScalar());
             dateTimePickerEntered.Value = Convert.ToDateTime(cmd3.ExecuteScalar());
 
-            if(Convert.ToInt64(cmd4.ExecuteScalar())  == 1)
+            if (Convert.ToInt64(cmd4.ExecuteScalar()) == 1)
             {
                 emailRadioBtn.Checked = true;
             }
-            else if(Convert.ToInt64(cmd5.ExecuteScalar()) == 1)
+            else if (Convert.ToInt64(cmd5.ExecuteScalar()) == 1)
             {
                 phoneRadioBtn.Checked = true;
             }
-            else if(Convert.ToInt64(cmd6.ExecuteScalar()) == 1)
+            else if (Convert.ToInt64(cmd6.ExecuteScalar()) == 1)
             {
                 inPersonRadioBtn.Checked = true;
             }
@@ -292,30 +356,86 @@ namespace Opeq_CallCenter
             if (Convert.ToInt64(cmd13.ExecuteScalar()) > 0)
             {
                 cmd17.CommandText = "SELECT computer_desc FROM Computer_Prob WHERE computer_prob_id = '" + Convert.ToInt64(cmd13.ExecuteScalar()) + "';";
-                //computerProblemComboBox.SelectedIndex = 0;
                 computerProblemComboBox.SelectedIndex = computerProblemComboBox.FindString(cmd17.ExecuteScalar().ToString());
             }
             else if (Convert.ToInt64(cmd14.ExecuteScalar()) > 0)
             {
-                cmd17.CommandText = "SELECT laptop_desc FROM Laptop_Prob WHERE laptop_prob_id = '" + Convert.ToInt64(cmd13.ExecuteScalar()) + "';";
+                cmd17.CommandText = "SELECT laptop_desc FROM Laptop_Prob WHERE laptop_prob_id = '" + Convert.ToInt64(cmd14.ExecuteScalar()) + "';";
                 laptopProblemComboBox.SelectedIndex = laptopProblemComboBox.FindString(cmd17.ExecuteScalar().ToString());
             }
             else if (Convert.ToInt64(cmd15.ExecuteScalar()) > 0)
             {
-                cmd17.CommandText = "SELECT phone_tab_desc FROM Phone_Tablet_Prob WHERE phone_tablet_prob_id = '" + Convert.ToInt64(cmd13.ExecuteScalar()) + "';";
+                cmd17.CommandText = "SELECT phone_tab_desc FROM Phone_Tablet_Prob WHERE phone_tablet_prob_id = '" + Convert.ToInt64(cmd15.ExecuteScalar()) + "';";
                 phoneOrTabletProblemComboBox.SelectedIndex = phoneOrTabletProblemComboBox.FindString(cmd17.ExecuteScalar().ToString());
             }
             else if (Convert.ToInt64(cmd16.ExecuteScalar()) > 0)
             {
-                cmd17.CommandText = "SELECT screen_desc FROM Screen_Prob WHERE screen_prob_id = '" + Convert.ToInt64(cmd13.ExecuteScalar()) + "';";
+                cmd17.CommandText = "SELECT screen_desc FROM Screen_Prob WHERE screen_prob_id = '" + Convert.ToInt64(cmd16.ExecuteScalar()) + "';";
                 screenProblemComboBox.SelectedIndex = screenProblemComboBox.FindString(cmd17.ExecuteScalar().ToString());
             }
 
+            if (cmd18.ExecuteScalar() == null)
+            {
+                textBox1.Text = "Numero de Commande";
+                textBox2.Text = "Comment Résolu";
+                textBox3.Text = "Bon D'envoi";
+                RMATextBox.Text = "RMA";
+            }
+            else
+            {
+                if (Convert.ToInt64(cmd19.ExecuteScalar()) > 0)
+                {
+                    cmd31.CommandText = "SELECT order_name FROM Order_Type WHERE order_type_id = '" + Convert.ToInt64(cmd19.ExecuteScalar()) + "';";
+                    orderTypeComboBox.SelectedIndex = orderTypeComboBox.FindString(cmd31.ExecuteScalar().ToString());
+                }
+
+                textBox1.Text = Convert.ToString(cmd20.ExecuteScalar());
+                textBox1.ForeColor = Color.Black;
+                textBox2.Text = Convert.ToString(cmd21.ExecuteScalar());
+                textBox2.ForeColor = Color.Black;
+
+                if (Convert.ToInt64(cmd22.ExecuteScalar()) > 0)
+                {
+                    cmd32.CommandText = "SELECT action_took_name FROM Action_Took WHERE action_took_id = '" + Convert.ToInt64(cmd22.ExecuteScalar()) + "';";
+                    orderTypeComboBox.SelectedIndex = orderTypeComboBox.FindString(cmd32.ExecuteScalar().ToString());
+                }
+
+                if (Convert.ToInt64(cmd23.ExecuteScalar()) == 1)
+                {
+                    radioButton3.Checked = true;
+                }
+                else if (Convert.ToInt64(cmd24.ExecuteScalar()) == 1)
+                {
+                    radioButton2.Checked = true;
+                }
+                else if (Convert.ToInt64(cmd25.ExecuteScalar()) == 1)
+                {
+                    radioButton1.Checked = true;
+                }
+
+                dateTimePicker1.Value = Convert.ToDateTime(cmd26.ExecuteScalar());
+
+                if (Convert.ToInt64(cmd27.ExecuteScalar()) > 1)
+                {
+                    radioButton5.Checked = true;
+                    dateTimePicker2.Value = Convert.ToDateTime(cmd28.ExecuteScalar());
+                    textBox3.Text = Convert.ToString(cmd29.ExecuteScalar());
+                    textBox3.ForeColor = Color.Black;
+                    RMATextBox.Text = Convert.ToString(cmd30.ExecuteScalar());
+                    RMATextBox.ForeColor = Color.Black;
+
+                }
+                else
+                {
+                    radioButton4.Checked = true;
+                }
+
+            }
 
             con.Close();
         }
 
-
+        //placeholder clearing
         private void textBox1_MouseClick(object sender, MouseEventArgs e)
         {
             if (textBox1.Text == "Numero de Commande")
@@ -352,6 +472,7 @@ namespace Opeq_CallCenter
             RMATextBox.ForeColor = Color.Black;
         }
 
+        //inserting into modify table
         private void addBtn_Click(object sender, EventArgs e)
         {
             //Update Client Table
@@ -362,9 +483,7 @@ namespace Opeq_CallCenter
             string phone = phoneTextBox.Text;
             string date = dateTimePickerEntered.Value.ToString();
 
-            //IDK how to get addressId from address table
             string addressID = " ";
-
 
             string street = streetTextBox.Text;
             string aptNum = aptNumTextBox.Text;
@@ -423,7 +542,7 @@ namespace Opeq_CallCenter
             cmd9.CommandType = CommandType.Text;
             cmd10.CommandType = CommandType.Text;
 
-            cmd1.CommandText = "UPDATE Client_Address SET street = '" + street + "', apt_num = '" + aptNum + "', city = '" + city+ "', postal_code = '" + postalCode+ "' FROM Client_Address JOIN Client ON Client_Address.address_id = Client.address_id JOIN Product ON Product.product_id = Client.product_id WHERE MAT = 'MAT-ollo';";
+            cmd1.CommandText = "UPDATE Client_Address SET street = '" + street + "', apt_num = '" + aptNum + "', city = '" + city + "', postal_code = '" + postalCode + "' FROM Client_Address JOIN Client ON Client_Address.address_id = Client.address_id JOIN Product ON Product.product_id = Client.product_id WHERE MAT = 'MAT-ollo';";
             //cmd1.CommandText = "INSERT INTO Client_Address (street, apt_num, city, postal_code) VALUES ('" + street + "', '" + aptNum + "', '" + city + "','" + postalCode + "');";
 
             cmd1.ExecuteNonQuery();
@@ -431,13 +550,15 @@ namespace Opeq_CallCenter
             cmd2.CommandText = "SELECT IDENT_CURRENT('Employee');";
             empID = Convert.ToString(cmd2.ExecuteScalar());
 
-            cmd3.CommandText = "SELECT IDENT_CURRENT('Client_Address');";
-            addressID = Convert.ToString(cmd3.ExecuteScalar());
+            //cmd3.CommandText = "SELECT IDENT_CURRENT('Client_Address');";
+            //addressID = Convert.ToString(cmd3.ExecuteScalar());
 
-            cmd4.CommandText = "INSERT INTO Product (MAT, product_name) VALUES ('" + mat + "', '" + productName + "');";
-            cmd4.ExecuteNonQuery();
+            //do we need to update those ones?
+            // cmd4.CommandText = "INSERT INTO Product (MAT, product_name) VALUES ('" + mat + "', '" + productName + "');";
+            // cmd4.ExecuteNonQuery();
 
-            cmd5.CommandText = "SELECT IDENT_CURRENT('Product');";
+
+            cmd5.CommandText = "SELECT product_id FROM Product WHERE MAT='" + mat + "';";
             productID = Convert.ToString(cmd5.ExecuteScalar());
 
             if (computerProbDesc != "")
@@ -461,35 +582,92 @@ namespace Opeq_CallCenter
                 phoneTabProbID = Convert.ToString(cmd9.ExecuteScalar());
             }
 
-            cmd10.CommandText = "UPDATE Client SET computer_prob_id = '" + computerProbID + "', laptop_prob_id = '" + laptopProbID + "', screen_prob_id = '" + screenProbID + "', phone_tablet_prob_id = '" + phoneTabProbID + "', client_name = '" + clientName + "', client_desc = '" + problemDesc + "', date_added = '" + date+ "', client_email = '" + email+ "', client_phone_num = '" + phone+ "', by_email = '" + byEmail+ "', by_telephone = '" + byTelephone + "', in_person = '" + inPerson+ "' FROM Client JOIN Product ON Client.product_id = Product.product_id WHERE MAT = 'MAT-ollo';";
-
-            //cmd10.CommandText = "INSERT INTO Client (employee_id, product_id, computer_prob_id, laptop_prob_id, screen_prob_id, phone_tablet_prob_id, address_id, client_name, client_desc, date_added, client_email, client_phone_num, by_email, by_telephone, in_person) VALUES ('" +
-            //                       empID + "', '" + productID + "', '" + computerProbID + "', '" + laptopProbID + "', '" + screenProbID + "', '" + phoneTabProbID + "', '" + addressID + "', '" + clientName + "', '" + problemDesc + "', '" + date + "', '" + email + "', '" + phone + "', '" + byEmail + "', '" + byTelephone + "', '" + inPerson + "');";
-
+            cmd10.CommandText = "UPDATE Client SET computer_prob_id = '" + computerProbID + "', laptop_prob_id = '" + laptopProbID + "', screen_prob_id = '" + screenProbID + "', phone_tablet_prob_id = '" + phoneTabProbID + "', client_name = '" + clientName + "', client_desc = '" + problemDesc + "', date_added = '" + date + "', client_email = '" + email + "', client_phone_num = '" + phone + "', by_email = '" + byEmail + "', by_telephone = '" + byTelephone + "', in_person = '" + inPerson + "' FROM Client JOIN Product ON Client.product_id = Product.product_id WHERE MAT = 'MAT-ollo';";
             cmd10.ExecuteNonQuery();
+            con.Close();
+
+            var problemStatus = problemStatusFroupBox;
+            foreach (var radioButton in problemStatus.Controls.OfType<RadioButton>())
+            {
+                resolved = radioButton3.Checked ? "1" : "0";
+                notResolved = radioButton2.Checked ? "1" : "0";
+                onGoing = radioButton1.Checked ? "1" : "0";
+            }
+
+            var yesNo = orderGroupBox;
+            foreach (var radioButton in orderGroupBox.Controls.OfType<RadioButton>())
+            {
+                yes = radioButton5.Checked ? "1" : "0";
+                no = radioButton4.Checked ? "1" : "0";
+            }
+
+            orderTypeDesc = orderTypeComboBox.GetItemText(orderTypeComboBox.SelectedItem);
+            orderNum = textBox1.Text;
+            howResolved = textBox2.Text;
+            actionTookDesc = actionTookComboBox.GetItemText(actionTookComboBox.SelectedItem);
+
+            con.Open();
+            SqlCommand cmd18 = con.CreateCommand();
+            SqlCommand cmd19 = con.CreateCommand();
+            SqlCommand cmd20 = con.CreateCommand();
+            SqlCommand cmd21 = con.CreateCommand();
+            SqlCommand cmd22 = con.CreateCommand();
+            SqlCommand cmd23 = con.CreateCommand();
+            SqlCommand cmd24 = con.CreateCommand();
+            SqlCommand cmd25 = con.CreateCommand();
+            SqlCommand cmd26 = con.CreateCommand();
+            SqlCommand cmd27 = con.CreateCommand();
+
+
+            cmd18.CommandType = CommandType.Text;
+            cmd19.CommandType = CommandType.Text;
+            cmd20.CommandType = CommandType.Text;
+            cmd21.CommandType = CommandType.Text;
+            cmd22.CommandType = CommandType.Text;
+            cmd23.CommandType = CommandType.Text;
+            cmd24.CommandType = CommandType.Text;
+            cmd25.CommandType = CommandType.Text;
+
+
+            //access clientId
+            cmd19.CommandText = "SELECT client_id FROM CLIENT WHERE CONVERT(VARCHAR, product_id) = '" + productID + "';";
+            clientId = Convert.ToString(cmd19.ExecuteScalar());
+
+            //create action, by inputting it and insert into Action table and access the id later
+            //cmd20.CommandText = "INSERT INTO Action_Took (action_took_name) VALUES ('" + actionTookDesc + "')";
+            //cmd20.ExecuteNonQuery();    
+            cmd21.CommandText = "SELECT action_took_id FROM Action_Took WHERE CONVERT(VARCHAR, action_took_name) = '" + actionTookDesc + "';";
+            actionTookId = Convert.ToString(cmd21.ExecuteScalar());
+
+            //create orderType, by inputting it and insert into Order type table and access the id later
+            //cmd22.CommandText = "INSERT INTO Order_Type (order_name) VALUES ('" + orderTypeDesc + "')";
+            //cmd22.ExecuteNonQuery();
+            cmd23.CommandText = "SELECT order_type_id FROM Order_Type WHERE CONVERT(VARCHAR, order_name) = '" + orderTypeDesc + "';";
+            orderTypeId = Convert.ToString(cmd23.ExecuteScalar());
+
+            //create new orderId, by inputting it and insert into NewOrder table and access the id later
+            if (yes == "1")
+            {
+                cmd24.CommandText = "INSERT INTO New_Order (RMA, send_date, return_voucher) VALUES ('" + rma + "', '" + deliveryDate + "', '" + return_voucher + "')";
+                cmd24.ExecuteNonQuery();
+                cmd25.CommandText = "SELECT client_id FROM CLIENT WHERE CONVERT(VARCHAR, RMA) = '" + rma + "';";
+                newOrderId = Convert.ToString(cmd25.ExecuteScalar());
+            }
+            else if(no == "1")
+            {
+                newOrderId = " ";
+            }
+
+            cmd18.CommandText = "INSERT INTO Modify_Client (employee_id, client_id, action_took_id, order_type_id, how_solved, order_num, is_solved, is_unsolved, is_ongoing, date_solved, order_id) VALUES ('" + empID + "', '" + clientId + "', '" + actionTookId + "','" + orderTypeId + "', '" + howResolved + "', '" + orderNum + "', '" + resolved + "', '" + notResolved + "', '" + onGoing + "', '" + resolvedDate + "', '" + newOrderId + "');";
+            cmd18.ExecuteNonQuery();
 
             con.Close();
 
             isAddBtnClicked = true;
             confirmation();
-
-
-            string orderTypeDesc = orderTypeComboBox.GetItemText(orderTypeComboBox.SelectedItem);
-            string orderNum = textBox1.Text;
-            string howResolved = textBox2.Text;
-            string actionTookDesc = actionTookComboBox.GetItemText(actionTookComboBox.SelectedItem);
-            string resolved = "0";
-            string notResolved = "0";
-            string onGoing = "0";
-            string resolvedDate = dateTimePicker1.Value.ToString();
-            string yes = "0";
-            string no = "0";
-            string deliveryDate = dateTimePicker2.Value.ToString();
-            string shipment = textBox3.Text;
-            string rma = RMATextBox.Text;
-
         }
 
+        //what is this
         private void computerProblemComboBox_KeyDown(object sender, KeyEventArgs e)
         {
             e.SuppressKeyPress = true;
@@ -506,6 +684,15 @@ namespace Opeq_CallCenter
         }
 
         private void phoneOrTabletProblemComboBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.SuppressKeyPress = true;
+        }
+        private void orderTypeComboBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.SuppressKeyPress = true;
+        }
+
+        private void actionTookComboBox_KeyDown(object sender, KeyEventArgs e)
         {
             e.SuppressKeyPress = true;
         }
@@ -527,7 +714,7 @@ namespace Opeq_CallCenter
                 {
                     this.Hide();
                     String empName = empNameTextView.Text;
-                    AddForm addForm = new AddForm(empName);
+                    ModifyForm addForm = new ModifyForm(empName);
                     addForm.ShowDialog();
                     this.Close();
                     //Alternate solution: create a Form for the confirmation 
@@ -628,6 +815,26 @@ namespace Opeq_CallCenter
         private void orderGroupBox_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void radioButton5_MouseClick(object sender, MouseEventArgs e)
+        {
+            label19.Show();
+            dateTimePicker2.Show();
+            label20.Show();
+            textBox3.Show();
+            label21.Show();
+            RMATextBox.Show();
+        }
+
+        private void radioButton4_MouseClick(object sender, MouseEventArgs e)
+        {
+            label19.Hide();
+            dateTimePicker2.Hide();
+            label20.Hide();
+            textBox3.Hide();
+            label21.Hide();
+            RMATextBox.Hide();
         }
     }
 

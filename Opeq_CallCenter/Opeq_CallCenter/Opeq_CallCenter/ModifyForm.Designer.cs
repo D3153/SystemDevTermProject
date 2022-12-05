@@ -439,6 +439,7 @@
             this.radioButton4.TabIndex = 91;
             this.radioButton4.Text = "Non";
             this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.radioButton4_MouseClick);
             // 
             // radioButton5
             // 
@@ -451,6 +452,7 @@
             this.radioButton5.TabIndex = 90;
             this.radioButton5.Text = "Oui";
             this.radioButton5.UseVisualStyleBackColor = true;
+            this.radioButton5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.radioButton5_MouseClick);
             // 
             // dateTimePicker2
             // 
