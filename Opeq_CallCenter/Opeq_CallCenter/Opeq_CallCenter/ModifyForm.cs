@@ -300,11 +300,11 @@ namespace Opeq_CallCenter
             cmd11.CommandText = "SELECT Client_Address.city FROM Client JOIN Product ON Client.product_id = Product.product_id JOIN Client_Address ON Client_Address.address_id = Client.address_id WHERE Product.MAT = '" + MAT + "';";
             cmd12.CommandText = "SELECT Client_Address.postal_code FROM Client JOIN Product ON Client.product_id = Product.product_id JOIN Client_Address ON Client_Address.address_id = Client.address_id WHERE Product.MAT = '" + MAT + "';";
             cmd13.CommandText = "SELECT Computer_Prob.computer_prob_id FROM Client JOIN Product ON Client.product_id = Product.product_id JOIN Computer_Prob ON Computer_Prob.computer_prob_id = Client.computer_prob_id WHERE Product.MAT = '" + MAT + "';";
-            cmd14.CommandText = "SELECT Laptop_Prob.laptop_prob_id FROM Client JOIN Product ON Client.product_id = Product.product_id JOIN Computer_Prob ON Laptop_Prob.laptop_prob_id = Client.laptop_prob_id WHERE Product.MAT = '" + MAT + "';";
+            cmd14.CommandText = "SELECT Laptop_Prob.laptop_prob_id FROM Client JOIN Product ON Client.product_id = Product.product_id JOIN Laptop_Prob ON Laptop_Prob.laptop_prob_id = Client.laptop_prob_id WHERE Product.MAT = '" + MAT + "';";
             cmd15.CommandText = "SELECT Phone_Tablet_Prob.phone_tablet_prob_id FROM Client JOIN Product ON Client.product_id = Product.product_id JOIN Phone_Tablet_Prob ON Phone_Tablet_Prob.phone_tablet_prob_id = Client.phone_tablet_prob_id WHERE Product.MAT = '" + MAT + "';";
             cmd16.CommandText = "SELECT Screen_Prob.screen_prob_id FROM Client JOIN Product ON Client.product_id = Product.product_id JOIN Screen_Prob ON Screen_Prob.screen_prob_id = Client.screen_prob_id WHERE Product.MAT = '" + MAT + "';";
             //modify load
-            cmd18.CommandText = "SELECT Modify_Client.* FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
+            cmd18.CommandText = "SELECT Modify_Client.modify_id FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
             cmd19.CommandText = "SELECT Order_Type.order_type_id FROM Order_Type JOIN Modify_Client ON Order_Type.order_type_id =Modify_Client.order_type_id JOIN Client ON Client.client_id=Modify_Client.client_id JOIN Product ON Product.product_id=Client.product_id WHERE MAT = '" + MAT + "';";
             cmd20.CommandText = "SELECT Modify_Client.order_num FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
             cmd21.CommandText = "SELECT Modify_Client.how_solved FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
@@ -374,7 +374,7 @@ namespace Opeq_CallCenter
                 screenProblemComboBox.SelectedIndex = screenProblemComboBox.FindString(cmd17.ExecuteScalar().ToString());
             }
 
-            if (cmd18.ExecuteScalar() == null)
+            if (Convert.ToString(cmd18.ExecuteScalar()) == "" )
             {
                 textBox1.Text = "Numero de Commande";
                 textBox2.Text = "Comment Résolu";
