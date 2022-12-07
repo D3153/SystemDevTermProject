@@ -173,7 +173,7 @@ namespace Opeq_CallCenter
                 else if (dialog == DialogResult.No)
                 {
                     this.Hide();
-                    MainHub mainHub = new MainHub();
+                    MainHub mainHub = new MainHub(empNameTextView.Text);
                     mainHub.ShowDialog();
                     this.Close();
                 }
@@ -185,7 +185,7 @@ namespace Opeq_CallCenter
                 if (dialog == DialogResult.Yes)
                 {
                     this.Hide();
-                    MainHub mainHub = new MainHub();
+                    MainHub mainHub = new MainHub(empNameTextView.Text);
                     mainHub.ShowDialog();
                     this.Close();
                 }

@@ -180,26 +180,8 @@ namespace Opeq_CallCenter
 
         }
 
-        private void MATTextBox_MouseClick(object sender, MouseEventArgs e)
+        private void loadData()
         {
-            if (MATTextBox.Text == "Entrer problème")
-            {
-                MATTextBox.Text = "";
-            }
-            MATTextBox.ForeColor = Color.Black;
-        }
-
-
-
-        private void loadBtn_Click(object sender, EventArgs e)
-        {
-
-
-            //orderTypeDesc = orderTypeComboBox.GetItemText(orderTypeComboBox.SelectedItem);
-            //orderNum = textBox1.Text;
-            //howResolved = textBox2.Text;
-            //actionTookDesc = actionTookComboBox.GetItemText(actionTookComboBox.SelectedItem);
-
             resolved = "0";
             notResolved = "0";
             onGoing = "0";
@@ -317,7 +299,7 @@ namespace Opeq_CallCenter
             cmd28.CommandText = "SELECT New_Order.RMA FROM New_Order JOIN Modify_Client ON New_Order.order_id=Modify_Client.order_id JOIN Client ON Client.client_id=Modify_Client.client_id JOIN Product ON Product.product_id=Client.product_id WHERE MAT = '" + MAT + "';";
             cmd29.CommandText = "SELECT New_Order.send_date FROM New_Order JOIN Modify_Client ON New_Order.order_id=Modify_Client.order_id JOIN Client ON Client.client_id=Modify_Client.client_id JOIN Product ON Product.product_id=Client.product_id WHERE MAT = '" + MAT + "';";
             cmd30.CommandText = "SELECT New_Order.return_voucher FROM New_Order JOIN Modify_Client ON New_Order.order_id=Modify_Client.order_id JOIN Client ON Client.client_id=Modify_Client.client_id JOIN Product ON Product.product_id=Client.product_id WHERE MAT = '" + MAT + "';";
-            
+
 
             //Commands to populate dropdowns
             SqlCommand cmd17 = con.CreateCommand();
@@ -374,7 +356,7 @@ namespace Opeq_CallCenter
                 screenProblemComboBox.SelectedIndex = screenProblemComboBox.FindString(cmd17.ExecuteScalar().ToString());
             }
 
-            if (Convert.ToString(cmd18.ExecuteScalar()) == "" )
+            if (Convert.ToString(cmd18.ExecuteScalar()) == "")
             {
                 textBox1.Text = "Numero de Commande";
                 textBox2.Text = "Comment Résolu";
@@ -383,7 +365,7 @@ namespace Opeq_CallCenter
             }
             else
             {
-                if (Convert.ToInt64(cmd19.ExecuteScalar()) > 0)
+                if (Convert.ToInt64(cmd19.ExecuteScalar()) != 0)
                 {
                     cmd31.CommandText = "SELECT order_name FROM Order_Type WHERE order_type_id = '" + Convert.ToInt64(cmd19.ExecuteScalar()) + "';";
                     orderTypeComboBox.SelectedIndex = orderTypeComboBox.FindString(cmd31.ExecuteScalar().ToString());
@@ -394,7 +376,7 @@ namespace Opeq_CallCenter
                 textBox2.Text = Convert.ToString(cmd21.ExecuteScalar());
                 textBox2.ForeColor = Color.Black;
 
-                if (Convert.ToInt64(cmd22.ExecuteScalar()) > 0)
+                if (Convert.ToInt64(cmd22.ExecuteScalar()) != 0)
                 {
                     cmd32.CommandText = "SELECT action_took_name FROM Action_Took WHERE action_took_id = '" + Convert.ToInt64(cmd22.ExecuteScalar()) + "';";
                     orderTypeComboBox.SelectedIndex = orderTypeComboBox.FindString(cmd32.ExecuteScalar().ToString());
@@ -433,6 +415,26 @@ namespace Opeq_CallCenter
             }
 
             con.Close();
+        }
+
+        private void MATTextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            MATTextBox.ForeColor = Color.Black;
+        }
+        private void MATTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //MATTextBox.Text = "MAT-";
+            //MATTextBox.ForeColor = Color.Black;
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                loadData();
+            }
+        }
+
+
+        private void loadBtn_Click(object sender, EventArgs e)
+        {
+            loadData();
         }
 
         //placeholder clearing
@@ -483,14 +485,10 @@ namespace Opeq_CallCenter
             string phone = phoneTextBox.Text;
             string date = dateTimePickerEntered.Value.ToString();
 
-            string addressID = " ";
-
             string street = streetTextBox.Text;
             string aptNum = aptNumTextBox.Text;
             string city = cityTextBox.Text;
             string postalCode = postalCodeTextBox.Text;
-
-            string productName = " ";
 
             string productID = " ";
             string mat = MATTextBox.Text;
@@ -499,7 +497,7 @@ namespace Opeq_CallCenter
             string laptopProbDesc = laptopProblemComboBox.GetItemText(laptopProblemComboBox.SelectedItem);
             string screenProbDesc = screenProblemComboBox.GetItemText(screenProblemComboBox.SelectedItem);
             string phoneTabProbDesc = phoneOrTabletProblemComboBox.GetItemText(phoneOrTabletProblemComboBox.SelectedItem);
-
+             
             string computerProbID = " ";
             string laptopProbID = " ";
             string screenProbID = " ";
@@ -543,20 +541,11 @@ namespace Opeq_CallCenter
             cmd10.CommandType = CommandType.Text;
 
             cmd1.CommandText = "UPDATE Client_Address SET street = '" + street + "', apt_num = '" + aptNum + "', city = '" + city + "', postal_code = '" + postalCode + "' FROM Client_Address JOIN Client ON Client_Address.address_id = Client.address_id JOIN Product ON Product.product_id = Client.product_id WHERE MAT = 'MAT-ollo';";
-            //cmd1.CommandText = "INSERT INTO Client_Address (street, apt_num, city, postal_code) VALUES ('" + street + "', '" + aptNum + "', '" + city + "','" + postalCode + "');";
 
             cmd1.ExecuteNonQuery();
 
             cmd2.CommandText = "SELECT IDENT_CURRENT('Employee');";
             empID = Convert.ToString(cmd2.ExecuteScalar());
-
-            //cmd3.CommandText = "SELECT IDENT_CURRENT('Client_Address');";
-            //addressID = Convert.ToString(cmd3.ExecuteScalar());
-
-            //do we need to update those ones?
-            // cmd4.CommandText = "INSERT INTO Product (MAT, product_name) VALUES ('" + mat + "', '" + productName + "');";
-            // cmd4.ExecuteNonQuery();
-
 
             cmd5.CommandText = "SELECT product_id FROM Product WHERE MAT='" + mat + "';";
             productID = Convert.ToString(cmd5.ExecuteScalar());
@@ -627,21 +616,17 @@ namespace Opeq_CallCenter
             cmd23.CommandType = CommandType.Text;
             cmd24.CommandType = CommandType.Text;
             cmd25.CommandType = CommandType.Text;
+            cmd26.CommandType = CommandType.Text;
+            cmd27.CommandType = CommandType.Text;
 
 
             //access clientId
             cmd19.CommandText = "SELECT client_id FROM CLIENT WHERE CONVERT(VARCHAR, product_id) = '" + productID + "';";
             clientId = Convert.ToString(cmd19.ExecuteScalar());
 
-            //create action, by inputting it and insert into Action table and access the id later
-            //cmd20.CommandText = "INSERT INTO Action_Took (action_took_name) VALUES ('" + actionTookDesc + "')";
-            //cmd20.ExecuteNonQuery();    
             cmd21.CommandText = "SELECT action_took_id FROM Action_Took WHERE CONVERT(VARCHAR, action_took_name) = '" + actionTookDesc + "';";
             actionTookId = Convert.ToString(cmd21.ExecuteScalar());
 
-            //create orderType, by inputting it and insert into Order type table and access the id later
-            //cmd22.CommandText = "INSERT INTO Order_Type (order_name) VALUES ('" + orderTypeDesc + "')";
-            //cmd22.ExecuteNonQuery();
             cmd23.CommandText = "SELECT order_type_id FROM Order_Type WHERE CONVERT(VARCHAR, order_name) = '" + orderTypeDesc + "';";
             orderTypeId = Convert.ToString(cmd23.ExecuteScalar());
 
@@ -658,8 +643,18 @@ namespace Opeq_CallCenter
                 newOrderId = " ";
             }
 
-            cmd18.CommandText = "INSERT INTO Modify_Client (employee_id, client_id, action_took_id, order_type_id, how_solved, order_num, is_solved, is_unsolved, is_ongoing, date_solved, order_id) VALUES ('" + empID + "', '" + clientId + "', '" + actionTookId + "','" + orderTypeId + "', '" + howResolved + "', '" + orderNum + "', '" + resolved + "', '" + notResolved + "', '" + onGoing + "', '" + resolvedDate + "', '" + newOrderId + "');";
-            cmd18.ExecuteNonQuery();
+            cmd26.CommandText = "SELECT Modify_Client.client_id FROM Modify_Client JOIN Client ON Modify_Client.client_id=Client.client_id JOIN Product ON Client.product_id=Product.product_id WHERE MAT='" + empID + "';";
+
+            if(Convert.ToString(cmd26.ExecuteScalar()) != "")
+            {
+                cmd27.CommandText = "UPDATE Modify_Client SET action_took_id= '" + actionTookId + "', order_type_id= '" + orderTypeId + "', how_solved= '" + howResolved + "', order_num= '" + orderNum + "', is_solved= '" + resolved + "', is_unsolved= '" + notResolved + "', is_ongoing= '" + onGoing + "', date_solved= '" + resolvedDate + "', order_id= '" + newOrderId + "' WHERE client_id = '" + clientId + "';";
+                cmd27.ExecuteNonQuery();
+            }
+            else
+            {
+                cmd18.CommandText = "INSERT INTO Modify_Client (employee_id, client_id, action_took_id, order_type_id, how_solved, order_num, is_solved, is_unsolved, is_ongoing, date_solved, order_id) VALUES ('" + empID + "', '" + clientId + "', '" + actionTookId + "','" + orderTypeId + "', '" + howResolved + "', '" + orderNum + "', '" + resolved + "', '" + notResolved + "', '" + onGoing + "', '" + resolvedDate + "', '" + newOrderId + "');";
+                cmd18.ExecuteNonQuery();
+            }
 
             con.Close();
 
@@ -667,7 +662,6 @@ namespace Opeq_CallCenter
             confirmation();
         }
 
-        //what is this
         private void computerProblemComboBox_KeyDown(object sender, KeyEventArgs e)
         {
             e.SuppressKeyPress = true;
@@ -836,6 +830,7 @@ namespace Opeq_CallCenter
             label21.Hide();
             RMATextBox.Hide();
         }
+
     }
 
 }

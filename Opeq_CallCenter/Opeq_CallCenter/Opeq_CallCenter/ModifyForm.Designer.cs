@@ -265,6 +265,7 @@
             this.MATTextBox.TabIndex = 1;
             this.MATTextBox.Text = "MAT-";
             this.MATTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MATTextBox_MouseClick);
+            this.MATTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MATTextBox_KeyPress);
             // 
             // orderTypeComboBox
             // 
@@ -824,7 +825,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(1383, 750);
+            this.ClientSize = new System.Drawing.Size(1404, 750);
             this.Controls.Add(this.empNameTextView);
             this.Controls.Add(this.orderGroupBox);
             this.Controls.Add(this.problemStatusFroupBox);

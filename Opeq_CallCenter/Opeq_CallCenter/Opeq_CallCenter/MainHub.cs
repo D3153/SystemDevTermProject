@@ -18,6 +18,7 @@ namespace Opeq_CallCenter
 
         public MainHub(string empName)
         {
+            empNameTextView.Text = empName;
             InitializeComponent();
         }
 
