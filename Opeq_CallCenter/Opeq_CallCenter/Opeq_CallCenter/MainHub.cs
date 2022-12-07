@@ -18,8 +18,14 @@ namespace Opeq_CallCenter
 
         public MainHub(string empName)
         {
-            empNameTextView.Text = empName;
             InitializeComponent();
+            empNameTextView.Text = empName;
+
+            if (empName == "Simon.P")
+            {
+                adminRadioBtn.Show();
+            }
+            else adminRadioBtn.Hide();
         }
 
         private void addButton_MouseClick(object sender, MouseEventArgs e)

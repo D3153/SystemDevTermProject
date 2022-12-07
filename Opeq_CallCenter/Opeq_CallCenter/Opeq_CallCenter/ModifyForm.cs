@@ -497,7 +497,7 @@ namespace Opeq_CallCenter
             string laptopProbDesc = laptopProblemComboBox.GetItemText(laptopProblemComboBox.SelectedItem);
             string screenProbDesc = screenProblemComboBox.GetItemText(screenProblemComboBox.SelectedItem);
             string phoneTabProbDesc = phoneOrTabletProblemComboBox.GetItemText(phoneOrTabletProblemComboBox.SelectedItem);
-             
+                           
             string computerProbID = " ";
             string laptopProbID = " ";
             string screenProbID = " ";
@@ -681,12 +681,13 @@ namespace Opeq_CallCenter
         {
             e.SuppressKeyPress = true;
         }
-        private void orderTypeComboBox_KeyDown(object sender, KeyEventArgs e)
+
+        private void orderTypeComboBox_KeyDown_1(object sender, KeyEventArgs e)
         {
             e.SuppressKeyPress = true;
         }
 
-        private void actionTookComboBox_KeyDown(object sender, KeyEventArgs e)
+        private void actionTookComboBox_KeyDown_1(object sender, KeyEventArgs e)
         {
             e.SuppressKeyPress = true;
         }
@@ -795,7 +796,12 @@ namespace Opeq_CallCenter
         private void addButton_MouseClick(object sender, MouseEventArgs e)
         {
             isAddRadioBtnClicked = true;
-            addRadioBtn.Checked = true;
+            confirmation();
+        }
+
+        private void cancelBtn_Click(object sender, EventArgs e)
+        {
+            isCancelBtnClicked = true;
             confirmation();
         }
 
@@ -830,7 +836,6 @@ namespace Opeq_CallCenter
             label21.Hide();
             RMATextBox.Hide();
         }
-
     }
 
 }

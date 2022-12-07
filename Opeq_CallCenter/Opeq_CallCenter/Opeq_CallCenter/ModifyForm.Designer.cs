@@ -275,6 +275,7 @@
             this.orderTypeComboBox.Name = "orderTypeComboBox";
             this.orderTypeComboBox.Size = new System.Drawing.Size(357, 24);
             this.orderTypeComboBox.TabIndex = 74;
+            this.orderTypeComboBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.orderTypeComboBox_KeyDown_1);
             // 
             // label13
             // 
@@ -343,6 +344,7 @@
             this.actionTookComboBox.Name = "actionTookComboBox";
             this.actionTookComboBox.Size = new System.Drawing.Size(357, 24);
             this.actionTookComboBox.TabIndex = 80;
+            this.actionTookComboBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.actionTookComboBox_KeyDown_1);
             // 
             // label15
             // 
@@ -548,6 +550,7 @@
             this.cancelBtn.TabIndex = 18;
             this.cancelBtn.Text = "Annuler";
             this.cancelBtn.UseVisualStyleBackColor = false;
+            this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
             // 
             // navGroupBox
             // 
