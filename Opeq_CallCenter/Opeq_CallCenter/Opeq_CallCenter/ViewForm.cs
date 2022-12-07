@@ -235,6 +235,11 @@ namespace Opeq_CallCenter
 
         }
 
+        private void modifyRadioBtn_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
         private void NotResolvedRBtn(object sender, MouseEventArgs e)
         {
 
@@ -243,6 +248,11 @@ namespace Opeq_CallCenter
         //take client info, + modify client info
         private void viewBtn_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            ViewSearchedForm viewFormInstance = new ViewSearchedForm();
+            viewFormInstance.ShowDialog();
+            this.Close();
+        }
             //resultBox.Text = $"Accounts with {accountType}{Environment.NewLine}";
 
             // traverse file until end of file

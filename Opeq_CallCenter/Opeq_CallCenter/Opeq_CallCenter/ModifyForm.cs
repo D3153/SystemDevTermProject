@@ -14,6 +14,10 @@ namespace Opeq_CallCenter
 {
     public partial class ModifyForm : Form
     {
+        //SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KFOB4HEQ\DINAL;Initial Catalog=Opeq_CallCenter;Integrated Security=True");
+       // SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-H0P1R86\SQLEXPRESS;Initial Catalog=Opeq;Integrated Security=True");
+
+        //public ModifyForm()
         SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KFOB4HEQ\DINAL;Initial Catalog=Opeq_CallCenter;Integrated Security=True");
         //SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-PJPEDDG;Initial Catalog=Opeq;Integrated Security=True");
 
