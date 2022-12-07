@@ -15,6 +15,7 @@ namespace Opeq_CallCenter
     {
 
         SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KFOB4HEQ\DINAL;Initial Catalog=Opeq_CallCenter;Integrated Security=True");
+        //SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-PJPEDDG;Initial Catalog=Opeq;Integrated Security=True");
 
         public AdminLoginForm()
         {
@@ -89,7 +90,7 @@ namespace Opeq_CallCenter
             cmd2.CommandType = CommandType.Text;
 
             cmd1.CommandText = "SELECT admin_name FROM Admin_Account;";
-            cmd2.CommandText = "SELECT password FROM Admin_Account;";
+            cmd2.CommandText = "SELECT admin_password FROM Admin_Account;";
 
             string adminName = Convert.ToString(cmd1.ExecuteScalar());
             string adminPass = Convert.ToString(cmd2.ExecuteScalar());
@@ -98,7 +99,7 @@ namespace Opeq_CallCenter
             if (adminNameTextBox.Text == adminName && adminPassTextBox.Text == adminPass)
             {
                 this.Hide();
-                WelcomeForm welcomeForm = new WelcomeForm();
+                WelcomeForm welcomeForm = new WelcomeForm(adminName);
                 welcomeForm.ShowDialog();
                 this.Close();
             }

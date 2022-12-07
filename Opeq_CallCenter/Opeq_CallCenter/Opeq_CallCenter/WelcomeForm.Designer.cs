@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WelcomeForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.adminRadioBtn = new System.Windows.Forms.RadioButton();
             this.viewRadioBtn = new System.Windows.Forms.RadioButton();
             this.modifyRadioBtn = new System.Windows.Forms.RadioButton();
             this.addButton = new System.Windows.Forms.RadioButton();
@@ -43,6 +44,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.Menu;
+            this.groupBox1.Controls.Add(this.adminRadioBtn);
             this.groupBox1.Controls.Add(this.viewRadioBtn);
             this.groupBox1.Controls.Add(this.modifyRadioBtn);
             this.groupBox1.Controls.Add(this.addButton);
@@ -51,6 +53,18 @@
             this.groupBox1.Size = new System.Drawing.Size(200, 752);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            // 
+            // adminRadioBtn
+            // 
+            this.adminRadioBtn.AutoSize = true;
+            this.adminRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
+            this.adminRadioBtn.Location = new System.Drawing.Point(6, 240);
+            this.adminRadioBtn.Name = "adminRadioBtn";
+            this.adminRadioBtn.Size = new System.Drawing.Size(165, 33);
+            this.adminRadioBtn.TabIndex = 32;
+            this.adminRadioBtn.Text = "Admin Page";
+            this.adminRadioBtn.UseVisualStyleBackColor = true;
+            this.adminRadioBtn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.adminRadioBtn_MouseClick);
             // 
             // viewRadioBtn
             // 
@@ -137,6 +151,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WelcomeForm";
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -151,5 +166,6 @@
         private System.Windows.Forms.Label welcomeLabel;
         private System.Windows.Forms.Label nameLabel;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.RadioButton adminRadioBtn;
     }
 }

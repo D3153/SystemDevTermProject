@@ -12,24 +12,24 @@ namespace Opeq_CallCenter
 {
     public partial class WelcomeForm : Form
     {
-        public string Name { get; set; }
-
-        public WelcomeForm()
-        {
-            InitializeComponent();
-        }
 
         public WelcomeForm(String name)
         {
             InitializeComponent();
             this.Name = name;
             nameLabel.Text = Name;
+
+            if(name == "Simon.P")
+            {
+                adminRadioBtn.Show();
+            }else adminRadioBtn.Hide();
         }
 
         private void addButton_MouseClick(object sender, MouseEventArgs e)
         {
             this.Hide();
-            AddForm addFormInstance = new AddForm();
+            String empName = nameLabel.Text;
+            AddForm addFormInstance = new AddForm(empName);
             addFormInstance.ShowDialog();
             this.Close();
         }
@@ -37,7 +37,8 @@ namespace Opeq_CallCenter
         private void modifyRadioBtn_MouseClick(object sender, MouseEventArgs e)
         {
             this.Hide();
-            ModifyForm modifyFormInstance = new ModifyForm();
+            String empName = nameLabel.Text;
+            ModifyForm modifyFormInstance = new ModifyForm(empName);
             modifyFormInstance.ShowDialog();
             this.Close();
         }
@@ -45,8 +46,17 @@ namespace Opeq_CallCenter
         private void viewRadioBtn_MouseClick(object sender, MouseEventArgs e)
         {
             this.Hide();
-            ViewForm viewFormInstance = new ViewForm();
+            String empName = nameLabel.Text;
+            ViewForm viewFormInstance = new ViewForm(empName);
             viewFormInstance.ShowDialog();
+            this.Close();
+        }
+
+        private void adminRadioBtn_MouseClick(object sender, MouseEventArgs e)
+        {
+            this.Hide();
+            AdminPage adminFormInstance = new AdminPage();
+            adminFormInstance.ShowDialog();
             this.Close();
         }
 

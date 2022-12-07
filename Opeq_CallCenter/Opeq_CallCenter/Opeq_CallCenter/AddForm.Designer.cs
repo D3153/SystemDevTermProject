@@ -62,9 +62,11 @@
             this.contactGroupBox = new System.Windows.Forms.GroupBox();
             this.problemGroupBox = new System.Windows.Forms.GroupBox();
             this.navGroupBox = new System.Windows.Forms.GroupBox();
+            this.adminRadioBtn = new System.Windows.Forms.RadioButton();
             this.addRadioBtn = new System.Windows.Forms.RadioButton();
             this.modifyRadioBtn = new System.Windows.Forms.RadioButton();
             this.viewRadioBtn = new System.Windows.Forms.RadioButton();
+            this.empNameTextView = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.opeq_CallCenterDataSet1)).BeginInit();
             this.contactGroupBox.SuspendLayout();
             this.problemGroupBox.SuspendLayout();
@@ -105,6 +107,7 @@
             this.problemDescriptionTextBox.TabIndex = 2;
             this.problemDescriptionTextBox.Text = "Entrer problème";
             this.problemDescriptionTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.problemDescriptionTextBox_MouseClick);
+            this.problemDescriptionTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.problemDescriptionTextBox_KeyPress);
             // 
             // nameTextBox
             // 
@@ -118,6 +121,7 @@
             this.nameTextBox.TabIndex = 1;
             this.nameTextBox.Text = "Entrer nom du client";
             this.nameTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.nameTextBox_MouseClick);
+            this.nameTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.nameTextBox_KeyPress);
             // 
             // emailTextbox
             // 
@@ -131,6 +135,7 @@
             this.emailTextbox.TabIndex = 7;
             this.emailTextbox.Text = "Courriel";
             this.emailTextbox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.emailTextbox_MouseClick);
+            this.emailTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.emailTextbox_KeyPress);
             // 
             // label3
             // 
@@ -166,6 +171,7 @@
             this.MATTextBox.TabIndex = 17;
             this.MATTextBox.Text = "MAT";
             this.MATTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MATTextBox_MouseClick);
+            this.MATTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MATTextBox_KeyPress);
             // 
             // dateTimePicker
             // 
@@ -209,6 +215,7 @@
             this.phoneTextBox.TabIndex = 8;
             this.phoneTextBox.Text = "Téléphone";
             this.phoneTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.phoneTextBox_MouseClick);
+            this.phoneTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.phoneTextBox_KeyPress);
             // 
             // inPersonRadioBtn
             // 
@@ -233,6 +240,7 @@
             this.streetTextBox.TabIndex = 9;
             this.streetTextBox.Text = "Adresse";
             this.streetTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.streetTextBox_MouseClick);
+            this.streetTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.streetTextBox_KeyPress);
             // 
             // opeq_CallCenterDataSet1
             // 
@@ -375,6 +383,7 @@
             this.aptNumTextBox.TabIndex = 10;
             this.aptNumTextBox.Text = "Appartement, suite, ect.";
             this.aptNumTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.aptNumTextBox_MouseClick);
+            this.aptNumTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.aptNumTextBox_KeyPress);
             // 
             // postalCodeTextBox
             // 
@@ -388,6 +397,7 @@
             this.postalCodeTextBox.TabIndex = 12;
             this.postalCodeTextBox.Text = "Code Postal";
             this.postalCodeTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.postalCodeTextBox_MouseClick);
+            this.postalCodeTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.postalCodeTextBox_KeyPress);
             // 
             // cityTextBox
             // 
@@ -401,6 +411,7 @@
             this.cityTextBox.TabIndex = 11;
             this.cityTextBox.Text = "Ville";
             this.cityTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cityTextBox_MouseClick);
+            this.cityTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cityTextBox_KeyPress);
             // 
             // contactGroupBox
             // 
@@ -433,14 +444,26 @@
             // 
             // navGroupBox
             // 
+            this.navGroupBox.Controls.Add(this.adminRadioBtn);
             this.navGroupBox.Controls.Add(this.addRadioBtn);
             this.navGroupBox.Controls.Add(this.modifyRadioBtn);
             this.navGroupBox.Controls.Add(this.viewRadioBtn);
-            this.navGroupBox.Location = new System.Drawing.Point(12, 30);
+            this.navGroupBox.Location = new System.Drawing.Point(1, 57);
             this.navGroupBox.Name = "navGroupBox";
-            this.navGroupBox.Size = new System.Drawing.Size(248, 332);
+            this.navGroupBox.Size = new System.Drawing.Size(268, 359);
             this.navGroupBox.TabIndex = 101;
             this.navGroupBox.TabStop = false;
+            // 
+            // adminRadioBtn
+            // 
+            this.adminRadioBtn.AutoSize = true;
+            this.adminRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adminRadioBtn.Location = new System.Drawing.Point(58, 299);
+            this.adminRadioBtn.Name = "adminRadioBtn";
+            this.adminRadioBtn.Size = new System.Drawing.Size(191, 35);
+            this.adminRadioBtn.TabIndex = 31;
+            this.adminRadioBtn.Text = "Admin Page";
+            this.adminRadioBtn.UseVisualStyleBackColor = true;
             // 
             // addRadioBtn
             // 
@@ -479,13 +502,25 @@
             this.viewRadioBtn.UseVisualStyleBackColor = true;
             this.viewRadioBtn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.viewRadioBtn_MouseClick);
             // 
+            // empNameTextView
+            // 
+            this.empNameTextView.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.empNameTextView.Location = new System.Drawing.Point(3, 9);
+            this.empNameTextView.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.empNameTextView.Name = "empNameTextView";
+            this.empNameTextView.Size = new System.Drawing.Size(266, 50);
+            this.empNameTextView.TabIndex = 102;
+            this.empNameTextView.Text = "Nom";
+            this.empNameTextView.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // AddForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(1362, 750);
+            this.ClientSize = new System.Drawing.Size(1383, 750);
+            this.Controls.Add(this.empNameTextView);
             this.Controls.Add(this.navGroupBox);
             this.Controls.Add(this.problemGroupBox);
             this.Controls.Add(this.contactGroupBox);
@@ -564,5 +599,7 @@
         private System.Windows.Forms.RadioButton addRadioBtn;
         private System.Windows.Forms.RadioButton modifyRadioBtn;
         private System.Windows.Forms.RadioButton viewRadioBtn;
+        private System.Windows.Forms.RadioButton adminRadioBtn;
+        private System.Windows.Forms.Label empNameTextView;
     }
 }
