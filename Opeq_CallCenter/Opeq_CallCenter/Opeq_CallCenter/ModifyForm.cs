@@ -794,6 +794,23 @@ namespace Opeq_CallCenter
                 {
                     isAdminRadioBtnClicked = false;
                 }
+                //else if (isAdminRadioBtnClicked == true)
+                //{
+                //    DialogResult dialog1 = MessageBox.Show("Les donnés que vous avez rentrées ne vont pas être sauvegardés." +
+                //        "\nÊtes-vous sur d’annuler?", "Mise en garde", MessageBoxButtons.YesNo);
+                //    if (dialog1 == DialogResult.Yes)
+                //    {
+                //        this.Hide();
+                //        String empName = empNameTextView.Text;
+                //        AdminPage adminForm = new AdminPage();
+                //        adminForm.ShowDialog();
+                //        this.Close();
+                //    }
+                //    else if (dialog1 == DialogResult.No)
+                //    {
+                //        isAdminRadioBtnClicked = false;
+                //    }
+                //}
             }
 
         }
@@ -839,6 +856,13 @@ namespace Opeq_CallCenter
             textBox3.Hide();
             label21.Hide();
             RMATextBox.Hide();
+        }
+
+        private void adminRadioBtn_MouseClick(object sender, MouseEventArgs e)
+        {
+            isViewRadioBtnClicked = true;
+            addRadioBtn.Checked = true;
+            confirmation();
         }
     }
 

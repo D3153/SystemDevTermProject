@@ -576,6 +576,7 @@
             this.adminRadioBtn.TabIndex = 32;
             this.adminRadioBtn.Text = "Admin Page";
             this.adminRadioBtn.UseVisualStyleBackColor = true;
+            this.adminRadioBtn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.adminRadioBtn_MouseClick);
             // 
             // addRadioBtn
             // 
@@ -828,7 +829,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(1404, 750);
+            this.ClientSize = new System.Drawing.Size(1425, 750);
             this.Controls.Add(this.empNameTextView);
             this.Controls.Add(this.orderGroupBox);
             this.Controls.Add(this.problemStatusFroupBox);

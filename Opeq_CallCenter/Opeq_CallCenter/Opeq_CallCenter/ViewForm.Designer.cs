@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewForm));
             this.searchbar = new System.Windows.Forms.TextBox();
             this.searchBtn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.viewBtn = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.resultBox = new System.Windows.Forms.RichTextBox();
@@ -46,6 +46,7 @@
             this.modifyRadioBtn = new System.Windows.Forms.RadioButton();
             this.addRadioBtn = new System.Windows.Forms.RadioButton();
             this.empNameTextView = new System.Windows.Forms.Label();
+            this.MATsearchBar = new System.Windows.Forms.TextBox();
             this.filter.SuspendLayout();
             this.navigation.SuspendLayout();
             this.SuspendLayout();
@@ -54,15 +55,11 @@
             // 
             this.searchbar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchbar.ForeColor = System.Drawing.SystemColors.ScrollBar;
-<<<<<<< HEAD
-            this.searchbar.Location = new System.Drawing.Point(695, 35);
-=======
-            this.searchbar.Location = new System.Drawing.Point(631, 30);
->>>>>>> c4290e1700ac60ada1a6b03d3eda003d0cf4fdeb
-            this.searchbar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.searchbar.Location = new System.Drawing.Point(354, 22);
+            this.searchbar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.searchbar.Multiline = true;
             this.searchbar.Name = "searchbar";
-            this.searchbar.Size = new System.Drawing.Size(500, 52);
+            this.searchbar.Size = new System.Drawing.Size(424, 35);
             this.searchbar.TabIndex = 0;
             this.searchbar.Text = "Enter nom du cliente, MAT, ou nom du commande";
             // 
@@ -70,45 +67,25 @@
             // 
             this.searchBtn.BackColor = System.Drawing.Color.CornflowerBlue;
             this.searchBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.searchBtn.Location = new System.Drawing.Point(537, 35);
-=======
-            this.searchBtn.Location = new System.Drawing.Point(490, 30);
->>>>>>> c4290e1700ac60ada1a6b03d3eda003d0cf4fdeb
-            this.searchBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.searchBtn.Location = new System.Drawing.Point(782, 22);
+            this.searchBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.searchBtn.Name = "searchBtn";
-            this.searchBtn.Size = new System.Drawing.Size(140, 52);
+            this.searchBtn.Size = new System.Drawing.Size(116, 34);
             this.searchBtn.TabIndex = 1;
-            this.searchBtn.Text = "Search";
+            this.searchBtn.Text = "Rechercher";
             this.searchBtn.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.label1.Location = new System.Drawing.Point(375, 45);
-=======
-            this.label1.Location = new System.Drawing.Point(346, 38);
->>>>>>> c4290e1700ac60ada1a6b03d3eda003d0cf4fdeb
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(162, 42);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Rechercher";
+            this.searchBtn.Click += new System.EventHandler(this.searchBtn_Click);
             // 
             // viewBtn
             // 
             this.viewBtn.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.viewBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.viewBtn.Location = new System.Drawing.Point(655, 888);
-=======
-            this.viewBtn.Location = new System.Drawing.Point(595, 712);
->>>>>>> c4290e1700ac60ada1a6b03d3eda003d0cf4fdeb
-            this.viewBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.viewBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewBtn.Location = new System.Drawing.Point(782, 563);
+            this.viewBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.viewBtn.Name = "viewBtn";
-            this.viewBtn.Size = new System.Drawing.Size(164, 68);
+            this.viewBtn.Size = new System.Drawing.Size(176, 35);
             this.viewBtn.TabIndex = 3;
-            this.viewBtn.Text = "Voir";
+            this.viewBtn.Text = "Voir Plus de Detail";
             this.viewBtn.UseVisualStyleBackColor = false;
             this.viewBtn.Click += new System.EventHandler(this.viewBtn_Click);
             // 
@@ -120,14 +97,11 @@
             // 
             // resultBox
             // 
-<<<<<<< HEAD
-            this.resultBox.Location = new System.Drawing.Point(381, 198);
-=======
-            this.resultBox.Location = new System.Drawing.Point(352, 160);
->>>>>>> c4290e1700ac60ada1a6b03d3eda003d0cf4fdeb
-            this.resultBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.resultBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resultBox.Location = new System.Drawing.Point(365, 111);
+            this.resultBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.resultBox.Name = "resultBox";
-            this.resultBox.Size = new System.Drawing.Size(814, 655);
+            this.resultBox.Size = new System.Drawing.Size(544, 427);
             this.resultBox.TabIndex = 6;
             this.resultBox.Text = "";
             // 
@@ -136,15 +110,11 @@
             this.filter.Controls.Add(this.unresolvedRadioBtn);
             this.filter.Controls.Add(this.ongoingRadioBtn);
             this.filter.Controls.Add(this.resolveRadioBtn);
-<<<<<<< HEAD
-            this.filter.Location = new System.Drawing.Point(400, 105);
-=======
-            this.filter.Location = new System.Drawing.Point(369, 86);
->>>>>>> c4290e1700ac60ada1a6b03d3eda003d0cf4fdeb
-            this.filter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.filter.Location = new System.Drawing.Point(365, 59);
+            this.filter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.filter.Name = "filter";
-            this.filter.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.filter.Size = new System.Drawing.Size(794, 75);
+            this.filter.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.filter.Size = new System.Drawing.Size(530, 49);
             this.filter.TabIndex = 7;
             this.filter.TabStop = false;
             // 
@@ -152,10 +122,10 @@
             // 
             this.unresolvedRadioBtn.AutoSize = true;
             this.unresolvedRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.unresolvedRadioBtn.Location = new System.Drawing.Point(513, 32);
-            this.unresolvedRadioBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.unresolvedRadioBtn.Location = new System.Drawing.Point(342, 21);
+            this.unresolvedRadioBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.unresolvedRadioBtn.Name = "unresolvedRadioBtn";
-            this.unresolvedRadioBtn.Size = new System.Drawing.Size(175, 33);
+            this.unresolvedRadioBtn.Size = new System.Drawing.Size(120, 24);
             this.unresolvedRadioBtn.TabIndex = 2;
             this.unresolvedRadioBtn.TabStop = true;
             this.unresolvedRadioBtn.Text = "Non Résolu";
@@ -165,10 +135,10 @@
             // 
             this.ongoingRadioBtn.AutoSize = true;
             this.ongoingRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ongoingRadioBtn.Location = new System.Drawing.Point(284, 32);
-            this.ongoingRadioBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ongoingRadioBtn.Location = new System.Drawing.Point(189, 21);
+            this.ongoingRadioBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ongoingRadioBtn.Name = "ongoingRadioBtn";
-            this.ongoingRadioBtn.Size = new System.Drawing.Size(145, 33);
+            this.ongoingRadioBtn.Size = new System.Drawing.Size(101, 24);
             this.ongoingRadioBtn.TabIndex = 1;
             this.ongoingRadioBtn.TabStop = true;
             this.ongoingRadioBtn.Text = "En Cours";
@@ -178,10 +148,10 @@
             // 
             this.resolveRadioBtn.AutoSize = true;
             this.resolveRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resolveRadioBtn.Location = new System.Drawing.Point(58, 32);
-            this.resolveRadioBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.resolveRadioBtn.Location = new System.Drawing.Point(39, 21);
+            this.resolveRadioBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.resolveRadioBtn.Name = "resolveRadioBtn";
-            this.resolveRadioBtn.Size = new System.Drawing.Size(120, 33);
+            this.resolveRadioBtn.Size = new System.Drawing.Size(83, 24);
             this.resolveRadioBtn.TabIndex = 0;
             this.resolveRadioBtn.TabStop = true;
             this.resolveRadioBtn.Text = "Résolu";
@@ -191,15 +161,10 @@
             // 
             this.label11.BackColor = System.Drawing.Color.Black;
             this.label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-<<<<<<< HEAD
-            this.label11.Location = new System.Drawing.Point(291, 16);
+            this.label11.Location = new System.Drawing.Point(206, 0);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(10, 948);
-=======
-            this.label11.Location = new System.Drawing.Point(271, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(10, 773);
->>>>>>> c4290e1700ac60ada1a6b03d3eda003d0cf4fdeb
+            this.label11.Size = new System.Drawing.Size(8, 608);
             this.label11.TabIndex = 32;
             // 
             // navigation
@@ -208,19 +173,11 @@
             this.navigation.Controls.Add(this.viewRadioBtn);
             this.navigation.Controls.Add(this.modifyRadioBtn);
             this.navigation.Controls.Add(this.addRadioBtn);
-<<<<<<< HEAD
-            this.navigation.Location = new System.Drawing.Point(32, 84);
-            this.navigation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.navigation.Location = new System.Drawing.Point(13, 45);
+            this.navigation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.navigation.Name = "navigation";
-            this.navigation.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.navigation.Size = new System.Drawing.Size(220, 430);
-=======
-            this.navigation.Location = new System.Drawing.Point(41, 69);
-            this.navigation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.navigation.Name = "navigation";
-            this.navigation.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.navigation.Size = new System.Drawing.Size(205, 344);
->>>>>>> c4290e1700ac60ada1a6b03d3eda003d0cf4fdeb
+            this.navigation.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.navigation.Size = new System.Drawing.Size(189, 270);
             this.navigation.TabIndex = 33;
             this.navigation.TabStop = false;
             // 
@@ -228,9 +185,10 @@
             // 
             this.adminRadioBtn.AutoSize = true;
             this.adminRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adminRadioBtn.Location = new System.Drawing.Point(5, 255);
+            this.adminRadioBtn.Location = new System.Drawing.Point(20, 205);
+            this.adminRadioBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.adminRadioBtn.Name = "adminRadioBtn";
-            this.adminRadioBtn.Size = new System.Drawing.Size(191, 35);
+            this.adminRadioBtn.Size = new System.Drawing.Size(160, 30);
             this.adminRadioBtn.TabIndex = 104;
             this.adminRadioBtn.Text = "Admin Page";
             this.adminRadioBtn.UseVisualStyleBackColor = true;
@@ -241,24 +199,23 @@
             this.viewRadioBtn.AutoSize = true;
             this.viewRadioBtn.Checked = true;
             this.viewRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewRadioBtn.Location = new System.Drawing.Point(29, 232);
-            this.viewRadioBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.viewRadioBtn.Location = new System.Drawing.Point(20, 151);
+            this.viewRadioBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.viewRadioBtn.Name = "viewRadioBtn";
-            this.viewRadioBtn.Size = new System.Drawing.Size(104, 41);
+            this.viewRadioBtn.Size = new System.Drawing.Size(73, 30);
             this.viewRadioBtn.TabIndex = 33;
             this.viewRadioBtn.TabStop = true;
             this.viewRadioBtn.Text = "Voir";
             this.viewRadioBtn.UseVisualStyleBackColor = true;
-            this.viewRadioBtn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.viewRadioBtn_MouseClick);
             // 
             // modifyRadioBtn
             // 
             this.modifyRadioBtn.AutoSize = true;
             this.modifyRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.modifyRadioBtn.Location = new System.Drawing.Point(29, 139);
-            this.modifyRadioBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.modifyRadioBtn.Location = new System.Drawing.Point(20, 90);
+            this.modifyRadioBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.modifyRadioBtn.Name = "modifyRadioBtn";
-            this.modifyRadioBtn.Size = new System.Drawing.Size(163, 41);
+            this.modifyRadioBtn.Size = new System.Drawing.Size(115, 30);
             this.modifyRadioBtn.TabIndex = 32;
             this.modifyRadioBtn.Text = "Modifier";
             this.modifyRadioBtn.UseVisualStyleBackColor = true;
@@ -268,10 +225,10 @@
             // 
             this.addRadioBtn.AutoSize = true;
             this.addRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addRadioBtn.Location = new System.Drawing.Point(29, 44);
-            this.addRadioBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.addRadioBtn.Location = new System.Drawing.Point(20, 28);
+            this.addRadioBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.addRadioBtn.Name = "addRadioBtn";
-            this.addRadioBtn.Size = new System.Drawing.Size(151, 41);
+            this.addRadioBtn.Size = new System.Drawing.Size(106, 30);
             this.addRadioBtn.TabIndex = 31;
             this.addRadioBtn.Text = "Ajouter";
             this.addRadioBtn.UseVisualStyleBackColor = true;
@@ -280,35 +237,43 @@
             // empNameTextView
             // 
             this.empNameTextView.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.empNameTextView.Location = new System.Drawing.Point(13, 9);
-            this.empNameTextView.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.empNameTextView.Location = new System.Drawing.Point(3, 6);
             this.empNameTextView.Name = "empNameTextView";
-            this.empNameTextView.Size = new System.Drawing.Size(251, 58);
+            this.empNameTextView.Size = new System.Drawing.Size(199, 37);
             this.empNameTextView.TabIndex = 103;
             this.empNameTextView.Text = "Nom";
             this.empNameTextView.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // MATsearchBar
+            // 
+            this.MATsearchBar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MATsearchBar.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.MATsearchBar.Location = new System.Drawing.Point(354, 563);
+            this.MATsearchBar.Margin = new System.Windows.Forms.Padding(2);
+            this.MATsearchBar.Multiline = true;
+            this.MATsearchBar.Name = "MATsearchBar";
+            this.MATsearchBar.Size = new System.Drawing.Size(424, 35);
+            this.MATsearchBar.TabIndex = 104;
+            this.MATsearchBar.Text = "Enter MAT";
+            // 
             // ViewForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.SkyBlue;
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(1367, 938);
-=======
-            this.ClientSize = new System.Drawing.Size(1215, 750);
+            this.ClientSize = new System.Drawing.Size(1053, 609);
+            this.Controls.Add(this.MATsearchBar);
             this.Controls.Add(this.empNameTextView);
->>>>>>> c4290e1700ac60ada1a6b03d3eda003d0cf4fdeb
             this.Controls.Add(this.navigation);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.filter);
             this.Controls.Add(this.resultBox);
             this.Controls.Add(this.viewBtn);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.searchBtn);
             this.Controls.Add(this.searchbar);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ViewForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewForm";
@@ -326,7 +291,6 @@
 
         private System.Windows.Forms.TextBox searchbar;
         private System.Windows.Forms.Button searchBtn;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button viewBtn;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.RichTextBox resultBox;
@@ -341,5 +305,6 @@
         private System.Windows.Forms.RadioButton addRadioBtn;
         private System.Windows.Forms.Label empNameTextView;
         private System.Windows.Forms.RadioButton adminRadioBtn;
+        private System.Windows.Forms.TextBox MATsearchBar;
     }
 }
