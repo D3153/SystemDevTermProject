@@ -117,740 +117,1109 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;orderTypeTextBox.Name" xml:space="preserve">
-    <value>orderTypeTextBox</value>
-  </data>
-  <data name="label8.Text" xml:space="preserve">
-    <value>Portable</value>
-  </data>
-  <data name="&gt;&gt;orderTypeComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="adminRadioBtn.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>355, 338</value>
+  <data name="adminRadioBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 13.2000008pt</value>
   </data>
-  <data name="&gt;&gt;label9.Name" xml:space="preserve">
-    <value>label9</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="adminRadioBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;orderTypeRemoveBtn.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="adminRadioBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 251</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="phoneOrTabTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>117</value>
+  <data name="adminRadioBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 33</value>
   </data>
-  <data name="&gt;&gt;computerProbRemoveBtn.Name" xml:space="preserve">
-    <value>computerProbRemoveBtn</value>
+  <data name="adminRadioBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
   </data>
-  <data name="actionTookTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>251, 24</value>
+  <data name="adminRadioBtn.Text" xml:space="preserve">
+    <value>Page Admin</value>
   </data>
-  <data name="label8.TabIndex" type="System.Int32, mscorlib">
-    <value>111</value>
+  <data name="&gt;&gt;adminRadioBtn.Name" xml:space="preserve">
+    <value>adminRadioBtn</value>
   </data>
-  <data name="&gt;&gt;orderTypeAddBtn.Name" xml:space="preserve">
-    <value>orderTypeAddBtn</value>
+  <data name="&gt;&gt;adminRadioBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;actionTookTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;adminRadioBtn.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="laptopProbRemoveBtn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11pt, style=Bold</value>
-  </data>
-  <data name="laptopProbRemoveBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 41</value>
-  </data>
-  <data name="computerProbTextBox.Text" xml:space="preserve">
-    <value>Ajouter</value>
-  </data>
-  <data name="&gt;&gt;screenProbAddBtn.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="orderTypeRemoveBtn.Text" xml:space="preserve">
-    <value>-</value>
-  </data>
-  <data name="&gt;&gt;computerProbAddBtn.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;actionTookAddBtn.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="laptopProbAddBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>987, 281</value>
-  </data>
-  <data name="phoneOrTabletProblemComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>357, 24</value>
-  </data>
-  <data name="phoneOrTabProbRemoveBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1052, 368</value>
-  </data>
-  <data name="&gt;&gt;computerProblemComboBox.Name" xml:space="preserve">
-    <value>computerProblemComboBox</value>
-  </data>
-  <data name="&gt;&gt;computerProbAddBtn.Name" xml:space="preserve">
-    <value>computerProbAddBtn</value>
-  </data>
-  <data name="&gt;&gt;modifyRadioBtn.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="actionTookAddBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>987, 606</value>
+  <data name="&gt;&gt;adminRadioBtn.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="viewRadioBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 13.8pt</value>
   </data>
-  <data name="screenProbAddBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>121</value>
-  </data>
-  <data name="&gt;&gt;orderTypeRemoveBtn.Name" xml:space="preserve">
-    <value>orderTypeRemoveBtn</value>
-  </data>
-  <data name="computerProbTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>251, 24</value>
-  </data>
-  <data name="screenProbRemoveBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1053, 191</value>
-  </data>
-  <data name="label5.TabIndex" type="System.Int32, mscorlib">
-    <value>105</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="laptopProbRemoveBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>249, 29</value>
-  </data>
-  <data name="&gt;&gt;computerProbRemoveBtn.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="actionTookRemoveBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1053, 606</value>
-  </data>
-  <data name="screenProbTextBox.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>357, 250</value>
-  </data>
-  <data name="orderTypeAddBtn.Text" xml:space="preserve">
-    <value>+</value>
-  </data>
-  <data name="computerProbAddBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>119</value>
-  </data>
-  <data name="actionTookComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="&gt;&gt;laptopProbRemoveBtn.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 25</value>
-  </data>
-  <data name="&gt;&gt;screenProbRemoveBtn.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;viewRadioBtn.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="laptopProbTextBox.Text" xml:space="preserve">
-    <value>Ajouter</value>
-  </data>
-  <data name="&gt;&gt;actionTookRemoveBtn.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;viewRadioBtn.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="screenProblemComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>355, 202</value>
-  </data>
-  <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="&gt;&gt;phoneOrTabProbRemoveBtn.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="laptopProbAddBtn.Text" xml:space="preserve">
-    <value>+</value>
-  </data>
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;computerProbTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;screenProblemComboBox.ZOrder" xml:space="preserve">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
-  </data>
-  <data name="modifyRadioBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="screenProbAddBtn.Text" xml:space="preserve">
-    <value>+</value>
-  </data>
-  <data name="computerProbTextBox.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;laptopProblemComboBox.ZOrder" xml:space="preserve">
-    <value>25</value>
-  </data>
-  <data name="computerProbAddBtn.Text" xml:space="preserve">
-    <value>+</value>
-  </data>
-  <data name="screenProbRemoveBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 41</value>
-  </data>
-  <data name="laptopProblemComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="&gt;&gt;laptopProbAddBtn.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;screenProbAddBtn.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 25</value>
-  </data>
-  <data name="screenProbRemoveBtn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11pt, style=Bold</value>
-  </data>
-  <data name="addButton.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="orderTypeComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="&gt;&gt;actionTookRemoveBtn.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;actionTookAddBtn.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="phoneOrTabletProblemComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>353, 379</value>
-  </data>
-  <data name="orderTypeTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>128</value>
-  </data>
-  <data name="label13.Text" xml:space="preserve">
-    <value>Type de Commande</value>
-  </data>
-  <data name="phoneOrTabProbAddBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>987, 368</value>
-  </data>
-  <data name="phoneOrTabTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>251, 24</value>
-  </data>
-  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="actionTookComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>132</value>
-  </data>
-  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>371, 446</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1215, 750</value>
-  </data>
-  <data name="&gt;&gt;actionTookTextBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="screenProblemComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;screenProbTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="label15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="screenProbTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>115</value>
-  </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 25</value>
-  </data>
-  <data name="&gt;&gt;actionTookTextBox.Name" xml:space="preserve">
-    <value>actionTookTextBox</value>
-  </data>
-  <data name="&gt;&gt;orderTypeTextBox.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;phoneOrTabTextBox.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="orderTypeAddBtn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11pt, style=Bold</value>
-  </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>371, 27</value>
-  </data>
-  <data name="&gt;&gt;orderTypeRemoveBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="computerProbRemoveBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="&gt;&gt;phoneOrTabletProblemComboBox.Name" xml:space="preserve">
-    <value>phoneOrTabletProblemComboBox</value>
-  </data>
-  <data name="&gt;&gt;screenProbTextBox.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;modifyRadioBtn.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;orderTypeAddBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="computerProbRemoveBtn.Text" xml:space="preserve">
-    <value>-</value>
-  </data>
-  <data name="computerProbRemoveBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1053, 103</value>
-  </data>
-  <data name="modifyRadioBtn.Text" xml:space="preserve">
-    <value>Modifier</value>
-  </data>
-  <data name="orderTypeTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11pt</value>
-  </data>
-  <data name="actionTookAddBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 41</value>
-  </data>
-  <data name="laptopProbRemoveBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1053, 281</value>
-  </data>
-  <data name="label15.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14pt, style=Bold</value>
-  </data>
-  <data name="label7.TabIndex" type="System.Int32, mscorlib">
-    <value>109</value>
-  </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;orderTypeComboBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="label13.TabIndex" type="System.Int32, mscorlib">
-    <value>126</value>
-  </data>
-  <data name="&gt;&gt;label15.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;computerProblemComboBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="screenProblemComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>108</value>
-  </data>
-  <data name="&gt;&gt;computerProbTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="orderTypeTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>731, 506</value>
-  </data>
-  <data name="&gt;&gt;screenProblemComboBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="screenProblemComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>357, 24</value>
-  </data>
-  <data name="screenProbTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="&gt;&gt;actionTookRemoveBtn.Name" xml:space="preserve">
-    <value>actionTookRemoveBtn</value>
-  </data>
-  <data name="phoneOrTabletProblemComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>112</value>
-  </data>
-  <data name="phoneOrTabTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11pt</value>
-  </data>
-  <data name="modifyRadioBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 118</value>
-  </data>
-  <data name="&gt;&gt;orderTypeTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;laptopProbTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="addButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13.8pt</value>
-  </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>Cellulaire/Tablette</value>
-  </data>
-  <data name="&gt;&gt;screenProbAddBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;addButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="phoneOrTabProbAddBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="viewRadioBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 185</value>
   </data>
   <data name="viewRadioBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="viewRadioBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 44</value>
   </data>
-  <data name="actionTookTextBox.Text" xml:space="preserve">
-    <value>Ajouter</value>
+  <data name="viewRadioBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="viewRadioBtn.Text" xml:space="preserve">
     <value>Voir</value>
   </data>
-  <data name="screenProbTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>251, 24</value>
+  <data name="&gt;&gt;viewRadioBtn.Name" xml:space="preserve">
+    <value>viewRadioBtn</value>
   </data>
-  <data name="&gt;&gt;orderTypeComboBox.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="&gt;&gt;viewRadioBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="phoneOrTabProbAddBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="&gt;&gt;viewRadioBtn.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;viewRadioBtn.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="modifyRadioBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 13.8pt</value>
+  </data>
+  <data name="modifyRadioBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 118</value>
+  </data>
+  <data name="modifyRadioBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="modifyRadioBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 44</value>
+  </data>
+  <data name="modifyRadioBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="modifyRadioBtn.Text" xml:space="preserve">
+    <value>Modifier</value>
+  </data>
+  <data name="&gt;&gt;modifyRadioBtn.Name" xml:space="preserve">
+    <value>modifyRadioBtn</value>
+  </data>
+  <data name="&gt;&gt;modifyRadioBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;modifyRadioBtn.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;modifyRadioBtn.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="addButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 13.8pt</value>
+  </data>
+  <data name="addButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 39</value>
+  </data>
+  <data name="addButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="addButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 44</value>
+  </data>
+  <data name="addButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="addButton.Text" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="&gt;&gt;addButton.Name" xml:space="preserve">
+    <value>addButton</value>
+  </data>
+  <data name="&gt;&gt;addButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addButton.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;addButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, -1</value>
+  </data>
+  <data name="groupBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="groupBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>207, 752</value>
   </data>
-  <data name="computerProbAddBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
-  <data name="orderTypeTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
-  </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>349, 73</value>
-  </data>
-  <data name="orderTypeRemoveBtn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11pt, style=Bold</value>
-  </data>
-  <data name="actionTookComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>355, 615</value>
-  </data>
-  <data name="phoneOrTabletProblemComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="&gt;&gt;computerProbAddBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;computerProbTextBox.Name" xml:space="preserve">
-    <value>computerProbTextBox</value>
-  </data>
-  <data name="computerProblemComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>355, 114</value>
-  </data>
-  <data name="modifyRadioBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 44</value>
-  </data>
-  <data name="&gt;&gt;addButton.Parent" xml:space="preserve">
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;orderTypeTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="phoneOrTabTextBox.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="phoneOrTabProbRemoveBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 41</value>
-  </data>
-  <data name="&gt;&gt;laptopProbRemoveBtn.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="orderTypeRemoveBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>129</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>30</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>Écran</value>
-  </data>
-  <data name="laptopProbTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11pt</value>
-  </data>
-  <data name="&gt;&gt;phoneOrTabletProblemComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>357, 160</value>
-  </data>
-  <data name="computerProblemComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>106</value>
-  </data>
-  <data name="laptopProbTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="orderTypeComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>355, 506</value>
-  </data>
-  <data name="phoneOrTabProbRemoveBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>124</value>
-  </data>
-  <data name="label15.TabIndex" type="System.Int32, mscorlib">
-    <value>131</value>
-  </data>
-  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>31</value>
   </data>
-  <data name="actionTookRemoveBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>134</value>
-  </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="actionTookTextBox.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="computerProblemComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>371, 565</value>
-  </data>
-  <data name="computerProbAddBtn.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="phoneOrTabProbAddBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 11pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;laptopProbRemoveBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="phoneOrTabProbAddBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>987, 368</value>
   </data>
-  <data name="screenProbAddBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>987, 191</value>
-  </data>
-  <data name="&gt;&gt;laptopProblemComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="actionTookTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>133</value>
-  </data>
-  <data name="&gt;&gt;modifyRadioBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="laptopProbTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>251, 24</value>
-  </data>
-  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>24</value>
-  </data>
-  <data name="orderTypeAddBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>987, 495</value>
-  </data>
-  <data name="actionTookComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>357, 24</value>
+  <data name="phoneOrTabProbAddBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="phoneOrTabProbAddBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>45, 41</value>
   </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, -1</value>
+  <data name="phoneOrTabProbAddBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>125</value>
   </data>
-  <data name="addButton.Text" xml:space="preserve">
-    <value>Ajouter</value>
+  <data name="phoneOrTabProbAddBtn.Text" xml:space="preserve">
+    <value>+</value>
   </data>
-  <data name="addButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="&gt;&gt;orderTypeAddBtn.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;actionTookAddBtn.Name" xml:space="preserve">
-    <value>actionTookAddBtn</value>
-  </data>
-  <data name="&gt;&gt;screenProbRemoveBtn.Name" xml:space="preserve">
-    <value>screenProbRemoveBtn</value>
-  </data>
-  <data name="&gt;&gt;phoneOrTabProbAddBtn.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="screenProbRemoveBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="&gt;&gt;phoneOrTabProbRemoveBtn.Name" xml:space="preserve">
-    <value>phoneOrTabProbRemoveBtn</value>
-  </data>
-  <data name="phoneOrTabProbRemoveBtn.Text" xml:space="preserve">
-    <value>-</value>
-  </data>
-  <data name="&gt;&gt;phoneOrTabletProblemComboBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;computerProbRemoveBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;actionTookComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="phoneOrTabTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="phoneOrTabProbRemoveBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="&gt;&gt;label15.Name" xml:space="preserve">
-    <value>label15</value>
-  </data>
-  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 29</value>
-  </data>
-  <data name="&gt;&gt;orderTypeComboBox.Name" xml:space="preserve">
-    <value>orderTypeComboBox</value>
-  </data>
-  <data name="computerProbAddBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 41</value>
-  </data>
-  <data name="&gt;&gt;actionTookAddBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label13.Name" xml:space="preserve">
-    <value>label13</value>
+  <data name="&gt;&gt;phoneOrTabProbAddBtn.Name" xml:space="preserve">
+    <value>phoneOrTabProbAddBtn</value>
   </data>
   <data name="&gt;&gt;phoneOrTabProbAddBtn.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="orderTypeTextBox.Text" xml:space="preserve">
-    <value>Ajouter</value>
-  </data>
-  <data name="screenProbTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>731, 202</value>
-  </data>
-  <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="actionTookTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="&gt;&gt;viewRadioBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="computerProbTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>AdminPage</value>
-  </data>
-  <data name="&gt;&gt;actionTookComboBox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;phoneOrTabProbAddBtn.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;phoneOrTabProbRemoveBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;phoneOrTabProbAddBtn.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
-  <data name="screenProbAddBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 41</value>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="addButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 39</value>
+  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;actionTookComboBox.Name" xml:space="preserve">
-    <value>actionTookComboBox</value>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>371, 27</value>
   </data>
-  <data name="&gt;&gt;phoneOrTabletProblemComboBox.ZOrder" xml:space="preserve">
-    <value>23</value>
+  <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
-  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 29</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Type de Probléme</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="computerProblemComboBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.2pt</value>
+  </data>
+  <data name="computerProblemComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>355, 114</value>
+  </data>
+  <data name="computerProblemComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="computerProblemComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>357, 28</value>
+  </data>
+  <data name="computerProblemComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>106</value>
+  </data>
+  <data name="&gt;&gt;computerProblemComboBox.Name" xml:space="preserve">
+    <value>computerProblemComboBox</value>
+  </data>
+  <data name="&gt;&gt;computerProblemComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;computerProblemComboBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;computerProblemComboBox.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>349, 73</value>
   </data>
-  <data name="&gt;&gt;phoneOrTabProbRemoveBtn.ZOrder" xml:space="preserve">
-    <value>11</value>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 25</value>
   </data>
-  <data name="phoneOrTabTextBox.Text" xml:space="preserve">
-    <value>Ajouter</value>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>107</value>
   </data>
-  <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
+  <data name="label6.Text" xml:space="preserve">
+    <value>Ordinateur</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="screenProblemComboBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.2pt</value>
+  </data>
+  <data name="screenProblemComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>355, 202</value>
+  </data>
+  <data name="screenProblemComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="screenProblemComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>357, 28</value>
+  </data>
+  <data name="screenProblemComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>108</value>
+  </data>
+  <data name="&gt;&gt;screenProblemComboBox.Name" xml:space="preserve">
+    <value>screenProblemComboBox</value>
+  </data>
+  <data name="&gt;&gt;screenProblemComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;screenProblemComboBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;screenProblemComboBox.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>357, 160</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 25</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>109</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Écran</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
     <value>26</value>
   </data>
-  <data name="actionTookRemoveBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 41</value>
+  <data name="laptopProblemComboBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.2pt</value>
   </data>
-  <data name="modifyRadioBtn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13.8pt</value>
+  <data name="laptopProblemComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>355, 292</value>
   </data>
-  <data name="&gt;&gt;modifyRadioBtn.Name" xml:space="preserve">
-    <value>modifyRadioBtn</value>
+  <data name="laptopProblemComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="laptopProblemComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>357, 28</value>
+  </data>
+  <data name="laptopProblemComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>110</value>
+  </data>
+  <data name="&gt;&gt;laptopProblemComboBox.Name" xml:space="preserve">
+    <value>laptopProblemComboBox</value>
+  </data>
+  <data name="&gt;&gt;laptopProblemComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;laptopProblemComboBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;laptopProblemComboBox.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>357, 250</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 25</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>111</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Portable</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="phoneOrTabletProblemComboBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.2pt</value>
+  </data>
+  <data name="phoneOrTabletProblemComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>353, 379</value>
+  </data>
+  <data name="phoneOrTabletProblemComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="phoneOrTabletProblemComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>357, 28</value>
+  </data>
+  <data name="phoneOrTabletProblemComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>112</value>
+  </data>
+  <data name="&gt;&gt;phoneOrTabletProblemComboBox.Name" xml:space="preserve">
+    <value>phoneOrTabletProblemComboBox</value>
+  </data>
+  <data name="&gt;&gt;phoneOrTabletProblemComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;phoneOrTabletProblemComboBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;phoneOrTabletProblemComboBox.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>355, 338</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 25</value>
+  </data>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>113</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Cellulaire/Tablette</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="computerProbTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt</value>
+  </data>
+  <data name="computerProbTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>731, 114</value>
+  </data>
+  <data name="computerProbTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="computerProbTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="computerProbTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 24</value>
+  </data>
+  <data name="computerProbTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>114</value>
+  </data>
+  <data name="computerProbTextBox.Text" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="&gt;&gt;computerProbTextBox.Name" xml:space="preserve">
+    <value>computerProbTextBox</value>
+  </data>
+  <data name="&gt;&gt;computerProbTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;computerProbTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;computerProbTextBox.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="screenProbTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt</value>
+  </data>
+  <data name="screenProbTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>731, 202</value>
+  </data>
+  <data name="screenProbTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="screenProbTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="screenProbTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 24</value>
+  </data>
+  <data name="screenProbTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>115</value>
+  </data>
+  <data name="screenProbTextBox.Text" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="&gt;&gt;screenProbTextBox.Name" xml:space="preserve">
+    <value>screenProbTextBox</value>
+  </data>
+  <data name="&gt;&gt;screenProbTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;screenProbTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;screenProbTextBox.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="laptopProbTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt</value>
+  </data>
+  <data name="laptopProbTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>731, 292</value>
+  </data>
+  <data name="laptopProbTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="laptopProbTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="laptopProbTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 24</value>
+  </data>
+  <data name="laptopProbTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>116</value>
+  </data>
+  <data name="laptopProbTextBox.Text" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="&gt;&gt;laptopProbTextBox.Name" xml:space="preserve">
+    <value>laptopProbTextBox</value>
+  </data>
+  <data name="&gt;&gt;laptopProbTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;laptopProbTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;laptopProbTextBox.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="phoneOrTabTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt</value>
   </data>
   <data name="phoneOrTabTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>729, 379</value>
   </data>
+  <data name="phoneOrTabTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="phoneOrTabTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="phoneOrTabTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 24</value>
+  </data>
+  <data name="phoneOrTabTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>117</value>
+  </data>
+  <data name="phoneOrTabTextBox.Text" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="&gt;&gt;phoneOrTabTextBox.Name" xml:space="preserve">
+    <value>phoneOrTabTextBox</value>
+  </data>
+  <data name="&gt;&gt;phoneOrTabTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;phoneOrTabTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;phoneOrTabTextBox.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="computerProbRemoveBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt, style=Bold</value>
+  </data>
+  <data name="computerProbRemoveBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1053, 103</value>
+  </data>
+  <data name="computerProbRemoveBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="computerProbRemoveBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 41</value>
+  </data>
+  <data name="computerProbRemoveBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>118</value>
+  </data>
+  <data name="computerProbRemoveBtn.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="&gt;&gt;computerProbRemoveBtn.Name" xml:space="preserve">
+    <value>computerProbRemoveBtn</value>
+  </data>
+  <data name="&gt;&gt;computerProbRemoveBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;computerProbRemoveBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;computerProbRemoveBtn.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="computerProbAddBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt, style=Bold</value>
+  </data>
+  <data name="computerProbAddBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>987, 103</value>
+  </data>
+  <data name="computerProbAddBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="computerProbAddBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 41</value>
+  </data>
+  <data name="computerProbAddBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>119</value>
+  </data>
+  <data name="computerProbAddBtn.Text" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="&gt;&gt;computerProbAddBtn.Name" xml:space="preserve">
+    <value>computerProbAddBtn</value>
+  </data>
+  <data name="&gt;&gt;computerProbAddBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;computerProbAddBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;computerProbAddBtn.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="screenProbRemoveBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt, style=Bold</value>
+  </data>
+  <data name="screenProbRemoveBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1053, 191</value>
+  </data>
+  <data name="screenProbRemoveBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="screenProbRemoveBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 41</value>
+  </data>
+  <data name="screenProbRemoveBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="screenProbRemoveBtn.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="&gt;&gt;screenProbRemoveBtn.Name" xml:space="preserve">
+    <value>screenProbRemoveBtn</value>
+  </data>
+  <data name="&gt;&gt;screenProbRemoveBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;screenProbRemoveBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;screenProbRemoveBtn.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="screenProbAddBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt, style=Bold</value>
+  </data>
+  <data name="screenProbAddBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>987, 191</value>
+  </data>
+  <data name="screenProbAddBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="screenProbAddBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 41</value>
+  </data>
+  <data name="screenProbAddBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>121</value>
+  </data>
+  <data name="screenProbAddBtn.Text" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="&gt;&gt;screenProbAddBtn.Name" xml:space="preserve">
+    <value>screenProbAddBtn</value>
+  </data>
+  <data name="&gt;&gt;screenProbAddBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;screenProbAddBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;screenProbAddBtn.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="laptopProbRemoveBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt, style=Bold</value>
+  </data>
+  <data name="laptopProbRemoveBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1053, 281</value>
+  </data>
+  <data name="laptopProbRemoveBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="laptopProbRemoveBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 41</value>
+  </data>
+  <data name="laptopProbRemoveBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>122</value>
+  </data>
+  <data name="laptopProbRemoveBtn.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="&gt;&gt;laptopProbRemoveBtn.Name" xml:space="preserve">
+    <value>laptopProbRemoveBtn</value>
+  </data>
+  <data name="&gt;&gt;laptopProbRemoveBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;laptopProbRemoveBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;laptopProbRemoveBtn.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="laptopProbAddBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt, style=Bold</value>
+  </data>
+  <data name="laptopProbAddBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>987, 281</value>
+  </data>
+  <data name="laptopProbAddBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="laptopProbAddBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 41</value>
+  </data>
+  <data name="laptopProbAddBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>123</value>
+  </data>
+  <data name="laptopProbAddBtn.Text" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="&gt;&gt;laptopProbAddBtn.Name" xml:space="preserve">
+    <value>laptopProbAddBtn</value>
+  </data>
+  <data name="&gt;&gt;laptopProbAddBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;laptopProbAddBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;laptopProbAddBtn.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="phoneOrTabProbRemoveBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt, style=Bold</value>
+  </data>
+  <data name="phoneOrTabProbRemoveBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1052, 368</value>
+  </data>
+  <data name="phoneOrTabProbRemoveBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="phoneOrTabProbRemoveBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 41</value>
+  </data>
+  <data name="phoneOrTabProbRemoveBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>124</value>
+  </data>
+  <data name="phoneOrTabProbRemoveBtn.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="&gt;&gt;phoneOrTabProbRemoveBtn.Name" xml:space="preserve">
+    <value>phoneOrTabProbRemoveBtn</value>
+  </data>
+  <data name="&gt;&gt;phoneOrTabProbRemoveBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;phoneOrTabProbRemoveBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;phoneOrTabProbRemoveBtn.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="orderTypeComboBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.2pt</value>
+  </data>
+  <data name="orderTypeComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>355, 506</value>
+  </data>
+  <data name="orderTypeComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="orderTypeComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>357, 28</value>
+  </data>
+  <data name="orderTypeComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>127</value>
+  </data>
+  <data name="&gt;&gt;orderTypeComboBox.Name" xml:space="preserve">
+    <value>orderTypeComboBox</value>
+  </data>
+  <data name="&gt;&gt;orderTypeComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;orderTypeComboBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;orderTypeComboBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label13.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt, style=Bold</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>371, 446</value>
+  </data>
+  <data name="label13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 29</value>
+  </data>
+  <data name="label13.TabIndex" type="System.Int32, mscorlib">
+    <value>126</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>Type de Commande</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="orderTypeTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt</value>
+  </data>
+  <data name="orderTypeTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>731, 506</value>
+  </data>
+  <data name="orderTypeTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="orderTypeTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="orderTypeTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 24</value>
+  </data>
+  <data name="orderTypeTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>128</value>
+  </data>
+  <data name="orderTypeTextBox.Text" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="&gt;&gt;orderTypeTextBox.Name" xml:space="preserve">
+    <value>orderTypeTextBox</value>
+  </data>
+  <data name="&gt;&gt;orderTypeTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;orderTypeTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;orderTypeTextBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="orderTypeAddBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt, style=Bold</value>
+  </data>
+  <data name="orderTypeAddBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>987, 495</value>
+  </data>
+  <data name="orderTypeAddBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="orderTypeAddBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 41</value>
+  </data>
+  <data name="orderTypeAddBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>130</value>
+  </data>
+  <data name="orderTypeAddBtn.Text" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="&gt;&gt;orderTypeAddBtn.Name" xml:space="preserve">
+    <value>orderTypeAddBtn</value>
+  </data>
+  <data name="&gt;&gt;orderTypeAddBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;orderTypeAddBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;orderTypeAddBtn.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="orderTypeRemoveBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt, style=Bold</value>
+  </data>
   <data name="orderTypeRemoveBtn.Location" type="System.Drawing.Point, System.Drawing">
     <value>1053, 495</value>
   </data>
-  <data name="groupBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="orderTypeRemoveBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
+  </data>
+  <data name="orderTypeRemoveBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 41</value>
+  </data>
+  <data name="orderTypeRemoveBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>129</value>
+  </data>
+  <data name="orderTypeRemoveBtn.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="&gt;&gt;orderTypeRemoveBtn.Name" xml:space="preserve">
+    <value>orderTypeRemoveBtn</value>
+  </data>
+  <data name="&gt;&gt;orderTypeRemoveBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;orderTypeRemoveBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;orderTypeRemoveBtn.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="actionTookComboBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.2pt</value>
+  </data>
+  <data name="actionTookComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>355, 615</value>
+  </data>
+  <data name="actionTookComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="actionTookComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>357, 28</value>
+  </data>
+  <data name="actionTookComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>132</value>
+  </data>
+  <data name="&gt;&gt;actionTookComboBox.Name" xml:space="preserve">
+    <value>actionTookComboBox</value>
+  </data>
+  <data name="&gt;&gt;actionTookComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;actionTookComboBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;actionTookComboBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label15.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label15.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt, style=Bold</value>
+  </data>
+  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>371, 565</value>
+  </data>
+  <data name="label15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 29</value>
+  </data>
+  <data name="label15.TabIndex" type="System.Int32, mscorlib">
+    <value>131</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>Action Prise</value>
+  </data>
+  <data name="&gt;&gt;label15.Name" xml:space="preserve">
+    <value>label15</value>
+  </data>
+  <data name="&gt;&gt;label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="actionTookTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt</value>
+  </data>
+  <data name="actionTookTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>731, 615</value>
+  </data>
+  <data name="actionTookTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="actionTookTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="actionTookTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 24</value>
+  </data>
+  <data name="actionTookTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>133</value>
+  </data>
+  <data name="actionTookTextBox.Text" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="&gt;&gt;actionTookTextBox.Name" xml:space="preserve">
+    <value>actionTookTextBox</value>
+  </data>
+  <data name="&gt;&gt;actionTookTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;actionTookTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;actionTookTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="actionTookAddBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt, style=Bold</value>
+  </data>
+  <data name="actionTookAddBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>987, 606</value>
+  </data>
+  <data name="actionTookAddBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="actionTookAddBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 41</value>
+  </data>
+  <data name="actionTookAddBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>135</value>
+  </data>
+  <data name="actionTookAddBtn.Text" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="&gt;&gt;actionTookAddBtn.Name" xml:space="preserve">
+    <value>actionTookAddBtn</value>
+  </data>
+  <data name="&gt;&gt;actionTookAddBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;actionTookAddBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;actionTookAddBtn.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="actionTookRemoveBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt, style=Bold</value>
+  </data>
+  <data name="actionTookRemoveBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1053, 606</value>
+  </data>
+  <data name="actionTookRemoveBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="actionTookRemoveBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 41</value>
+  </data>
+  <data name="actionTookRemoveBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>134</value>
+  </data>
+  <data name="actionTookRemoveBtn.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="&gt;&gt;actionTookRemoveBtn.Name" xml:space="preserve">
+    <value>actionTookRemoveBtn</value>
+  </data>
+  <data name="&gt;&gt;actionTookRemoveBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;actionTookRemoveBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;actionTookRemoveBtn.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1215, 750</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4971,337 +5340,19 @@
         AAAAAAAA
 </value>
   </data>
-  <data name="laptopProbRemoveBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>122</value>
-  </data>
-  <data name="laptopProbAddBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="label13.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14pt, style=Bold</value>
-  </data>
-  <data name="actionTookRemoveBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="computerProblemComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>357, 24</value>
-  </data>
-  <data name="computerProbRemoveBtn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11pt, style=Bold</value>
-  </data>
-  <data name="laptopProbTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>731, 292</value>
-  </data>
-  <data name="&gt;&gt;phoneOrTabTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="actionTookAddBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>135</value>
-  </data>
-  <data name="actionTookTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11pt</value>
-  </data>
-  <data name="screenProbTextBox.Text" xml:space="preserve">
-    <value>Ajouter</value>
-  </data>
-  <data name="groupBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="actionTookRemoveBtn.Text" xml:space="preserve">
-    <value>-</value>
-  </data>
-  <data name="orderTypeAddBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>130</value>
-  </data>
-  <data name="laptopProbAddBtn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11pt, style=Bold</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Type de Probléme</value>
-  </data>
-  <data name="laptopProblemComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>355, 292</value>
-  </data>
-  <data name="&gt;&gt;orderTypeAddBtn.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;screenProbRemoveBtn.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="orderTypeAddBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="screenProbRemoveBtn.Text" xml:space="preserve">
-    <value>-</value>
-  </data>
-  <data name="orderTypeTextBox.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;laptopProbTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="screenProbAddBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="&gt;&gt;orderTypeRemoveBtn.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;laptopProblemComboBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="actionTookRemoveBtn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;label13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;laptopProbAddBtn.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;phoneOrTabProbAddBtn.Name" xml:space="preserve">
-    <value>phoneOrTabProbAddBtn</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>AdminPage</value>
-  </data>
-  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="actionTookAddBtn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11pt, style=Bold</value>
-  </data>
-  <data name="modifyRadioBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;screenProblemComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;computerProblemComboBox.ZOrder" xml:space="preserve">
-    <value>29</value>
-  </data>
-  <data name="orderTypeRemoveBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 41</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;screenProbAddBtn.Name" xml:space="preserve">
-    <value>screenProbAddBtn</value>
-  </data>
-  <data name="&gt;&gt;laptopProbRemoveBtn.Name" xml:space="preserve">
-    <value>laptopProbRemoveBtn</value>
-  </data>
-  <data name="viewRadioBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 185</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>Ordinateur</value>
-  </data>
-  <data name="laptopProbTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>116</value>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
-  <data name="screenProbRemoveBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>120</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>AdminPage</value>
   </data>
-  <data name="addButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 44</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AdminPage</value>
   </data>
-  <data name="&gt;&gt;laptopProbAddBtn.Name" xml:space="preserve">
-    <value>laptopProbAddBtn</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;laptopProbTextBox.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="label15.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;computerProblemComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="orderTypeComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>357, 24</value>
-  </data>
-  <data name="actionTookTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>731, 615</value>
-  </data>
-  <data name="viewRadioBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="laptopProblemComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>357, 24</value>
-  </data>
-  <data name="&gt;&gt;screenProbRemoveBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="viewRadioBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 44</value>
-  </data>
-  <data name="&gt;&gt;addButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;computerProbTextBox.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="orderTypeTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>251, 24</value>
-  </data>
-  <data name="phoneOrTabProbRemoveBtn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;screenProbTextBox.Name" xml:space="preserve">
-    <value>screenProbTextBox</value>
-  </data>
-  <data name="screenProbTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11pt</value>
-  </data>
-  <data name="laptopProblemComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>110</value>
-  </data>
-  <data name="&gt;&gt;screenProbTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="actionTookAddBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="&gt;&gt;computerProbRemoveBtn.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
-    <value>107</value>
-  </data>
-  <data name="computerProbAddBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>987, 103</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 29</value>
-  </data>
-  <data name="actionTookAddBtn.Text" xml:space="preserve">
-    <value>+</value>
-  </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 25</value>
-  </data>
-  <data name="laptopProbTextBox.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="computerProbTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11pt</value>
-  </data>
-  <data name="label9.TabIndex" type="System.Int32, mscorlib">
-    <value>113</value>
-  </data>
-  <data name="screenProbAddBtn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11pt, style=Bold</value>
-  </data>
-  <data name="orderTypeAddBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 41</value>
-  </data>
-  <data name="&gt;&gt;phoneOrTabProbAddBtn.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="orderTypeComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>127</value>
-  </data>
-  <data name="&gt;&gt;actionTookTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>31</value>
-  </data>
-  <data name="computerProbRemoveBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>118</value>
-  </data>
-  <data name="&gt;&gt;laptopProbTextBox.Name" xml:space="preserve">
-    <value>laptopProbTextBox</value>
-  </data>
-  <data name="label13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="orderTypeRemoveBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="&gt;&gt;computerProbAddBtn.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="label15.Text" xml:space="preserve">
-    <value>Action Prise</value>
-  </data>
-  <data name="laptopProbAddBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>123</value>
-  </data>
-  <data name="&gt;&gt;phoneOrTabTextBox.Name" xml:space="preserve">
-    <value>phoneOrTabTextBox</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
-  </data>
-  <data name="&gt;&gt;laptopProblemComboBox.Name" xml:space="preserve">
-    <value>laptopProblemComboBox</value>
-  </data>
-  <data name="phoneOrTabProbAddBtn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11pt, style=Bold</value>
-  </data>
-  <data name="laptopProbAddBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 41</value>
-  </data>
-  <data name="&gt;&gt;screenProblemComboBox.Name" xml:space="preserve">
-    <value>screenProblemComboBox</value>
-  </data>
-  <data name="&gt;&gt;addButton.Name" xml:space="preserve">
-    <value>addButton</value>
-  </data>
-  <data name="phoneOrTabProbAddBtn.Text" xml:space="preserve">
-    <value>+</value>
-  </data>
-  <data name="laptopProbRemoveBtn.Text" xml:space="preserve">
-    <value>-</value>
-  </data>
-  <data name="&gt;&gt;actionTookRemoveBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="computerProbTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>731, 114</value>
-  </data>
-  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="computerProbRemoveBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 41</value>
-  </data>
-  <data name="&gt;&gt;laptopProbAddBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;actionTookComboBox.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;viewRadioBtn.Name" xml:space="preserve">
-    <value>viewRadioBtn</value>
-  </data>
-  <data name="computerProbTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>114</value>
-  </data>
-  <data name="&gt;&gt;phoneOrTabTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>

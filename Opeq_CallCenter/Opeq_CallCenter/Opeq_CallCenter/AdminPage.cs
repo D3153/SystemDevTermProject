@@ -116,6 +116,13 @@ namespace Opeq_CallCenter
             actionTookComboBox.DisplayMember = "action_took_name";
             actionTookComboBox.ValueMember = "action_took_id";
             actionTookComboBox.SelectedIndex = -1;
+
+            computerProblemComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            screenProblemComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            phoneOrTabletProblemComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            laptopProblemComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            actionTookComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            orderTypeComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
         public void reloadComboBox()
@@ -322,7 +329,7 @@ namespace Opeq_CallCenter
 
         private void computerProbRemoveBtn_Click(object sender, EventArgs e)
         {
-            string computerProbDesc = computerProbTextBox.Text;
+            string computerProbDesc = computerProblemComboBox.Text;
 
             if (computerProbDesc != "")
             {
@@ -343,7 +350,7 @@ namespace Opeq_CallCenter
 
         private void screenProbRemoveBtn_Click(object sender, EventArgs e)
         {
-            string screenProbDesc = screenProbTextBox.Text;
+            string screenProbDesc = screenProblemComboBox.Text;
 
             if (screenProbDesc != "")
             {
@@ -364,7 +371,7 @@ namespace Opeq_CallCenter
 
         private void laptopProbRemoveBtn_Click(object sender, EventArgs e)
         {
-            string laptopProbDesc = laptopProbTextBox.Text;
+            string laptopProbDesc = laptopProblemComboBox.Text;
 
             if (laptopProbDesc != "")
             {
@@ -385,7 +392,7 @@ namespace Opeq_CallCenter
 
         private void phoneOrTabProbRemoveBtn_Click(object sender, EventArgs e)
         {
-            string phoneOrTabProbDesc = phoneOrTabTextBox.Text;
+            string phoneOrTabProbDesc = phoneOrTabletProblemComboBox.Text;
 
             if (phoneOrTabProbDesc != "")
             {
@@ -406,7 +413,8 @@ namespace Opeq_CallCenter
 
         private void orderTypeRemoveBtn_Click(object sender, EventArgs e)
         {
-            string orderTypeName = orderTypeComboBox.GetItemText(orderTypeComboBox.SelectedItem);
+            //string orderTypeName = orderTypeComboBox.GetItemText(orderTypeComboBox.SelectedItem);
+            string orderTypeName = orderTypeComboBox.Text;
 
             if (orderTypeName != "")
             {
@@ -427,7 +435,7 @@ namespace Opeq_CallCenter
 
         private void actionTookRemoveBtn_Click(object sender, EventArgs e)
         {
-            string actionTookName = actionTookTextBox.Text;
+            string actionTookName = actionTookComboBox.Text;
 
             if (actionTookName != "")
             {
