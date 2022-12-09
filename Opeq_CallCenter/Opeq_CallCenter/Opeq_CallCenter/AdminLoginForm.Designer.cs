@@ -38,8 +38,8 @@
             // 
             // loginButton
             // 
-            this.loginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.loginButton, "loginButton");
+            this.loginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.loginButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.loginButton.Name = "loginButton";
             this.loginButton.UseVisualStyleBackColor = false;
@@ -63,8 +63,8 @@
             // 
             // loginLabel
             // 
-            this.loginLabel.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.loginLabel, "loginLabel");
+            this.loginLabel.BackColor = System.Drawing.Color.Transparent;
             this.loginLabel.Name = "loginLabel";
             // 
             // adminPassTextBox

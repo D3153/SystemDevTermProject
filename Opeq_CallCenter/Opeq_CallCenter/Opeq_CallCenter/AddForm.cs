@@ -302,7 +302,7 @@ namespace Opeq_CallCenter
                 //IDK how to get addressId from address table
                 string addressID = " ";
 
-                
+
                 string street = streetTextBox.Text;
 
                 if (aptNumTextBox.Text == "Appartement, suite, ect.")
@@ -319,6 +319,7 @@ namespace Opeq_CallCenter
 
                 string productID = " ";
                 string mat = MATTextBox.Text;
+                string confMAT = " ";
 
                 string computerProbDesc = computerProblemComboBox.GetItemText(computerProblemComboBox.SelectedItem);
                 string laptopProbDesc = laptopProblemComboBox.GetItemText(laptopProblemComboBox.SelectedItem);
@@ -334,7 +335,7 @@ namespace Opeq_CallCenter
                 string byTelephone = "0";
                 string inPerson = "0";
 
-                    var contacts = contactGroupBox;
+                var contacts = contactGroupBox;
                 foreach (var radioButton in contacts.Controls.OfType<RadioButton>())
                 {
                     byEmail = emailRadioBtn.Checked ? "1" : "0";
@@ -344,91 +345,104 @@ namespace Opeq_CallCenter
 
                 con.Open();
 
-                SqlCommand cmd1 = con.CreateCommand();
-                SqlCommand cmd2 = con.CreateCommand();
-                SqlCommand cmd3 = con.CreateCommand();
-                SqlCommand cmd4 = con.CreateCommand();
-                SqlCommand cmd5 = con.CreateCommand();
-                SqlCommand cmd6 = con.CreateCommand();
-                SqlCommand cmd7 = con.CreateCommand();
-                SqlCommand cmd8 = con.CreateCommand();
-                SqlCommand cmd9 = con.CreateCommand();
-                SqlCommand cmd10 = con.CreateCommand();
 
+                SqlCommand cmd11 = con.CreateCommand();
+                cmd11.CommandType = CommandType.Text;
+                cmd11.CommandText = "SELECT MAT FROM Product WHERE MAT = '" + mat + "';";
+                confMAT = Convert.ToString(cmd11.ExecuteScalar());
 
-                cmd1.CommandType = CommandType.Text;
-                cmd2.CommandType = CommandType.Text;
-                cmd3.CommandType = CommandType.Text;
-                cmd4.CommandType = CommandType.Text;
-                cmd5.CommandType = CommandType.Text;
-                cmd6.CommandType = CommandType.Text;
-                cmd7.CommandType = CommandType.Text;
-                cmd8.CommandType = CommandType.Text;
-                cmd9.CommandType = CommandType.Text;
-                cmd10.CommandType = CommandType.Text;
-
-                cmd1.CommandText = "INSERT INTO Client_Address (street, apt_num, city, postal_code) VALUES ('" + street + "', '" +
-                                                             aptNum + "', '" + city + "','" + postalCode + "');";
-
-                cmd1.ExecuteNonQuery();
-
-                cmd2.CommandText = "SELECT IDENT_CURRENT('Employee');";
-                empID = Convert.ToString(cmd2.ExecuteScalar());
-
-                cmd3.CommandText = "SELECT IDENT_CURRENT('Client_Address');";
-                addressID = Convert.ToString(cmd3.ExecuteScalar());
-
-                cmd5.CommandText = "SELECT IDENT_CURRENT('Product');";
-                productID = Convert.ToString(cmd5.ExecuteScalar());
-
-                if (computerProbDesc != "")
+                if (mat != confMAT)
                 {
-                    cmd6.CommandText = "SELECT computer_prob_id FROM Computer_Prob WHERE computer_desc = '" + computerProbDesc + "';";
-                    computerProbID = Convert.ToString(cmd6.ExecuteScalar());
-                }
-                else if (laptopProbDesc != "")
-                {
-                    cmd7.CommandText = "SELECT laptop_prob_id FROM Laptop_Prob WHERE laptop_desc = '" + laptopProbDesc + "';";
-                    laptopProbID = Convert.ToString(cmd7.ExecuteScalar());
-                }
-                else if (screenProbDesc != "")
-                {
-                    cmd8.CommandText = "SELECT screen_prob_id FROM Screen_Prob WHERE screen_desc = '" + screenProbDesc + "';";
-                    screenProbID = Convert.ToString(cmd8.ExecuteScalar());
-                }
-                else if (phoneTabProbDesc != "")
-                {
-                    cmd9.CommandText = "SELECT phone_tablet_prob_id FROM Phone_tablet_Prob WHERE phone_tab_desc = '" + phoneTabProbDesc + "';";
-                    phoneTabProbID = Convert.ToString(cmd9.ExecuteScalar());
-                }
+                    SqlCommand cmd1 = con.CreateCommand();
+                    SqlCommand cmd2 = con.CreateCommand();
+                    SqlCommand cmd3 = con.CreateCommand();
+                    SqlCommand cmd4 = con.CreateCommand();
+                    SqlCommand cmd5 = con.CreateCommand();
+                    SqlCommand cmd6 = con.CreateCommand();
+                    SqlCommand cmd7 = con.CreateCommand();
+                    SqlCommand cmd8 = con.CreateCommand();
+                    SqlCommand cmd9 = con.CreateCommand();
+                    SqlCommand cmd10 = con.CreateCommand();
 
-                cmd4.CommandText = "INSERT INTO Product (MAT, product_name) VALUES ('" + mat + "', '" + productName + "');";
-                try
-                {
-                    cmd4.ExecuteNonQuery();
-                    cmd10.CommandText = "INSERT INTO Client (employee_id, product_id, computer_prob_id, laptop_prob_id, screen_prob_id, phone_tablet_prob_id, address_id, client_name, client_desc, date_added, client_email, client_phone_num, by_email, by_telephone, in_person) VALUES ('" +
-                                       empID + "', '" + productID + "', '" + computerProbID + "', '" + laptopProbID + "', '" + screenProbID + "', '" + phoneTabProbID + "', '" + addressID + "', '" + clientName + "', '" + problemDesc + "', '" + date + "', '" + email + "', '" + phone + "', '" + byEmail + "', '" + byTelephone + "', '" + inPerson + "');";
 
-                    cmd10.ExecuteNonQuery();
-                }
-                catch (SqlException s)
-                {
-                    if (s.Message.Contains("Violation of UNIQUE KEY constraint"))
+                    cmd1.CommandType = CommandType.Text;
+                    cmd2.CommandType = CommandType.Text;
+                    cmd3.CommandType = CommandType.Text;
+                    cmd4.CommandType = CommandType.Text;
+                    cmd5.CommandType = CommandType.Text;
+                    cmd6.CommandType = CommandType.Text;
+                    cmd7.CommandType = CommandType.Text;
+                    cmd8.CommandType = CommandType.Text;
+                    cmd9.CommandType = CommandType.Text;
+                    cmd10.CommandType = CommandType.Text;
+
+                    cmd1.CommandText = "INSERT INTO Client_Address (street, apt_num, city, postal_code) VALUES ('" + street + "', '" +
+                                                                 aptNum + "', '" + city + "','" + postalCode + "');";
+
+                    cmd1.ExecuteNonQuery();
+
+                    cmd2.CommandText = "SELECT IDENT_CURRENT('Employee');";
+                    empID = Convert.ToString(cmd2.ExecuteScalar());
+
+                    cmd3.CommandText = "SELECT IDENT_CURRENT('Client_Address');";
+                    addressID = Convert.ToString(cmd3.ExecuteScalar());
+
+                    cmd5.CommandText = "SELECT IDENT_CURRENT('Product');";
+                    productID = Convert.ToString(cmd5.ExecuteScalar());
+
+                    if (computerProbDesc != "")
                     {
-                        DialogResult dialog = MessageBox.Show("MAT est deja utilizer", "Mise en garde", MessageBoxButtons.OK);
+                        cmd6.CommandText = "SELECT computer_prob_id FROM Computer_Prob WHERE computer_desc = '" + computerProbDesc + "';";
+                        computerProbID = Convert.ToString(cmd6.ExecuteScalar());
                     }
-                }
+                    else if (laptopProbDesc != "")
+                    {
+                        cmd7.CommandText = "SELECT laptop_prob_id FROM Laptop_Prob WHERE laptop_desc = '" + laptopProbDesc + "';";
+                        laptopProbID = Convert.ToString(cmd7.ExecuteScalar());
+                    }
+                    else if (screenProbDesc != "")
+                    {
+                        cmd8.CommandText = "SELECT screen_prob_id FROM Screen_Prob WHERE screen_desc = '" + screenProbDesc + "';";
+                        screenProbID = Convert.ToString(cmd8.ExecuteScalar());
+                    }
+                    else if (phoneTabProbDesc != "")
+                    {
+                        cmd9.CommandText = "SELECT phone_tablet_prob_id FROM Phone_tablet_Prob WHERE phone_tab_desc = '" + phoneTabProbDesc + "';";
+                        phoneTabProbID = Convert.ToString(cmd9.ExecuteScalar());
+                    }
 
-                con.Close();
+                    cmd4.CommandText = "INSERT INTO Product (MAT, product_name) VALUES ('" + mat + "', '" + productName + "');";
+                    try
+                    {
+                        cmd4.ExecuteNonQuery();
+                        cmd10.CommandText = "INSERT INTO Client (employee_id, product_id, computer_prob_id, laptop_prob_id, screen_prob_id, phone_tablet_prob_id, address_id, client_name, client_desc, date_added, client_email, client_phone_num, by_email, by_telephone, in_person) VALUES ('" +
+                                           empID + "', '" + productID + "', '" + computerProbID + "', '" + laptopProbID + "', '" + screenProbID + "', '" + phoneTabProbID + "', '" + addressID + "', '" + clientName + "', '" + problemDesc + "', '" + date + "', '" + email + "', '" + phone + "', '" + byEmail + "', '" + byTelephone + "', '" + inPerson + "');";
 
-                isAddBtnClicked = true;
+                        cmd10.ExecuteNonQuery();
+                    }
+                    catch (SqlException s)
+                    {
+                        if (s.Message.Contains("Violation of UNIQUE KEY constraint"))
+                        {
+                            DialogResult dialog = MessageBox.Show("MAT est deja utilizer", "Mise en garde", MessageBoxButtons.OK);
+                        }
+                    }
+
+                    con.Close();
+
+                    isAddBtnClicked = true;
                     confirmation();
 
                 }
                 else
                 {
-                    MessageBox.Show("Les champs de texte ne peuvent pas être vides");
+                    DialogResult dialog = MessageBox.Show("MAT est deja utilizer", "Mise en garde", MessageBoxButtons.OK);
                 }
+            }
+            else
+            {
+                MessageBox.Show("Les champs de texte ne peuvent pas être vides");
+            }
 
         }
 
