@@ -272,7 +272,7 @@ namespace Opeq_CallCenter
             //SqlDataAdapter adapter6 = new SqlDataAdapter(cmd6);
 
             //Commands to run to get client information
-            String MAT = MATTextBox.Text;
+            string MAT = MATTextBox.Text;
             cmd1.CommandText = "SELECT client_name FROM Client FULL OUTER JOIN Product ON Client.product_id=Product.product_id WHERE Product.MAT= '" + MAT + "';";
             cmd2.CommandText = "SELECT client_desc FROM Client FULL OUTER JOIN Product ON Client.product_id=Product.product_id WHERE Product.MAT= '" + MAT + "';";
             cmd3.CommandText = "SELECT date_added FROM Client FULL OUTER JOIN Product ON Client.product_id=Product.product_id WHERE Product.MAT= '" + MAT + "';";

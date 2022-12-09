@@ -288,7 +288,7 @@ namespace Opeq_CallCenter
         private void addBtn_Click(object sender, EventArgs e)
         {
             if (nameTextBox.Text != "" && nameTextBox.Text != "Entrer nom" && problemDescriptionTextBox.Text != "" && problemDescriptionTextBox.Text != "Entrer problème" && emailTextbox.Text != "" && emailTextbox.Text != "Courriel" &&
-                streetTextBox.Text != "" && streetTextBox.Text != "Adresse" && aptNumTextBox.Text != "" && aptNumTextBox.Text != "Appartement, suite, ect." && cityTextBox.Text != "" && cityTextBox.Text != "Ville" &&
+                streetTextBox.Text != "" && streetTextBox.Text != "Adresse" && cityTextBox.Text != "" && cityTextBox.Text != "Ville" &&
                 postalCodeTextBox.Text != "" && postalCodeTextBox.Text != "Code Postal" && MATTextBox.Text != "" && MATTextBox.Text != "MAT" && MATTextBox.Text != "MAT-")
             {
                 //IDK if this will work
@@ -304,7 +304,14 @@ namespace Opeq_CallCenter
 
                 
                 string street = streetTextBox.Text;
+
+                if (aptNumTextBox.Text == "Appartement, suite, ect.")
+                {
+                    aptNumTextBox.Text = "";
+                }
+
                 string aptNum = aptNumTextBox.Text;
+
                 string city = cityTextBox.Text;
                 string postalCode = postalCodeTextBox.Text;
 
@@ -371,9 +378,6 @@ namespace Opeq_CallCenter
                 cmd3.CommandText = "SELECT IDENT_CURRENT('Client_Address');";
                 addressID = Convert.ToString(cmd3.ExecuteScalar());
 
-                cmd4.CommandText = "INSERT INTO Product (MAT, product_name) VALUES ('" + mat + "', '" + productName + "');";
-                cmd4.ExecuteNonQuery();
-
                 cmd5.CommandText = "SELECT IDENT_CURRENT('Product');";
                 productID = Convert.ToString(cmd5.ExecuteScalar());
 
@@ -398,10 +402,22 @@ namespace Opeq_CallCenter
                     phoneTabProbID = Convert.ToString(cmd9.ExecuteScalar());
                 }
 
-                cmd10.CommandText = "INSERT INTO Client (employee_id, product_id, computer_prob_id, laptop_prob_id, screen_prob_id, phone_tablet_prob_id, address_id, client_name, client_desc, date_added, client_email, client_phone_num, by_email, by_telephone, in_person) VALUES ('" +
+                cmd4.CommandText = "INSERT INTO Product (MAT, product_name) VALUES ('" + mat + "', '" + productName + "');";
+                try
+                {
+                    cmd4.ExecuteNonQuery();
+                    cmd10.CommandText = "INSERT INTO Client (employee_id, product_id, computer_prob_id, laptop_prob_id, screen_prob_id, phone_tablet_prob_id, address_id, client_name, client_desc, date_added, client_email, client_phone_num, by_email, by_telephone, in_person) VALUES ('" +
                                        empID + "', '" + productID + "', '" + computerProbID + "', '" + laptopProbID + "', '" + screenProbID + "', '" + phoneTabProbID + "', '" + addressID + "', '" + clientName + "', '" + problemDesc + "', '" + date + "', '" + email + "', '" + phone + "', '" + byEmail + "', '" + byTelephone + "', '" + inPerson + "');";
 
-                cmd10.ExecuteNonQuery();
+                    cmd10.ExecuteNonQuery();
+                }
+                catch (SqlException s)
+                {
+                    if (s.Message.Contains("Violation of UNIQUE KEY constraint"))
+                    {
+                        DialogResult dialog = MessageBox.Show("MAT est deja utilizer", "Mise en garde", MessageBoxButtons.OK);
+                    }
+                }
 
                 con.Close();
 
@@ -427,7 +443,7 @@ namespace Opeq_CallCenter
             if (isAddBtnClicked == true)
             {
                 DialogResult dialog = MessageBox.Show("Les donnés que vous avez rentrées vont être sauvegardés." +
-                    "\nModifier un autre client?", "Mise en garde", MessageBoxButtons.YesNo);
+                    "\nAjouter un autre client?", "Mise en garde", MessageBoxButtons.YesNo);
                 if (dialog == DialogResult.Yes)
                 {
                     this.Hide();

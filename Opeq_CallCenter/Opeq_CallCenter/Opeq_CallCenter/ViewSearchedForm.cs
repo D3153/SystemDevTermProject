@@ -56,6 +56,10 @@ namespace Opeq_CallCenter
             isSolvedRadioBtn.Enabled = false;
             notSolvedRadioBtn.Enabled = false;
             onGoingRadioBtn.Enabled = false;
+            addRadioBtn.Enabled = false;
+            modifyRadioBtn.Enabled = false;
+            viewRadioBtn.Enabled = false;
+            adminRadioBtn.Enabled = false;
 
             con.Open();
 
@@ -115,10 +119,10 @@ namespace Opeq_CallCenter
             cmd16.CommandText = "SELECT Screen_Prob.screen_desc FROM Client JOIN Product ON Client.product_id = Product.product_id JOIN Screen_Prob ON Screen_Prob.screen_prob_id = Client.screen_prob_id WHERE Product.MAT = '" + MAT + "';";
             //modify load
             cmd18.CommandText = "SELECT Modify_Client.modify_id FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
-            cmd19.CommandText = "SELECT Order_Type.order_name FROM Order_Type JOIN Modify_Client ON Order_Type.order_type_id =Modify_Client.order_type_id JOIN Client ON Client.client_id=Modify_Client.client_id JOIN Product ON Product.product_id=Client.product_id WHERE MAT = '" + MAT + "';";
+            cmd19.CommandText = "SELECT Order_Type.order_name FROM Order_Type FULL JOIN Modify_Client ON Order_Type.order_type_id=Modify_Client.order_type_id LEFT JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN Product ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
             cmd20.CommandText = "SELECT Modify_Client.order_num FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
             cmd21.CommandText = "SELECT Modify_Client.how_solved FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
-            cmd22.CommandText = "SELECT Action_Took.action_took_name FROM Action_Took JOIN Modify_Client ON Action_Took.action_took_id=Modify_Client.order_type_id JOIN Client ON Client.client_id=Modify_Client.client_id JOIN Product ON Product.product_id=Client.product_id WHERE MAT = '" + MAT + "';";
+            cmd22.CommandText = "SELECT Action_Took.action_took_name FROM Action_Took FULL JOIN Modify_Client ON Action_Took.action_took_id=Modify_Client.action_took_id LEFT JOIN Client ON Client.client_id=Modify_Client.client_id LEFT JOIN Product ON Product.product_id=Client.product_id WHERE MAT = '" + MAT + "';";
             cmd23.CommandText = "SELECT Modify_Client.is_solved FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
             cmd24.CommandText = "SELECT Modify_Client.is_unsolved FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
             cmd25.CommandText = "SELECT Modify_Client.is_ongoing FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
@@ -253,7 +257,7 @@ namespace Opeq_CallCenter
 
         private void returnBtn_Click(object sender, EventArgs e)
         {
-            string empName = emailTextbox.Text;
+            string empName = empNameTextView.Text;
             this.Hide();
             ViewForm viewFormInstance = new ViewForm(empName);
             viewFormInstance.ShowDialog();

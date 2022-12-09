@@ -41,11 +41,11 @@
             // 
             this.loginLabel.BackColor = System.Drawing.Color.Transparent;
             this.loginLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginLabel.Location = new System.Drawing.Point(499, 203);
+            this.loginLabel.Location = new System.Drawing.Point(405, 203);
             this.loginLabel.Name = "loginLabel";
-            this.loginLabel.Size = new System.Drawing.Size(236, 94);
+            this.loginLabel.Size = new System.Drawing.Size(434, 94);
             this.loginLabel.TabIndex = 0;
-            this.loginLabel.Text = "Login";
+            this.loginLabel.Text = "Connexion";
             // 
             // adminLoginLabel
             // 
@@ -70,7 +70,7 @@
             this.empNameTextBox.Name = "empNameTextBox";
             this.empNameTextBox.Size = new System.Drawing.Size(443, 38);
             this.empNameTextBox.TabIndex = 1;
-            this.empNameTextBox.Text = "Entrer votre nom";
+            this.empNameTextBox.Text = "Entrez votre nom";
             this.empNameTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.empNameTextBox_MouseClick);
             this.empNameTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.empNameTextBox_KeyPress);
             // 

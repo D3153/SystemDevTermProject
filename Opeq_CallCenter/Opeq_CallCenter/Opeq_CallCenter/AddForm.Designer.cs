@@ -75,170 +75,92 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(417, 31);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nom";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(418, 157);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 24);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Description";
             // 
             // problemDescriptionTextBox
             // 
-            this.problemDescriptionTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.problemDescriptionTextBox, "problemDescriptionTextBox");
             this.problemDescriptionTextBox.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.problemDescriptionTextBox.Location = new System.Drawing.Point(424, 210);
-            this.problemDescriptionTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.problemDescriptionTextBox.Multiline = true;
             this.problemDescriptionTextBox.Name = "problemDescriptionTextBox";
-            this.problemDescriptionTextBox.Size = new System.Drawing.Size(516, 55);
-            this.problemDescriptionTextBox.TabIndex = 2;
-            this.problemDescriptionTextBox.Text = "Entrer problème";
             this.problemDescriptionTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.problemDescriptionTextBox_MouseClick);
             this.problemDescriptionTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.problemDescriptionTextBox_KeyPress);
             // 
             // nameTextBox
             // 
-            this.nameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.nameTextBox, "nameTextBox");
             this.nameTextBox.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.nameTextBox.Location = new System.Drawing.Point(423, 79);
-            this.nameTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.nameTextBox.Multiline = true;
             this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(516, 55);
-            this.nameTextBox.TabIndex = 1;
-            this.nameTextBox.Text = "Entrer nom du client";
             this.nameTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.nameTextBox_MouseClick);
             this.nameTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.nameTextBox_KeyPress);
             // 
             // emailTextbox
             // 
-            this.emailTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.emailTextbox, "emailTextbox");
             this.emailTextbox.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.emailTextbox.Location = new System.Drawing.Point(609, 422);
-            this.emailTextbox.Margin = new System.Windows.Forms.Padding(4);
-            this.emailTextbox.Multiline = true;
             this.emailTextbox.Name = "emailTextbox";
-            this.emailTextbox.Size = new System.Drawing.Size(332, 33);
-            this.emailTextbox.TabIndex = 7;
-            this.emailTextbox.Text = "Courriel";
             this.emailTextbox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.emailTextbox_MouseClick);
             this.emailTextbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.emailTextbox_KeyPress);
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(418, 361);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(194, 24);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Comment Contacter";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(419, 296);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(120, 24);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Date Entrée";
             // 
             // MATTextBox
             // 
-            this.MATTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.MATTextBox, "MATTextBox");
             this.MATTextBox.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.MATTextBox.Location = new System.Drawing.Point(419, 1271);
-            this.MATTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.MATTextBox.Multiline = true;
             this.MATTextBox.Name = "MATTextBox";
-            this.MATTextBox.Size = new System.Drawing.Size(440, 55);
-            this.MATTextBox.TabIndex = 17;
-            this.MATTextBox.Text = "MAT";
             this.MATTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MATTextBox_MouseClick);
             this.MATTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MATTextBox_KeyPress);
             // 
             // dateTimePicker
             // 
-            this.dateTimePicker.Location = new System.Drawing.Point(591, 297);
-            this.dateTimePicker.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this.dateTimePicker, "dateTimePicker");
             this.dateTimePicker.Name = "dateTimePicker";
-            this.dateTimePicker.Size = new System.Drawing.Size(383, 24);
-            this.dateTimePicker.TabIndex = 3;
             // 
             // emailRadioBtn
             // 
-            this.emailRadioBtn.AutoSize = true;
-            this.emailRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailRadioBtn.Location = new System.Drawing.Point(12, 18);
+            resources.ApplyResources(this.emailRadioBtn, "emailRadioBtn");
             this.emailRadioBtn.Name = "emailRadioBtn";
-            this.emailRadioBtn.Size = new System.Drawing.Size(81, 24);
-            this.emailRadioBtn.TabIndex = 4;
-            this.emailRadioBtn.Text = "Courriel";
             this.emailRadioBtn.UseVisualStyleBackColor = true;
             // 
             // phoneRadioBtn
             // 
-            this.phoneRadioBtn.AutoSize = true;
-            this.phoneRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phoneRadioBtn.Location = new System.Drawing.Point(12, 86);
+            resources.ApplyResources(this.phoneRadioBtn, "phoneRadioBtn");
             this.phoneRadioBtn.Name = "phoneRadioBtn";
-            this.phoneRadioBtn.Size = new System.Drawing.Size(102, 24);
-            this.phoneRadioBtn.TabIndex = 5;
-            this.phoneRadioBtn.Text = "Téléphone";
             this.phoneRadioBtn.UseVisualStyleBackColor = true;
             // 
             // phoneTextBox
             // 
-            this.phoneTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.phoneTextBox, "phoneTextBox");
             this.phoneTextBox.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.phoneTextBox.Location = new System.Drawing.Point(609, 490);
-            this.phoneTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.phoneTextBox.Multiline = true;
             this.phoneTextBox.Name = "phoneTextBox";
-            this.phoneTextBox.Size = new System.Drawing.Size(332, 33);
-            this.phoneTextBox.TabIndex = 8;
-            this.phoneTextBox.Text = "Téléphone";
             this.phoneTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.phoneTextBox_MouseClick);
             this.phoneTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.phoneTextBox_KeyPress);
             // 
             // inPersonRadioBtn
             // 
-            this.inPersonRadioBtn.AutoSize = true;
-            this.inPersonRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inPersonRadioBtn.Location = new System.Drawing.Point(12, 152);
+            resources.ApplyResources(this.inPersonRadioBtn, "inPersonRadioBtn");
             this.inPersonRadioBtn.Name = "inPersonRadioBtn";
-            this.inPersonRadioBtn.Size = new System.Drawing.Size(119, 24);
-            this.inPersonRadioBtn.TabIndex = 6;
-            this.inPersonRadioBtn.Text = "En Personne";
             this.inPersonRadioBtn.UseVisualStyleBackColor = true;
             // 
             // streetTextBox
             // 
-            this.streetTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.streetTextBox, "streetTextBox");
             this.streetTextBox.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.streetTextBox.Location = new System.Drawing.Point(609, 556);
-            this.streetTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.streetTextBox.Multiline = true;
             this.streetTextBox.Name = "streetTextBox";
-            this.streetTextBox.Size = new System.Drawing.Size(332, 33);
-            this.streetTextBox.TabIndex = 9;
-            this.streetTextBox.Text = "Adresse";
             this.streetTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.streetTextBox_MouseClick);
             this.streetTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.streetTextBox_KeyPress);
             // 
@@ -249,183 +171,118 @@
             // 
             // computerProblemComboBox
             // 
+            resources.ApplyResources(this.computerProblemComboBox, "computerProblemComboBox");
             this.computerProblemComboBox.FormattingEnabled = true;
-            this.computerProblemComboBox.ItemHeight = 25;
-            this.computerProblemComboBox.Location = new System.Drawing.Point(36, 95);
             this.computerProblemComboBox.Name = "computerProblemComboBox";
-            this.computerProblemComboBox.Size = new System.Drawing.Size(357, 33);
-            this.computerProblemComboBox.TabIndex = 13;
             this.computerProblemComboBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.computerProblemComboBox_KeyDown);
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(29, 54);
+            resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(84, 20);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "Ordinateur";
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(38, 146);
+            resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(51, 20);
-            this.label7.TabIndex = 22;
-            this.label7.Text = "Écran";
             // 
             // screenProblemComboBox
             // 
+            resources.ApplyResources(this.screenProblemComboBox, "screenProblemComboBox");
             this.screenProblemComboBox.FormattingEnabled = true;
-            this.screenProblemComboBox.ItemHeight = 25;
-            this.screenProblemComboBox.Location = new System.Drawing.Point(36, 188);
             this.screenProblemComboBox.Name = "screenProblemComboBox";
-            this.screenProblemComboBox.Size = new System.Drawing.Size(357, 33);
-            this.screenProblemComboBox.TabIndex = 14;
             this.screenProblemComboBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.screenProblemComboBox_KeyDown);
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(38, 252);
+            resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(68, 20);
-            this.label8.TabIndex = 24;
-            this.label8.Text = "Portable";
             // 
             // laptopProblemComboBox
             // 
+            resources.ApplyResources(this.laptopProblemComboBox, "laptopProblemComboBox");
             this.laptopProblemComboBox.FormattingEnabled = true;
-            this.laptopProblemComboBox.Location = new System.Drawing.Point(34, 293);
             this.laptopProblemComboBox.Name = "laptopProblemComboBox";
-            this.laptopProblemComboBox.Size = new System.Drawing.Size(357, 33);
-            this.laptopProblemComboBox.TabIndex = 15;
             this.laptopProblemComboBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.laptopProblemComboBox_KeyDown);
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(36, 351);
+            resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(135, 20);
-            this.label9.TabIndex = 26;
-            this.label9.Text = "Cellulaire/Tablette";
             // 
             // phoneOrTabletProblemComboBox
             // 
+            resources.ApplyResources(this.phoneOrTabletProblemComboBox, "phoneOrTabletProblemComboBox");
             this.phoneOrTabletProblemComboBox.FormattingEnabled = true;
-            this.phoneOrTabletProblemComboBox.Location = new System.Drawing.Point(34, 393);
             this.phoneOrTabletProblemComboBox.Name = "phoneOrTabletProblemComboBox";
-            this.phoneOrTabletProblemComboBox.Size = new System.Drawing.Size(357, 33);
-            this.phoneOrTabletProblemComboBox.TabIndex = 16;
             this.phoneOrTabletProblemComboBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.phoneOrTabletProblemComboBox_KeyDown);
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(415, 1218);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            resources.ApplyResources(this.label10, "label10");
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(54, 24);
-            this.label10.TabIndex = 27;
-            this.label10.Text = "MAT";
             // 
             // label11
             // 
+            resources.ApplyResources(this.label11, "label11");
             this.label11.BackColor = System.Drawing.Color.Black;
             this.label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label11.Location = new System.Drawing.Point(287, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(10, 1434);
-            this.label11.TabIndex = 31;
             // 
             // cancelBtn
             // 
+            resources.ApplyResources(this.cancelBtn, "cancelBtn");
             this.cancelBtn.BackColor = System.Drawing.Color.Red;
-            this.cancelBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cancelBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.cancelBtn.Location = new System.Drawing.Point(646, 1358);
             this.cancelBtn.Name = "cancelBtn";
-            this.cancelBtn.Size = new System.Drawing.Size(153, 61);
-            this.cancelBtn.TabIndex = 19;
-            this.cancelBtn.Text = "Annuler";
             this.cancelBtn.UseVisualStyleBackColor = false;
             this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
             // 
             // addBtn
             // 
+            resources.ApplyResources(this.addBtn, "addBtn");
             this.addBtn.BackColor = System.Drawing.Color.Green;
-            this.addBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.addBtn.Location = new System.Drawing.Point(456, 1358);
             this.addBtn.Name = "addBtn";
-            this.addBtn.Size = new System.Drawing.Size(153, 61);
-            this.addBtn.TabIndex = 18;
-            this.addBtn.Text = "Adjouter";
             this.addBtn.UseVisualStyleBackColor = false;
             this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
             // 
             // aptNumTextBox
             // 
-            this.aptNumTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.aptNumTextBox, "aptNumTextBox");
             this.aptNumTextBox.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.aptNumTextBox.Location = new System.Drawing.Point(609, 597);
-            this.aptNumTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.aptNumTextBox.Multiline = true;
             this.aptNumTextBox.Name = "aptNumTextBox";
-            this.aptNumTextBox.Size = new System.Drawing.Size(332, 33);
-            this.aptNumTextBox.TabIndex = 10;
-            this.aptNumTextBox.Text = "Appartement, suite, ect.";
             this.aptNumTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.aptNumTextBox_MouseClick);
             this.aptNumTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.aptNumTextBox_KeyPress);
             // 
             // postalCodeTextBox
             // 
-            this.postalCodeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.postalCodeTextBox, "postalCodeTextBox");
             this.postalCodeTextBox.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.postalCodeTextBox.Location = new System.Drawing.Point(608, 679);
-            this.postalCodeTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.postalCodeTextBox.Multiline = true;
             this.postalCodeTextBox.Name = "postalCodeTextBox";
-            this.postalCodeTextBox.Size = new System.Drawing.Size(332, 33);
-            this.postalCodeTextBox.TabIndex = 12;
-            this.postalCodeTextBox.Text = "Code Postal";
             this.postalCodeTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.postalCodeTextBox_MouseClick);
             this.postalCodeTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.postalCodeTextBox_KeyPress);
             // 
             // cityTextBox
             // 
-            this.cityTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.cityTextBox, "cityTextBox");
             this.cityTextBox.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.cityTextBox.Location = new System.Drawing.Point(609, 638);
-            this.cityTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.cityTextBox.Multiline = true;
             this.cityTextBox.Name = "cityTextBox";
-            this.cityTextBox.Size = new System.Drawing.Size(332, 33);
-            this.cityTextBox.TabIndex = 11;
-            this.cityTextBox.Text = "Ville";
             this.cityTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cityTextBox_MouseClick);
             this.cityTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cityTextBox_KeyPress);
             // 
             // contactGroupBox
             // 
+            resources.ApplyResources(this.contactGroupBox, "contactGroupBox");
             this.contactGroupBox.Controls.Add(this.phoneRadioBtn);
             this.contactGroupBox.Controls.Add(this.emailRadioBtn);
             this.contactGroupBox.Controls.Add(this.inPersonRadioBtn);
-            this.contactGroupBox.Location = new System.Drawing.Point(411, 403);
             this.contactGroupBox.Name = "contactGroupBox";
-            this.contactGroupBox.Size = new System.Drawing.Size(191, 208);
-            this.contactGroupBox.TabIndex = 39;
             this.contactGroupBox.TabStop = false;
             // 
             // problemGroupBox
             // 
+            resources.ApplyResources(this.problemGroupBox, "problemGroupBox");
             this.problemGroupBox.Controls.Add(this.computerProblemComboBox);
             this.problemGroupBox.Controls.Add(this.label6);
             this.problemGroupBox.Controls.Add(this.screenProblemComboBox);
@@ -434,92 +291,57 @@
             this.problemGroupBox.Controls.Add(this.label8);
             this.problemGroupBox.Controls.Add(this.phoneOrTabletProblemComboBox);
             this.problemGroupBox.Controls.Add(this.label9);
-            this.problemGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.problemGroupBox.Location = new System.Drawing.Point(420, 748);
             this.problemGroupBox.Name = "problemGroupBox";
-            this.problemGroupBox.Size = new System.Drawing.Size(439, 449);
-            this.problemGroupBox.TabIndex = 40;
             this.problemGroupBox.TabStop = false;
-            this.problemGroupBox.Text = "Type de Probléme";
             // 
             // navGroupBox
             // 
+            resources.ApplyResources(this.navGroupBox, "navGroupBox");
             this.navGroupBox.Controls.Add(this.adminRadioBtn);
             this.navGroupBox.Controls.Add(this.addRadioBtn);
             this.navGroupBox.Controls.Add(this.modifyRadioBtn);
             this.navGroupBox.Controls.Add(this.viewRadioBtn);
-            this.navGroupBox.Location = new System.Drawing.Point(2, 56);
             this.navGroupBox.Name = "navGroupBox";
-            this.navGroupBox.Size = new System.Drawing.Size(268, 359);
-            this.navGroupBox.TabIndex = 101;
             this.navGroupBox.TabStop = false;
             // 
             // adminRadioBtn
             // 
-            this.adminRadioBtn.AutoSize = true;
-            this.adminRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adminRadioBtn.Location = new System.Drawing.Point(58, 299);
+            resources.ApplyResources(this.adminRadioBtn, "adminRadioBtn");
             this.adminRadioBtn.Name = "adminRadioBtn";
-            this.adminRadioBtn.Size = new System.Drawing.Size(160, 30);
-            this.adminRadioBtn.TabIndex = 31;
-            this.adminRadioBtn.Text = "Admin Page";
             this.adminRadioBtn.UseVisualStyleBackColor = true;
             // 
             // addRadioBtn
             // 
-            this.addRadioBtn.AutoSize = true;
+            resources.ApplyResources(this.addRadioBtn, "addRadioBtn");
             this.addRadioBtn.Checked = true;
-            this.addRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addRadioBtn.Location = new System.Drawing.Point(58, 54);
             this.addRadioBtn.Name = "addRadioBtn";
-            this.addRadioBtn.Size = new System.Drawing.Size(106, 30);
-            this.addRadioBtn.TabIndex = 28;
             this.addRadioBtn.TabStop = true;
-            this.addRadioBtn.Text = "Ajouter";
             this.addRadioBtn.UseVisualStyleBackColor = true;
             // 
             // modifyRadioBtn
             // 
-            this.modifyRadioBtn.AutoSize = true;
-            this.modifyRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.modifyRadioBtn.Location = new System.Drawing.Point(58, 145);
+            resources.ApplyResources(this.modifyRadioBtn, "modifyRadioBtn");
             this.modifyRadioBtn.Name = "modifyRadioBtn";
-            this.modifyRadioBtn.Size = new System.Drawing.Size(115, 30);
-            this.modifyRadioBtn.TabIndex = 29;
-            this.modifyRadioBtn.Text = "Modifier";
             this.modifyRadioBtn.UseVisualStyleBackColor = true;
             this.modifyRadioBtn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.modifyRadioBtn_MouseClick);
             // 
             // viewRadioBtn
             // 
-            this.viewRadioBtn.AutoSize = true;
-            this.viewRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewRadioBtn.Location = new System.Drawing.Point(58, 230);
+            resources.ApplyResources(this.viewRadioBtn, "viewRadioBtn");
             this.viewRadioBtn.Name = "viewRadioBtn";
-            this.viewRadioBtn.Size = new System.Drawing.Size(73, 30);
-            this.viewRadioBtn.TabIndex = 30;
-            this.viewRadioBtn.Text = "Voir";
             this.viewRadioBtn.UseVisualStyleBackColor = true;
             this.viewRadioBtn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.viewRadioBtn_MouseClick);
             // 
             // empNameTextView
             // 
-            this.empNameTextView.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.empNameTextView.Location = new System.Drawing.Point(4, 8);
-            this.empNameTextView.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            resources.ApplyResources(this.empNameTextView, "empNameTextView");
             this.empNameTextView.Name = "empNameTextView";
-            this.empNameTextView.Size = new System.Drawing.Size(266, 50);
-            this.empNameTextView.TabIndex = 102;
-            this.empNameTextView.Text = "Nom";
-            this.empNameTextView.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // AddForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(1053, 609);
             this.Controls.Add(this.empNameTextView);
             this.Controls.Add(this.navGroupBox);
             this.Controls.Add(this.problemGroupBox);
@@ -542,12 +364,7 @@
             this.Controls.Add(this.problemDescriptionTextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "AddForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AddForm";
             this.Load += new System.EventHandler(this.AddForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.opeq_CallCenterDataSet1)).EndInit();
             this.contactGroupBox.ResumeLayout(false);

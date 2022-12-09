@@ -191,7 +191,7 @@ namespace Opeq_CallCenter
         {
             string computerProbDesc = computerProbTextBox.Text;
 
-            if(computerProbDesc != "")
+            if(computerProbDesc != "" && computerProbDesc != "Ajouter")
             {
                 con.Open();
 
@@ -214,7 +214,7 @@ namespace Opeq_CallCenter
         {
             string screenProbDesc = screenProbTextBox.Text;
 
-            if (screenProbDesc != "")
+            if (screenProbDesc != "" && screenProbDesc != "Ajouter")
             {
                 con.Open();
 
@@ -236,7 +236,7 @@ namespace Opeq_CallCenter
         {
             string laptopProbDesc = laptopProbTextBox.Text;
 
-            if (laptopProbDesc != "")
+            if (laptopProbDesc != "" && laptopProbDesc != "Ajouter")
             {
                 con.Open();
 
@@ -258,7 +258,7 @@ namespace Opeq_CallCenter
         {
             string phoneOrTabProbDesc = phoneOrTabTextBox.Text;
 
-            if (phoneOrTabProbDesc != "")
+            if (phoneOrTabProbDesc != "" && phoneOrTabProbDesc != "Ajouter")
             {
                 con.Open();
 
@@ -280,7 +280,7 @@ namespace Opeq_CallCenter
         {
             string orderTypeName = orderTypeTextBox.Text;
 
-            if (orderTypeName != "")
+            if (orderTypeName != "" && orderTypeName != "Ajouter")
             {
                 con.Open();
 
@@ -302,7 +302,7 @@ namespace Opeq_CallCenter
         {
             string actionTookName = actionTookTextBox.Text;
 
-            if (actionTookName != "")
+            if (actionTookName != "" && actionTookName != "Ajouter")
             {
                 con.Open();
 
