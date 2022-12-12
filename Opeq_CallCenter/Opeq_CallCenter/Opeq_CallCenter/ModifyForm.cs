@@ -14,14 +14,8 @@ namespace Opeq_CallCenter
 {
     public partial class ModifyForm : Form
     {
-        //SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KFOB4HEQ\DINAL;Initial Catalog=Opeq_CallCenter;Integrated Security=True");
-       // SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-H0P1R86\SQLEXPRESS;Initial Catalog=Opeq;Integrated Security=True");
-
-        //public ModifyForm()
         SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KFOB4HEQ\DINAL;Initial Catalog=Opeq_CallCenter;Integrated Security=True");
-        //SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-PJPEDDG;Initial Catalog=Opeq;Integrated Security=True");
-
-        //Ali code for inserting to modify table
+        
         string orderTypeDesc;
         string orderNum;
         string howResolved;
@@ -39,7 +33,7 @@ namespace Opeq_CallCenter
         string return_voucher;
         string rma;
 
-        string clientId;
+        string clientId; 
         string actionTookId;
         string orderTypeId;
         string newOrderId;
@@ -62,6 +56,8 @@ namespace Opeq_CallCenter
         //loading up client dropdown information
         private void ModifyForm_Load(object sender, EventArgs e)
         {
+             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter();
+
             con.Open();
 
             SqlCommand cmd1 = con.CreateCommand();
@@ -186,6 +182,12 @@ namespace Opeq_CallCenter
 
         private void loadData()
         {
+            string MAT = MATTextBox.Text;
+            con.Open();
+            SqlCommand cmd33 = con.CreateCommand();
+            cmd33.CommandText = "SELECT MAT FROM Product WHERE MAT= '" + MAT + "';";
+            try { 
+            cmd33.ExecuteNonQuery();
             resolved = "0";
             notResolved = "0";
             onGoing = "0";
@@ -232,9 +234,6 @@ namespace Opeq_CallCenter
             dateTimePicker1.Show();
             orderGroupBox.Show();
 
-
-            con.Open();
-
             SqlCommand cmd1 = con.CreateCommand();
             SqlCommand cmd2 = con.CreateCommand();
             SqlCommand cmd3 = con.CreateCommand();
@@ -272,7 +271,6 @@ namespace Opeq_CallCenter
             //SqlDataAdapter adapter6 = new SqlDataAdapter(cmd6);
 
             //Commands to run to get client information
-            string MAT = MATTextBox.Text;
             cmd1.CommandText = "SELECT client_name FROM Client FULL OUTER JOIN Product ON Client.product_id=Product.product_id WHERE Product.MAT= '" + MAT + "';";
             cmd2.CommandText = "SELECT client_desc FROM Client FULL OUTER JOIN Product ON Client.product_id=Product.product_id WHERE Product.MAT= '" + MAT + "';";
             cmd3.CommandText = "SELECT date_added FROM Client FULL OUTER JOIN Product ON Client.product_id=Product.product_id WHERE Product.MAT= '" + MAT + "';";
@@ -360,62 +358,68 @@ namespace Opeq_CallCenter
                 screenProblemComboBox.SelectedIndex = screenProblemComboBox.FindString(cmd17.ExecuteScalar().ToString());
             }
 
-            if (Convert.ToString(cmd18.ExecuteScalar()) == "")
-            {
-                textBox1.Text = "Numero de Commande";
-                textBox2.Text = "Comment Résolu";
-                textBox3.Text = "Bon D'envoi";
-                RMATextBox.Text = "RMA";
-            }
-            else
-            {
-                if (Convert.ToInt64(cmd19.ExecuteScalar()) != 0)
+                if (Convert.ToString(cmd18.ExecuteScalar()) == "")
                 {
-                    cmd31.CommandText = "SELECT order_name FROM Order_Type WHERE order_type_id = '" + Convert.ToInt64(cmd19.ExecuteScalar()) + "';";
-                    orderTypeComboBox.SelectedIndex = orderTypeComboBox.FindString(cmd31.ExecuteScalar().ToString());
-                }
-
-                textBox1.Text = Convert.ToString(cmd20.ExecuteScalar());
-                textBox1.ForeColor = Color.Black;
-                textBox2.Text = Convert.ToString(cmd21.ExecuteScalar());
-                textBox2.ForeColor = Color.Black;
-
-                if (Convert.ToInt64(cmd22.ExecuteScalar()) != 0)
-                {
-                    cmd32.CommandText = "SELECT action_took_name FROM Action_Took WHERE action_took_id = '" + Convert.ToInt64(cmd22.ExecuteScalar()) + "';";
-                    orderTypeComboBox.SelectedIndex = orderTypeComboBox.FindString(cmd32.ExecuteScalar().ToString());
-                }
-
-                if (Convert.ToInt64(cmd23.ExecuteScalar()) == 1)
-                {
-                    radioButton3.Checked = true;
-                }
-                else if (Convert.ToInt64(cmd24.ExecuteScalar()) == 1)
-                {
-                    radioButton2.Checked = true;
-                }
-                else if (Convert.ToInt64(cmd25.ExecuteScalar()) == 1)
-                {
-                    radioButton1.Checked = true;
-                }
-
-                dateTimePicker1.Value = Convert.ToDateTime(cmd26.ExecuteScalar());
-
-                if (Convert.ToInt64(cmd27.ExecuteScalar()) > 1)
-                {
-                    radioButton5.Checked = true;
-                    dateTimePicker2.Value = Convert.ToDateTime(cmd28.ExecuteScalar());
-                    textBox3.Text = Convert.ToString(cmd29.ExecuteScalar());
-                    textBox3.ForeColor = Color.Black;
-                    RMATextBox.Text = Convert.ToString(cmd30.ExecuteScalar());
-                    RMATextBox.ForeColor = Color.Black;
-
+                    textBox1.Text = "Numero de Commande";
+                    textBox2.Text = "Comment Résolu";
+                    textBox3.Text = "Bon D'envoi";
+                    RMATextBox.Text = "RMA";
                 }
                 else
                 {
-                    radioButton4.Checked = true;
+                    if (Convert.ToInt64(cmd19.ExecuteScalar()) != 0)
+                    {
+                        cmd31.CommandText = "SELECT order_name FROM Order_Type WHERE order_type_id = '" + Convert.ToInt64(cmd19.ExecuteScalar()) + "';";
+                        orderTypeComboBox.SelectedIndex = orderTypeComboBox.FindString(cmd31.ExecuteScalar().ToString());
+                    }
+
+                    textBox1.Text = Convert.ToString(cmd20.ExecuteScalar());
+                    textBox1.ForeColor = Color.Black;
+                    textBox2.Text = Convert.ToString(cmd21.ExecuteScalar());
+                    textBox2.ForeColor = Color.Black;
+
+                    if (Convert.ToInt64(cmd22.ExecuteScalar()) != 0)
+                    {
+                        cmd32.CommandText = "SELECT action_took_name FROM Action_Took WHERE action_took_id = '" + Convert.ToInt64(cmd22.ExecuteScalar()) + "';";
+                        orderTypeComboBox.SelectedIndex = orderTypeComboBox.FindString(cmd32.ExecuteScalar().ToString());
+                    }
+
+                    if (Convert.ToInt64(cmd23.ExecuteScalar()) == 1)
+                    {
+                        radioButton3.Checked = true;
+                    }
+                    else if (Convert.ToInt64(cmd24.ExecuteScalar()) == 1)
+                    {
+                        radioButton2.Checked = true;
+                    }
+                    else if (Convert.ToInt64(cmd25.ExecuteScalar()) == 1)
+                    {
+                        radioButton1.Checked = true;
+                    }
+
+                    dateTimePicker1.Value = Convert.ToDateTime(cmd26.ExecuteScalar());
+
+                    if (Convert.ToInt64(cmd27.ExecuteScalar()) > 1)
+                    {
+                        radioButton5.Checked = true;
+                        dateTimePicker2.Value = Convert.ToDateTime(cmd28.ExecuteScalar());
+                        textBox3.Text = Convert.ToString(cmd29.ExecuteScalar());
+                        textBox3.ForeColor = Color.Black;
+                        RMATextBox.Text = Convert.ToString(cmd30.ExecuteScalar());
+                        RMATextBox.ForeColor = Color.Black;
+
+                    }
+                    else
+                    {
+                        radioButton4.Checked = true;
+                    }
                 }
 
+            }catch (ArgumentOutOfRangeException a)
+            {
+                
+                    DialogResult dialog = MessageBox.Show("MAT n'existe pas", "Mise en garde", MessageBoxButtons.OK);
+                
             }
 
             con.Close();
@@ -544,7 +548,7 @@ namespace Opeq_CallCenter
             cmd9.CommandType = CommandType.Text;
             cmd10.CommandType = CommandType.Text;
 
-            cmd1.CommandText = "UPDATE Client_Address SET street = '" + street + "', apt_num = '" + aptNum + "', city = '" + city + "', postal_code = '" + postalCode + "' FROM Client_Address JOIN Client ON Client_Address.address_id = Client.address_id JOIN Product ON Product.product_id = Client.product_id WHERE MAT = 'MAT-ollo';";
+            cmd1.CommandText = "UPDATE Client_Address SET street = '" + street + "', apt_num = '" + aptNum + "', city = '" + city + "', postal_code = '" + postalCode + "' FROM Client_Address JOIN Client ON Client_Address.address_id = Client.address_id JOIN Product ON Product.product_id = Client.product_id WHERE MAT = '" + mat + "';";
 
             cmd1.ExecuteNonQuery();
 
@@ -575,7 +579,7 @@ namespace Opeq_CallCenter
                 phoneTabProbID = Convert.ToString(cmd9.ExecuteScalar());
             }
 
-            cmd10.CommandText = "UPDATE Client SET computer_prob_id = '" + computerProbID + "', laptop_prob_id = '" + laptopProbID + "', screen_prob_id = '" + screenProbID + "', phone_tablet_prob_id = '" + phoneTabProbID + "', client_name = '" + clientName + "', client_desc = '" + problemDesc + "', date_added = '" + date + "', client_email = '" + email + "', client_phone_num = '" + phone + "', by_email = '" + byEmail + "', by_telephone = '" + byTelephone + "', in_person = '" + inPerson + "' FROM Client JOIN Product ON Client.product_id = Product.product_id WHERE MAT = 'MAT-ollo';";
+            cmd10.CommandText = "UPDATE Client SET computer_prob_id = '" + computerProbID + "', laptop_prob_id = '" + laptopProbID + "', screen_prob_id = '" + screenProbID + "', phone_tablet_prob_id = '" + phoneTabProbID + "', client_name = '" + clientName + "', client_desc = '" + problemDesc + "', date_added = '" + date + "', client_email = '" + email + "', client_phone_num = '" + phone + "', by_email = '" + byEmail + "', by_telephone = '" + byTelephone + "', in_person = '" + inPerson + "' FROM Client JOIN Product ON Client.product_id = Product.product_id WHERE MAT = '" + mat + "';";
             cmd10.ExecuteNonQuery();
             con.Close();
 
@@ -863,6 +867,11 @@ namespace Opeq_CallCenter
             isViewRadioBtnClicked = true;
             addRadioBtn.Checked = true;
             confirmation();
+        }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
         }
     }
 

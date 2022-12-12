@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModifyForm));
             this.cityTextBox = new System.Windows.Forms.TextBox();
             this.aptNumTextBox = new System.Windows.Forms.TextBox();
@@ -91,6 +92,7 @@
             this.problemStatusFroupBox = new System.Windows.Forms.GroupBox();
             this.orderGroupBox = new System.Windows.Forms.GroupBox();
             this.empNameTextView = new System.Windows.Forms.Label();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.opeq_CallCenterDataSet1)).BeginInit();
             this.navGroupBox.SuspendLayout();
             this.problemGroupBox.SuspendLayout();
@@ -823,6 +825,13 @@
             this.empNameTextView.Text = "Nom";
             this.empNameTextView.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
+            // 
             // ModifyForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -957,5 +966,6 @@
         private System.Windows.Forms.GroupBox orderGroupBox;
         private System.Windows.Forms.RadioButton adminRadioBtn;
         private System.Windows.Forms.Label empNameTextView;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }

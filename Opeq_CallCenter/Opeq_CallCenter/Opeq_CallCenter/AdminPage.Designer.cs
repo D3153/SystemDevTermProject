@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminPage));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.adminRadioBtn = new System.Windows.Forms.RadioButton();
             this.viewRadioBtn = new System.Windows.Forms.RadioButton();
             this.modifyRadioBtn = new System.Windows.Forms.RadioButton();
             this.addButton = new System.Windows.Forms.RadioButton();
@@ -64,25 +65,32 @@
             this.actionTookTextBox = new System.Windows.Forms.TextBox();
             this.actionTookAddBtn = new System.Windows.Forms.Button();
             this.actionTookRemoveBtn = new System.Windows.Forms.Button();
-            this.adminRadioBtn = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.BackColor = System.Drawing.SystemColors.Menu;
             this.groupBox1.Controls.Add(this.adminRadioBtn);
             this.groupBox1.Controls.Add(this.viewRadioBtn);
             this.groupBox1.Controls.Add(this.modifyRadioBtn);
             this.groupBox1.Controls.Add(this.addButton);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
+            // adminRadioBtn
+            // 
+            resources.ApplyResources(this.adminRadioBtn, "adminRadioBtn");
+            this.adminRadioBtn.Checked = true;
+            this.adminRadioBtn.Name = "adminRadioBtn";
+            this.adminRadioBtn.TabStop = true;
+            this.adminRadioBtn.UseVisualStyleBackColor = true;
+            // 
             // viewRadioBtn
             // 
-            this.viewRadioBtn.AutoCheck = false;
             resources.ApplyResources(this.viewRadioBtn, "viewRadioBtn");
+            this.viewRadioBtn.AutoCheck = false;
             this.viewRadioBtn.Name = "viewRadioBtn";
             this.viewRadioBtn.TabStop = true;
             this.viewRadioBtn.UseVisualStyleBackColor = true;
@@ -90,8 +98,8 @@
             // 
             // modifyRadioBtn
             // 
-            this.modifyRadioBtn.AutoCheck = false;
             resources.ApplyResources(this.modifyRadioBtn, "modifyRadioBtn");
+            this.modifyRadioBtn.AutoCheck = false;
             this.modifyRadioBtn.Name = "modifyRadioBtn";
             this.modifyRadioBtn.TabStop = true;
             this.modifyRadioBtn.UseVisualStyleBackColor = true;
@@ -99,8 +107,8 @@
             // 
             // addButton
             // 
-            this.addButton.AutoCheck = false;
             resources.ApplyResources(this.addButton, "addButton");
+            this.addButton.AutoCheck = false;
             this.addButton.Name = "addButton";
             this.addButton.TabStop = true;
             this.addButton.UseVisualStyleBackColor = true;
@@ -108,8 +116,8 @@
             // 
             // phoneOrTabProbAddBtn
             // 
-            this.phoneOrTabProbAddBtn.BackColor = System.Drawing.Color.Green;
             resources.ApplyResources(this.phoneOrTabProbAddBtn, "phoneOrTabProbAddBtn");
+            this.phoneOrTabProbAddBtn.BackColor = System.Drawing.Color.Green;
             this.phoneOrTabProbAddBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.phoneOrTabProbAddBtn.Name = "phoneOrTabProbAddBtn";
             this.phoneOrTabProbAddBtn.UseVisualStyleBackColor = false;
@@ -194,8 +202,8 @@
             // 
             // computerProbRemoveBtn
             // 
-            this.computerProbRemoveBtn.BackColor = System.Drawing.Color.Red;
             resources.ApplyResources(this.computerProbRemoveBtn, "computerProbRemoveBtn");
+            this.computerProbRemoveBtn.BackColor = System.Drawing.Color.Red;
             this.computerProbRemoveBtn.ForeColor = System.Drawing.SystemColors.Control;
             this.computerProbRemoveBtn.Name = "computerProbRemoveBtn";
             this.computerProbRemoveBtn.UseVisualStyleBackColor = false;
@@ -203,8 +211,8 @@
             // 
             // computerProbAddBtn
             // 
-            this.computerProbAddBtn.BackColor = System.Drawing.Color.Green;
             resources.ApplyResources(this.computerProbAddBtn, "computerProbAddBtn");
+            this.computerProbAddBtn.BackColor = System.Drawing.Color.Green;
             this.computerProbAddBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.computerProbAddBtn.Name = "computerProbAddBtn";
             this.computerProbAddBtn.UseVisualStyleBackColor = false;
@@ -212,8 +220,8 @@
             // 
             // screenProbRemoveBtn
             // 
-            this.screenProbRemoveBtn.BackColor = System.Drawing.Color.Red;
             resources.ApplyResources(this.screenProbRemoveBtn, "screenProbRemoveBtn");
+            this.screenProbRemoveBtn.BackColor = System.Drawing.Color.Red;
             this.screenProbRemoveBtn.ForeColor = System.Drawing.SystemColors.Control;
             this.screenProbRemoveBtn.Name = "screenProbRemoveBtn";
             this.screenProbRemoveBtn.UseVisualStyleBackColor = false;
@@ -221,8 +229,8 @@
             // 
             // screenProbAddBtn
             // 
-            this.screenProbAddBtn.BackColor = System.Drawing.Color.Green;
             resources.ApplyResources(this.screenProbAddBtn, "screenProbAddBtn");
+            this.screenProbAddBtn.BackColor = System.Drawing.Color.Green;
             this.screenProbAddBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.screenProbAddBtn.Name = "screenProbAddBtn";
             this.screenProbAddBtn.UseVisualStyleBackColor = false;
@@ -230,8 +238,8 @@
             // 
             // laptopProbRemoveBtn
             // 
-            this.laptopProbRemoveBtn.BackColor = System.Drawing.Color.Red;
             resources.ApplyResources(this.laptopProbRemoveBtn, "laptopProbRemoveBtn");
+            this.laptopProbRemoveBtn.BackColor = System.Drawing.Color.Red;
             this.laptopProbRemoveBtn.ForeColor = System.Drawing.SystemColors.Control;
             this.laptopProbRemoveBtn.Name = "laptopProbRemoveBtn";
             this.laptopProbRemoveBtn.UseVisualStyleBackColor = false;
@@ -239,8 +247,8 @@
             // 
             // laptopProbAddBtn
             // 
-            this.laptopProbAddBtn.BackColor = System.Drawing.Color.Green;
             resources.ApplyResources(this.laptopProbAddBtn, "laptopProbAddBtn");
+            this.laptopProbAddBtn.BackColor = System.Drawing.Color.Green;
             this.laptopProbAddBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.laptopProbAddBtn.Name = "laptopProbAddBtn";
             this.laptopProbAddBtn.UseVisualStyleBackColor = false;
@@ -248,8 +256,8 @@
             // 
             // phoneOrTabProbRemoveBtn
             // 
-            this.phoneOrTabProbRemoveBtn.BackColor = System.Drawing.Color.Red;
             resources.ApplyResources(this.phoneOrTabProbRemoveBtn, "phoneOrTabProbRemoveBtn");
+            this.phoneOrTabProbRemoveBtn.BackColor = System.Drawing.Color.Red;
             this.phoneOrTabProbRemoveBtn.ForeColor = System.Drawing.SystemColors.Control;
             this.phoneOrTabProbRemoveBtn.Name = "phoneOrTabProbRemoveBtn";
             this.phoneOrTabProbRemoveBtn.UseVisualStyleBackColor = false;
@@ -275,8 +283,8 @@
             // 
             // orderTypeAddBtn
             // 
-            this.orderTypeAddBtn.BackColor = System.Drawing.Color.Green;
             resources.ApplyResources(this.orderTypeAddBtn, "orderTypeAddBtn");
+            this.orderTypeAddBtn.BackColor = System.Drawing.Color.Green;
             this.orderTypeAddBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.orderTypeAddBtn.Name = "orderTypeAddBtn";
             this.orderTypeAddBtn.UseVisualStyleBackColor = false;
@@ -284,8 +292,8 @@
             // 
             // orderTypeRemoveBtn
             // 
-            this.orderTypeRemoveBtn.BackColor = System.Drawing.Color.Red;
             resources.ApplyResources(this.orderTypeRemoveBtn, "orderTypeRemoveBtn");
+            this.orderTypeRemoveBtn.BackColor = System.Drawing.Color.Red;
             this.orderTypeRemoveBtn.ForeColor = System.Drawing.SystemColors.Control;
             this.orderTypeRemoveBtn.Name = "orderTypeRemoveBtn";
             this.orderTypeRemoveBtn.UseVisualStyleBackColor = false;
@@ -311,8 +319,8 @@
             // 
             // actionTookAddBtn
             // 
-            this.actionTookAddBtn.BackColor = System.Drawing.Color.Green;
             resources.ApplyResources(this.actionTookAddBtn, "actionTookAddBtn");
+            this.actionTookAddBtn.BackColor = System.Drawing.Color.Green;
             this.actionTookAddBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.actionTookAddBtn.Name = "actionTookAddBtn";
             this.actionTookAddBtn.UseVisualStyleBackColor = false;
@@ -320,20 +328,12 @@
             // 
             // actionTookRemoveBtn
             // 
-            this.actionTookRemoveBtn.BackColor = System.Drawing.Color.Red;
             resources.ApplyResources(this.actionTookRemoveBtn, "actionTookRemoveBtn");
+            this.actionTookRemoveBtn.BackColor = System.Drawing.Color.Red;
             this.actionTookRemoveBtn.ForeColor = System.Drawing.SystemColors.Control;
             this.actionTookRemoveBtn.Name = "actionTookRemoveBtn";
             this.actionTookRemoveBtn.UseVisualStyleBackColor = false;
             this.actionTookRemoveBtn.Click += new System.EventHandler(this.actionTookRemoveBtn_Click);
-            // 
-            // adminRadioBtn
-            // 
-            resources.ApplyResources(this.adminRadioBtn, "adminRadioBtn");
-            this.adminRadioBtn.Checked = true;
-            this.adminRadioBtn.Name = "adminRadioBtn";
-            this.adminRadioBtn.TabStop = true;
-            this.adminRadioBtn.UseVisualStyleBackColor = true;
             // 
             // AdminPage
             // 

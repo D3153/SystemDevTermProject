@@ -171,8 +171,8 @@
             // 
             // computerProblemComboBox
             // 
-            resources.ApplyResources(this.computerProblemComboBox, "computerProblemComboBox");
             this.computerProblemComboBox.FormattingEnabled = true;
+            resources.ApplyResources(this.computerProblemComboBox, "computerProblemComboBox");
             this.computerProblemComboBox.Name = "computerProblemComboBox";
             this.computerProblemComboBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.computerProblemComboBox_KeyDown);
             // 
@@ -188,8 +188,8 @@
             // 
             // screenProblemComboBox
             // 
-            resources.ApplyResources(this.screenProblemComboBox, "screenProblemComboBox");
             this.screenProblemComboBox.FormattingEnabled = true;
+            resources.ApplyResources(this.screenProblemComboBox, "screenProblemComboBox");
             this.screenProblemComboBox.Name = "screenProblemComboBox";
             this.screenProblemComboBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.screenProblemComboBox_KeyDown);
             // 
@@ -200,8 +200,8 @@
             // 
             // laptopProblemComboBox
             // 
-            resources.ApplyResources(this.laptopProblemComboBox, "laptopProblemComboBox");
             this.laptopProblemComboBox.FormattingEnabled = true;
+            resources.ApplyResources(this.laptopProblemComboBox, "laptopProblemComboBox");
             this.laptopProblemComboBox.Name = "laptopProblemComboBox";
             this.laptopProblemComboBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.laptopProblemComboBox_KeyDown);
             // 
@@ -212,8 +212,8 @@
             // 
             // phoneOrTabletProblemComboBox
             // 
-            resources.ApplyResources(this.phoneOrTabletProblemComboBox, "phoneOrTabletProblemComboBox");
             this.phoneOrTabletProblemComboBox.FormattingEnabled = true;
+            resources.ApplyResources(this.phoneOrTabletProblemComboBox, "phoneOrTabletProblemComboBox");
             this.phoneOrTabletProblemComboBox.Name = "phoneOrTabletProblemComboBox";
             this.phoneOrTabletProblemComboBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.phoneOrTabletProblemComboBox_KeyDown);
             // 
@@ -224,15 +224,15 @@
             // 
             // label11
             // 
-            resources.ApplyResources(this.label11, "label11");
             this.label11.BackColor = System.Drawing.Color.Black;
             this.label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.label11, "label11");
             this.label11.Name = "label11";
             // 
             // cancelBtn
             // 
-            resources.ApplyResources(this.cancelBtn, "cancelBtn");
             this.cancelBtn.BackColor = System.Drawing.Color.Red;
+            resources.ApplyResources(this.cancelBtn, "cancelBtn");
             this.cancelBtn.ForeColor = System.Drawing.SystemColors.Control;
             this.cancelBtn.Name = "cancelBtn";
             this.cancelBtn.UseVisualStyleBackColor = false;
@@ -240,8 +240,8 @@
             // 
             // addBtn
             // 
-            resources.ApplyResources(this.addBtn, "addBtn");
             this.addBtn.BackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.addBtn, "addBtn");
             this.addBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.addBtn.Name = "addBtn";
             this.addBtn.UseVisualStyleBackColor = false;
@@ -273,16 +273,15 @@
             // 
             // contactGroupBox
             // 
-            resources.ApplyResources(this.contactGroupBox, "contactGroupBox");
             this.contactGroupBox.Controls.Add(this.phoneRadioBtn);
             this.contactGroupBox.Controls.Add(this.emailRadioBtn);
             this.contactGroupBox.Controls.Add(this.inPersonRadioBtn);
+            resources.ApplyResources(this.contactGroupBox, "contactGroupBox");
             this.contactGroupBox.Name = "contactGroupBox";
             this.contactGroupBox.TabStop = false;
             // 
             // problemGroupBox
             // 
-            resources.ApplyResources(this.problemGroupBox, "problemGroupBox");
             this.problemGroupBox.Controls.Add(this.computerProblemComboBox);
             this.problemGroupBox.Controls.Add(this.label6);
             this.problemGroupBox.Controls.Add(this.screenProblemComboBox);
@@ -291,16 +290,17 @@
             this.problemGroupBox.Controls.Add(this.label8);
             this.problemGroupBox.Controls.Add(this.phoneOrTabletProblemComboBox);
             this.problemGroupBox.Controls.Add(this.label9);
+            resources.ApplyResources(this.problemGroupBox, "problemGroupBox");
             this.problemGroupBox.Name = "problemGroupBox";
             this.problemGroupBox.TabStop = false;
             // 
             // navGroupBox
             // 
-            resources.ApplyResources(this.navGroupBox, "navGroupBox");
             this.navGroupBox.Controls.Add(this.adminRadioBtn);
             this.navGroupBox.Controls.Add(this.addRadioBtn);
             this.navGroupBox.Controls.Add(this.modifyRadioBtn);
             this.navGroupBox.Controls.Add(this.viewRadioBtn);
+            resources.ApplyResources(this.navGroupBox, "navGroupBox");
             this.navGroupBox.Name = "navGroupBox";
             this.navGroupBox.TabStop = false;
             // 

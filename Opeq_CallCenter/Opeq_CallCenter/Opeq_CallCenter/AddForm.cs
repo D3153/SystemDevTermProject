@@ -13,10 +13,7 @@ namespace Opeq_CallCenter
 {
     public partial class AddForm : Form
     {
-        //SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KFOB4HEQ\DINAL;Initial Catalog=Opeq_CallCenter;Integrated Security=True");
-        //SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-H0P1R86\SQLEXPRESS;Initial Catalog=Opeq;Integrated Security=True");
         SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KFOB4HEQ\DINAL;Initial Catalog=Opeq_CallCenter;Integrated Security=True");
-        //SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-PJPEDDG;Initial Catalog=Opeq;Integrated Security=True");
 
         Boolean isAddBtnClicked;
         Boolean isCancelBtnClicked;
@@ -291,7 +288,6 @@ namespace Opeq_CallCenter
                 streetTextBox.Text != "" && streetTextBox.Text != "Adresse" && cityTextBox.Text != "" && cityTextBox.Text != "Ville" &&
                 postalCodeTextBox.Text != "" && postalCodeTextBox.Text != "Code Postal" && MATTextBox.Text != "" && MATTextBox.Text != "MAT" && MATTextBox.Text != "MAT-")
             {
-                //IDK if this will work
                 string empID;
                 string clientName = nameTextBox.Text;
                 string problemDesc = problemDescriptionTextBox.Text;
@@ -299,7 +295,6 @@ namespace Opeq_CallCenter
                 string phone = phoneTextBox.Text;
                 string date = dateTimePicker.Value.ToString();
 
-                //IDK how to get addressId from address table
                 string addressID = " ";
 
 
@@ -454,6 +449,7 @@ namespace Opeq_CallCenter
 
         private void confirmation()
         {
+            
             if (isAddBtnClicked == true)
             {
                 DialogResult dialog = MessageBox.Show("Les donnés que vous avez rentrées vont être sauvegardés." +

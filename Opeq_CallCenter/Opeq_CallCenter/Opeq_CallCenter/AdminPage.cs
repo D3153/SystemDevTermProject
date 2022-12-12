@@ -125,12 +125,6 @@ namespace Opeq_CallCenter
             orderTypeComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
-        public void reloadComboBox()
-        {
-            computerProblemComboBox.Refresh();
-            orderTypeComboBox.Refresh();
-        }
-
         private void addButton_MouseClick(object sender, MouseEventArgs e)
         {
             this.Hide();
@@ -413,7 +407,6 @@ namespace Opeq_CallCenter
 
         private void orderTypeRemoveBtn_Click(object sender, EventArgs e)
         {
-            //string orderTypeName = orderTypeComboBox.GetItemText(orderTypeComboBox.SelectedItem);
             string orderTypeName = orderTypeComboBox.Text;
 
             if (orderTypeName != "")
