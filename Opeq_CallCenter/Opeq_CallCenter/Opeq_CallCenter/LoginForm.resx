@@ -122,10 +122,14 @@
     <value>Microsoft Sans Serif, 45pt</value>
   </data>
   <data name="loginLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>405, 203</value>
+    <value>304, 165</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="loginLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="loginLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>434, 94</value>
+    <value>326, 76</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="loginLabel.TabIndex" type="System.Int32, mscorlib">
@@ -144,7 +148,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;loginLabel.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="adminLoginLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -153,16 +157,19 @@
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="adminLoginLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>40, 690</value>
+    <value>30, 561</value>
+  </data>
+  <data name="adminLoginLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="adminLoginLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 20</value>
+    <value>159, 17</value>
   </data>
   <data name="adminLoginLabel.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
   <data name="adminLoginLabel.Text" xml:space="preserve">
-    <value>Êtez-vous une admin?</value>
+    <value>Êtez-vous un(e) admin?</value>
   </data>
   <data name="&gt;&gt;adminLoginLabel.Name" xml:space="preserve">
     <value>adminLoginLabel</value>
@@ -174,23 +181,22 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;adminLoginLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="empNameTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 15pt</value>
   </data>
   <data name="empNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>396, 361</value>
+    <value>297, 293</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="empNameTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="empNameTextBox.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="empNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>443, 38</value>
+    <value>333, 32</value>
   </data>
   <data name="empNameTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -208,19 +214,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;empNameTextBox.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="loginButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="loginButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>531, 454</value>
-  </data>
-  <data name="loginButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>398, 369</value>
   </data>
   <data name="loginButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 52</value>
+    <value>134, 42</value>
   </data>
   <data name="loginButton.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -238,7 +241,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;loginButton.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -423,13 +426,13 @@
 </value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
+    <value>9, 10</value>
   </data>
   <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>373, 144</value>
+    <value>280, 117</value>
   </data>
   <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -444,13 +447,43 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="languagechanger.Items" xml:space="preserve">
+    <value>Français</value>
+  </data>
+  <data name="languagechanger.Items1" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="languagechanger.Location" type="System.Drawing.Point, System.Drawing">
+    <value>778, 576</value>
+  </data>
+  <data name="languagechanger.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="languagechanger.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="languagechanger.Text" xml:space="preserve">
+    <value>Langue/Language</value>
+  </data>
+  <data name="&gt;&gt;languagechanger.Name" xml:space="preserve">
+    <value>languagechanger</value>
+  </data>
+  <data name="&gt;&gt;languagechanger.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;languagechanger.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;languagechanger.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
+    <value>6, 13</value>
   </data>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1257,7 +1290,7 @@
 </value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1215, 750</value>
+    <value>911, 609</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -5379,7 +5412,7 @@
 </value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

@@ -117,86 +117,92 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;adminNameTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;languagechanger.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="employeeLoginLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 684</value>
-  </data>
-  <data name="employeeLoginLabel.Text" xml:space="preserve">
-    <value>Pas un(e) admin?</value>
-  </data>
-  <data name="loginButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 52</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="adminPassTextBox.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="employeeLoginLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;loginButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;adminNameTextBox.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;adminPassTextBox.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;employeeLoginLabel.Name" xml:space="preserve">
-    <value>employeeLoginLabel</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="employeeLoginLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
   </data>
-  <data name="adminPassTextBox.Text" xml:space="preserve">
-    <value>Entrer votre Mot de passe</value>
+  <data name="&gt;&gt;adminNameTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;adminPassTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;loginButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;adminPassTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;loginLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;loginLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="loginButton.Text" xml:space="preserve">
-    <value>Se Connecter</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="adminPassTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="loginLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>387, 187</value>
-  </data>
-  <data name="adminNameTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="loginButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt</value>
-  </data>
-  <data name="loginButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="adminNameTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15pt</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
+  <data name="&gt;&gt;loginButton.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Admin Login</value>
   </data>
-  <data name="adminPassTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>373, 411</value>
+  <data name="adminNameTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="loginButton.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="adminNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>373, 331</value>
+  </data>
+  <data name="employeeLoginLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 684</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="&gt;&gt;employeeLoginLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;loginLabel.Name" xml:space="preserve">
+    <value>loginLabel</value>
+  </data>
+  <data name="&gt;&gt;loginLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="adminPassTextBox.Text" xml:space="preserve">
+    <value>Entrer votre Mot de passe</value>
+  </data>
+  <data name="loginLabel.Text" xml:space="preserve">
+    <value>Connexion</value>
+  </data>
+  <data name="&gt;&gt;employeeLoginLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="employeeLoginLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 20</value>
+  </data>
+  <data name="loginLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 187</value>
+  </data>
+  <data name="&gt;&gt;adminNameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 11</value>
+  </data>
+  <data name="loginLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 45pt</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="adminPassTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="&gt;&gt;adminNameTextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1002,50 +1008,328 @@
         VsNQkrSKBZ9Ht+wApzLdbl3H6OhbEvKWZhpuVUGvo7S7JlFFt7fR9VWQAYCIBZ9HuKjgmNXEqvkn/9k=
 </value>
   </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="&gt;&gt;loginLabel.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;loginButton.Name" xml:space="preserve">
-    <value>loginButton</value>
-  </data>
-  <data name="adminNameTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="&gt;&gt;loginButton.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;adminNameTextBox.Name" xml:space="preserve">
     <value>adminNameTextBox</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
+  <data name="loginButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>508, 508</value>
   </data>
-  <data name="adminNameTextBox.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="loginButton.Text" xml:space="preserve">
+    <value>Se Connecter</value>
+  </data>
+  <data name="languagechanger.Text" xml:space="preserve">
+    <value>Langue/Language</value>
+  </data>
+  <data name="languagechanger.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="languagechanger.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 24</value>
   </data>
   <data name="loginLabel.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="loginButton.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="adminPassTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt</value>
   </data>
-  <data name="&gt;&gt;employeeLoginLabel.Parent" xml:space="preserve">
+  <data name="adminNameTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="adminPassTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>443, 37</value>
+  </data>
+  <data name="&gt;&gt;loginLabel.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="adminPassTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AdminLoginForm</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;languagechanger.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;loginButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="languagechanger.Items1" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="adminNameTextBox.Text" xml:space="preserve">
+    <value>Entrez votre nom</value>
   </data>
   <data name="employeeLoginLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="employeeLoginLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 20</value>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>373, 144</value>
   </data>
-  <data name="loginLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 45pt</value>
+  <data name="&gt;&gt;languagechanger.Name" xml:space="preserve">
+    <value>languagechanger</value>
   </data>
-  <data name="&gt;&gt;adminPassTextBox.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="loginButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="languagechanger.Items" xml:space="preserve">
+    <value>Français</value>
+  </data>
+  <data name="loginButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>179, 52</value>
+  </data>
+  <data name="&gt;&gt;adminPassTextBox.Name" xml:space="preserve">
+    <value>adminPassTextBox</value>
   </data>
   <data name="&gt;&gt;employeeLoginLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;loginLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;adminPassTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="employeeLoginLabel.Text" xml:space="preserve">
+    <value>Pas un(e) admin?</value>
+  </data>
+  <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="&gt;&gt;employeeLoginLabel.Name" xml:space="preserve">
+    <value>employeeLoginLabel</value>
+  </data>
+  <data name="adminPassTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1215, 750</value>
+  </data>
+  <data name="&gt;&gt;loginButton.Name" xml:space="preserve">
+    <value>loginButton</value>
+  </data>
+  <data name="loginLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>431, 94</value>
+  </data>
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="loginButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="employeeLoginLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="languagechanger.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="adminNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>443, 37</value>
+  </data>
+  <data name="adminNameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="adminPassTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>373, 411</value>
+  </data>
+  <data name="languagechanger.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1037, 709</value>
+  </data>
+  <data name="&gt;&gt;languagechanger.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -5166,56 +5450,14 @@
         AAAAAAAA
 </value>
   </data>
-  <data name="&gt;&gt;adminNameTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="adminPassTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15pt</value>
+  <data name="&gt;&gt;adminPassTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;loginLabel.Name" xml:space="preserve">
-    <value>loginLabel</value>
-  </data>
-  <data name="&gt;&gt;adminPassTextBox.Name" xml:space="preserve">
-    <value>adminPassTextBox</value>
-  </data>
-  <data name="loginLabel.Text" xml:space="preserve">
-    <value>Connexion</value>
-  </data>
-  <data name="adminNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>373, 331</value>
-  </data>
-  <data name="adminNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>443, 37</value>
-  </data>
-  <data name="&gt;&gt;loginButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="adminNameTextBox.Text" xml:space="preserve">
-    <value>Entrez votre nom</value>
-  </data>
-  <data name="adminPassTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1215, 750</value>
-  </data>
-  <data name="adminPassTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>443, 37</value>
-  </data>
-  <data name="&gt;&gt;employeeLoginLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>AdminLoginForm</value>
-  </data>
-  <data name="loginLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>405, 94</value>
-  </data>
-  <data name="employeeLoginLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt</value>
-  </data>
-  <data name="loginButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>508, 508</value>
+  <data name="adminNameTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

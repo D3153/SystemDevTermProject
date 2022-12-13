@@ -15,7 +15,7 @@ namespace Opeq_CallCenter
     public partial class ModifyForm : Form
     {
         SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KFOB4HEQ\DINAL;Initial Catalog=Opeq_CallCenter;Integrated Security=True");
-        
+
         string orderTypeDesc;
         string orderNum;
         string howResolved;
@@ -33,7 +33,7 @@ namespace Opeq_CallCenter
         string return_voucher;
         string rma;
 
-        string clientId; 
+        string clientId;
         string actionTookId;
         string orderTypeId;
         string newOrderId;
@@ -56,7 +56,7 @@ namespace Opeq_CallCenter
         //loading up client dropdown information
         private void ModifyForm_Load(object sender, EventArgs e)
         {
-             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter();
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter();
 
             con.Open();
 
@@ -186,177 +186,178 @@ namespace Opeq_CallCenter
             con.Open();
             SqlCommand cmd33 = con.CreateCommand();
             cmd33.CommandText = "SELECT MAT FROM Product WHERE MAT= '" + MAT + "';";
-            try { 
-            cmd33.ExecuteNonQuery();
-            resolved = "0";
-            notResolved = "0";
-            onGoing = "0";
-
-            resolvedDate = dateTimePicker1.Value.ToString();
-            yes = "0";
-            no = "0";
-
-            deliveryDate = dateTimePicker2.Value.ToString();
-            return_voucher = textBox3.Text;
-            rma = RMATextBox.Text;
-
-            clientId = "";
-            actionTookId = "";
-            orderTypeId = "";
-            newOrderId = "";
-
-            //Show everything
-            nameTextBox.Show();
-            label1.Show();
-            label2.Show();
-            problemDescriptionTextBox.Show();
-            label4.Show();
-            dateTimePickerEntered.Show();
-            label3.Show();
-            contactGroupBox.Show();
-            emailTextbox.Show();
-            phoneTextBox.Show();
-            streetTextBox.Show();
-            aptNumTextBox.Show();
-            cityTextBox.Show();
-            postalCodeTextBox.Show();
-            problemGroupBox.Show();
-            label13.Show();
-            orderTypeComboBox.Show();
-            label12.Show();
-            textBox1.Show();
-            label14.Show();
-            textBox2.Show();
-            label15.Show();
-            actionTookComboBox.Show();
-            problemStatusFroupBox.Show();
-            label17.Show();
-            dateTimePicker1.Show();
-            orderGroupBox.Show();
-
-            SqlCommand cmd1 = con.CreateCommand();
-            SqlCommand cmd2 = con.CreateCommand();
-            SqlCommand cmd3 = con.CreateCommand();
-            SqlCommand cmd4 = con.CreateCommand();
-            SqlCommand cmd5 = con.CreateCommand();
-            SqlCommand cmd6 = con.CreateCommand();
-            SqlCommand cmd7 = con.CreateCommand();
-            SqlCommand cmd8 = con.CreateCommand();
-            SqlCommand cmd9 = con.CreateCommand();
-            SqlCommand cmd10 = con.CreateCommand();
-            SqlCommand cmd11 = con.CreateCommand();
-            SqlCommand cmd12 = con.CreateCommand();
-            SqlCommand cmd13 = con.CreateCommand();
-            SqlCommand cmd14 = con.CreateCommand();
-            SqlCommand cmd15 = con.CreateCommand();
-            SqlCommand cmd16 = con.CreateCommand();
-
-            //to load modify table
-            SqlCommand cmd18 = con.CreateCommand();
-            SqlCommand cmd19 = con.CreateCommand();
-            SqlCommand cmd20 = con.CreateCommand();
-            SqlCommand cmd21 = con.CreateCommand();
-            SqlCommand cmd22 = con.CreateCommand();
-            SqlCommand cmd23 = con.CreateCommand();
-            SqlCommand cmd24 = con.CreateCommand();
-            SqlCommand cmd25 = con.CreateCommand();
-            SqlCommand cmd26 = con.CreateCommand();
-            SqlCommand cmd27 = con.CreateCommand();
-            SqlCommand cmd29 = con.CreateCommand();
-            SqlCommand cmd28 = con.CreateCommand();
-            SqlCommand cmd30 = con.CreateCommand();
-
-
-            //SqlDataAdapter adapter5 = new SqlDataAdapter(cmd5);
-            //SqlDataAdapter adapter6 = new SqlDataAdapter(cmd6);
-
-            //Commands to run to get client information
-            cmd1.CommandText = "SELECT client_name FROM Client FULL OUTER JOIN Product ON Client.product_id=Product.product_id WHERE Product.MAT= '" + MAT + "';";
-            cmd2.CommandText = "SELECT client_desc FROM Client FULL OUTER JOIN Product ON Client.product_id=Product.product_id WHERE Product.MAT= '" + MAT + "';";
-            cmd3.CommandText = "SELECT date_added FROM Client FULL OUTER JOIN Product ON Client.product_id=Product.product_id WHERE Product.MAT= '" + MAT + "';";
-            cmd4.CommandText = "SELECT by_email FROM Client FULL OUTER JOIN Product ON Client.product_id=Product.product_id WHERE Product.MAT= '" + MAT + "';";
-            cmd5.CommandText = "SELECT by_telephone FROM Client FULL OUTER JOIN Product ON Client.product_id=Product.product_id WHERE Product.MAT= '" + MAT + "';";
-            cmd6.CommandText = "SELECT in_person FROM Client FULL OUTER JOIN Product ON Client.product_id=Product.product_id WHERE Product.MAT= '" + MAT + "';";
-            cmd7.CommandText = "SELECT client_email FROM Client FULL OUTER JOIN Product ON Client.product_id=Product.product_id WHERE Product.MAT= '" + MAT + "';";
-            cmd8.CommandText = "SELECT client_phone_num FROM Client FULL OUTER JOIN Product ON Client.product_id=Product.product_id WHERE Product.MAT= '" + MAT + "';";
-            cmd9.CommandText = "SELECT Client_Address.street FROM Client JOIN Product ON Client.product_id = Product.product_id JOIN Client_Address ON Client_Address.address_id = Client.address_id WHERE Product.MAT = '" + MAT + "';";
-            cmd10.CommandText = "SELECT Client_Address.apt_num FROM Client JOIN Product ON Client.product_id = Product.product_id JOIN Client_Address ON Client_Address.address_id = Client.address_id WHERE Product.MAT = '" + MAT + "';";
-            cmd11.CommandText = "SELECT Client_Address.city FROM Client JOIN Product ON Client.product_id = Product.product_id JOIN Client_Address ON Client_Address.address_id = Client.address_id WHERE Product.MAT = '" + MAT + "';";
-            cmd12.CommandText = "SELECT Client_Address.postal_code FROM Client JOIN Product ON Client.product_id = Product.product_id JOIN Client_Address ON Client_Address.address_id = Client.address_id WHERE Product.MAT = '" + MAT + "';";
-            cmd13.CommandText = "SELECT Computer_Prob.computer_prob_id FROM Client JOIN Product ON Client.product_id = Product.product_id JOIN Computer_Prob ON Computer_Prob.computer_prob_id = Client.computer_prob_id WHERE Product.MAT = '" + MAT + "';";
-            cmd14.CommandText = "SELECT Laptop_Prob.laptop_prob_id FROM Client JOIN Product ON Client.product_id = Product.product_id JOIN Laptop_Prob ON Laptop_Prob.laptop_prob_id = Client.laptop_prob_id WHERE Product.MAT = '" + MAT + "';";
-            cmd15.CommandText = "SELECT Phone_Tablet_Prob.phone_tablet_prob_id FROM Client JOIN Product ON Client.product_id = Product.product_id JOIN Phone_Tablet_Prob ON Phone_Tablet_Prob.phone_tablet_prob_id = Client.phone_tablet_prob_id WHERE Product.MAT = '" + MAT + "';";
-            cmd16.CommandText = "SELECT Screen_Prob.screen_prob_id FROM Client JOIN Product ON Client.product_id = Product.product_id JOIN Screen_Prob ON Screen_Prob.screen_prob_id = Client.screen_prob_id WHERE Product.MAT = '" + MAT + "';";
-            //modify load
-            cmd18.CommandText = "SELECT Modify_Client.modify_id FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
-            cmd19.CommandText = "SELECT Order_Type.order_type_id FROM Order_Type JOIN Modify_Client ON Order_Type.order_type_id =Modify_Client.order_type_id JOIN Client ON Client.client_id=Modify_Client.client_id JOIN Product ON Product.product_id=Client.product_id WHERE MAT = '" + MAT + "';";
-            cmd20.CommandText = "SELECT Modify_Client.order_num FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
-            cmd21.CommandText = "SELECT Modify_Client.how_solved FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
-            cmd22.CommandText = "SELECT Action_Took.action_took_id FROM Action_Took JOIN Modify_Client ON Action_Took.action_took_id=Modify_Client.order_type_id JOIN Client ON Client.client_id=Modify_Client.client_id JOIN Product ON Product.product_id=Client.product_id WHERE MAT = '" + MAT + "';";
-            cmd23.CommandText = "SELECT Modify_Client.is_solved FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
-            cmd24.CommandText = "SELECT Modify_Client.is_unsolved FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
-            cmd25.CommandText = "SELECT Modify_Client.is_ongoing FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
-            cmd26.CommandText = "SELECT Modify_Client.date_solved FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
-            cmd27.CommandText = "SELECT Modify_Client.order_id FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
-            cmd28.CommandText = "SELECT New_Order.RMA FROM New_Order JOIN Modify_Client ON New_Order.order_id=Modify_Client.order_id JOIN Client ON Client.client_id=Modify_Client.client_id JOIN Product ON Product.product_id=Client.product_id WHERE MAT = '" + MAT + "';";
-            cmd29.CommandText = "SELECT New_Order.send_date FROM New_Order JOIN Modify_Client ON New_Order.order_id=Modify_Client.order_id JOIN Client ON Client.client_id=Modify_Client.client_id JOIN Product ON Product.product_id=Client.product_id WHERE MAT = '" + MAT + "';";
-            cmd30.CommandText = "SELECT New_Order.return_voucher FROM New_Order JOIN Modify_Client ON New_Order.order_id=Modify_Client.order_id JOIN Client ON Client.client_id=Modify_Client.client_id JOIN Product ON Product.product_id=Client.product_id WHERE MAT = '" + MAT + "';";
-
-
-            //Commands to populate dropdowns
-            SqlCommand cmd17 = con.CreateCommand();
-            SqlCommand cmd31 = con.CreateCommand();
-            SqlCommand cmd32 = con.CreateCommand();
-
-            cmd17.CommandType = CommandType.Text;
-            cmd31.CommandType = CommandType.Text;
-            cmd32.CommandType = CommandType.Text;
-
-            //Setting texts for the client
-            nameTextBox.Text = Convert.ToString(cmd1.ExecuteScalar());
-            problemDescriptionTextBox.Text = Convert.ToString(cmd2.ExecuteScalar());
-            dateTimePickerEntered.Value = Convert.ToDateTime(cmd3.ExecuteScalar());
-
-            if (Convert.ToInt64(cmd4.ExecuteScalar()) == 1)
+            try
             {
-                emailRadioBtn.Checked = true;
-            }
-            else if (Convert.ToInt64(cmd5.ExecuteScalar()) == 1)
-            {
-                phoneRadioBtn.Checked = true;
-            }
-            else if (Convert.ToInt64(cmd6.ExecuteScalar()) == 1)
-            {
-                inPersonRadioBtn.Checked = true;
-            }
+                cmd33.ExecuteNonQuery();
+                resolved = "0";
+                notResolved = "0";
+                onGoing = "0";
 
-            emailTextbox.Text = Convert.ToString(cmd7.ExecuteScalar());
-            phoneTextBox.Text = Convert.ToString(cmd8.ExecuteScalar());
-            streetTextBox.Text = Convert.ToString(cmd9.ExecuteScalar());
-            aptNumTextBox.Text = Convert.ToString(cmd10.ExecuteScalar());
-            cityTextBox.Text = Convert.ToString(cmd11.ExecuteScalar());
-            postalCodeTextBox.Text = Convert.ToString(cmd12.ExecuteScalar());
+                resolvedDate = dateTimePicker1.Value.ToString();
+                yes = "0";
+                no = "0";
 
-            if (Convert.ToInt64(cmd13.ExecuteScalar()) > 0)
-            {
-                cmd17.CommandText = "SELECT computer_desc FROM Computer_Prob WHERE computer_prob_id = '" + Convert.ToInt64(cmd13.ExecuteScalar()) + "';";
-                computerProblemComboBox.SelectedIndex = computerProblemComboBox.FindString(cmd17.ExecuteScalar().ToString());
-            }
-            else if (Convert.ToInt64(cmd14.ExecuteScalar()) > 0)
-            {
-                cmd17.CommandText = "SELECT laptop_desc FROM Laptop_Prob WHERE laptop_prob_id = '" + Convert.ToInt64(cmd14.ExecuteScalar()) + "';";
-                laptopProblemComboBox.SelectedIndex = laptopProblemComboBox.FindString(cmd17.ExecuteScalar().ToString());
-            }
-            else if (Convert.ToInt64(cmd15.ExecuteScalar()) > 0)
-            {
-                cmd17.CommandText = "SELECT phone_tab_desc FROM Phone_Tablet_Prob WHERE phone_tablet_prob_id = '" + Convert.ToInt64(cmd15.ExecuteScalar()) + "';";
-                phoneOrTabletProblemComboBox.SelectedIndex = phoneOrTabletProblemComboBox.FindString(cmd17.ExecuteScalar().ToString());
-            }
-            else if (Convert.ToInt64(cmd16.ExecuteScalar()) > 0)
-            {
-                cmd17.CommandText = "SELECT screen_desc FROM Screen_Prob WHERE screen_prob_id = '" + Convert.ToInt64(cmd16.ExecuteScalar()) + "';";
-                screenProblemComboBox.SelectedIndex = screenProblemComboBox.FindString(cmd17.ExecuteScalar().ToString());
-            }
+                deliveryDate = dateTimePicker2.Value.ToString();
+                return_voucher = textBox3.Text;
+                rma = RMATextBox.Text;
+
+                clientId = "";
+                actionTookId = "";
+                orderTypeId = "";
+                newOrderId = "";
+
+                //Show everything
+                nameTextBox.Show();
+                label1.Show();
+                label2.Show();
+                problemDescriptionTextBox.Show();
+                label4.Show();
+                dateTimePickerEntered.Show();
+                label3.Show();
+                contactGroupBox.Show();
+                emailTextbox.Show();
+                phoneTextBox.Show();
+                streetTextBox.Show();
+                aptNumTextBox.Show();
+                cityTextBox.Show();
+                postalCodeTextBox.Show();
+                problemGroupBox.Show();
+                label13.Show();
+                orderTypeComboBox.Show();
+                label12.Show();
+                textBox1.Show();
+                label14.Show();
+                textBox2.Show();
+                label15.Show();
+                actionTookComboBox.Show();
+                problemStatusFroupBox.Show();
+                label17.Show();
+                dateTimePicker1.Show();
+                orderGroupBox.Show();
+
+                SqlCommand cmd1 = con.CreateCommand();
+                SqlCommand cmd2 = con.CreateCommand();
+                SqlCommand cmd3 = con.CreateCommand();
+                SqlCommand cmd4 = con.CreateCommand();
+                SqlCommand cmd5 = con.CreateCommand();
+                SqlCommand cmd6 = con.CreateCommand();
+                SqlCommand cmd7 = con.CreateCommand();
+                SqlCommand cmd8 = con.CreateCommand();
+                SqlCommand cmd9 = con.CreateCommand();
+                SqlCommand cmd10 = con.CreateCommand();
+                SqlCommand cmd11 = con.CreateCommand();
+                SqlCommand cmd12 = con.CreateCommand();
+                SqlCommand cmd13 = con.CreateCommand();
+                SqlCommand cmd14 = con.CreateCommand();
+                SqlCommand cmd15 = con.CreateCommand();
+                SqlCommand cmd16 = con.CreateCommand();
+
+                //to load modify table
+                SqlCommand cmd18 = con.CreateCommand();
+                SqlCommand cmd19 = con.CreateCommand();
+                SqlCommand cmd20 = con.CreateCommand();
+                SqlCommand cmd21 = con.CreateCommand();
+                SqlCommand cmd22 = con.CreateCommand();
+                SqlCommand cmd23 = con.CreateCommand();
+                SqlCommand cmd24 = con.CreateCommand();
+                SqlCommand cmd25 = con.CreateCommand();
+                SqlCommand cmd26 = con.CreateCommand();
+                SqlCommand cmd27 = con.CreateCommand();
+                SqlCommand cmd29 = con.CreateCommand();
+                SqlCommand cmd28 = con.CreateCommand();
+                SqlCommand cmd30 = con.CreateCommand();
+
+
+                //SqlDataAdapter adapter5 = new SqlDataAdapter(cmd5);
+                //SqlDataAdapter adapter6 = new SqlDataAdapter(cmd6);
+
+                //Commands to run to get client information
+                cmd1.CommandText = "SELECT client_name FROM Client FULL OUTER JOIN Product ON Client.product_id=Product.product_id WHERE Product.MAT= '" + MAT + "';";
+                cmd2.CommandText = "SELECT client_desc FROM Client FULL OUTER JOIN Product ON Client.product_id=Product.product_id WHERE Product.MAT= '" + MAT + "';";
+                cmd3.CommandText = "SELECT date_added FROM Client FULL OUTER JOIN Product ON Client.product_id=Product.product_id WHERE Product.MAT= '" + MAT + "';";
+                cmd4.CommandText = "SELECT by_email FROM Client FULL OUTER JOIN Product ON Client.product_id=Product.product_id WHERE Product.MAT= '" + MAT + "';";
+                cmd5.CommandText = "SELECT by_telephone FROM Client FULL OUTER JOIN Product ON Client.product_id=Product.product_id WHERE Product.MAT= '" + MAT + "';";
+                cmd6.CommandText = "SELECT in_person FROM Client FULL OUTER JOIN Product ON Client.product_id=Product.product_id WHERE Product.MAT= '" + MAT + "';";
+                cmd7.CommandText = "SELECT client_email FROM Client FULL OUTER JOIN Product ON Client.product_id=Product.product_id WHERE Product.MAT= '" + MAT + "';";
+                cmd8.CommandText = "SELECT client_phone_num FROM Client FULL OUTER JOIN Product ON Client.product_id=Product.product_id WHERE Product.MAT= '" + MAT + "';";
+                cmd9.CommandText = "SELECT Client_Address.street FROM Client JOIN Product ON Client.product_id = Product.product_id JOIN Client_Address ON Client_Address.address_id = Client.address_id WHERE Product.MAT = '" + MAT + "';";
+                cmd10.CommandText = "SELECT Client_Address.apt_num FROM Client JOIN Product ON Client.product_id = Product.product_id JOIN Client_Address ON Client_Address.address_id = Client.address_id WHERE Product.MAT = '" + MAT + "';";
+                cmd11.CommandText = "SELECT Client_Address.city FROM Client JOIN Product ON Client.product_id = Product.product_id JOIN Client_Address ON Client_Address.address_id = Client.address_id WHERE Product.MAT = '" + MAT + "';";
+                cmd12.CommandText = "SELECT Client_Address.postal_code FROM Client JOIN Product ON Client.product_id = Product.product_id JOIN Client_Address ON Client_Address.address_id = Client.address_id WHERE Product.MAT = '" + MAT + "';";
+                cmd13.CommandText = "SELECT Computer_Prob.computer_prob_id FROM Client JOIN Product ON Client.product_id = Product.product_id JOIN Computer_Prob ON Computer_Prob.computer_prob_id = Client.computer_prob_id WHERE Product.MAT = '" + MAT + "';";
+                cmd14.CommandText = "SELECT Laptop_Prob.laptop_prob_id FROM Client JOIN Product ON Client.product_id = Product.product_id JOIN Laptop_Prob ON Laptop_Prob.laptop_prob_id = Client.laptop_prob_id WHERE Product.MAT = '" + MAT + "';";
+                cmd15.CommandText = "SELECT Phone_Tablet_Prob.phone_tablet_prob_id FROM Client JOIN Product ON Client.product_id = Product.product_id JOIN Phone_Tablet_Prob ON Phone_Tablet_Prob.phone_tablet_prob_id = Client.phone_tablet_prob_id WHERE Product.MAT = '" + MAT + "';";
+                cmd16.CommandText = "SELECT Screen_Prob.screen_prob_id FROM Client JOIN Product ON Client.product_id = Product.product_id JOIN Screen_Prob ON Screen_Prob.screen_prob_id = Client.screen_prob_id WHERE Product.MAT = '" + MAT + "';";
+                //modify load
+                cmd18.CommandText = "SELECT Modify_Client.modify_id FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
+                cmd19.CommandText = "SELECT Order_Type.order_type_id FROM Order_Type JOIN Modify_Client ON Order_Type.order_type_id =Modify_Client.order_type_id JOIN Client ON Client.client_id=Modify_Client.client_id JOIN Product ON Product.product_id=Client.product_id WHERE MAT = '" + MAT + "';";
+                cmd20.CommandText = "SELECT Modify_Client.order_num FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
+                cmd21.CommandText = "SELECT Modify_Client.how_solved FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
+                cmd22.CommandText = "SELECT Action_Took.action_took_id FROM Action_Took JOIN Modify_Client ON Action_Took.action_took_id=Modify_Client.order_type_id JOIN Client ON Client.client_id=Modify_Client.client_id JOIN Product ON Product.product_id=Client.product_id WHERE MAT = '" + MAT + "';";
+                cmd23.CommandText = "SELECT Modify_Client.is_solved FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
+                cmd24.CommandText = "SELECT Modify_Client.is_unsolved FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
+                cmd25.CommandText = "SELECT Modify_Client.is_ongoing FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
+                cmd26.CommandText = "SELECT Modify_Client.date_solved FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
+                cmd27.CommandText = "SELECT Modify_Client.order_id FROM Modify_Client FULL OUTER JOIN Client ON Modify_Client.client_id=Client.client_id LEFT JOIN PRODUCT ON Client.product_id=Product.product_id WHERE MAT = '" + MAT + "';";
+                cmd28.CommandText = "SELECT New_Order.RMA FROM New_Order JOIN Modify_Client ON New_Order.order_id=Modify_Client.order_id JOIN Client ON Client.client_id=Modify_Client.client_id JOIN Product ON Product.product_id=Client.product_id WHERE MAT = '" + MAT + "';";
+                cmd29.CommandText = "SELECT New_Order.send_date FROM New_Order JOIN Modify_Client ON New_Order.order_id=Modify_Client.order_id JOIN Client ON Client.client_id=Modify_Client.client_id JOIN Product ON Product.product_id=Client.product_id WHERE MAT = '" + MAT + "';";
+                cmd30.CommandText = "SELECT New_Order.return_voucher FROM New_Order JOIN Modify_Client ON New_Order.order_id=Modify_Client.order_id JOIN Client ON Client.client_id=Modify_Client.client_id JOIN Product ON Product.product_id=Client.product_id WHERE MAT = '" + MAT + "';";
+
+
+                //Commands to populate dropdowns
+                SqlCommand cmd17 = con.CreateCommand();
+                SqlCommand cmd31 = con.CreateCommand();
+                SqlCommand cmd32 = con.CreateCommand();
+
+                cmd17.CommandType = CommandType.Text;
+                cmd31.CommandType = CommandType.Text;
+                cmd32.CommandType = CommandType.Text;
+
+                //Setting texts for the client
+                nameTextBox.Text = Convert.ToString(cmd1.ExecuteScalar());
+                problemDescriptionTextBox.Text = Convert.ToString(cmd2.ExecuteScalar());
+                dateTimePickerEntered.Value = Convert.ToDateTime(cmd3.ExecuteScalar());
+
+                if (Convert.ToInt64(cmd4.ExecuteScalar()) == 1)
+                {
+                    emailRadioBtn.Checked = true;
+                }
+                else if (Convert.ToInt64(cmd5.ExecuteScalar()) == 1)
+                {
+                    phoneRadioBtn.Checked = true;
+                }
+                else if (Convert.ToInt64(cmd6.ExecuteScalar()) == 1)
+                {
+                    inPersonRadioBtn.Checked = true;
+                }
+
+                emailTextbox.Text = Convert.ToString(cmd7.ExecuteScalar());
+                phoneTextBox.Text = Convert.ToString(cmd8.ExecuteScalar());
+                streetTextBox.Text = Convert.ToString(cmd9.ExecuteScalar());
+                aptNumTextBox.Text = Convert.ToString(cmd10.ExecuteScalar());
+                cityTextBox.Text = Convert.ToString(cmd11.ExecuteScalar());
+                postalCodeTextBox.Text = Convert.ToString(cmd12.ExecuteScalar());
+
+                if (Convert.ToInt64(cmd13.ExecuteScalar()) > 0)
+                {
+                    cmd17.CommandText = "SELECT computer_desc FROM Computer_Prob WHERE computer_prob_id = '" + Convert.ToInt64(cmd13.ExecuteScalar()) + "';";
+                    computerProblemComboBox.SelectedIndex = computerProblemComboBox.FindString(cmd17.ExecuteScalar().ToString());
+                }
+                else if (Convert.ToInt64(cmd14.ExecuteScalar()) > 0)
+                {
+                    cmd17.CommandText = "SELECT laptop_desc FROM Laptop_Prob WHERE laptop_prob_id = '" + Convert.ToInt64(cmd14.ExecuteScalar()) + "';";
+                    laptopProblemComboBox.SelectedIndex = laptopProblemComboBox.FindString(cmd17.ExecuteScalar().ToString());
+                }
+                else if (Convert.ToInt64(cmd15.ExecuteScalar()) > 0)
+                {
+                    cmd17.CommandText = "SELECT phone_tab_desc FROM Phone_Tablet_Prob WHERE phone_tablet_prob_id = '" + Convert.ToInt64(cmd15.ExecuteScalar()) + "';";
+                    phoneOrTabletProblemComboBox.SelectedIndex = phoneOrTabletProblemComboBox.FindString(cmd17.ExecuteScalar().ToString());
+                }
+                else if (Convert.ToInt64(cmd16.ExecuteScalar()) > 0)
+                {
+                    cmd17.CommandText = "SELECT screen_desc FROM Screen_Prob WHERE screen_prob_id = '" + Convert.ToInt64(cmd16.ExecuteScalar()) + "';";
+                    screenProblemComboBox.SelectedIndex = screenProblemComboBox.FindString(cmd17.ExecuteScalar().ToString());
+                }
 
                 if (Convert.ToString(cmd18.ExecuteScalar()) == "")
                 {
@@ -415,11 +416,12 @@ namespace Opeq_CallCenter
                     }
                 }
 
-            }catch (ArgumentOutOfRangeException a)
+            }
+            catch (ArgumentOutOfRangeException a)
             {
-                
-                    DialogResult dialog = MessageBox.Show("MAT n'existe pas", "Mise en garde", MessageBoxButtons.OK);
-                
+
+                DialogResult dialog = MessageBox.Show("MAT n'existe pas", "Mise en garde", MessageBoxButtons.OK);
+
             }
 
             con.Close();
@@ -505,7 +507,7 @@ namespace Opeq_CallCenter
             string laptopProbDesc = laptopProblemComboBox.GetItemText(laptopProblemComboBox.SelectedItem);
             string screenProbDesc = screenProblemComboBox.GetItemText(screenProblemComboBox.SelectedItem);
             string phoneTabProbDesc = phoneOrTabletProblemComboBox.GetItemText(phoneOrTabletProblemComboBox.SelectedItem);
-                           
+
             string computerProbID = " ";
             string laptopProbID = " ";
             string screenProbID = " ";
@@ -646,14 +648,14 @@ namespace Opeq_CallCenter
                 cmd25.CommandText = "SELECT client_id FROM CLIENT WHERE CONVERT(VARCHAR, RMA) = '" + rma + "';";
                 newOrderId = Convert.ToString(cmd25.ExecuteScalar());
             }
-            else if(no == "1")
+            else if (no == "1")
             {
                 newOrderId = " ";
             }
 
             cmd26.CommandText = "SELECT Modify_Client.client_id FROM Modify_Client JOIN Client ON Modify_Client.client_id=Client.client_id JOIN Product ON Client.product_id=Product.product_id WHERE MAT='" + empID + "';";
 
-            if(Convert.ToString(cmd26.ExecuteScalar()) != "")
+            if (Convert.ToString(cmd26.ExecuteScalar()) != "")
             {
                 cmd27.CommandText = "UPDATE Modify_Client SET action_took_id= '" + actionTookId + "', order_type_id= '" + orderTypeId + "', how_solved= '" + howResolved + "', order_num= '" + orderNum + "', is_solved= '" + resolved + "', is_unsolved= '" + notResolved + "', is_ongoing= '" + onGoing + "', date_solved= '" + resolvedDate + "', order_id= '" + newOrderId + "' WHERE client_id = '" + clientId + "';";
                 cmd27.ExecuteNonQuery();

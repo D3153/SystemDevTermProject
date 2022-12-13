@@ -54,5 +54,13 @@ namespace Opeq_CallCenter
             viewFormInstance.ShowDialog();
             this.Close();
         }
+
+        private void adminRadioBtn_MouseClick(object sender, MouseEventArgs e)
+        {
+            this.Hide();
+            AdminPage viewFormInstance = new AdminPage();
+            viewFormInstance.ShowDialog();
+            this.Close();
+        }
     }
 }

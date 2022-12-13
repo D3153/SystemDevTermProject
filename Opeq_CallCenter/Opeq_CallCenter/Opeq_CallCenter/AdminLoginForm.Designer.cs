@@ -34,6 +34,9 @@
             this.employeeLoginLabel = new System.Windows.Forms.Label();
             this.loginLabel = new System.Windows.Forms.Label();
             this.adminPassTextBox = new System.Windows.Forms.TextBox();
+            this.languagechanger = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // loginButton
@@ -75,16 +78,36 @@
             this.adminPassTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.adminPassTextBox_MouseClick);
             this.adminPassTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.adminPassTextBox_KeyPress);
             // 
+            // languagechanger
+            // 
+            resources.ApplyResources(this.languagechanger, "languagechanger");
+            this.languagechanger.FormattingEnabled = true;
+            this.languagechanger.Items.AddRange(new object[] {
+            resources.GetString("languagechanger.Items"),
+            resources.GetString("languagechanger.Items1")});
+            this.languagechanger.Name = "languagechanger";
+            this.languagechanger.SelectedIndexChanged += new System.EventHandler(this.languagechanger_SelectedIndexChanged);
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
             // AdminLoginForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.languagechanger);
             this.Controls.Add(this.adminPassTextBox);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.adminNameTextBox);
             this.Controls.Add(this.employeeLoginLabel);
             this.Controls.Add(this.loginLabel);
             this.Name = "AdminLoginForm";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -97,5 +120,7 @@
         private System.Windows.Forms.Label employeeLoginLabel;
         private System.Windows.Forms.Label loginLabel;
         private System.Windows.Forms.TextBox adminPassTextBox;
+        private System.Windows.Forms.ComboBox languagechanger;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -34,6 +34,7 @@
             this.empNameTextBox = new System.Windows.Forms.TextBox();
             this.loginButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.languagechanger = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,10 +76,21 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
+            // languagechanger
+            // 
+            this.languagechanger.FormattingEnabled = true;
+            this.languagechanger.Items.AddRange(new object[] {
+            resources.GetString("languagechanger.Items"),
+            resources.GetString("languagechanger.Items1")});
+            resources.ApplyResources(this.languagechanger, "languagechanger");
+            this.languagechanger.Name = "languagechanger";
+            this.languagechanger.SelectedIndexChanged += new System.EventHandler(this.languagechanger_SelectedIndexChanged);
+            // 
             // LoginForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.languagechanger);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.empNameTextBox);
@@ -99,6 +111,7 @@
         private System.Windows.Forms.TextBox empNameTextBox;
         private System.Windows.Forms.Button loginButton;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ComboBox languagechanger;
     }
 }
 

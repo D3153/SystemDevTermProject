@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="adminRadioBtn.Text" xml:space="preserve">
+    <value>Admin Page</value>
+  </data>
   <data name="viewRadioBtn.Text" xml:space="preserve">
     <value>View</value>
   </data>
@@ -127,11 +130,17 @@
     <value>Add</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="phoneOrTabProbAddBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1004, 371</value>
+  </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>178, 29</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
     <value>Problem Type</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>357, 77</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>98, 25</value>
@@ -139,11 +148,17 @@
   <data name="label6.Text" xml:space="preserve">
     <value>Computer</value>
   </data>
+  <data name="screenProblemComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>355, 200</value>
+  </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 25</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
     <value>Monitor</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>357, 250</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 25</value>
@@ -151,11 +166,20 @@
   <data name="label8.Text" xml:space="preserve">
     <value>Laptop</value>
   </data>
+  <data name="phoneOrTabletProblemComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>359, 28</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>357, 342</value>
+  </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>130, 25</value>
   </data>
   <data name="label9.Text" xml:space="preserve">
     <value>Phone/Tablet</value>
+  </data>
+  <data name="computerProbTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 28</value>
   </data>
   <data name="computerProbTextBox.Text" xml:space="preserve">
     <value>Add</value>
@@ -166,8 +190,38 @@
   <data name="laptopProbTextBox.Text" xml:space="preserve">
     <value>Add</value>
   </data>
+  <data name="phoneOrTabTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>731, 385</value>
+  </data>
   <data name="phoneOrTabTextBox.Text" xml:space="preserve">
     <value>Add</value>
+  </data>
+  <data name="computerProbRemoveBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1084, 106</value>
+  </data>
+  <data name="computerProbAddBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1004, 101</value>
+  </data>
+  <data name="screenProbRemoveBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1084, 185</value>
+  </data>
+  <data name="screenProbAddBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1004, 188</value>
+  </data>
+  <data name="laptopProbRemoveBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1084, 283</value>
+  </data>
+  <data name="laptopProbRemoveBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 44</value>
+  </data>
+  <data name="laptopProbAddBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1004, 283</value>
+  </data>
+  <data name="laptopProbAddBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 42</value>
+  </data>
+  <data name="phoneOrTabProbRemoveBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1084, 371</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
     <value>147, 29</value>
@@ -178,6 +232,15 @@
   <data name="orderTypeTextBox.Text" xml:space="preserve">
     <value>Add</value>
   </data>
+  <data name="orderTypeAddBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1004, 493</value>
+  </data>
+  <data name="orderTypeAddBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 41</value>
+  </data>
+  <data name="orderTypeRemoveBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1084, 493</value>
+  </data>
   <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
     <value>165, 29</value>
   </data>
@@ -186,6 +249,12 @@
   </data>
   <data name="actionTookTextBox.Text" xml:space="preserve">
     <value>Add</value>
+  </data>
+  <data name="actionTookAddBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1004, 607</value>
+  </data>
+  <data name="actionTookRemoveBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1084, 607</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1236, 750</value>

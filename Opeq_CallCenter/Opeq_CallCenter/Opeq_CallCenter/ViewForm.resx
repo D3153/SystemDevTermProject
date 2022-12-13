@@ -117,10 +117,450 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1053, 609</value>
+  </data>
+  <data name="&gt;&gt;navigation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MATsearchBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>424, 35</value>
+  </data>
+  <data name="&gt;&gt;orderNumRichTextBox.Name" xml:space="preserve">
+    <value>orderNumRichTextBox</value>
+  </data>
+  <data name="&gt;&gt;filter.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="viewRadioBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="&gt;&gt;resultBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="searchbar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>424, 35</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="viewBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="filter.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="&gt;&gt;searchbar.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;modifyRadioBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;resultBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="addRadioBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="&gt;&gt;searchBtn.Name" xml:space="preserve">
+    <value>searchBtn</value>
+  </data>
+  <data name="ongoingRadioBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 24</value>
+  </data>
+  <data name="&gt;&gt;orderNumRichTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="resolveRadioBtn.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="addRadioBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16pt, style=Bold</value>
+  </data>
+  <data name="nameRichTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 427</value>
+  </data>
+  <data name="&gt;&gt;resolveRadioBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MATsearchBar.Name" xml:space="preserve">
+    <value>MATsearchBar</value>
+  </data>
+  <data name="&gt;&gt;empNameTextView.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="searchBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="filter.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="resultBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="label11.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="ongoingRadioBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;viewRadioBtn.Name" xml:space="preserve">
+    <value>viewRadioBtn</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 0</value>
+  </data>
+  <data name="&gt;&gt;adminRadioBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="adminRadioBtn.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;searchBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nameRichTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;unresolvedRadioBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;orderNumRichTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MATsearchBar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ViewForm</value>
+  </data>
+  <data name="viewBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="ongoingRadioBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;MATsearchBar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;adminRadioBtn.Name" xml:space="preserve">
+    <value>adminRadioBtn</value>
+  </data>
+  <data name="&gt;&gt;viewBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;navigation.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;adminRadioBtn.Parent" xml:space="preserve">
+    <value>navigation</value>
+  </data>
+  <data name="empNameTextView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 37</value>
+  </data>
+  <data name="searchBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>782, 22</value>
+  </data>
+  <data name="unresolvedRadioBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>342, 21</value>
+  </data>
+  <data name="addRadioBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 30</value>
+  </data>
+  <data name="&gt;&gt;addRadioBtn.Parent" xml:space="preserve">
+    <value>navigation</value>
+  </data>
+  <data name="filter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>365, 59</value>
+  </data>
+  <data name="&gt;&gt;viewBtn.Name" xml:space="preserve">
+    <value>viewBtn</value>
+  </data>
+  <data name="unresolvedRadioBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="&gt;&gt;resultBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;searchbar.Name" xml:space="preserve">
+    <value>searchbar</value>
+  </data>
+  <data name="orderNumRichTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>709, 112</value>
+  </data>
+  <data name="modifyRadioBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 30</value>
+  </data>
+  <data name="navigation.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="adminRadioBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="resultBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 427</value>
+  </data>
+  <data name="resultBox.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="resolveRadioBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 24</value>
+  </data>
+  <data name="MATsearchBar.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="searchBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;resolveRadioBtn.Parent" xml:space="preserve">
+    <value>filter</value>
+  </data>
+  <data name="viewBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 35</value>
+  </data>
+  <data name="&gt;&gt;adminRadioBtn.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;navigation.Name" xml:space="preserve">
+    <value>navigation</value>
+  </data>
+  <data name="empNameTextView.Text" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="&gt;&gt;viewRadioBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;resolveRadioBtn.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="viewBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>782, 563</value>
+  </data>
+  <data name="viewRadioBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;searchBtn.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="ongoingRadioBtn.Text" xml:space="preserve">
+    <value>En Cours</value>
+  </data>
+  <data name="navigation.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="modifyRadioBtn.Text" xml:space="preserve">
+    <value>Modifier</value>
+  </data>
+  <data name="&gt;&gt;resolveRadioBtn.Name" xml:space="preserve">
+    <value>resolveRadioBtn</value>
+  </data>
+  <data name="&gt;&gt;searchbar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>ViewForm</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;modifyRadioBtn.Name" xml:space="preserve">
+    <value>modifyRadioBtn</value>
+  </data>
+  <data name="searchbar.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="modifyRadioBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;resultBox.Name" xml:space="preserve">
+    <value>resultBox</value>
+  </data>
+  <data name="viewBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="ongoingRadioBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="viewBtn.Text" xml:space="preserve">
+    <value>Voir Plus de Detail</value>
+  </data>
+  <data name="&gt;&gt;viewRadioBtn.Parent" xml:space="preserve">
+    <value>navigation</value>
+  </data>
+  <data name="searchbar.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="addRadioBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="resolveRadioBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="empNameTextView.TabIndex" type="System.Int32, mscorlib">
+    <value>103</value>
+  </data>
+  <data name="adminRadioBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 30</value>
+  </data>
+  <data name="&gt;&gt;nameRichTextBox.Name" xml:space="preserve">
+    <value>nameRichTextBox</value>
+  </data>
+  <data name="ongoingRadioBtn.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="orderNumRichTextBox.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MATsearchBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>354, 563</value>
+  </data>
+  <data name="unresolvedRadioBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;unresolvedRadioBtn.Name" xml:space="preserve">
+    <value>unresolvedRadioBtn</value>
+  </data>
+  <data name="&gt;&gt;addRadioBtn.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="viewRadioBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="modifyRadioBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 90</value>
+  </data>
+  <data name="orderNumRichTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>106</value>
+  </data>
+  <data name="empNameTextView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 6</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="empNameTextView.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 13.8pt</value>
+  </data>
+  <data name="adminRadioBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="orderNumRichTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="&gt;&gt;filter.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ongoingRadioBtn.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;empNameTextView.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="modifyRadioBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;nameRichTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;addRadioBtn.Name" xml:space="preserve">
+    <value>addRadioBtn</value>
+  </data>
+  <data name="nameRichTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="resolveRadioBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="resultBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;nameRichTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ongoingRadioBtn.Name" xml:space="preserve">
+    <value>ongoingRadioBtn</value>
+  </data>
+  <data name="&gt;&gt;modifyRadioBtn.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="viewRadioBtn.Text" xml:space="preserve">
+    <value>Voir</value>
+  </data>
+  <data name="empNameTextView.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="viewRadioBtn.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="viewRadioBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 30</value>
+  </data>
+  <data name="&gt;&gt;searchBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 4</value>
+  </data>
+  <data name="orderNumRichTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="nameRichTextBox.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="modifyRadioBtn.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;empNameTextView.Name" xml:space="preserve">
+    <value>empNameTextView</value>
+  </data>
+  <data name="&gt;&gt;ongoingRadioBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="nameRichTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="unresolvedRadioBtn.Text" xml:space="preserve">
+    <value>Non Résolu</value>
+  </data>
+  <data name="&gt;&gt;viewBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="filter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>530, 49</value>
+  </data>
+  <data name="resolveRadioBtn.Text" xml:space="preserve">
+    <value>Résolu</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="ongoingRadioBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>189, 21</value>
+  </data>
+  <data name="modifyRadioBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="adminRadioBtn.Text" xml:space="preserve">
+    <value>Page Admin</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEA6QAAAAEAIAAoxAMAFgAAACgAAADpAAAAAAIAAAEAIAAAAAAAAKQDAMMOAADDDgAAAAAAAAAA
@@ -4240,4 +4680,157 @@
         AAAAAAAA
 </value>
   </data>
+  <data name="searchBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 34</value>
+  </data>
+  <data name="searchbar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt</value>
+  </data>
+  <data name="MATsearchBar.Text" xml:space="preserve">
+    <value>Entrer MAT</value>
+  </data>
+  <data name="&gt;&gt;ongoingRadioBtn.Parent" xml:space="preserve">
+    <value>filter</value>
+  </data>
+  <data name="navigation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 270</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
+    <value>contextMenuStrip1</value>
+  </data>
+  <data name="searchbar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>354, 22</value>
+  </data>
+  <data name="unresolvedRadioBtn.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;orderNumRichTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="addRadioBtn.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="orderNumRichTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>179, 427</value>
+  </data>
+  <data name="adminRadioBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 205</value>
+  </data>
+  <data name="resultBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>374, 112</value>
+  </data>
+  <data name="MATsearchBar.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;filter.Name" xml:space="preserve">
+    <value>filter</value>
+  </data>
+  <data name="searchbar.Text" xml:space="preserve">
+    <value>Entrer le nom du client(e), MAT, ou nom du commande</value>
+  </data>
+  <data name="searchBtn.Text" xml:space="preserve">
+    <value>Rechercher</value>
+  </data>
+  <data name="viewRadioBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 151</value>
+  </data>
+  <data name="label11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="&gt;&gt;modifyRadioBtn.Parent" xml:space="preserve">
+    <value>navigation</value>
+  </data>
+  <data name="nameRichTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>544, 112</value>
+  </data>
+  <data name="&gt;&gt;unresolvedRadioBtn.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="navigation.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="resolveRadioBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 21</value>
+  </data>
+  <data name="unresolvedRadioBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 24</value>
+  </data>
+  <data name="&gt;&gt;viewBtn.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;viewRadioBtn.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;filter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="searchBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="MATsearchBar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="addRadioBtn.Text" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="&gt;&gt;MATsearchBar.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;addRadioBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="resultBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="filter.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="&gt;&gt;searchbar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MATsearchBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;empNameTextView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="addRadioBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 28</value>
+  </data>
+  <data name="navigation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 45</value>
+  </data>
+  <data name="resolveRadioBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="unresolvedRadioBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="adminRadioBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16pt, style=Bold</value>
+  </data>
+  <data name="searchbar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="&gt;&gt;navigation.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="nameRichTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="&gt;&gt;unresolvedRadioBtn.Parent" xml:space="preserve">
+    <value>filter</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>8, 608</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 29</value>
+    <value>65, 24</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Name</value>
@@ -134,25 +134,25 @@
     <value>Email</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>212, 29</value>
+    <value>170, 24</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>How To Contact?</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 29</value>
+    <value>106, 24</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>Entry Date</value>
   </data>
   <data name="emailRadioBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 29</value>
+    <value>66, 24</value>
   </data>
   <data name="emailRadioBtn.Text" xml:space="preserve">
     <value>Email</value>
   </data>
   <data name="phoneRadioBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 29</value>
+    <value>73, 24</value>
   </data>
   <data name="phoneRadioBtn.Text" xml:space="preserve">
     <value>Phone</value>
@@ -161,7 +161,7 @@
     <value>Phone</value>
   </data>
   <data name="inPersonRadioBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 29</value>
+    <value>95, 24</value>
   </data>
   <data name="inPersonRadioBtn.Text" xml:space="preserve">
     <value>In Person</value>
@@ -170,25 +170,25 @@
     <value>Adress</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 25</value>
+    <value>79, 20</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
     <value>Computer</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 25</value>
+    <value>62, 20</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
     <value>Monitor</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 25</value>
+    <value>59, 20</value>
   </data>
   <data name="label8.Text" xml:space="preserve">
     <value>Laptop</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 25</value>
+    <value>103, 20</value>
   </data>
   <data name="label9.Text" xml:space="preserve">
     <value>Phone/Tablet</value>
@@ -215,19 +215,19 @@
     <value>Admin Page</value>
   </data>
   <data name="addRadioBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 35</value>
+    <value>72, 30</value>
   </data>
   <data name="addRadioBtn.Text" xml:space="preserve">
     <value>Add</value>
   </data>
   <data name="modifyRadioBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 35</value>
+    <value>100, 30</value>
   </data>
   <data name="modifyRadioBtn.Text" xml:space="preserve">
     <value>Modify</value>
   </data>
   <data name="viewRadioBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 35</value>
+    <value>82, 30</value>
   </data>
   <data name="viewRadioBtn.Text" xml:space="preserve">
     <value>View</value>
@@ -236,7 +236,7 @@
     <value>Name</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1095, 609</value>
+    <value>1112, 609</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

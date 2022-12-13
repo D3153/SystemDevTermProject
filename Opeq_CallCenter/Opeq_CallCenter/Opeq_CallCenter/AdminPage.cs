@@ -447,5 +447,9 @@ namespace Opeq_CallCenter
             loadComboBox();
         }
 
+        private void adminRadioBtn_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
     }
 }

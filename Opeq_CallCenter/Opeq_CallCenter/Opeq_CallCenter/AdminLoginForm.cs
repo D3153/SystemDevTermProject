@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Threading;
 
 namespace Opeq_CallCenter
 {
@@ -107,6 +108,22 @@ namespace Opeq_CallCenter
             {
                 MessageBox.Show("Nom ou Mot de Passe non valide!");
             }
+        }
+
+        private void languagechanger_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (languagechanger.SelectedIndex)
+            {
+                case 0:
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("fr");
+                    break;
+
+                case 1:
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+                    break;
+            }
+            this.Controls.Clear();
+            InitializeComponent();
         }
     }
 }

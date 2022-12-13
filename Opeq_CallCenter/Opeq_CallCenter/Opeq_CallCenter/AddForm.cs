@@ -449,7 +449,7 @@ namespace Opeq_CallCenter
 
         private void confirmation()
         {
-            
+
             if (isAddBtnClicked == true)
             {
                 DialogResult dialog = MessageBox.Show("Les donnés que vous avez rentrées vont être sauvegardés." +
@@ -576,5 +576,26 @@ namespace Opeq_CallCenter
             e.SuppressKeyPress = true;
         }
 
+        private void adminRadioBtn_MouseClick(object sender, MouseEventArgs e)
+        {
+            isAdminRadioBtnClicked = true;
+            addRadioBtn.Checked = true;
+            confirmation();
+        }
+
+        //private void MATTextBox_MouseClick(object sender, MouseEventArgs e)
+        //{
+
+        //}
+
+        //private void streetTextBox_MouseClick_1(object sender, MouseEventArgs e)
+        //{
+
+        //}
+
+        //private void phoneTextBox_MouseClick(object sender, MouseEventArgs e)
+        //{
+
+        //}
     }
 }

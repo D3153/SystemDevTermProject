@@ -118,458 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14pt, style=Bold</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 31</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 29</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Nom</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14pt, style=Bold</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>418, 157</value>
-  </data>
-  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 29</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Description</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="problemDescriptionTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11pt</value>
-  </data>
-  <data name="problemDescriptionTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>424, 210</value>
-  </data>
-  <data name="problemDescriptionTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="problemDescriptionTextBox.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="problemDescriptionTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>516, 55</value>
-  </data>
-  <data name="problemDescriptionTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="problemDescriptionTextBox.Text" xml:space="preserve">
-    <value>Entrer problème</value>
-  </data>
-  <data name="&gt;&gt;problemDescriptionTextBox.Name" xml:space="preserve">
-    <value>problemDescriptionTextBox</value>
-  </data>
-  <data name="&gt;&gt;problemDescriptionTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;problemDescriptionTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;problemDescriptionTextBox.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="nameTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11pt</value>
-  </data>
-  <data name="nameTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>423, 79</value>
-  </data>
-  <data name="nameTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="nameTextBox.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="nameTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>516, 55</value>
-  </data>
-  <data name="nameTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="nameTextBox.Text" xml:space="preserve">
-    <value>Entrer nom du client</value>
-  </data>
-  <data name="&gt;&gt;nameTextBox.Name" xml:space="preserve">
-    <value>nameTextBox</value>
-  </data>
-  <data name="&gt;&gt;nameTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nameTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;nameTextBox.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="emailTextbox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11pt</value>
-  </data>
-  <data name="emailTextbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>609, 422</value>
-  </data>
-  <data name="emailTextbox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="emailTextbox.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="emailTextbox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 33</value>
-  </data>
-  <data name="emailTextbox.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="emailTextbox.Text" xml:space="preserve">
-    <value>Courriel</value>
-  </data>
-  <data name="&gt;&gt;emailTextbox.Name" xml:space="preserve">
-    <value>emailTextbox</value>
-  </data>
-  <data name="&gt;&gt;emailTextbox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;emailTextbox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;emailTextbox.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14pt, style=Bold</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>418, 361</value>
-  </data>
-  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>243, 29</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Comment Contacter</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14pt, style=Bold</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>419, 296</value>
-  </data>
-  <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 29</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Date Entrée</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="MATTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11pt</value>
-  </data>
-  <data name="MATTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>419, 1271</value>
-  </data>
-  <data name="MATTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="MATTextBox.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="MATTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 55</value>
-  </data>
-  <data name="MATTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="MATTextBox.Text" xml:space="preserve">
-    <value>MAT</value>
-  </data>
-  <data name="&gt;&gt;MATTextBox.Name" xml:space="preserve">
-    <value>MATTextBox</value>
-  </data>
-  <data name="&gt;&gt;MATTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MATTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;MATTextBox.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="dateTimePicker.Location" type="System.Drawing.Point, System.Drawing">
-    <value>591, 297</value>
-  </data>
-  <data name="dateTimePicker.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="dateTimePicker.Size" type="System.Drawing.Size, System.Drawing">
-    <value>383, 28</value>
-  </data>
-  <data name="dateTimePicker.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker.Name" xml:space="preserve">
-    <value>dateTimePicker</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="emailRadioBtn.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="emailRadioBtn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="emailRadioBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 18</value>
-  </data>
-  <data name="emailRadioBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 29</value>
-  </data>
-  <data name="emailRadioBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="emailRadioBtn.Text" xml:space="preserve">
-    <value>Courriel</value>
-  </data>
-  <data name="&gt;&gt;emailRadioBtn.Name" xml:space="preserve">
-    <value>emailRadioBtn</value>
-  </data>
-  <data name="&gt;&gt;emailRadioBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;emailRadioBtn.Parent" xml:space="preserve">
-    <value>contactGroupBox</value>
-  </data>
-  <data name="&gt;&gt;emailRadioBtn.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="phoneRadioBtn.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="phoneRadioBtn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="phoneRadioBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 86</value>
-  </data>
-  <data name="phoneRadioBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 29</value>
-  </data>
-  <data name="phoneRadioBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="phoneRadioBtn.Text" xml:space="preserve">
-    <value>Téléphone</value>
-  </data>
-  <data name="&gt;&gt;phoneRadioBtn.Name" xml:space="preserve">
-    <value>phoneRadioBtn</value>
-  </data>
-  <data name="&gt;&gt;phoneRadioBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;phoneRadioBtn.Parent" xml:space="preserve">
-    <value>contactGroupBox</value>
-  </data>
-  <data name="&gt;&gt;phoneRadioBtn.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="phoneTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11pt</value>
-  </data>
-  <data name="phoneTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>609, 490</value>
-  </data>
-  <data name="phoneTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="phoneTextBox.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="phoneTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 33</value>
-  </data>
-  <data name="phoneTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="phoneTextBox.Text" xml:space="preserve">
-    <value>Téléphone</value>
-  </data>
-  <data name="&gt;&gt;phoneTextBox.Name" xml:space="preserve">
-    <value>phoneTextBox</value>
-  </data>
-  <data name="&gt;&gt;phoneTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;phoneTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;phoneTextBox.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="inPersonRadioBtn.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="inPersonRadioBtn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="inPersonRadioBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 152</value>
-  </data>
-  <data name="inPersonRadioBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 29</value>
-  </data>
-  <data name="inPersonRadioBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="inPersonRadioBtn.Text" xml:space="preserve">
-    <value>En Personne</value>
-  </data>
-  <data name="&gt;&gt;inPersonRadioBtn.Name" xml:space="preserve">
-    <value>inPersonRadioBtn</value>
-  </data>
-  <data name="&gt;&gt;inPersonRadioBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;inPersonRadioBtn.Parent" xml:space="preserve">
-    <value>contactGroupBox</value>
-  </data>
-  <data name="&gt;&gt;inPersonRadioBtn.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="streetTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11pt</value>
-  </data>
-  <data name="streetTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>609, 556</value>
-  </data>
-  <data name="streetTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="streetTextBox.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="streetTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 33</value>
-  </data>
-  <data name="streetTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="streetTextBox.Text" xml:space="preserve">
-    <value>Adresse</value>
-  </data>
-  <data name="&gt;&gt;streetTextBox.Name" xml:space="preserve">
-    <value>streetTextBox</value>
-  </data>
-  <data name="&gt;&gt;streetTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;streetTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;streetTextBox.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <metadata name="opeq_CallCenterDataSet1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="computerProblemComboBox.ItemHeight" type="System.Int32, mscorlib">
     <value>31</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="computerProblemComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>36, 95</value>
   </data>
@@ -591,11 +143,48 @@
   <data name="&gt;&gt;computerProblemComboBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="viewRadioBtn.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="viewRadioBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16pt, style=Bold</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="viewRadioBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="viewRadioBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 230</value>
+  </data>
+  <data name="viewRadioBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 35</value>
+  </data>
+  <data name="viewRadioBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="viewRadioBtn.Text" xml:space="preserve">
+    <value>Voir</value>
+  </data>
+  <data name="&gt;&gt;viewRadioBtn.Name" xml:space="preserve">
+    <value>viewRadioBtn</value>
+  </data>
+  <data name="&gt;&gt;viewRadioBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;viewRadioBtn.Parent" xml:space="preserve">
+    <value>navGroupBox</value>
+  </data>
+  <data name="&gt;&gt;viewRadioBtn.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
     <value>29, 54</value>
@@ -621,422 +210,50 @@
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="empNameTextView.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 13.8pt</value>
   </data>
-  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+  <data name="empNameTextView.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 146</value>
+  <data name="empNameTextView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>70, 10</value>
   </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 25</value>
-  </data>
-  <data name="label7.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>Écran</value>
-  </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
-  </data>
-  <data name="&gt;&gt;label7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>problemGroupBox</value>
-  </data>
-  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="screenProblemComboBox.ItemHeight" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="screenProblemComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 188</value>
-  </data>
-  <data name="screenProblemComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>357, 39</value>
-  </data>
-  <data name="screenProblemComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;screenProblemComboBox.Name" xml:space="preserve">
-    <value>screenProblemComboBox</value>
-  </data>
-  <data name="&gt;&gt;screenProblemComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;screenProblemComboBox.Parent" xml:space="preserve">
-    <value>problemGroupBox</value>
-  </data>
-  <data name="&gt;&gt;screenProblemComboBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 252</value>
-  </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 25</value>
-  </data>
-  <data name="label8.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="label8.Text" xml:space="preserve">
-    <value>Portable</value>
-  </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
-  </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
-    <value>problemGroupBox</value>
-  </data>
-  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="laptopProblemComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 293</value>
-  </data>
-  <data name="laptopProblemComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>357, 39</value>
-  </data>
-  <data name="laptopProblemComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;laptopProblemComboBox.Name" xml:space="preserve">
-    <value>laptopProblemComboBox</value>
-  </data>
-  <data name="&gt;&gt;laptopProblemComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;laptopProblemComboBox.Parent" xml:space="preserve">
-    <value>problemGroupBox</value>
-  </data>
-  <data name="&gt;&gt;laptopProblemComboBox.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 351</value>
-  </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 25</value>
-  </data>
-  <data name="label9.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>Cellulaire/Tablette</value>
-  </data>
-  <data name="&gt;&gt;label9.Name" xml:space="preserve">
-    <value>label9</value>
-  </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>problemGroupBox</value>
-  </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="phoneOrTabletProblemComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 393</value>
-  </data>
-  <data name="phoneOrTabletProblemComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>357, 39</value>
-  </data>
-  <data name="phoneOrTabletProblemComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;phoneOrTabletProblemComboBox.Name" xml:space="preserve">
-    <value>phoneOrTabletProblemComboBox</value>
-  </data>
-  <data name="&gt;&gt;phoneOrTabletProblemComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;phoneOrTabletProblemComboBox.Parent" xml:space="preserve">
-    <value>problemGroupBox</value>
-  </data>
-  <data name="&gt;&gt;phoneOrTabletProblemComboBox.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14pt, style=Bold</value>
-  </data>
-  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>415, 1218</value>
-  </data>
-  <data name="label10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="empNameTextView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
-  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 29</value>
+  <data name="empNameTextView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 50</value>
   </data>
-  <data name="label10.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
+  <data name="empNameTextView.TabIndex" type="System.Int32, mscorlib">
+    <value>124</value>
   </data>
-  <data name="label10.Text" xml:space="preserve">
-    <value>MAT</value>
+  <data name="empNameTextView.Text" xml:space="preserve">
+    <value>Nom</value>
   </data>
-  <data name="&gt;&gt;label10.Name" xml:space="preserve">
-    <value>label10</value>
+  <data name="empNameTextView.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
-  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+  <data name="&gt;&gt;empNameTextView.Name" xml:space="preserve">
+    <value>empNameTextView</value>
+  </data>
+  <data name="&gt;&gt;empNameTextView.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+  <data name="&gt;&gt;empNameTextView.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>287, 0</value>
-  </data>
-  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 1551</value>
-  </data>
-  <data name="label11.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="&gt;&gt;label11.Name" xml:space="preserve">
-    <value>label11</value>
-  </data>
-  <data name="&gt;&gt;label11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="cancelBtn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11pt, style=Bold</value>
-  </data>
-  <data name="cancelBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>646, 1358</value>
-  </data>
-  <data name="cancelBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 61</value>
-  </data>
-  <data name="cancelBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="cancelBtn.Text" xml:space="preserve">
-    <value>Annuler</value>
-  </data>
-  <data name="&gt;&gt;cancelBtn.Name" xml:space="preserve">
-    <value>cancelBtn</value>
-  </data>
-  <data name="&gt;&gt;cancelBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cancelBtn.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;cancelBtn.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="addBtn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11pt, style=Bold</value>
-  </data>
-  <data name="addBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>456, 1358</value>
-  </data>
-  <data name="addBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 61</value>
-  </data>
-  <data name="addBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="addBtn.Text" xml:space="preserve">
-    <value>Ajouter</value>
-  </data>
-  <data name="&gt;&gt;addBtn.Name" xml:space="preserve">
-    <value>addBtn</value>
-  </data>
-  <data name="&gt;&gt;addBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;addBtn.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;addBtn.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="aptNumTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11pt</value>
-  </data>
-  <data name="aptNumTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>609, 597</value>
-  </data>
-  <data name="aptNumTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="aptNumTextBox.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="aptNumTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 33</value>
-  </data>
-  <data name="aptNumTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="aptNumTextBox.Text" xml:space="preserve">
-    <value>Appartement, suite, ect.</value>
-  </data>
-  <data name="&gt;&gt;aptNumTextBox.Name" xml:space="preserve">
-    <value>aptNumTextBox</value>
-  </data>
-  <data name="&gt;&gt;aptNumTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;aptNumTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;aptNumTextBox.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="postalCodeTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11pt</value>
-  </data>
-  <data name="postalCodeTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>608, 679</value>
-  </data>
-  <data name="postalCodeTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="postalCodeTextBox.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="postalCodeTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 33</value>
-  </data>
-  <data name="postalCodeTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="postalCodeTextBox.Text" xml:space="preserve">
-    <value>Code Postal</value>
-  </data>
-  <data name="&gt;&gt;postalCodeTextBox.Name" xml:space="preserve">
-    <value>postalCodeTextBox</value>
-  </data>
-  <data name="&gt;&gt;postalCodeTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;postalCodeTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;postalCodeTextBox.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="cityTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 11pt</value>
-  </data>
-  <data name="cityTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>609, 638</value>
-  </data>
-  <data name="cityTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="cityTextBox.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="cityTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 33</value>
-  </data>
-  <data name="cityTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="cityTextBox.Text" xml:space="preserve">
-    <value>Ville</value>
-  </data>
-  <data name="&gt;&gt;cityTextBox.Name" xml:space="preserve">
-    <value>cityTextBox</value>
-  </data>
-  <data name="&gt;&gt;cityTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cityTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;cityTextBox.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="contactGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>411, 403</value>
-  </data>
-  <data name="contactGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 208</value>
-  </data>
-  <data name="contactGroupBox.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
-  </data>
-  <data name="&gt;&gt;contactGroupBox.Name" xml:space="preserve">
-    <value>contactGroupBox</value>
-  </data>
-  <data name="&gt;&gt;contactGroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;contactGroupBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;contactGroupBox.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="problemGroupBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 16pt, style=Bold</value>
-  </data>
-  <data name="problemGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>420, 748</value>
-  </data>
-  <data name="problemGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>439, 449</value>
-  </data>
-  <data name="problemGroupBox.TabIndex" type="System.Int32, mscorlib">
-    <value>40</value>
-  </data>
-  <data name="problemGroupBox.Text" xml:space="preserve">
-    <value>Type de Probléme</value>
-  </data>
-  <data name="&gt;&gt;problemGroupBox.Name" xml:space="preserve">
-    <value>problemGroupBox</value>
-  </data>
-  <data name="&gt;&gt;problemGroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;problemGroupBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;problemGroupBox.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;empNameTextView.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="adminRadioBtn.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="adminRadioBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 16pt, style=Bold</value>
+  </data>
+  <data name="adminRadioBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="adminRadioBtn.Location" type="System.Drawing.Point, System.Drawing">
     <value>58, 299</value>
@@ -1068,6 +285,9 @@
   <data name="addRadioBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 16pt, style=Bold</value>
   </data>
+  <data name="addRadioBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="addRadioBtn.Location" type="System.Drawing.Point, System.Drawing">
     <value>58, 54</value>
   </data>
@@ -1098,6 +318,9 @@
   <data name="modifyRadioBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 16pt, style=Bold</value>
   </data>
+  <data name="modifyRadioBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="modifyRadioBtn.Location" type="System.Drawing.Point, System.Drawing">
     <value>58, 145</value>
   </data>
@@ -1122,44 +345,14 @@
   <data name="&gt;&gt;modifyRadioBtn.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="viewRadioBtn.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="viewRadioBtn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 16pt, style=Bold</value>
-  </data>
-  <data name="viewRadioBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>58, 230</value>
-  </data>
-  <data name="viewRadioBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 35</value>
-  </data>
-  <data name="viewRadioBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="viewRadioBtn.Text" xml:space="preserve">
-    <value>Voir</value>
-  </data>
-  <data name="&gt;&gt;viewRadioBtn.Name" xml:space="preserve">
-    <value>viewRadioBtn</value>
-  </data>
-  <data name="&gt;&gt;viewRadioBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;viewRadioBtn.Parent" xml:space="preserve">
-    <value>navGroupBox</value>
-  </data>
-  <data name="&gt;&gt;viewRadioBtn.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="navGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 56</value>
+    <value>68, 58</value>
   </data>
   <data name="navGroupBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>268, 359</value>
   </data>
   <data name="navGroupBox.TabIndex" type="System.Int32, mscorlib">
-    <value>101</value>
+    <value>123</value>
   </data>
   <data name="&gt;&gt;navGroupBox.Name" xml:space="preserve">
     <value>navGroupBox</value>
@@ -1173,39 +366,906 @@
   <data name="&gt;&gt;navGroupBox.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="empNameTextView.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13.8pt</value>
+  <data name="screenProblemComboBox.ItemHeight" type="System.Int32, mscorlib">
+    <value>31</value>
   </data>
-  <data name="empNameTextView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 8</value>
+  <data name="screenProblemComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 188</value>
   </data>
-  <data name="empNameTextView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+  <data name="screenProblemComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>357, 39</value>
   </data>
-  <data name="empNameTextView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>266, 50</value>
+  <data name="screenProblemComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
   </data>
-  <data name="empNameTextView.TabIndex" type="System.Int32, mscorlib">
-    <value>102</value>
+  <data name="&gt;&gt;screenProblemComboBox.Name" xml:space="preserve">
+    <value>screenProblemComboBox</value>
   </data>
-  <data name="empNameTextView.Text" xml:space="preserve">
-    <value>Nom</value>
+  <data name="&gt;&gt;screenProblemComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="empNameTextView.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+  <data name="&gt;&gt;screenProblemComboBox.Parent" xml:space="preserve">
+    <value>problemGroupBox</value>
   </data>
-  <data name="&gt;&gt;empNameTextView.Name" xml:space="preserve">
-    <value>empNameTextView</value>
+  <data name="&gt;&gt;screenProblemComboBox.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;empNameTextView.Type" xml:space="preserve">
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 146</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 25</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Écran</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;empNameTextView.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>problemGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="laptopProblemComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 293</value>
+  </data>
+  <data name="laptopProblemComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>357, 39</value>
+  </data>
+  <data name="laptopProblemComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;laptopProblemComboBox.Name" xml:space="preserve">
+    <value>laptopProblemComboBox</value>
+  </data>
+  <data name="&gt;&gt;laptopProblemComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;laptopProblemComboBox.Parent" xml:space="preserve">
+    <value>problemGroupBox</value>
+  </data>
+  <data name="&gt;&gt;laptopProblemComboBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 252</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 25</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Portable</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>problemGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="phoneOrTabletProblemComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 393</value>
+  </data>
+  <data name="phoneOrTabletProblemComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>357, 39</value>
+  </data>
+  <data name="phoneOrTabletProblemComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;phoneOrTabletProblemComboBox.Name" xml:space="preserve">
+    <value>phoneOrTabletProblemComboBox</value>
+  </data>
+  <data name="&gt;&gt;phoneOrTabletProblemComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;phoneOrTabletProblemComboBox.Parent" xml:space="preserve">
+    <value>problemGroupBox</value>
+  </data>
+  <data name="&gt;&gt;phoneOrTabletProblemComboBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 351</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 25</value>
+  </data>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Cellulaire/Tablette</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>problemGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="problemGroupBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16pt, style=Bold</value>
+  </data>
+  <data name="problemGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>486, 750</value>
+  </data>
+  <data name="problemGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>439, 449</value>
+  </data>
+  <data name="problemGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>122</value>
+  </data>
+  <data name="problemGroupBox.Text" xml:space="preserve">
+    <value>Type de Probléme</value>
+  </data>
+  <data name="&gt;&gt;problemGroupBox.Name" xml:space="preserve">
+    <value>problemGroupBox</value>
+  </data>
+  <data name="&gt;&gt;problemGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;problemGroupBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;empNameTextView.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;problemGroupBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="phoneRadioBtn.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="phoneRadioBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="phoneRadioBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="phoneRadioBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 86</value>
+  </data>
+  <data name="phoneRadioBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 29</value>
+  </data>
+  <data name="phoneRadioBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="phoneRadioBtn.Text" xml:space="preserve">
+    <value>Téléphone</value>
+  </data>
+  <data name="&gt;&gt;phoneRadioBtn.Name" xml:space="preserve">
+    <value>phoneRadioBtn</value>
+  </data>
+  <data name="&gt;&gt;phoneRadioBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;phoneRadioBtn.Parent" xml:space="preserve">
+    <value>contactGroupBox</value>
+  </data>
+  <data name="&gt;&gt;phoneRadioBtn.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="emailRadioBtn.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="emailRadioBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="emailRadioBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="emailRadioBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 18</value>
+  </data>
+  <data name="emailRadioBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 29</value>
+  </data>
+  <data name="emailRadioBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="emailRadioBtn.Text" xml:space="preserve">
+    <value>Courriel</value>
+  </data>
+  <data name="&gt;&gt;emailRadioBtn.Name" xml:space="preserve">
+    <value>emailRadioBtn</value>
+  </data>
+  <data name="&gt;&gt;emailRadioBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;emailRadioBtn.Parent" xml:space="preserve">
+    <value>contactGroupBox</value>
+  </data>
+  <data name="&gt;&gt;emailRadioBtn.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="inPersonRadioBtn.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="inPersonRadioBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="inPersonRadioBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="inPersonRadioBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 152</value>
+  </data>
+  <data name="inPersonRadioBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 29</value>
+  </data>
+  <data name="inPersonRadioBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="inPersonRadioBtn.Text" xml:space="preserve">
+    <value>En Personne</value>
+  </data>
+  <data name="&gt;&gt;inPersonRadioBtn.Name" xml:space="preserve">
+    <value>inPersonRadioBtn</value>
+  </data>
+  <data name="&gt;&gt;inPersonRadioBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;inPersonRadioBtn.Parent" xml:space="preserve">
+    <value>contactGroupBox</value>
+  </data>
+  <data name="&gt;&gt;inPersonRadioBtn.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="contactGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>477, 405</value>
+  </data>
+  <data name="contactGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 208</value>
+  </data>
+  <data name="contactGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>121</value>
+  </data>
+  <data name="&gt;&gt;contactGroupBox.Name" xml:space="preserve">
+    <value>contactGroupBox</value>
+  </data>
+  <data name="&gt;&gt;contactGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;contactGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;contactGroupBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cityTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt</value>
+  </data>
+  <data name="cityTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>675, 640</value>
+  </data>
+  <data name="cityTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cityTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cityTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 33</value>
+  </data>
+  <data name="cityTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="cityTextBox.Text" xml:space="preserve">
+    <value>Ville</value>
+  </data>
+  <data name="&gt;&gt;cityTextBox.Name" xml:space="preserve">
+    <value>cityTextBox</value>
+  </data>
+  <data name="&gt;&gt;cityTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cityTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cityTextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="aptNumTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt</value>
+  </data>
+  <data name="aptNumTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>675, 599</value>
+  </data>
+  <data name="aptNumTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="aptNumTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="aptNumTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 33</value>
+  </data>
+  <data name="aptNumTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="aptNumTextBox.Text" xml:space="preserve">
+    <value>Appartement, suite, ect.</value>
+  </data>
+  <data name="&gt;&gt;aptNumTextBox.Name" xml:space="preserve">
+    <value>aptNumTextBox</value>
+  </data>
+  <data name="&gt;&gt;aptNumTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;aptNumTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;aptNumTextBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="addBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt, style=Bold</value>
+  </data>
+  <data name="addBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="addBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>522, 1360</value>
+  </data>
+  <data name="addBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 61</value>
+  </data>
+  <data name="addBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>117</value>
+  </data>
+  <data name="addBtn.Text" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="&gt;&gt;addBtn.Name" xml:space="preserve">
+    <value>addBtn</value>
+  </data>
+  <data name="&gt;&gt;addBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;addBtn.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="cancelBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt, style=Bold</value>
+  </data>
+  <data name="cancelBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cancelBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>712, 1360</value>
+  </data>
+  <data name="cancelBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 61</value>
+  </data>
+  <data name="cancelBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>118</value>
+  </data>
+  <data name="cancelBtn.Text" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="&gt;&gt;cancelBtn.Name" xml:space="preserve">
+    <value>cancelBtn</value>
+  </data>
+  <data name="&gt;&gt;cancelBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cancelBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cancelBtn.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>353, 2</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 1454</value>
+  </data>
+  <data name="label11.TabIndex" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt, style=Bold</value>
+  </data>
+  <data name="label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>481, 1220</value>
+  </data>
+  <data name="label10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 29</value>
+  </data>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>119</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>MAT</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="postalCodeTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt</value>
+  </data>
+  <data name="postalCodeTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>674, 681</value>
+  </data>
+  <data name="postalCodeTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="postalCodeTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="postalCodeTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 33</value>
+  </data>
+  <data name="postalCodeTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="postalCodeTextBox.Text" xml:space="preserve">
+    <value>Code Postal</value>
+  </data>
+  <data name="&gt;&gt;postalCodeTextBox.Name" xml:space="preserve">
+    <value>postalCodeTextBox</value>
+  </data>
+  <data name="&gt;&gt;postalCodeTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;postalCodeTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;postalCodeTextBox.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="MATTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt</value>
+  </data>
+  <data name="MATTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>485, 1273</value>
+  </data>
+  <data name="MATTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="MATTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="MATTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 55</value>
+  </data>
+  <data name="MATTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="MATTextBox.Text" xml:space="preserve">
+    <value>MAT</value>
+  </data>
+  <data name="&gt;&gt;MATTextBox.Name" xml:space="preserve">
+    <value>MATTextBox</value>
+  </data>
+  <data name="&gt;&gt;MATTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MATTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MATTextBox.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="emailTextbox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt</value>
+  </data>
+  <data name="emailTextbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>675, 424</value>
+  </data>
+  <data name="emailTextbox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="emailTextbox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="emailTextbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 33</value>
+  </data>
+  <data name="emailTextbox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="emailTextbox.Text" xml:space="preserve">
+    <value>Courriel</value>
+  </data>
+  <data name="&gt;&gt;emailTextbox.Name" xml:space="preserve">
+    <value>emailTextbox</value>
+  </data>
+  <data name="&gt;&gt;emailTextbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;emailTextbox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;emailTextbox.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt, style=Bold</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>484, 363</value>
+  </data>
+  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>243, 29</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>111</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Comment Contacter</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt, style=Bold</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>485, 298</value>
+  </data>
+  <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 29</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>108</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Date Entrée</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="nameTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt</value>
+  </data>
+  <data name="nameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>489, 81</value>
+  </data>
+  <data name="nameTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="nameTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="nameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>516, 55</value>
+  </data>
+  <data name="nameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="nameTextBox.Text" xml:space="preserve">
+    <value>Entrer nom du client</value>
+  </data>
+  <data name="&gt;&gt;nameTextBox.Name" xml:space="preserve">
+    <value>nameTextBox</value>
+  </data>
+  <data name="&gt;&gt;nameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nameTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;nameTextBox.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="problemDescriptionTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt</value>
+  </data>
+  <data name="problemDescriptionTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>490, 212</value>
+  </data>
+  <data name="problemDescriptionTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="problemDescriptionTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="problemDescriptionTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>516, 55</value>
+  </data>
+  <data name="problemDescriptionTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="problemDescriptionTextBox.Text" xml:space="preserve">
+    <value>Entrer problème</value>
+  </data>
+  <data name="&gt;&gt;problemDescriptionTextBox.Name" xml:space="preserve">
+    <value>problemDescriptionTextBox</value>
+  </data>
+  <data name="&gt;&gt;problemDescriptionTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;problemDescriptionTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;problemDescriptionTextBox.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt, style=Bold</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>484, 159</value>
+  </data>
+  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 29</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt, style=Bold</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>483, 33</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 29</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>103</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="dateTimePicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>657, 299</value>
+  </data>
+  <data name="dateTimePicker.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="dateTimePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>383, 28</value>
+  </data>
+  <data name="dateTimePicker.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker.Name" xml:space="preserve">
+    <value>dateTimePicker</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="phoneTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt</value>
+  </data>
+  <data name="phoneTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>675, 492</value>
+  </data>
+  <data name="phoneTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="phoneTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="phoneTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 33</value>
+  </data>
+  <data name="phoneTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="phoneTextBox.Text" xml:space="preserve">
+    <value>Téléphone</value>
+  </data>
+  <data name="&gt;&gt;phoneTextBox.Name" xml:space="preserve">
+    <value>phoneTextBox</value>
+  </data>
+  <data name="&gt;&gt;phoneTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;phoneTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;phoneTextBox.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="streetTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt</value>
+  </data>
+  <data name="streetTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>675, 558</value>
+  </data>
+  <data name="streetTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="streetTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="streetTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 33</value>
+  </data>
+  <data name="streetTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="streetTextBox.Text" xml:space="preserve">
+    <value>Adresse</value>
+  </data>
+  <data name="&gt;&gt;streetTextBox.Name" xml:space="preserve">
+    <value>streetTextBox</value>
+  </data>
+  <data name="&gt;&gt;streetTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;streetTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;streetTextBox.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <metadata name="opeq_CallCenterDataSet1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -1219,7 +1279,7 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1116, 609</value>
+    <value>1387, 744</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 11pt</value>
@@ -5343,11 +5403,8 @@
         AAAAAAAA
 </value>
   </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
+    <value>7, 7, 7, 7</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
