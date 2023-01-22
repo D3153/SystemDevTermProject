@@ -23,8 +23,7 @@ namespace Opeq_CallCenter
         Boolean isOnGoingClicked;
         Boolean isUnresolvedClicked;
 
-        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KFOB4HEQ\DINAL;Initial Catalog=Opeq_CallCenter;Integrated Security=True");
-        //SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-PJPEDDG;Initial Catalog=Opeq;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KFOB4HEQ\DINAL;Initial Catalog=Opeq_CentreAppels;Integrated Security=True");
         public ViewForm()
         {
         }

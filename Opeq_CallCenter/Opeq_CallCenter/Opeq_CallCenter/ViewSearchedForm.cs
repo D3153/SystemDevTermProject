@@ -13,7 +13,7 @@ namespace Opeq_CallCenter
 {
     public partial class ViewSearchedForm : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KFOB4HEQ\DINAL;Initial Catalog=Opeq_CallCenter;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KFOB4HEQ\DINAL;Initial Catalog=Opeq_CentreAppels;Integrated Security=True");
 
         public ViewSearchedForm(string input, string empName)
         {

@@ -14,7 +14,7 @@ namespace Opeq_CallCenter
     public partial class AdminPage : Form
     {
 
-        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KFOB4HEQ\DINAL;Initial Catalog=Opeq_CallCenter;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KFOB4HEQ\DINAL;Initial Catalog=Opeq_CentreAppels;Integrated Security=True");
         public AdminPage(string empName)
         {
             InitializeComponent();

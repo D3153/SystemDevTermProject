@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Opeq_CallCenter.exe" version="1.0.0.0" publicKeyToken="61df71c3e3b23109" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Opeq_CallCenter" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Opeq_CallCenter.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+             If you want to change the Windows User Account Control level replace the 
+             requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel element will disable file and registry virtualization. 
+            Remove this element if your application requires this virtualization for backwards
+            compatibility.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Opeq_CallCenter.exe" size="3513312">
+      <assemblyIdentity name="Opeq_CallCenter" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>DUtY4sfKq7LxJg7z12wGAAKYGp6JEndZGVxOfuglXMo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="bs-Latn\Opeq_CallCenter.resources.dll" size="250880">
+      <assemblyIdentity name="Opeq_CallCenter.resources" version="1.0.0.0" language="bs-Latn" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ol+NWiSQmP3l0nBNLpWwPmEzX2xjSq6Sb9o7pK7YEH0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="en\Opeq_CallCenter.resources.dll" size="2528256">
+      <assemblyIdentity name="Opeq_CallCenter.resources" version="1.0.0.0" language="en" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>9TRY8p5LzfFJm+PNG3GR9r0XEvqQqh4vnBIBeQoknEA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="en-CA\Opeq_CallCenter.resources.dll" size="814080">
+      <assemblyIdentity name="Opeq_CallCenter.resources" version="1.0.0.0" language="en-CA" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>l+qPmI4tfllsOSgLWPchvvLvGBRSMI+A4753dFap8AI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Opeq_CallCenter.exe.config" size="552">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ue9CiGwPGCWMWsqwS6s1jY70T4vFxoP7YT9zCN+3R38=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of the Windows versions that this application has been tested on
+           and is designed to work with. Uncomment the appropriate elements
+           and Windows will automatically select the most compatible environment. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=LAPTOP-KFOB4HEQ\Dinal" issuerKeyHash="f3280e5c1bf6b9218ccc7bd5bcd71ab2985631be" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>9wYIro2eHkiZMIQQE98Q+/77o6D4181Ez3LU9knUSws=</DigestValue></Reference></SignedInfo><SignatureValue>hVi7ek0FjN76exGXNMUEmOAxzNAGW1BkZZmnuXXQpC8/jBd/jfgZziswqTX1aaofqnsPa61U0mmfi3lY/41Pye+MCzH+oUW3FETpdQaxO3tr8DAzeipYNp/j9Du05j9SbU9MFf94ZAzdApmLrx7sbvWWyYt9gxRxdGGgwin4Wng=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>zSmz71cdvngSZVBJXXzmoRKjLHAH+Ri+LJGO15dMAtH197Jf6NJzifFJO1b0MGSKgokhfq9tCQ4TT+OceM5zTChnnAlozzMggSTD+Mu7t748dhjCe101dW3ClcK4tV+XhOVs+LRjucTLrFlxG7AeGHAU8FCIg9UbjGkToCLnneU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="0b4bd449f6d472cf44cdd7f8a0a3fbfefb10df1310843099481e9e8dae0806f7" Description="" Url=""><as:assemblyIdentity name="Opeq_CallCenter.exe" version="1.0.0.0" publicKeyToken="61df71c3e3b23109" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=LAPTOP-KFOB4HEQ\Dinal</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>lQMPbQ5YTkNcPsAYvsJSuoapK13zZIMbF/E8DCtVpNs=</DigestValue></Reference></SignedInfo><SignatureValue>RxsK2aBEkQ4ubZcb65D542A62Phe94P/n1SEeQFeKL9oWEI6Wbrd8SVVjf366cBTVPJMNbwmKStYIGFpXharbMlQxqzjeomnJGpDEkPFArgyWOgtbmfVztgDBS+2NApCrFXeJUjdZWYc4swXt/bZDAk1s34Nf31XLlUq9SET85Y=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>zSmz71cdvngSZVBJXXzmoRKjLHAH+Ri+LJGO15dMAtH197Jf6NJzifFJO1b0MGSKgokhfq9tCQ4TT+OceM5zTChnnAlozzMggSTD+Mu7t748dhjCe101dW3ClcK4tV+XhOVs+LRjucTLrFlxG7AeGHAU8FCIg9UbjGkToCLnneU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQRuqjbOLKmbRNDxW+v3u1AjANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioATABBAFAAVABPAFAALQBLAEYATwBCADQASABFAFEAXABEAGkAbgBhAGwwHhcNMjMwMTIyMTY0OTE4WhcNMjQwMTIyMjI0OTE4WjA1MTMwMQYDVQQDHioATABBAFAAVABPAFAALQBLAEYATwBCADQASABFAFEAXABEAGkAbgBhAGwwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAM0ps+9XHb54EmVQSV185qESoyxwB/kYviyRjteXTALR9feyX+jSc4nxSTtW9DBkioKJIX6vbQkOE0/jnHjOc0woZ5wJaM8zIIEkw/jLu7e+PHYYwntdNXVtwpXCuLVfl4TlbPi0Y7nEy6xZcRuwHhhwFPBQiIPVG4xpE6Ai553lAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAK4pP4DqJwOmYdI72uWYO7ITjtrfcTXxWs98lZbblZIZMxPByXrmE0hmvYIJm8CtnP2kR8dPvGJYckyO5l419OpabCjrXhA5APKZDB+/knCGBLiDOIMyUmVM1zr7EGmUbooUH9xlBbpn0xPiX50r6DrLcab68NL2AC79An0NaloQ=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

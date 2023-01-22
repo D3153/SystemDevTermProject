@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opeq_CallCenter", "Opeq_Cal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{CFEDB541-8DF5-4568-8F7B-FBA984C2DF05}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "OpeqCallcenterSetup", "OpeqCallcenterSetup\OpeqCallcenterSetup.vdproj", "{83C17664-3C3A-444A-A0E4-CD951CB8F502}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,8 @@ Global
 		{CFEDB541-8DF5-4568-8F7B-FBA984C2DF05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFEDB541-8DF5-4568-8F7B-FBA984C2DF05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFEDB541-8DF5-4568-8F7B-FBA984C2DF05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83C17664-3C3A-444A-A0E4-CD951CB8F502}.Debug|Any CPU.ActiveCfg = Debug
+		{83C17664-3C3A-444A-A0E4-CD951CB8F502}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
